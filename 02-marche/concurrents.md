@@ -69,4 +69,41 @@ Beaphar et Vetoform ont des milliers de clients mais aucune review UGC visible. 
 
 ---
 
+## Concurrents DTC directs — Benchmark prioritaire Barky
+
+> Liste validée par Thomas (avril 2026). À analyser en profondeur : page produit, pricing, offre abonnement, reviews, UGC, angle créatif, stack tech. Base pour le prompt 2 (extraction personas) et benchmark positionnement.
+
+| # | Marque | Pays | URL produit phare | À analyser |
+|---|---|---|---|---|
+| 1 | **Besti** | 🇫🇷 FR | https://www.besti.fr/products/8-en-1-premium | Positionnement, pricing, reviews FR |
+| 2 | **Wuffes** | 🇺🇸 US/Intl | https://wuffes.com/products/multivitamin-chews | Concurrent le plus direct (multivitamin chews). Scale actuel, angles ads |
+| 3 | **Balto** | 🇫🇷 FR | https://www.balto.fr/products/complement-articulations?saveur=poulet | Seul DTC FR à étudier en priorité. Brand story, UX Shopify |
+| 4 | **Woofilab** | 🇫🇷 FR | https://woofilab.com/products/articulations-mobilite | Packaging, positionnement, reviews |
+| 5 | **Dog is Human** | 🇺🇸 US | https://dogishuman.com/ | Concept "human-grade" — proche du positionnement Barky (filières humaines) |
+| 6 | **Pawfy** | 🇺🇸 US | https://pawfy.com/ | Branding, contenu organique, gamme |
+| 7 | **Mammaly** | 🇩🇪 DE | https://www.mammaly.de/ | Leader DE, modèle abonnement avancé, UX |
+
+### Grille d'analyse à remplir pour chacun (TODO)
+
+- [ ] **Produit phare** : format (gummies/poudre/cachets), quantité, durée de cure
+- [ ] **Prix** : unique vs abonnement, % de remise abonnement, trigger de réduction
+- [ ] **Claims principaux** sur la page (littéral)
+- [ ] **Villain** qu'ils attaquent (ce contre quoi ils se positionnent)
+- [ ] **Mécanisme** mis en avant (ingrédient hero, process)
+- [ ] **Social proof** : nb reviews affichés, note moyenne, UGC
+- [ ] **Founder story** : présente ou absente ?
+- [ ] **Offre d'accroche** : 1er achat, bundle, money-back
+- [ ] **Ads actives** (Meta Ads Library à checker)
+- [ ] **Stack tech** (Shopify + apps visibles : abonnement, reviews, upsell)
+
+### Priorité d'analyse (ordre recommandé)
+
+1. **Wuffes** — concurrent le plus direct sur le format multivitamines chews, scale international
+2. **Mammaly** — modèle abonnement DE mature, beaucoup à apprendre sur la rétention
+3. **Balto** — seul acteur DTC FR comparable, benchmark local direct
+4. **Dog is Human** — positionnement "human-grade" très proche de l'angle Barky
+5. **Besti + Woofilab + Pawfy** — tour d'horizon complémentaire
+
+---
+
 *Alimenter ce fichier régulièrement. Chaque nouveau concurrent découvert doit être ajouté.*
