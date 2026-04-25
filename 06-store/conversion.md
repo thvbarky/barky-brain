@@ -1,5 +1,22 @@
 # Conversion — Optimisation Barky Store
 
+> **Source de vérité :** [`BARKY_CERVEAU.md`](../BARKY_CERVEAU.md) §14.4. Ce fichier en est l'extrait opérationnel.
+
+---
+
+## Structure landing page (template Dog is Human adapté)
+
+1. **Hero** : produit + prix + bouton abonnement en avant
+2. **3 icônes réassurance** (Fabriqué en France · Formulé par véto · Sans OGM)
+3. **5 bénéfices clés** avec icônes
+4. **Photos lifestyle + UGC** (chiens réels, propriétaires réels)
+5. **Tableau dosages actifs** (crédibilité scientifique)
+6. **"Formulé & Loué par des Vétérinaires Leaders"** + têtes de vétos
+7. **Customer reviews** (10 minimum, étoiles + photos)
+8. **Badges presse / influenceurs**
+9. **FAQ accordéon**
+10. **Footer simple**
+
 ---
 
 ## Éléments critiques page produit

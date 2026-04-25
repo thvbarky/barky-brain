@@ -1,5 +1,10 @@
 # Roadmap 3 mois — Barky
 
+> Pour la **roadmap 5 ans** (vision long terme) : voir [`roadmap-5ans.md`](./roadmap-5ans.md)
+> Pour le **plan validation lean 6 semaines** (test marché avant production) : voir [`validation-6sem.md`](./validation-6sem.md)
+>
+> Cette roadmap couvre la **phase post-validation** — ce qui se passe après le GO du test 6 semaines.
+
 Période d'essai : fin avril → fin juillet 2026
 
 ---

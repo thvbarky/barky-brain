@@ -1,6 +1,8 @@
 # Tendances marché — Compléments chiens
 
-*Dernière mise à jour : avril 2026*
+> **Source de vérité :** [`BARKY_CERVEAU.md`](../BARKY_CERVEAU.md) §4. Pour les stats marché FR détaillées, voir [`marche.md`](./marche.md).
+
+*Dernière mise à jour : 25 avril 2026*
 
 ---
 

@@ -25,5 +25,5 @@
 ## Mentions légales site
 
 - Responsable de la publication : [Nom]
-- Hébergeur : [Shopify / autre]
+- Hébergeur : Shopify
 - Données personnelles : [RGPD — politique de confidentialité]

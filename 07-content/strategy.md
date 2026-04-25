@@ -1,5 +1,46 @@
 # Stratégie Contenu — Barky
 
+> **Source de vérité :** [`BARKY_CERVEAU.md`](../BARKY_CERVEAU.md) §14. Ce fichier en est l'extrait opérationnel.
+
+---
+
+## Le pilier TikTok "build in public" — l'arme principale
+
+### Pourquoi ça matche parfaitement Barky
+- Profil fondateur **narratif fort** (étudiant Dauphine + M&A lance petfood)
+- Les gens adorent suivre le parcours d'un fondateur dès le début
+- **Tu n'as pas besoin d'un produit pour créer une audience** — juste d'une histoire
+- Capital-light : un iPhone et 2 h/sem
+
+### Sujets à explorer (rotation)
+- Sélection fournisseur (backstage)
+- Premiers tests chez des chiens
+- Débats d'ingrédients (qu'est-ce que la glucosamine ?)
+- Moments d'échec assumés
+- Milestones : 100 abonnés, 1 000 abonnés...
+- Unboxing clients (UGC)
+- Before / after (avec autorisation)
+- Réponses aux commentaires en vidéo
+
+### Scripts type — 3 formats
+
+**Format 1 — Ton histoire (hook émotionnel)**
+> *"J'ai 22 ans, je suis étudiant à Dauphine, et je suis en train de lancer une marque de friandises fonctionnelles pour chien. Voilà pourquoi."*
+
+**Format 2 — Pédagogie produit (hook curiosité)**
+> *"La différence entre une friandise normale et une friandise fonctionnelle, c'est ça."*
+
+**Format 3 — Backstage (hook authentique)**
+> *"Aujourd'hui je rencontre mon premier fournisseur. Voilà ce que j'ai appris."*
+
+---
+
+## Le contenu éditorial comme moat
+
+- **Articles SEO** : *"Comment choisir un complément pour chien"*, *"Glucosamine pour chien : le guide complet"*
+- **Newsletter hebdomadaire** : 1 conseil véto + 1 coulisse marque
+- **Webinaires véto trimestriels** (réservés membres abonnés)
+
 ---
 
 ## Vision

@@ -1,5 +1,49 @@
 # Meta Ads — Stratégie Barky
 
+> **Source de vérité :** [`BARKY_CERVEAU.md`](../../BARKY_CERVEAU.md) §14. Ce fichier en est l'extrait opérationnel.
+>
+> Le **Creative Strategy Map** complet (méthode Lorenzo Pravata) est dans [`02-marche/`](../../02-marche/) :
+> - [`personas.md`](../../02-marche/personas.md) — 4 personas review-driven
+> - [`thought-map.md`](../../02-marche/thought-map.md) — 5 awareness levels
+> - [`angles.md`](../../02-marche/angles.md) — angles starrés par evidence
+> - [`test-plan.md`](../../02-marche/test-plan.md) — top 5 tests rankés (à briefer en priorité)
+
+---
+
+## Mix de canaux (acquisition An 1)
+
+| Canal | Rôle | Budget % An 1 |
+|---|---|---|
+| **TikTok organique build-in-public** | Construction d'audience, signal de marque | 0 € (temps fondateur) |
+| **Meta Ads** (Instagram + FB) | **Acquisition primaire**, test d'angles | 50-60% |
+| **Google Ads** (SEM) | Intention haute (recherche *"complément chien démangeaisons"*) | 15-20% |
+| **Influence micro-véto / pet influencers** | Social proof, content rights | 10-15% |
+| **SEO / contenu** | Moyen terme, montée en puissance An 2 | 5-10% |
+| **Email + abandoned cart** | Rétention, relance | Inclus stack |
+
+---
+
+## 3 angles à tester pour le SKU hero (test validation 6 sem.)
+
+### Angle 1 — Articulations
+- **Hook** : *"Votre chien a du mal à monter les marches ?"*
+- **Promesse** : *"4 semaines. 1 bouchée par jour. Mobilité retrouvée."*
+- **Social proof** : *"Rejoint par 2 000 propriétaires français"*
+- **CTA** : Rejoindre la waitlist
+
+### Angle 2 — Pelage / démangeaisons
+- **Hook** : *"Votre chien se gratte toute la nuit ?"*
+- **Visuel fort** : before / after pelage
+- **Promesse** : *"Oméga-3 + Biotine. 1 bouchée/jour. Pelage brillant en 6 semaines."*
+- **CTA** : Recevez votre échantillon
+
+### Angle 3 — Stress / anxiété
+- **Hook** : *"Feux d'artifice, visite véto, orage — votre chien tremble ?"*
+- **Promesse** : *"Camomille + Ashwagandha. Apaisement sans somnolence."*
+- **CTA** : Tester 7 jours
+
+> **Le SKU qui convertit au meilleur CPL gagne** — voir [`12-operations/validation-6sem.md`](../../12-operations/validation-6sem.md).
+
 ---
 
 ## Structure de campagnes
