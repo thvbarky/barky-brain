@@ -1,63 +1,111 @@
 # Architecture SKU — Barky
 
 > **Source de vérité :** [`BARKY_CERVEAU.md`](../BARKY_CERVEAU.md) §7. Ce fichier en est l'extrait opérationnel.
+>
+> **Pivot acté le 26 avril 2026** — abandon de l'approche problème-spécifique (3 angles testés en parallèle) au profit d'un **SKU unique multivitaminé daily**, modèle Dog is Human DM-01.
 
 ---
 
-## Phase 1 — Lancement (M0–M6) : **1 SKU hero**
+## Phase 1 — Lancement (M0–M6) : **1 SKU multivitaminé**
 
-Pas 10. Pas 6. **Un seul.** Pour concentrer le budget, la narration et les tests.
+Pas 3 angles. Pas 6 flacons. **Une seule bouchée. Tout dedans.**
 
-### Options priorisées (à choisir selon le test de validation)
+### Le SKU hero
 
-| SKU | Problème | Atout | Risque |
-|---|---|---|---|
-| **Démangeaisons / pelage** | Peau qui gratte, chute de poil | Trigger **très visuel**, before/after imparables sur TikTok | Segment concurrentiel (Zesty Paws) |
-| **Anti-stress / calm** | Anxiété de séparation, feux d'artifice, visite véto | Croissance **+168% depuis 2018**, sous-servi en FR | Trigger moins visuel |
-| **Articulations / mobilité** | Chien senior / grande race qui boite | Plus gros volume marché | Cible plus senior, moins TikTok |
+| Attribut | Valeur |
+|---|---|
+| **Nom de travail** | BM-01™ / VK-01™ / Barky Daily™ / Barky Core™ — à trancher |
+| **Format** | Bouchée moelleuse |
+| **Contenu pot** | 60 bouchées |
+| **Saveur** | Foie de poulet (alternative bœuf en Phase 2) |
+| **Posologie** | 1 / 2 / 3 bouchées par jour selon poids du chien (voir [`produit.md`](./produit.md)) |
+| **Prix abonnement** | 28 €/mois (-18% vs one-off à 34 €) |
+| **Promesse** | *Premiers signes visibles en 4 à 6 semaines* |
+| **Bénéfices revendiqués** | 5 (peau/pelage, mobilité, digestion, défenses, cœur) |
+| **Actifs** | 12 (voir composition produit.md) |
 
-**Recommandation** : tester **les 3 angles simultanément en Meta Ads** pour laisser le marché révéler le gagnant. Le SKU qui convertit au meilleur CPL gagne.
+### Pourquoi un seul SKU multivitaminé plutôt que 3 angles testés
+
+| Critère | 1 SKU multivitaminé | 3 SKU problème-spécifique |
+|---|---|---|
+| **Cible adressable** | 100% des chiens | 15–30% (problème déclaré) |
+| **Budget Meta Ads test** | Concentré sur 1 angle | Dilué sur 3 |
+| **Apprentissage marché** | Validation pure du format | Validation format + arbitrage angle |
+| **Production OEM** | 1 recette, 1 MOQ | 3 recettes, 3 MOQ — capital immobilisé x3 |
+| **Stack landing** | 1 page advertorial | 3 pages × QA × tracking |
+| **Narratif marque** | Clair (« le AG1 du chien ») | Fragmenté (3 promesses concurrentes) |
+| **Risque churn post-symptôme** | Faible (préventif daily) | Élevé (curatif) |
+
+> **Le pari Phase 1** : valider le format multivitaminé sur le marché français en 6 semaines avec 260–400 €. Si GO → commande private label sur ce SKU unique. Si NO-GO → pivot Felis (compléments chat).
 
 ---
 
-## Phase 2 (M6–M18) — 2e SKU complémentaire
+## Phase 2 (M6–M18) — Profondeur > élargissement
 
-Ajouter le SKU **#2 en Meta Ads**. Objectif : pousser les bundles (2 SKU = 50 €, 3 SKU = 72 €) = **panier moyen × 1,5-2**.
+Une fois la base abonnés établie sur le SKU hero, **deux trajectoires possibles** classées par défaut :
+
+### 2A — Profondeur du daily (en défaut)
+
+Ajouter des **versions du multivitaminé adaptées au stade de vie** :
+
+1. **Barky Daily Puppy** — chiots 3 mois – 1 an (croissance, immunité, dentition)
+2. **Barky Daily Senior** — chiens 8 ans+ (cognition, mobilité renforcée, vitalité)
+3. **Barky Daily Large Breed** — gros chiens 25 kg+ (articulations renforcées, cœur)
+
+> Avantage : on reste sur la promesse « 1 bouchée daily » → narratif cohérent. AOV élevé via foyers multi-chiens et bundle « pack famille ».
+
+### 2B — Élargissement vers SKU problème-spécifique (en option)
+
+Si le marché demande un complément ciblé sur un problème grave (signal détecté via SAV, support, communauté), ajouter **un SKU curatif** :
+
+- **Articulations Plus** (chiens senior avec arthrose déclarée) — Glucosamine x4, Chondroïtine, Curcuma
+- **Calm** (anxiété de séparation, bruits) — Ashwagandha, L-Tryptophane, Camomille
+- **Digestive Restore** (troubles digestifs chroniques) — probiotiques x10, prébiotiques
+
+> Décision Phase 2 entre 2A et 2B = data-driven, post-validation. **Default = 2A** (plus aligné avec le narratif de marque).
 
 ---
 
-## Phase 3 (M18–M24+) — Gamme complète 6 SKUs (modèle Zesty Paws)
+## Phase 3 (M18–M36) — Gamme complète si trajectoire 2A confirmée
 
-Cible à 18-24 mois, **prix unique flat** :
+À 18–24 mois, si la profondeur fonctionne, gamme verticale par cycle de vie :
 
-1. **Articulations & mobilité** — Glucosamine, Chondroïtine, MSM, Curcuma
-2. **Stress & anxiété** — Camomille, Mélatonine, L-Tryptophane, Ashwagandha
-3. **Digestion / microbiote** — Pré + probiotiques
-4. **Peau & pelage** — Huile de saumon sauvage, Oméga-3, Biotine
-5. **Défenses / immunité** — Propolis, Colostrum, Spiruline
-6. **Multivitamines daily** — produit de **fidélisation post-adhésion**
+```
+Barky Daily Puppy    →    Barky Daily Adult    →    Barky Daily Senior
+  (3 mois – 1 an)            (1 – 8 ans)              (8 ans +)
+```
+
+Avec deux versions transverses possibles :
+- **Barky Daily Petite** (chiens < 11 kg)
+- **Barky Daily Large** (chiens > 25 kg)
+
+Objectif : **clarté absolue de la grille produit**. Le propriétaire choisit son SKU en 2 questions (âge + taille). Pas d'arbitrage cognitif.
 
 ---
 
 ## Nommage produit (codes lab)
 
-Inspiration **Dog is Human** (DM-01™). Si pertinent pour la gamme post-validation :
+Inspiration **Dog is Human (DM-01™)**. Options à arbitrer :
 
-- **VK-01™** (Vita K9 — 01 = première formule)
-- **CF-01™** (Canine Formula)
-- **Barky Core™**
-- **Barky Lab™ — Formula 01**
-- **Barky Science™ — Daily Complex**
+| Option | Logique |
+|---|---|
+| **BM-01™** | Barky Multivitamin — 01 = première formule. Lisible, technique. |
+| **VK-01™** | Vita K9 — clin d'œil canin, distinct du nom Barky. |
+| **Barky Daily™** | Verbal, mémorable, descriptif. Alignement « rituel quotidien ». |
+| **Barky Core™** | Premium, posé. Aligné « l'essentiel uniquement ». |
 
-À déposer INPI le moment venu (classe 31, 5, 35).
+> **À déposer INPI** classes 31 (alimentation animale) + 5 (compléments) + 35 (vente). Décision design + INPI à prendre **avant lancement public** (post-GO du test 6 semaines).
 
 ---
 
 ## Décisions ouvertes
 
-- **SKU hero pour le lancement** : démangeaisons OR anti-stress OR articulations → trancher post-test Meta Ads (S3-S5 du plan validation 6 semaines, voir [`12-operations/validation-6sem.md`](../12-operations/validation-6sem.md))
-- **Code lab à utiliser** : VK-01 / CF-01 / Barky Core — décision design + INPI
+| Décision | Quand trancher |
+|---|---|
+| Code lab final (BM-01 / VK-01 / Barky Daily / Barky Core) | Avant lancement public (post-GO test) |
+| Trajectoire Phase 2 (2A profondeur / 2B élargissement) | Post-mois 6, sur data abonnés réels |
+| Saveur Phase 2 (bœuf en alternative) | Post-mois 9 selon retours palatabilité |
 
 ---
 
-*Dernière mise à jour : 25 avril 2026*
+*Dernière mise à jour : 26 avril 2026 — pivot multivitaminé daily.*

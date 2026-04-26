@@ -21,15 +21,18 @@
 
 ## Étiquette du pot — principe
 
-Remplacer un générique "MULTIVITAMINES" par le **bénéfice fonctionnel** :
+> **Pivot acté le 26 avril 2026** — passage à un SKU unique multivitaminé daily. Plus de variantes par bénéfice. **Une seule étiquette pour l'ensemble de la gamme Phase 1.**
 
-- **ARTICULATIONS** / **MOBILITÉ**
-- **DIGESTION & TRANSIT**
-- **PEAU & PELAGE**
-- **CALME & ANTI-STRESS**
-- **DÉFENSES NATURELLES**
+L'étiquette du SKU hero affiche, dans l'ordre vertical :
 
-Chaque SKU = **une couleur secondaire** distincte sur le pot (orange reste constant pour la marque), bénéfice clair en grand, ingrédients vedettes en dessous.
+1. **Code lab** en grand — `BM-01™` / `VK-01™` / `Barky Daily™` (à trancher), Recoleta serif, navy sur fond orange
+2. **Dénomination produit** — *« Multivitaminé quotidien pour chien »* (oblige DGCCRF en alimentation complémentaire)
+3. **Tagline produit** — *« 12 actifs. 5 bienfaits. Une bouchée par jour. »*
+4. **Liste des 5 bénéfices** en pictogrammes : Peau & pelage · Mobilité · Digestion · Défenses · Cœur
+5. **Mention légale obligatoire** *« Aliment complémentaire pour chiens »* en bas du pot
+6. **Badge « Fabriqué en France »** en pastille latérale
+
+> Pas de couleur secondaire à arbitrer (un seul SKU = un seul code couleur). L'identité repose entièrement sur le couple **navy + orange** + Recoleta. Toute évolution couleur attendra la Phase 2 (versions Puppy / Senior / Large Breed) — voir [`skus.md`](./skus.md).
 
 ---
 

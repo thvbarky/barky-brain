@@ -128,17 +128,23 @@ Existe en 2 versions :
 
 ### 3.1 Le positionnement tranché
 
-**Friandises fonctionnelles problème-spécifiques** pour chiens, en abonnement mensuel.
+**Friandise multivitaminée daily** pour chiens, en abonnement mensuel. **Une bouchée par jour. Une seule formule. Tout dedans.**
 
-### 3.2 Le débat friandise vs multivitamines
+> *« Ce que les croquettes ne couvrent jamais — un complément multivitaminé quotidien, formulé par 4 vétérinaires, fabriqué en France. »*
 
-Un pivot a été envisagé vers un **"daily chew multivitamines"** façon Dog is Human (produit DM-01™ Daily Multivitamin). Après analyse, le **problème-spécifique reste supérieur** pour 3 raisons :
+### 3.2 Le débat friandise vs multivitamines — **TRANCHÉ : multivitaminé daily** *(décision actée 26/04/2026)*
 
-1. **Trigger d'achat clair** — "mon chien se gratte" / "mon chien boite" / "mon chien est anxieux" → intention de recherche Google et Amazon précise
-2. **Légitimité scientifique plus forte** — ingrédients vedettes nommés (Glucosamine, MSM, Ashwagandha) → le propriétaire reconnaît ce que son véto lui a dit
-3. **Justification du prix premium** — vendre une solution à un problème spécifique justifie 28–35 €/mois ; vendre un multivitamines généraliste en France se heurte à une **non-habitude culturelle** (contrairement aux US)
+L'option problème-spécifique (3 angles testés en parallèle : pelage / articulations / stress) était la stratégie initiale. Après analyse approfondie du marché français, du benchmark Dog is Human (51 600+ avis 5⭐ sur la DM-01) et des unit economics réels, **le multivitaminé daily devient le SKU hero du lancement** pour 5 raisons :
 
-**Règle de Zesty Paws** : par problème d'abord, multivitamines comme produit de fidélisation à 18 mois.
+1. **Cible adressable 100% des chiens** — pas seulement ceux avec un problème déclaré (15–30%). Le propriétaire achète parce que c'est *« pour son bien »*, pas pour réagir à un symptôme. Marché potentiel **3 à 6 fois plus large**.
+2. **Récurrence native sans risque de churn post-symptôme** — un complément curatif crée un risque structurel : si le problème s'apaise, le client part. Un multivitaminé est un **rituel préventif quotidien** sans raison d'arrêter.
+3. **Narratif marque limpide (« le AG1 du chien »)** — un seul produit, une seule promesse, un seul angle d'acquisition. Concentre 100% du budget Meta Ads sur un message clair plutôt que diluer sur 3 angles.
+4. **Production OEM simplifiée** — 1 recette, 1 MOQ (100–300 kg), capital immobilisé minimisé. Versus 3 recettes problème-spécifique = capital × 3.
+5. **Risque DGCCRF plus faible** — les revendications nutritionnelles génériques (« contribue à un pelage brillant », « soutient la mobilité ») sont plus tenables que des claims santé pointus.
+
+**Le précédent qui valide le pari** : Dog is Human (US) a construit sa marque sur la seule DM-01, **51 600+ avis 5⭐**. Petlab Co. (UK) idem. La France n'a pas de leader DTC sur ce format — **opportunité de marché blanc**.
+
+**Sur l'objection « non-habitude culturelle française du multivitaminé »** : 47% des propriétaires français donnent déjà des friandises, seuls 12% donnent des compléments. Le multivitaminé en bouchée **fusionne les deux usages** — il n'oblige pas à créer une habitude nouvelle, il enrichit une habitude existante.
 
 ### 3.3 Pourquoi friandises fonctionnelles > petfood classique
 
@@ -155,20 +161,20 @@ Un pivot a été envisagé vers un **"daily chew multivitamines"** façon Dog is
 | **Prix perçu** | Santé/supplément (25–35 €/mois) | Rayon Carrefour |
 | **Multiple exit** | 4–6x revenue | 1–3x revenue |
 
-### 3.4 Pourquoi friandises fonctionnelles > multivitamines généraliste
+### 3.4 Pourquoi le format bouchée multivitaminée
 
-- Segment en forte croissance : **friandises double bénéfice = 21,7% des lancements 2025**
-- Produits à croquer/mâcher = **39% du marché compléments pet en 2024**
-- Stress/anxiété : demande **+168% depuis 2018**, TCAC **+9,7%** jusqu'en 2030
-- Le format "bouchée" masque le goût → adhésion chien > formes classiques
+- Produits à croquer/mâcher = **39% du marché compléments pet en 2024** — format dominant
+- Format **bouchée moelleuse** masque le goût des actifs → adhésion chien > comprimés / poudres
+- Permet la fusion friandise + complément : **47% des propriétaires donnent déjà des friandises, 12% des compléments** → le multivitaminé en bouchée capte les deux usages dans un seul geste
+- Pricing power du registre santé/supplément (28 €/mois) sans la résistance des comprimés vétérinaires
 
 ### 3.5 Le cœur de l'offre
 
-**1 bouchée par jour. 1 SKU hero. Abonnement mensuel.**
-- 1 pot = 30 bouchées = 1 mois (rechargeable)
+**1 bouchée par jour. 1 SKU multivitaminé hero. Abonnement mensuel.**
+- 1 pot = **60 bouchées** (= 60 jours pour chien < 11 kg, 30 jours pour 11–34 kg, 20 jours pour > 34 kg)
 - Prix abonnement recommandé : **28 €/mois** (livré), **34 €** en one-off
 - Abonnement trimestriel : **27 €/mois** (livré tous les 90 j, -21%)
-- Bundle 2 SKU : 50 € (-26%), bundle 3 SKU : 72 € (-29%)
+- *Phase 2 (post-validation)* : versions Puppy / Senior / Large Breed → bundle « pack famille » pour foyers multi-chiens
 
 ---
 
@@ -419,34 +425,72 @@ Un pivot a été envisagé vers un **"daily chew multivitamines"** façon Dog is
 
 ## 7. ARCHITECTURE PRODUIT (SKU)
 
-### 7.1 Phase 1 — Lancement (M0–M6) : **1 SKU hero**
+### 7.1 Phase 1 — Lancement (M0–M6) : **1 SKU multivitaminé daily**
 
-Pas 10. Pas 6. **Un seul.** Pour concentrer le budget, la narration, et les tests.
+Pas 3 angles testés en parallèle. Pas 6 SKUs. **Une seule bouchée multivitaminée. Tout dedans.**
 
-**Options priorisées (à choisir selon le test de validation)**
+**Le SKU hero**
 
-| SKU | Problème | Atout | Risque |
-|---|---|---|---|
-| **Démangeaisons / pelage** | Peau qui gratte, chute de poil | Trigger **très visuel**, before/after imparables sur TikTok | Segment concurrentiel (Zesty Paws) |
-| **Anti-stress / calm** | Anxiété de séparation, feux d'artifice, visite véto | Croissance **+168% depuis 2018**, sous-servi en FR | Trigger moins visuel |
-| **Articulations / mobilité** | Chien senior / grande race qui boite | Plus gros volume marché | Cible plus senior, moins TikTok |
+| Attribut | Valeur |
+|---|---|
+| **Nom de travail** | BM-01™ / VK-01™ / Barky Daily™ / Barky Core™ — à trancher avant lancement public |
+| **Format** | Bouchée moelleuse, saveur foie de poulet |
+| **Contenu pot** | 60 bouchées |
+| **Posologie** | 1 / 2 / 3 bouchées par jour selon poids du chien |
+| **Prix abonnement** | 28 €/mois (-18% vs 34 € one-off) |
+| **Promesse** | *Premiers signes visibles en 4 à 6 semaines* |
+| **5 bénéfices revendiqués (DGCCRF)** | Peau & pelage · Mobilité · Digestion · Défenses · Cœur |
+| **12 actifs** | Glucosamine 200 mg · MSM 100 mg · Probiotiques 500 M CFU · Huile saumon 95 mg · Vitamines A, B2, B6, B9, B12, D3, E · CoQ10 |
 
-**Recommandation** : tester **les 3 angles simultanément en Meta Ads** pour laisser le marché révéler le gagnant. Le SKU qui convertit au meilleur CPL gagne.
+**Pourquoi un SKU unique multivitaminé plutôt que 3 angles testés**
 
-### 7.2 Phase 2 (M6–M18) — 2e SKU complémentaire
+| Critère | 1 SKU multivitaminé | 3 SKU problème-spécifique |
+|---|---|---|
+| Cible adressable | 100% des chiens | 15–30% (problème déclaré) |
+| Budget Meta Ads test | Concentré sur 1 angle | Dilué sur 3 |
+| Production OEM | 1 recette, 1 MOQ | 3 recettes, capital × 3 |
+| Stack landing | 1 page advertorial | 3 pages × QA × tracking |
+| Narratif marque | Limpide (« le AG1 du chien ») | Fragmenté |
+| Risque churn post-symptôme | Faible (préventif daily) | Élevé (curatif) |
 
-Ajouter le SKU qui convertissait le mieux en second en Meta Ads. Objectif : pousser les bundles (2 SKU = 50 €, 3 SKU = 72 €) = **panier moyen x1,5–2**.
+> **Le précédent qui valide le pari** : Dog is Human (US) construit sa marque sur la seule DM-01, **51 600+ avis 5⭐**. Voir §3.2 pour l'argumentaire complet du pivot.
 
-### 7.3 Phase 2+ — Gamme complète 6 SKUs (modèle Zesty Paws)
+### 7.2 Phase 2 (M6–M18) — Profondeur > élargissement
 
-Cible à 18–24 mois, prix unique flat :
+Une fois la base abonnés établie sur le SKU hero, **deux trajectoires** classées par défaut :
 
-1. **Articulations & mobilité** — Glucosamine, Chondroïtine, MSM, Curcuma
-2. **Stress & anxiété** — Camomille, Mélatonine, L-Tryptophane, Ashwagandha
-3. **Digestion / microbiote** — Pré+probiotiques
-4. **Peau & pelage** — Huile de saumon sauvage, Oméga-3, Biotine
-5. **Défenses / immunité** — Propolis, Colostrum, Spiruline
-6. **Multivitamines daily** — le produit de fidélisation post-adhésion
+#### **Default — 2A. Profondeur du daily**
+
+Versions du multivitaminé adaptées au stade de vie :
+
+1. **Barky Daily Puppy** (3 mois – 1 an) — croissance, immunité, dentition
+2. **Barky Daily Senior** (8 ans+) — cognition, mobilité renforcée, vitalité
+3. **Barky Daily Large Breed** (25 kg+) — articulations renforcées, cœur
+
+Avantage : narratif cohérent (« 1 bouchée daily »). AOV élevé via foyers multi-chiens et bundle « pack famille ».
+
+#### **Option — 2B. Élargissement vers SKU problème-spécifique**
+
+Si signal marché clair (SAV, support, communauté) sur un problème grave non couvert par le daily, ajouter un SKU **curatif** :
+
+- **Articulations Plus** — chiens senior arthrose déclarée
+- **Calm** — anxiété de séparation, bruits
+- **Digestive Restore** — troubles digestifs chroniques
+
+> Décision 2A vs 2B = data-driven post-mois 6, sur data abonnés réels. **Default = 2A** (plus aligné narratif marque).
+
+### 7.3 Phase 3 (M18–M36) — Gamme complète si trajectoire 2A confirmée
+
+Gamme verticale par cycle de vie + taille :
+
+```
+Barky Daily Puppy   →   Barky Daily Adult   →   Barky Daily Senior
+  (3 mois – 1 an)        (1 – 8 ans)              (8 ans +)
+```
+
+Versions transverses possibles : **Barky Daily Petite** (< 11 kg) et **Barky Daily Large** (> 25 kg).
+
+Objectif : **clarté absolue de la grille**. Le propriétaire choisit son SKU en 2 questions (âge + taille). Pas d'arbitrage cognitif. Modèle inverse de Zesty Paws (qui multiplie les SKUs problème).
 
 ### 7.4 Les 12 actifs potentiels (qualité humaine)
 
