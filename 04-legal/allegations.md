@@ -18,7 +18,7 @@
 
 ---
 
-## ZONE ORANGE — Valider avec juriste avant d'utiliser
+## ZONE JAUNE — Valider avec juriste avant d'utiliser
 
 | Allégation | Risque |
 |---|---|

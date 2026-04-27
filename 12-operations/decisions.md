@@ -12,10 +12,10 @@ Chaque décision importante loggée ici avec contexte et raisonnement.
 |---|---|---|---|
 | 1 | **Format** : friandises fonctionnelles | Avril 2026 | > petfood classique et > multivitamines généraliste (trigger d'achat clair, marge supérieure, viralité TikTok) |
 | 2 | **Voie de production** : private label (voie C, 8-20 k€) | Avril 2026 | Capital limité < 20 k€, time-to-market 6-10 sem, MOQ acceptable |
-| 3 | **Identité visuelle** : orange `#FF5500` + navy `#0D1B5E` | Avril 2026 | Retour après exploration alternative bleu pastel + brun ambré |
+| 3 | **Identité visuelle** : bleu pastel `#CADCE4` + brun ambré `#463432` | 2026-04-27 | Palette définitive "apothicaire moderne / wellness pharma" — voir [`01-identite/marque.md`](../01-identite/marque.md) |
 | 4 | **Nom** : Barky | Avril 2026 | Court, prononçable. Registre cute compensé par tagline + DA |
 | 5 | **Tagline** : *"Nourri comme il le mérite."* | Avril 2026 | Tire le nom vers le premium |
-| 6 | **Positionnement produit** : problème-spécifique > multivitamines | Avril 2026 | Trigger clair, légitimité scientifique, justification prix |
+| 6 | **Positionnement produit** : SKU unique multivitaminé daily | 2026-04-26 | Modèle Dog is Human DM-01. Voir [`BARKY_CERVEAU.md §3.2`](../BARKY_CERVEAU.md) — pivot depuis l'approche problème-spécifique |
 | 7 | **Canaux validation** : Meta Ads + TikTok organique build-in-public | Avril 2026 | Profil fondateur narratif fort, capital-light |
 | 8 | **Géographie initiale** : France métropolitaine DTC | Avril 2026 | Marché 6,3 Md€, 9,5M chiens, segment DTC sous-servi |
 | 9 | **Modèle commercial** : abonnement mensuel (+ one-off + trimestriel) | Avril 2026 | LTV/CAC SaaS-like, payback < 3 mois |
@@ -83,6 +83,16 @@ Semaine 1-6 → Test Barky (260-400 €)
 - **Why** : éviter la dispersion de connaissance, charger automatiquement dans toute conversation Claude
 - **Implémentation** : `BARKY_CERVEAU.md` à la racine + import via `CLAUDE.md` du repo + extraits opérationnels distribués dans les 15 dossiers thématiques
 
+### 26 avril 2026 — Pivot SKU unique multivitaminé daily
+- **Décision** : abandonner l'approche problème-spécifique (3 angles testés) au profit d'un SKU unique multivitaminé daily, modèle Dog is Human DM-01
+- **Why** : cible adressable 100% des chiens (vs 15-30%), récurrence native sans churn post-symptôme, narratif marque limpide ("le AG1 du chien"), production OEM simplifiée, risque DGCCRF plus faible
+- **Implémentation** : réécriture `produit.md`, `skus.md`, `packaging.md`, `BARKY_CERVEAU.md §3.1-3.5 / §7.1-7.3` ; landing v1 multivitaminée créée
+
+### 27 avril 2026 — Palette définitive : bleu pastel + brun ambré
+- **Décision** : palette de marque actée — `#CADCE4` (bleu pastel) + `#463432` (brun ambré). Identité visuelle figée, plus aucune alternative à explorer.
+- **Why** : la direction "apothicaire moderne / wellness pharma" est cohérente avec le positionnement premium "santé canine au plus haut standard" et compense le registre cute du nom Barky
+- **Implémentation** : `marque.md` mis à jour, alignement `BARKY_CERVEAU.md §2.3-2.4 / §9.1-9.2 / §17.1`, `packaging.md`. Création arborescence `01-identite/assets/` pour logos + bibliothèque d'images. Landing v2 à refaire avec logo réel.
+
 ---
 
 ## Template de décision
@@ -100,4 +110,4 @@ Semaine 1-6 → Test Barky (260-400 €)
 
 ---
 
-*Dernière mise à jour : 25 avril 2026*
+*Dernière mise à jour : 27 avril 2026 — palette figée + log pivot multivitaminé.*

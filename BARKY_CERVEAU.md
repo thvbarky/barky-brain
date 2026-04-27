@@ -84,38 +84,27 @@ Parle directement au propriétaire qui considère son chien comme un membre de l
 - "Serious food for happy dogs" *(angle anglophile, rejeté)*
 - Variantes autour de "nutrition premium", "science nutritionnelle", "simple et puissant"
 
-### 2.3 Palette de couleurs — **version actée**
+### 2.3 Palette de couleurs
 
 | Couleur | Hex | Rôle |
 |---|---|---|
-| **Orange vif** | `#FF5500` | Couleur d'accent principale, énergie, signal TikTok |
-| **Navy profond** | `#0D1B5E` | Couleur de fond premium, autorité, sérieux |
+| **Bleu pastel** | `#CADCE4` | Couleur d'accent principale, énergie, fonds clairs |
+| **Brun ambré** | `#463432` | Couleur de fond premium, autorité, sérieux |
 
-> **Actée** : orange + navy. L'identité établie, celle du logo, celle du pitch deck v1.
+> **Palette définitive** : bleu pastel + brun ambré. Direction "apothicaire moderne / wellness pharmaceutique" (façon Hims/Hers/Kin Euphorics). Source de vérité : [`01-identite/marque.md`](../01-identite/marque.md).
 
-### 2.4 Palette explorée puis écartée
-
-Une direction alternative **bleu pastel + brun ambré** a été testée pour un positionnement "wellness pharmaceutique" façon Hims/Hers/Kin Euphorics. Non retenue car désalignée avec l'identité Barky établie et demandait une refonte complète (logo, deck, assets).
-
-| Couleur | Hex approx | Rôle |
-|---|---|---|
-| Bleu pastel boîte | `#C9D9E3` | Fond principal, unboxing |
-| Vert-de-gris logo | `#C8D4D1` | Typo Barky, accents |
-| Brun ambré pot | `#2B1F17` | Packaging produit |
-| Blanc cassé | `#F5F1EA` | Textes secondaires |
-
-### 2.5 Logo
+### 2.4 Logo
 
 Existe en 2 versions :
-- **Version orange** (logo navy sur fond orange) — usage hero/publicitaire
-- **Version navy** (logo orange ou beige sur fond navy) — usage deck/packaging premium
+- **Version brun sur fond bleu** (logo brun ambré sur fond bleu pastel) — usage hero/publicitaire
+- **Version bleu sur fond brun** (logo bleu pastel sur fond brun ambré) — usage deck/packaging premium
 
-### 2.6 Typographie
+### 2.5 Typographie
 
 - **Recoleta** (titres) — serif élégante qui donne de l'autorité au registre premium, compense la légèreté du nom. C'est elle qui porte la personnalité de marque dans le pitch deck.
 - Body : Calibri/sans-serif clean moderne
 
-### 2.7 Ton de voix
+### 2.6 Ton de voix
 
 - **Affirmatif, adulte, warm** — pas d'emojis chiens, pas de "woof woof"
 - **Pédagogique sans paternaliste** — explique les ingrédients, ne les mystifie pas
@@ -582,14 +571,14 @@ Inspiration Dog is Human (DM-01™). Si pertinent pour la gamme multivitamines p
 
 ### 9.1 Principe directeur
 
-**Orange vif + navy profond** comme identité principale. Recoleta en titre, typo serrée, packaging qui signale "santé sérieuse" sans tomber dans le médical froid.
+**Bleu pastel `#CADCE4` + brun ambré `#463432`** comme identité principale. Recoleta en titre, typo serrée, packaging qui signale "apothicaire moderne / santé sérieuse" sans tomber dans le médical froid.
 
 ### 9.2 Ce qui fonctionne (retour sur mockups)
 
-- Pot **brun ambré** ou navy avec typographie **claire et serrée** — crédibilité apothicaire
+- Pot **brun ambré** avec typographie **claire et serrée** — crédibilité apothicaire
 - **Badge "Fabriqué en France"** bien placé
 - **Balle de tennis brandée** dans le colis d'unboxing → gimmick de rétention, UGC TikTok spontané ("regardez ce que j'ai reçu")
-- Fond neutre **crème / off-white / navy foncé** → meilleur feed Instagram qu'un fond bleu ciel qui dilue l'identité
+- Fond neutre **bleu pastel / blanc cassé / brun ambré** → posé, premium, photogénique sur feed Instagram
 
 ### 9.3 Étiquette du pot — principe
 
@@ -601,16 +590,16 @@ Remplacer un générique "MULTIVITAMINES" par le **bénéfice fonctionnel** :
 - **CALME & ANTI-STRESS**
 - **DÉFENSES NATURELLES**
 
-Chaque SKU = **une couleur secondaire** distincte sur le pot (orange reste constant pour la marque), bénéfice clair en grand, ingrédients vedettes en dessous.
+Chaque SKU = **une couleur secondaire** distincte sur le pot (le brun ambré reste constant pour la marque), bénéfice clair en grand, ingrédients vedettes en dessous.
 
 ### 9.4 Balle de tennis
 
-- **Version idéale** : orange avec logo navy → signal de marque fort, photogénique sur fond neutre (TikTok)
-- Version actuelle bleue → à repenser
+- **Version idéale** : bleu pastel avec logo brun ambré → signal de marque fort, photogénique sur fond neutre (TikTok)
+- Cohérence palette à valider sur les prochains lots
 
 ### 9.5 La séquence d'unboxing (le rituel)
 
-**Box navy** → **pot brun ambré** avec étiquette orange/beige → **carte manuscrite** du fondateur (build-in-public) → **balle brandée** → **feuillet "5 bienfaits + posologie"**
+**Box brun ambré** → **pot brun ambré** avec étiquette bleu pastel → **carte manuscrite** du fondateur (build-in-public) → **balle brandée** → **feuillet "5 bienfaits + posologie"**
 
 L'unboxing est une arme de fidélisation et un générateur d'UGC. Priorité absolue.
 
@@ -618,7 +607,7 @@ L'unboxing est une arme de fidélisation et un générateur d'UGC. Priorité abs
 
 Structure type pour Nano Banana Pro / Midjourney / Flux :
 
-> Tu es un photographe de magazine professionnel spécialisé dans la création de prompts art-directés pour générateurs d'images IA. Tu recevras une idée de prompt et une image d'un produit Barky (friandises fonctionnelles pour chiens — identité orange / navy, positionnement premium "Nourri comme il le mérite."). Génère 10 prompts diversifiés haut de gamme pour publicités statiques, intégrant les claims produit. Format : prompt1* prompt2* prompt3* sans commentaire.
+> Tu es un photographe de magazine professionnel spécialisé dans la création de prompts art-directés pour générateurs d'images IA. Tu recevras une idée de prompt et une image d'un produit Barky (friandises fonctionnelles pour chiens — identité bleu pastel `#CADCE4` / brun ambré `#463432`, positionnement premium "Nourri comme il le mérite."). Génère 10 prompts diversifiés haut de gamme pour publicités statiques, intégrant les claims produit. Format : prompt1* prompt2* prompt3* sans commentaire.
 
 > **Langue conseillée** : prompts en anglais (meilleur rendu), avec textes affichés dans l'image entre guillemets en français ("Nourri comme il le mérite.").
 
@@ -782,7 +771,7 @@ Typo titre : **Recoleta** (serif embarquée dans le fichier)
 - Mention "Testé en laboratoire indépendant"
 
 **Slide 9 — Le rituel (unboxing)**
-- Box navy + pot brun + balle brandée + carte manuscrite
+- Box brun ambré + pot brun ambré + balle brandée + carte manuscrite
 - Le produit n'est pas juste fonctionnel, il est émotionnel
 
 **Slide 10 — Business model abonnement**
@@ -1113,10 +1102,10 @@ Micro-influence véto → interviews clients → insights problèmes → TikTok 
 
 - **Format** : friandises fonctionnelles (> petfood classique et > multivitamines généraliste)
 - **Voie production** : private label (voie C, 8–20 k€)
-- **Identité visuelle** : orange #FF5500 + navy #0D1B5E (retour après exploration bleu pastel + brun ambré)
+- **Identité visuelle** : bleu pastel `#CADCE4` + brun ambré `#463432`
 - **Nom** : Barky (assumer le registre accessible, compensé par tagline + DA)
 - **Tagline** : "Nourri comme il le mérite."
-- **Positionnement produit** : problème-spécifique > multivitamines (trigger clair)
+- **Positionnement produit** : SKU unique multivitaminé daily *(pivot 26/04/2026, voir §3.2)*
 - **Canaux validation** : Meta Ads + TikTok organique build-in-public
 - **Géographie initiale** : France métropolitaine DTC
 - **Modèle commercial** : abonnement mensuel (avec options one-off et trimestriel)

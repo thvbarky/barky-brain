@@ -56,7 +56,7 @@
 - Mention **"Testé en laboratoire indépendant"**
 
 ### Slide 9 — Le rituel (unboxing)
-- Box navy + pot brun + balle brandée + carte manuscrite
+- Box brun ambré + pot brun ambré + balle brandée + carte manuscrite
 - *"Le produit n'est pas juste fonctionnel, il est émotionnel"*
 
 ### Slide 10 — Business model abonnement

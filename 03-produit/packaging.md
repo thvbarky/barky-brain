@@ -6,16 +6,16 @@
 
 ## Principe directeur
 
-**Orange vif + navy profond** comme identité principale. **Recoleta** en titre, typo serrée, packaging qui signale "santé sérieuse" sans tomber dans le médical froid.
+**Bleu pastel `#CADCE4` + brun ambré `#463432`** comme identité principale — palette définitive (voir [`01-identite/marque.md`](../01-identite/marque.md) §Univers visuel). **Recoleta** en titre, typo serrée, packaging qui signale *« apothicaire moderne / santé sérieuse »* sans tomber dans le médical froid.
 
 ---
 
 ## Ce qui fonctionne (retours mockups)
 
-- **Pot brun ambré** ou navy avec typographie **claire et serrée** → crédibilité apothicaire
+- **Pot brun ambré** avec typographie **claire et serrée** → crédibilité apothicaire
 - **Badge "Fabriqué en France"** bien placé
 - **Balle de tennis brandée** dans le colis d'unboxing → gimmick rétention + UGC TikTok spontané (*"regardez ce que j'ai reçu"*)
-- Fond neutre **crème / off-white / navy foncé** → meilleur feed Instagram qu'un fond bleu ciel qui dilue l'identité
+- Fond neutre **crème / off-white / brun ambré profond** → photogénique sur feed Instagram, valorise la palette de marque
 
 ---
 
@@ -25,34 +25,34 @@
 
 L'étiquette du SKU hero affiche, dans l'ordre vertical :
 
-1. **Code lab** en grand — `BM-01™` / `VK-01™` / `Barky Daily™` (à trancher), Recoleta serif, navy sur fond orange
+1. **Code lab** en grand — `BM-01™` / `VK-01™` / `Barky Daily™` (à trancher), Recoleta serif, brun ambré sur fond bleu pastel
 2. **Dénomination produit** — *« Multivitaminé quotidien pour chien »* (oblige DGCCRF en alimentation complémentaire)
 3. **Tagline produit** — *« 12 actifs. 5 bienfaits. Une bouchée par jour. »*
 4. **Liste des 5 bénéfices** en pictogrammes : Peau & pelage · Mobilité · Digestion · Défenses · Cœur
 5. **Mention légale obligatoire** *« Aliment complémentaire pour chiens »* en bas du pot
 6. **Badge « Fabriqué en France »** en pastille latérale
 
-> Pas de couleur secondaire à arbitrer (un seul SKU = un seul code couleur). L'identité repose entièrement sur le couple **navy + orange** + Recoleta. Toute évolution couleur attendra la Phase 2 (versions Puppy / Senior / Large Breed) — voir [`skus.md`](./skus.md).
+> Pas de couleur secondaire à arbitrer (un seul SKU = un seul code couleur). L'identité repose entièrement sur le couple **bleu pastel + brun ambré** + Recoleta. Toute évolution couleur attendra la Phase 2 (versions Puppy / Senior / Large Breed) — voir [`skus.md`](./skus.md).
 
 ---
 
 ## Balle de tennis — actée
 
-- **Version idéale** : orange avec logo navy → signal de marque fort, photogénique sur fond neutre (TikTok)
-- Version actuelle bleue → à repenser
+- **Version idéale** : balle bleu pastel avec logo brun ambré (ou inverse) → signal de marque fort, photogénique sur fond neutre (TikTok)
+- Cohérence absolue avec la palette de marque — voir [`01-identite/marque.md`](../01-identite/marque.md)
 
 ---
 
 ## La séquence d'unboxing (le rituel)
 
 ```
-Box navy
+Box brun ambré
   ↓
-Pot brun ambré avec étiquette orange/beige
+Pot brun ambré avec étiquette bleu pastel
   ↓
 Carte manuscrite du fondateur (build-in-public)
   ↓
-Balle brandée
+Balle brandée bleu pastel / brun ambré
   ↓
 Feuillet "5 bienfaits + posologie"
 ```
@@ -80,10 +80,10 @@ Voir [`04-legal/compliance.md`](../04-legal/compliance.md) pour le détail régl
 
 Structure type pour Nano Banana Pro / Midjourney / Flux :
 
-> Tu es un photographe de magazine professionnel spécialisé dans la création de prompts art-directés pour générateurs d'images IA. Tu recevras une idée de prompt et une image d'un produit Barky (friandises fonctionnelles pour chiens — identité orange / navy, positionnement premium *"Nourri comme il le mérite."*). Génère 10 prompts diversifiés haut de gamme pour publicités statiques, intégrant les claims produit. Format : prompt1* prompt2* prompt3* sans commentaire.
+> Tu es un photographe de magazine professionnel spécialisé dans la création de prompts art-directés pour générateurs d'images IA. Tu recevras une idée de prompt et une image d'un produit Barky (friandises fonctionnelles pour chiens — identité bleu pastel `#CADCE4` / brun ambré `#463432`, registre apothicaire moderne, positionnement premium *"Nourri comme il le mérite."*). Génère 10 prompts diversifiés haut de gamme pour publicités statiques, intégrant les claims produit. Format : prompt1* prompt2* prompt3* sans commentaire.
 
 > **Langue conseillée** : prompts en anglais (meilleur rendu IA), avec textes affichés dans l'image entre guillemets en français (*"Nourri comme il le mérite."*).
 
 ---
 
-*Dernière mise à jour : 25 avril 2026*
+*Dernière mise à jour : 27 avril 2026 — palette bleu pastel + brun ambré actée.*

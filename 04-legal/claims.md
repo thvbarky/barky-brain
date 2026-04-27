@@ -2,7 +2,7 @@
 
 > **Source de vérité :** [`BARKY_CERVEAU.md`](../BARKY_CERVEAU.md) §8. Ce fichier en est l'extrait opérationnel.
 >
-> Pour la liste complète zone verte / orange / rouge des allégations : [`allegations.md`](./allegations.md).
+> Pour la liste complète zone verte / jaune / rouge des allégations : [`allegations.md`](./allegations.md).
 
 ---
 
@@ -97,10 +97,10 @@ Parfaitement légal **si marque déposée** :
 ```
 Idée claim
     ↓
-Vérifier zone (verte / orange / rouge) dans allegations.md
+Vérifier zone (verte / jaune / rouge) dans allegations.md
     ↓
 [Zone verte] → utilisable directement
-[Zone orange] → valider avec juriste DGCCRF avant diffusion
+[Zone jaune] → valider avec juriste DGCCRF avant diffusion
 [Zone rouge] → reformuler ou abandonner
     ↓
 Logger dans decisions.md si claim majeur
