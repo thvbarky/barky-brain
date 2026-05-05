@@ -7,7 +7,7 @@
 ## Le pilier TikTok "build in public" — l'arme principale
 
 ### Pourquoi ça matche parfaitement Barky
-- Profil fondateur **narratif fort** (étudiant Dauphine + M&A lance petfood)
+- Profil fondateur **narratif fort** : entrepreneur 23 ans à Lyon, 500 k€ déjà générés en SMMA, qui pivote pour construire sa première vraie marque DTC produit (profil complet : [`01-identite/THOMAS_PROFIL_1.md`](../01-identite/THOMAS_PROFIL_1.md))
 - Les gens adorent suivre le parcours d'un fondateur dès le début
 - **Tu n'as pas besoin d'un produit pour créer une audience** — juste d'une histoire
 - Capital-light : un iPhone et 2 h/sem
@@ -25,7 +25,7 @@
 ### Scripts type — 3 formats
 
 **Format 1 — Ton histoire (hook émotionnel)**
-> *"J'ai 22 ans, je suis étudiant à Dauphine, et je suis en train de lancer une marque de friandises fonctionnelles pour chien. Voilà pourquoi."*
+> *"J'ai 23 ans, je viens de Lyon, j'ai déjà généré 500 k€ avec ma boîte de services, et je lance ma première vraie marque produit. Voilà pourquoi je me lance dans les friandises pour chien."*
 
 **Format 2 — Pédagogie produit (hook curiosité)**
 > *"La différence entre une friandise normale et une friandise fonctionnelle, c'est ça."*

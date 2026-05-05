@@ -22,6 +22,9 @@ Chaque décision importante loggée ici avec contexte et raisonnement.
 | 10 | **Repo barky-brain créé** | 2026-04-24 | Source de vérité versionnée |
 | 11 | **Creative Strategy Map exécuté** (méthode Pravata) | 2026-04-24 | 5 prompts complets, 4 personas extraits, 5 tests rankés |
 | 12 | **BARKY_CERVEAU.md intégré comme master du repo** | 2026-04-25 | Source de vérité unique, chargée dans CLAUDE.md |
+| 13 | **Rapport IndexPresse petfood juin 2024 intégré** | 2026-04-28 | Synthèse archivée dans [`02-marche/rapports/indexpresse-petfood-juin-2024.md`](../02-marche/rapports/indexpresse-petfood-juin-2024.md). Insights propagés dans `marche.md`, `tendances.md`, `concurrents.md` et §4.8-4.16 + §5.3 + §19.5 du master. **Apport principal** : citation Mars Petcare "90% croissance santé/bien-être" + 79% claim "qualité humaine" socialement validé + chiffres DNVB précis (UPD 110k abonnés 2023, Japhy panier 63€/+20% vs GD, Dogchef 20M€ CA 2023). |
+| 14 | **Stack MCP Barky documentée** (Trendtrack ✅ branché, Meta Ads + Higgsfield à activer post-validation) | 2026-05-01 | Documentation cadre dans [`15-machines/mcp-stack.md`](../15-machines/mcp-stack.md). Playbook veille concurrents [`02-marche/intel-veille-trendtrack.md`](../02-marche/intel-veille-trendtrack.md). Workflow créatif [`08-ads/workflow-creative-mcp.md`](../08-ads/workflow-creative-mcp.md). **Garde-fou non-négociable** : Higgsfield interdit pour visuels chien réel (uncanny valley pet niche, casse la conversion — benchmark Dog is Human n'utilise que photo réelle). Trendtrack à exploiter dès maintenant pour 3 prompts baseline (état marché FR, benchmark Dog is Human, hooks pet wellness 4 pays). Meta MCP à brancher post-J7 de spend. Higgsfield uniquement post-scaling (M2-M3) sur packshots/moodboards. |
+| 15 | **Refonte `BARKY_CERVEAU.md`** : 68k → 22k chars + suppression mentions erronées profil fondateur | 2026-05-05 | Master passé sous le seuil performance Claude Code (40k chars) — détail opérationnel déplacé vers fichiers thématiques (audit complet : tous égaux ou plus riches que le master, zéro perte d'info). Master devient **synthèse stratégique always-loaded + index navigable**. Inversion du flux de vérité : les fichiers thématiques sont désormais la source de vérité opérationnelle, le master tient le cap stratégique. **Profil fondateur corrigé** dans 5 fichiers (suppression "Dauphine/M&A" qui ne correspondait pas à Thomas) — source unique désormais [`01-identite/THOMAS_PROFIL_1.md`](../01-identite/THOMAS_PROFIL_1.md). Voir [`journal/2026-05-05.md`](./journal/2026-05-05.md). |
 
 ---
 
@@ -92,6 +95,23 @@ Semaine 1-6 → Test Barky (260-400 €)
 - **Décision** : palette de marque actée — `#CADCE4` (bleu pastel) + `#463432` (brun ambré). Identité visuelle figée, plus aucune alternative à explorer.
 - **Why** : la direction "apothicaire moderne / wellness pharma" est cohérente avec le positionnement premium "santé canine au plus haut standard" et compense le registre cute du nom Barky
 - **Implémentation** : `marque.md` mis à jour, alignement `BARKY_CERVEAU.md §2.3-2.4 / §9.1-9.2 / §17.1`, `packaging.md`. Création arborescence `01-identite/assets/` pour logos + bibliothèque d'images. Landing v2 à refaire avec logo réel.
+
+### 27 avril 2026 — Setup Shopify complet + déploiement landing v2 publique
+- **Décision** : Custom App créée sur Dev Dashboard (`f7617aa00dab4bef3da6cc457f0cfca3`) avec scopes `write_files,write_online_store_pages,write_themes,write_products,write_content`. Token Admin API permanent stocké en `.env.local` (gitignored).
+- **Why** : Shopify CLI OAuth flow plantait (callback store mismatch). Custom App + token = solution fiable, persistante, contrôlable depuis n'importe quel script Python.
+- **Implémentation** :
+  - Template Liquid `templates/page.barky-landing.liquid` (chrome-stripped) déployé sur Shrine Pro 1.3.3.1
+  - 24 assets (logos + 6 fontes Recoleta + 17 photos) uploadés sur Shopify Files (CDN `cdn.shopify.com/s/files/1/1068/0146/3645/`)
+  - Page live à `/pages/barky-daily-journal` (ID `Page/713609544029`)
+  - 4 CTAs branchés sur fiche produit existante `/products/cf-01%E2%84%A2-multivitamines`
+  - SEO complet : title_tag + description_tag (metafields) + OG + Twitter Card via template Liquid
+  - 3 scripts Python opérationnels dans `scripts/`
+- **Contexte technique** : shop interne `wcrkik-yd.myshopify.com` (alias public `barky-8363.myshopify.com`). MCP Shopify officiel `@shopify/dev-mcp@1.12.0` installé pour validation GraphQL.
+
+### 27 avril 2026 — Routine quotidienne d'enrichissement du cerveau
+- **Décision** : mise en place d'un cron quotidien à 17h00 qui synthétise l'activité du jour (git log + diff + journal) dans `BARKY_CERVEAU.md` + `decisions.md` + `12-operations/journal/`.
+- **Why** : éviter que les apprentissages restent uniquement dans les conversations Claude éphémères. Capitaliser le savoir au fil de l'eau.
+- **Implémentation** : `12-operations/journal/YYYY-MM-DD.md` écrit pendant les sessions par Claude au fil des décisions/insights. Cron CronCreate (durable) à 17h tous les jours déclenche un prompt de synthèse. Migration vers routine cloud (skill `schedule`) prévue après push GitHub du repo.
 
 ---
 

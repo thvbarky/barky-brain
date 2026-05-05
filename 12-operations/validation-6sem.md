@@ -39,10 +39,10 @@ Organique gratuit → concept test → paid Meta → pré-commandes payantes →
 
 - [ ] Format : ton visage, ton histoire
 - [ ] **3 posts/semaine**
-- [ ] Narratif : étudiant Dauphine qui lance une startup petfood
+- [ ] Narratif : entrepreneur 23 ans à Lyon qui a déjà généré 500 k€ avec sa boîte de services et qui construit en public sa première vraie marque DTC produit (profil complet : [`01-identite/THOMAS_PROFIL_1.md`](../01-identite/THOMAS_PROFIL_1.md))
 
 **Sujets à tester** :
-- *"Pourquoi j'ai quitté Dauphine pour les friandises"*
+- *"Pourquoi j'arrête les services pour construire une vraie marque"*
 - *"Est-ce que vous donnez des compléments à votre chien ?"*
 - *"Les vraies différences entre une friandise classique et une friandise fonctionnelle"*
 

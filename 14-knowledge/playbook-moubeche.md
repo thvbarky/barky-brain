@@ -108,7 +108,7 @@ Meta Ads mieux ciblées ← Instagram ← backlinks ← articles SEO ←——�
 1. ❌ **Être distrait par le deal pendant que le business ralentit**
 2. ❌ **Ne pas préparer ses data rooms**
 3. ❌ **Sous-estimer la due diligence**
-4. ❌ **Ne pas avoir d'avocat M&A dédié** (ironique vu ton background, mais valable)
+4. ❌ **Ne pas avoir d'avocat M&A dédié** (point critique : un avocat M&A spécialisé évite les pièges de due diligence et de term sheet)
 
 ---
 
