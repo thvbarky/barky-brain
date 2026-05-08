@@ -1,11 +1,29 @@
+# OS
 .DS_Store
 **/.DS_Store
+
+# Editors
 *.swp
 *.swo
 .vscode/
 .idea/
+
+# Build / deps
 node_modules/
 __pycache__/
 *.pyc
+
+# Secrets
 .env
 .env.local
+.env.*
+
+# Claude Code — local caches & session state (NOT versioned)
+.claude/worktrees/
+.claude/settings.local.json
+.claude/skills/
+.agents/
+skills-lock.json
+
+# Hook logs
+.claude/hooks/sync.log

@@ -40,12 +40,26 @@ Pour tout le détail : `BARKY_CERVEAU.md` (chargé ci-dessus).
 ## Règles de comportement
 
 - Communique en français avec Thomas
-- Code, commits, commentaires techniques : en anglais
+- Code, commits, commentaires techniques : en français 
 - Sois direct, opinioné, concis. Pas de listes infinies, pas de "ça dépend"
 - Si tu génères du contenu (post, email, script), utilise le voice-of-brand — lire `01-identite/voice-of-brand.md`
 - Pour toute décision importante, logge dans `12-operations/decisions.md`
 - Ne jamais inventer des données marché — `BARKY_CERVEAU.md` + `02-marche/` font foi
 - Pour la légalité des allégations produit : toujours vérifier `04-legal/allegations.md` et `BARKY_CERVEAU.md §8`
+
+### Habitude journal (capitalisation des apprentissages)
+
+**Au fil de chaque session avec Thomas**, tu écris dans `12-operations/journal/YYYY-MM-DD.md` (date du jour) au moment où ça arrive :
+- **Décisions actées** (avec le why concis) → bloc « 🎯 Décisions actées »
+- **Insights techniques** (gotchas, workarounds, patterns appris) → bloc « 💡 Insights techniques »
+- **Insights produit/marché** non triviaux → bloc « Insights produit »
+- **Tâches identifiées pour plus tard** → bloc « 🔄 Tâches en attente »
+
+Le but : **rien ne reste uniquement dans la conversation Claude**. Si c'est un apprentissage qui mérite d'être retrouvé dans 3 mois, il atterrit dans le journal du jour.
+
+Si le fichier journal du jour n'existe pas encore quand tu démarres, **crée-le** avec un en-tête `# Journal — {date FR longue}` et les 4 blocs vides.
+
+**Cron 17h** : un cron quotidien synthétise ces journaux dans `BARKY_CERVEAU.md` + `decisions.md`. Voir `BARKY_CERVEAU.md §20.8`.
 
 ---
 
@@ -53,7 +67,7 @@ Pour tout le détail : `BARKY_CERVEAU.md` (chargé ci-dessus).
 
 - **E-commerce :** Shopify
 - **Email/SMS :** Klaviyo
-- **Ads :** Meta Ads (principal), TikTok Ads
+- **Ads :** Meta Ads (principal)
 - **Repo :** GitHub privé (barky-brain)
 
 ---
