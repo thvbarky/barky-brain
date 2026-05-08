@@ -68,15 +68,12 @@ Parle directement au propriétaire qui considère son chien comme un membre de l
 
 | Couleur | Hex | Rôle |
 |---|---|---|
-| **Orange vif** | `#FF5500` | Accent principal, énergie, signal TikTok |
-| **Navy profond** | `#0D1B5E` | Fond premium, autorité, sérieux |
-
-### Palette explorée puis écartée
-Bleu pastel + brun ambré (positionnement "wellness pharmaceutique" type Hims/Hers). Non retenue car désalignée avec l'identité Barky établie.
+| **Bleu pastel** | `#CADCE4` | Accent principal, énergie |
+| **Brun ambré** | `#463432` | Fond premium, autorité, sérieux |
 
 ### Logo
-- **Version orange** (logo navy sur fond orange) → usage hero/publicitaire
-- **Version navy** (logo orange/beige sur fond navy) → usage deck/packaging premium
+- **Version bleu** (logo bleu sur fond marron) → usage hero/publicitaire
+- **Version brun** (logo marron sur fond bleu) → usage deck/packaging premium
 
 ### Typographie
 - **Recoleta** (titres) — serif élégante qui donne de l'autorité au registre premium, compense la légèreté du nom
