@@ -103,13 +103,88 @@
 
 ---
 
+## Vue mondiale & européenne (IndexPresse juin 2024)
+
+| Périmètre | Indicateur | Valeur |
+|---|---|---|
+| Mondial 2023 | Marché petfood (Mordor) | **119,6 Md$** |
+| Mondial 2028 | Projection (TCAC +5,1%) | **~155 Md$** |
+| Mondial 2022 | Part Amérique du Nord | 44,25% |
+| Europe 2022 | CA petfood (FEDIAF) | **29,1 Md€** |
+| Europe 2022 | Volume vendu | 10,5 M tonnes |
+| UE 2022 | Ménages avec animal | **91 M** (46% pop, vs 80 M en 2018) |
+
+→ Voir détail dans [`rapports/indexpresse-petfood-juin-2024.md`](./rapports/indexpresse-petfood-juin-2024.md).
+
+---
+
+## Premiumisation & naturel — le gap France/USA
+
+| Segment | France | USA | Source |
+|---|---|---|---|
+| **Naturel petfood** | **5% (2023)** | **~30%** | LSA |
+| **Bio petfood** | 0,3% (2021) | — | LSA |
+| Bio PGC global FR | 5,1% | — | LSA |
+| **Sans céréales** | **3,8% (2017) → 6,2% (2022)** | — | LSA, +63% en 5 ans |
+
+> 💡 **Le gap naturel FR/USA est massif (6×)**. Toutes les tendances petfood françaises suivent les USA avec 5-7 ans de décalage. **Convergence attendue** = opportunité 5-10 ans.
+
+> 💡 *« 90% de la croissance de la catégorie se situent sur des segments valorisés : santé & bien-être et moments de plaisir et de connexion avec son animal. »* — **Simon Lesage**, directeur marketing **Mars Petcare France** (cité dans IndexPresse juin 2024). Un dirigeant Mars qui valide directement le territoire Barky.
+
+---
+
+## Croissance segments France 2019-2021 (LSA)
+
+| Segment | Chats | Chiens |
+|---|---|---|
+| **Snacks / friandises** | **+26,7%** | **+7,6%** |
+| Aliments humides | +13% | — |
+
+→ Le segment **friandises est la croissance la plus rapide** sur les deux espèces. Confirme structurellement le choix du format friandise pour Barky.
+
+---
+
+## Inflation petfood (2022-2023)
+
+- **+13,26%** des prix entre fin oct 2021 et fin oct 2022 (Les Échos)
+- **+15%** entre mars 2022 et mars 2023 (Franceinfo)
+- 81% des possesseurs ont constaté la hausse (IFOP 2022)
+- Triplement du prix des graisses animales en 2 ans (concurrence biodiesel — citation Kathy Heugens, Mars Belgique)
+- **Conséquence** : montée de la dualité premium DNVB / discount Action-B&M (55,9% des Français ont acheté pet en discount 2023)
+
+---
+
+## Obésité — argument santé préventive
+
+- **30% des chiens** et **35% des chats** en surpoids/obésité en France (IndexPresse 2024)
+- Argument direct pour le narratif Barky "ce que les croquettes ne couvrent pas"
+
+---
+
+## Répartition géographique — pénétration animale (Ifop 2020)
+
+| Région | % propriétaires animaux |
+|---|---|
+| **Bourgogne-Franche-Comté** | **62%** ↑ |
+| Centre-Val de Loire | 58% |
+| Moyenne nationale | 52% |
+| **Île-de-France** | **40%** ↓ |
+| PACA | 48% |
+
+→ **Implication ciblage Meta Ads** : ne pas sur-concentrer sur Paris/IDF. Tester les régions à forte pénétration animale (Bourgogne, Centre, Bretagne).
+
+---
+
 ## Sources de vérité à surveiller en continu
 
 - **Xerfi** — rapport Pet Food France
 - **FACCO** — stats possession France
 - **Circana / LSA** — dynamique GSA
 - **ICAD** — recensement chiens
+- **IndexPresse Business Etude** — rapport juin 2024 archivé dans [`rapports/indexpresse-petfood-juin-2024.md`](./rapports/indexpresse-petfood-juin-2024.md)
+- **FEDIAF** — données européennes
+- **Mordor Intelligence** — vue mondiale
 
 ---
 
-*Dernière mise à jour : 25 avril 2026*
+*Dernière mise à jour : 28 avril 2026 — intégration rapport IndexPresse juin 2024.*

@@ -43,18 +43,65 @@
 - Levée **3 M€ en sept. 2025**
 
 ### **Ultra Premium Direct (UPD)** — exit récent
+- CA 2023 : **55 M€** (+45% vs 2022, IndexPresse)
 - CA 2024 : **67,3 M€ (+21,8%)**, EBE 10,2%, RN 5,6%
-- **Cédée à Inspired Pet Nutrition (UK) en oct. 2025**
-- Retour **2,1× pour Eurazeo**
+- **250k clients actifs** · **110k abonnés** en 2023
+- **9 boutiques physiques** actuelles (objectif 100 d'ici 2028)
+- Levée 68 M€ Eurazeo en 2021
+- **Cédée à Inspired Pet Nutrition (UK) en oct. 2025** — retour **2,1× pour Eurazeo**
+- → **L'étalon DNVB premium FR alimentation**. Notre cible An 3 (60k abonnés) = 55% de leur scale 2023.
 
 ### **Edgar & Cooper** — racheté par General Mills
 
-### **Japhy, Caats** — croquettes personnalisées par abonnement, quiz + reco
+### **Japhy** — croquettes personnalisées par abonnement
+- 15 000 abonnés en 2021 (LSA)
+- **Panier moyen 63 €**
+- **Tarifs +20% vs grande distribution**
+- Levée 7 M€ en oct. 2020
+- Service véto en ligne intégré
+- → **Confirme qu'on peut pricer +20% à +30% au-dessus de la GD en DTC sans casser la conversion.**
+
+### **Caats** — sur-mesure chats
+- Levée 4 M€ en 2023 (Otium Capital)
+
+### **Pépette** (Blois) — repas frais bio
+- Levée 6 M€ en 2022 (Ambrosia + Go Capital)
+- Comité scientifique vétérinaire en cours d'étoffement
+- Internalisation production en cours
+
+### **Ziggy** — chats premium
+- Création 2020
+- **4 M€ CA 2022** · **50 000+ chats nourris**
+- Stratégie omnicanal : 150 cliniques véto + Truffaut + e-commerce
+- Recettes par Dr Géraldine Blanchard (nutrition clinique vétérinaire)
+- → Modèle à étudier de près en cas de **pivot Felis**.
+
+### **Dogchef** (Belgique) — petfood frais sur-mesure
+- Création 2017
+- **20 M€ CA 2023** · **12 M repas livrés** en 2023
+- Levée 12,5 M€ en 2021
+- Lancement **Cat Chef** au printemps 2024
+- → Prouve qu'on peut scaler à **8 chiffres** en abonnement DTC sur la zone FR/BE.
 
 ### **Vétalis**
 - Ligne de compléments lancée 2025
 - Co-détenue par 130 cliniques vétérinaires
 - **Signal** : les vétos s'organisent pour le DTC
+
+### **Tomojo, Réglo, Sprÿng (Ynsect)** — protéines d'insectes
+- Tomojo : 3 M€ levés 2022 (Swen Capital, BNP Paribas Dev)
+- Réglo : 1,8 M€ levés 2022
+- Ynsect/Sprÿng : marque petfood lancée 2023, scarabée molitor (71% protéines)
+
+### **Freshpet** (US, coté Nasdaq) — petfood frais
+- 420 M$ CA 2021 · 7,4 Md$ capi 2022
+- 10% du marché humide chien aux USA
+- Filiale FR créée 2021, distribution Leclerc/Système U/Intermarché
+
+### **Bitiba** (groupe Zooplus) — animalerie discount
+- 34 M€ CA France 2021
+- Pure player en ligne, prix très agressifs
+- → **Anti-positionnement** Barky. Cible totalement différente.
 
 ### **Fungfeed, Entofood, Invers** — aliments à base d'insectes (niche)
 
