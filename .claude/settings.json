@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash /Users/thv12/Documents/github/barky-brain/scripts/sync-on-session-end.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
