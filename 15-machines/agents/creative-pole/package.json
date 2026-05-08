@@ -1,0 +1,13 @@
+{
+  "name": "barky-creative-pole",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Pôle créa autonome Barky — orchestrateur 48h (Trendtrack + Meta Ads + Claude API)",
+  "main": "agent.js",
+  "scripts": {
+    "start": "node agent.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

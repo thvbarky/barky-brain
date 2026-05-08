@@ -4,6 +4,20 @@ Agents automatisés qui travaillent pour Barky 24h/24. À développer avec Claud
 
 ---
 
+## 📡 Stack MCP — Claude orchestrateur
+
+> **Source de vérité opérationnelle** : [`mcp-stack.md`](./mcp-stack.md)
+
+Trois couches branchées (ou à brancher) à Claude Code :
+
+- **Trendtrack MCP** ✅ — data marché (250M+ pubs, 5M+ shops). Playbook : [`02-marche/intel-veille-trendtrack.md`](../02-marche/intel-veille-trendtrack.md)
+- **Meta Ads MCP** ⏳ — own data (à brancher post-J7 de spend, M1+)
+- **Higgsfield MCP** ⏳ — production créa (post-scaling M2-M3, **packshots/moodboards uniquement, pas de chien IA**)
+
+Workflow créatif complet : [`08-ads/workflow-creative-mcp.md`](../08-ads/workflow-creative-mcp.md)
+
+---
+
 ## Machines prévues
 
 ### M01 — Veille concurrentielle
