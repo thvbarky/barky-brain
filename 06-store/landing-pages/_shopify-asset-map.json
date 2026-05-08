@@ -1,0 +1,236 @@
+[
+  {
+    "local": "01-identite/assets/logo/Barky.svg",
+    "id": "gid://shopify/MediaImage/71944755577181",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/Barky.svg?v=1777296270",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/logo/Barky marron sans fond.svg",
+    "id": "gid://shopify/MediaImage/71944755904861",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/Barky_marron_sans_fond.svg?v=1777296273",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/logo/Barky fond marron.svg",
+    "id": "gid://shopify/MediaImage/71944756101469",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/Barky_fond_marron.svg?v=1777296276",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/Recoleta/Recoleta Light.woff2",
+    "id": "gid://shopify/GenericFile/71944757248349",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/Recoleta_Light.woff2?v=1777296280",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/Recoleta/Recoleta Regular.woff2",
+    "id": "gid://shopify/GenericFile/71944758755677",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/Recoleta_Regular.woff2?v=1777296285",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/Recoleta/Recoleta Medium.woff2",
+    "id": "gid://shopify/GenericFile/71944759574877",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/Recoleta_Medium.woff2?v=1777296290",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/Recoleta/Recoleta SemiBold.woff2",
+    "id": "gid://shopify/GenericFile/71944761999709",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/Recoleta_SemiBold.woff2?v=1777296295",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/Recoleta/Recoleta Bold.woff2",
+    "id": "gid://shopify/GenericFile/71944763343197",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/Recoleta_Bold.woff2?v=1777296300",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/Recoleta/Recoleta Black.woff2",
+    "id": "gid://shopify/GenericFile/71944764424541",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/Recoleta_Black.woff2?v=1777296305",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/photos/packshot/packshot-bouchees-3-nuages.png",
+    "id": "gid://shopify/MediaImage/71944768651613",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/packshot-bouchees-3-nuages.png?v=1777296312",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/photos/packshot/packshot-bouchees-vue-dessus.png",
+    "id": "gid://shopify/MediaImage/71944770814301",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/packshot-bouchees-vue-dessus.png?v=1777296316",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/photos/packshot/packshot-pot-dos-ingredients.png",
+    "id": "gid://shopify/MediaImage/71944773468509",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/packshot-pot-dos-ingredients.png?v=1777296322",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/photos/packshot/packshot-pot-ferme-bleu-pastel.png",
+    "id": "gid://shopify/MediaImage/71944775270749",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/packshot-pot-ferme-bleu-pastel.png?v=1777296328",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/photos/packshot/packshot-pot-nuages.png",
+    "id": "gid://shopify/MediaImage/71944777040221",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/packshot-pot-nuages.png?v=1777296333",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/photos/lifestyle/lifestyle-beagle-cuisine-bouchee.png",
+    "id": "gid://shopify/MediaImage/71944778416477",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/lifestyle-beagle-cuisine-bouchee.png?v=1777296340",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/photos/lifestyle/lifestyle-bichon-cuisine-dos.png",
+    "id": "gid://shopify/MediaImage/71944780841309",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/lifestyle-bichon-cuisine-dos.png?v=1777296345",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/photos/lifestyle/lifestyle-bouledogue-francais-tapis.png",
+    "id": "gid://shopify/MediaImage/71944782479709",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/lifestyle-bouledogue-francais-tapis.png?v=1777296351",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/photos/lifestyle/lifestyle-cane-corso-foulard.png",
+    "id": "gid://shopify/MediaImage/71944783724893",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/lifestyle-cane-corso-foulard.png?v=1777296356",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/photos/lifestyle/lifestyle-corgi-gazon.png",
+    "id": "gid://shopify/MediaImage/71944784413021",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/lifestyle-corgi-gazon.png?v=1777296364",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/photos/lifestyle/lifestyle-couple-petit-chien.png",
+    "id": "gid://shopify/MediaImage/71944785854813",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/lifestyle-couple-petit-chien.png?v=1777296370",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/photos/lifestyle/lifestyle-goldendoodle-herbe.png",
+    "id": "gid://shopify/MediaImage/71944787722589",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/lifestyle-goldendoodle-herbe.png?v=1777296377",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/photos/lifestyle/lifestyle-jack-russell-canape.png",
+    "id": "gid://shopify/MediaImage/71944789426525",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/lifestyle-jack-russell-canape.png?v=1777296382",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/photos/unboxing/unboxing-box-pot-balle-tagline.png",
+    "id": "gid://shopify/MediaImage/71944790114653",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/unboxing-box-pot-balle-tagline.png?v=1777296388",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/photos/editorial/editorial-composition-aliments-actifs.png",
+    "id": "gid://shopify/MediaImage/71944790868317",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/editorial-composition-aliments-actifs.png?v=1777296394",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/photos/editorial/editorial-composition-aliments-actifs.webp",
+    "id": "gid://shopify/MediaImage/71945052094813",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/editorial-composition-aliments-actifs.webp?v=1777297586",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/photos/lifestyle/lifestyle-beagle-cuisine-bouchee.webp",
+    "id": "gid://shopify/MediaImage/71945054159197",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/lifestyle-beagle-cuisine-bouchee.webp?v=1777297590",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/photos/lifestyle/lifestyle-bichon-cuisine-dos.webp",
+    "id": "gid://shopify/MediaImage/71945054617949",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/lifestyle-bichon-cuisine-dos.webp?v=1777297594",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/photos/lifestyle/lifestyle-bouledogue-francais-tapis.webp",
+    "id": "gid://shopify/MediaImage/71945055109469",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/lifestyle-bouledogue-francais-tapis.webp?v=1777297598",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/photos/lifestyle/lifestyle-cane-corso-foulard.webp",
+    "id": "gid://shopify/MediaImage/71945055666525",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/lifestyle-cane-corso-foulard.webp?v=1777297601",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/photos/lifestyle/lifestyle-corgi-gazon.webp",
+    "id": "gid://shopify/MediaImage/71945056059741",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/lifestyle-corgi-gazon.webp?v=1777297605",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/photos/lifestyle/lifestyle-couple-petit-chien.webp",
+    "id": "gid://shopify/MediaImage/71945056780637",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/lifestyle-couple-petit-chien.webp?v=1777297608",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/photos/lifestyle/lifestyle-goldendoodle-herbe.webp",
+    "id": "gid://shopify/MediaImage/71945057239389",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/lifestyle-goldendoodle-herbe.webp?v=1777297612",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/photos/lifestyle/lifestyle-jack-russell-canape.webp",
+    "id": "gid://shopify/MediaImage/71945057960285",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/lifestyle-jack-russell-canape.webp?v=1777297616",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/photos/packshot/packshot-bouchees-3-nuages.webp",
+    "id": "gid://shopify/MediaImage/71945058779485",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/packshot-bouchees-3-nuages.webp?v=1777297619",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/photos/packshot/packshot-bouchees-vue-dessus.webp",
+    "id": "gid://shopify/MediaImage/71945059336541",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/packshot-bouchees-vue-dessus.webp?v=1777297622",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/photos/packshot/packshot-pot-dos-ingredients.webp",
+    "id": "gid://shopify/MediaImage/71945060876637",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/packshot-pot-dos-ingredients.webp?v=1777297626",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/photos/packshot/packshot-pot-ferme-bleu-pastel.webp",
+    "id": "gid://shopify/MediaImage/71945060942173",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/packshot-pot-ferme-bleu-pastel.webp?v=1777297630",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/photos/packshot/packshot-pot-nuages.webp",
+    "id": "gid://shopify/MediaImage/71945061302621",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/packshot-pot-nuages.webp?v=1777297634",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/photos/unboxing/unboxing-box-pot-balle-tagline.webp",
+    "id": "gid://shopify/MediaImage/71945062121821",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/unboxing-box-pot-balle-tagline.webp?v=1777297637",
+    "status": "UPLOADED"
+  }
+]
