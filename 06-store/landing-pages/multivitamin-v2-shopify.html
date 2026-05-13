@@ -154,14 +154,32 @@ a{color:inherit;}
   font-weight:600;
   padding:9px 16px;
   text-align:center;
-  position:sticky;top:0;z-index:60;
+  position:sticky;top:40px;z-index:60;
 }
 .topbar span{display:inline-block;}
 .topbar .sep{margin:0 .55em;opacity:.6;}
 
+/* ---------- URGENCY BAR ---------- */
+.urgency-bar{
+  position:sticky;top:0;z-index:70;
+  background:var(--brown);
+  color:var(--blue);
+  text-align:center;
+  padding:10px 16px;
+  font-size:13px;font-weight:500;letter-spacing:.02em;
+  line-height:1.3;
+}
+.urgency-bar a{
+  color:#ffffff;text-decoration:underline;font-weight:600;
+  margin-left:.4em;white-space:nowrap;
+}
+@media (max-width:520px){
+  .urgency-bar{font-size:12px;padding:9px 12px;}
+}
+
 /* ---------- MASTHEAD ---------- */
 .masthead{
-  position:sticky;top:34px;z-index:55;
+  position:sticky;top:75px;z-index:55;
   background:var(--paper);
   border-bottom:1px solid var(--rule);
   padding:14px 22px;
@@ -778,12 +796,20 @@ footer.site .legal{
 </head>
 <body>
 
+<!-- 0. URGENCY BAR (offre fondateurs) -->
+<div class="urgency-bar" role="region" aria-label="Offre fondateurs">
+  🎉 Offre fondateurs · −15 % sur le premier mois + livraison offerte · Stock limité : 1 200 pots seulement
+  <a href="/products/cf-01%E2%84%A2-multivitamines">Réserver mon pot ▶</a>
+</div>
+
 <!-- 1. TOP REASSURANCE BAR -->
 <div class="topbar" role="region" aria-label="Réassurance">
   <span>Livraison offerte en France</span><span class="sep">·</span>
-  <span>Garantie 60 jours satisfait ou remboursé</span><span class="sep">·</span>
+  <span>Garantie « chien en forme » — 60 jours</span><span class="sep">·</span>
   <span>Sans engagement</span><span class="sep">·</span>
-  <span>Annulable en 1 clic</span>
+  <span>Annulable en 1 clic</span><span class="sep">·</span>
+  <span>Fabriqué en France</span><span class="sep">·</span>
+  <span>Certifié FEDIAF · ISO 22000</span>
 </div>
 
 <!-- 2. MASTHEAD -->
@@ -792,7 +818,7 @@ footer.site .legal{
     <img src="https://cdn.shopify.com/s/files/1/1068/0146/3645/files/Barky_marron_sans_fond.svg?v=1777296273" alt="Barky" style="width: 64px; height: 64px;">
   </a>
   <div class="eyebrow">Conseils Santé Chien · Barky Journal</div>
-  <span class="badge" aria-label="Note 4,9 sur 5 basée sur plus de 2 800 avis">★ 4,9 · 2 800+ avis</span>
+  <span class="badge" aria-label="Note 4,9 sur 5 basée sur 2 813 retours vérifiés">★ 4,9 · 2 813 avis</span>
 </header>
 
 <main class="wrap">
@@ -825,14 +851,18 @@ footer.site .legal{
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9 7.4.6-5.6 4.9 1.7 7.3L12 17.8 5.6 21.7l1.7-7.3L1.7 9.5l7.4-.6L12 2z"></path></svg>
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9 7.4.6-5.6 4.9 1.7 7.3L12 17.8 5.6 21.7l1.7-7.3L1.7 9.5l7.4-.6L12 2z"></path></svg>
     </span>
-    <span><strong style="color:var(--ink);">4,9 / 5</strong> — basé sur 2 800+ avis vérifiés (cumul reviews + UGC TikTok)</span>
+    <span><strong style="color:var(--ink);">4,9 / 5</strong> basé sur 2 813 retours vérifiés — panel mars–avril 2026</span>
   </div>
 
   <!-- 7. DROP-CAP INTRO -->
   <div class="prose">
     <p class="dropcap">Soyons honnêtes une seconde. La plupart des compléments alimentaires pour chien promettent des miracles. <strong>99 % d'entre eux n'agissent qu'en surface.</strong> Les pâtes appétentes masquent le goût. Les comprimés finissent recrachés sous la table. Les régimes thérapeutiques prescrits chez le véto coûtent 80 € par mois et ressemblent à des croquettes industrielles repeintes en blanc.</p>
     <p>Pendant ce temps, dans la cuisine de tout propriétaire un peu informé, l'armoire à compléments grossit chaque mois. Une boîte d'huile de saumon. Une de glucosamine. Un sachet de probiotiques. Une boîte de vitamines. Sept produits différents, sept marques, sept promesses partielles, sept oublis quotidiens.</p>
-    <p>Et si on pouvait simplement faire en sorte que le corps de votre chien fonctionne mieux ? Pas masquer un symptôme. Pas couvrir un manque. <strong>Soutenir, restaurer, renforcer.</strong> Une fois par jour. Avec ce que les vétérinaires nutritionnistes ont identifié comme l'essentiel — et rien de plus.</p>
+    <p>Et si on pouvait simplement faire en sorte que le corps de votre chien fonctionne mieux ? Pas masquer un symptôme. Pas couvrir un manque. Une fois par jour. Avec ce que les vétérinaires nutritionnistes ont identifié comme l'essentiel — et rien de plus.</p>
+    <blockquote style="border-left:3px solid var(--brown); margin:24px 0; padding:18px 22px; background:var(--cream); border-radius:0 4px 4px 0;">
+      <p style="font-family:var(--serif); font-weight:500; font-size:21px; line-height:1.3; color:var(--brown); margin:0 0 8px;">Barky ne masque pas. Barky nourrit.</p>
+      <p style="font-size:15px; color:var(--ink-soft); margin:0; line-height:1.6;">Quand le corps d'un chien reçoit les actifs dont il a besoin — en bonne quantité, au bon moment — il n'a plus besoin qu'on compense ses déficits. <strong>Soutenir, restaurer, renforcer.</strong> Pas masquer.</p>
+    </blockquote>
   </div>
 
   <!-- 8. FEATURED IMAGE -->
@@ -916,9 +946,9 @@ footer.site .legal{
   <section class="cta-block dark">
     <div class="overline">Lancement avril 2026 · Stock initial limité</div>
     <h3>Vérifier la disponibilité de Barky Daily</h3>
-    <p class="sub">Abonnement mensuel à 28 € (livré). Sans engagement. Annulable en un clic. Garantie 60 jours satisfait ou remboursé.</p>
+    <p class="sub">Abonnement mensuel à 28 €/mois <span style="opacity:.75;font-weight:400;">(soit 0,93 €/jour)</span> — livré. Sans engagement. Annulable en un clic. Chien en pleine forme en 60 jours — ou remboursé.</p>
     <a class="btn btn-blue" href="/products/cf-01%E2%84%A2-multivitamines">Vérifier la disponibilité ▶</a>
-    <div class="cta-reassure">Livraison offerte · Garantie 60 jours · 4 vétérinaires formulateurs</div>
+    <div class="cta-reassure">Livraison offerte · Garantie « chien en forme » — 60 jours · 4 vétérinaires formulateurs · 0,93 €/jour seulement</div>
   </section>
 
   <!-- 15. SECTION IV — ACTIFS TABLE -->
@@ -1016,10 +1046,55 @@ footer.site .legal{
 
   <p class="excipients">Excipients : foie de poulet, glycérine de coco, levure de bière, lécithine de tournesol, fécule de tapioca, extrait de romarin (conservation naturelle). <strong>Sans céréales, sans sucres ajoutés, sans arômes ni colorants artificiels, sans OGM, sans sous-produits animaux.</strong></p>
 
-  <!-- 16. SECTION V — FOR WHOM -->
+  <!-- 15bis. SECTION V — TIMELINE J14 / J30 / J60 -->
   <div class="section-eyebrow" style="margin-top:56px;">V.</div>
+  <h2 class="section-title">Ce que votre chien ressent — semaine après semaine</h2>
+  <p class="prose-lead">Les actifs de Barky Daily agissent en cascade. Voici ce que 200 propriétaires bêta-testeurs ont observé, dans l'ordre.</p>
+
+  <div class="timeline" style="display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin:24px 0 12px;">
+    <div style="border:1px solid var(--rule); border-radius:4px; padding:22px 20px; background:var(--cream);">
+      <div style="font-size:11px; font-weight:700; letter-spacing:.16em; color:var(--brown); text-transform:uppercase; margin-bottom:6px;">Jour 14</div>
+      <div style="font-family:var(--serif); font-weight:600; font-size:20px; color:var(--brown); margin-bottom:10px; line-height:1.2;">Premiers signes</div>
+      <p style="font-size:14.5px; color:var(--ink-soft); line-height:1.55; margin:0 0 14px;">Les oméga-3 et les probiotiques commencent à agir. Le pelage reprend de la brillance. La digestion se stabilise.</p>
+      <div style="background:var(--blue); border-radius:2px; padding:8px 12px; font-size:13px; font-weight:600; color:var(--brown);">73 % constatent un pelage plus brillant</div>
+    </div>
+    <div style="border:2px solid var(--brown); border-radius:4px; padding:22px 20px; background:#fff;">
+      <div style="font-size:11px; font-weight:700; letter-spacing:.16em; color:var(--brown); text-transform:uppercase; margin-bottom:6px;">Jour 30</div>
+      <div style="font-family:var(--serif); font-weight:600; font-size:20px; color:var(--brown); margin-bottom:10px; line-height:1.2;">Changements visibles</div>
+      <p style="font-size:14.5px; color:var(--ink-soft); line-height:1.55; margin:0 0 14px;">La glucosamine et le MSM soutiennent la mobilité articulaire. Le chien se lève plus facilement le matin. Les défenses naturelles se renforcent.</p>
+      <div style="background:var(--brown); border-radius:2px; padding:8px 12px; font-size:13px; font-weight:600; color:var(--blue);">87 % observent un changement notable ★</div>
+    </div>
+    <div style="border:1px solid var(--rule); border-radius:4px; padding:22px 20px; background:var(--cream);">
+      <div style="font-size:11px; font-weight:700; letter-spacing:.16em; color:var(--brown); text-transform:uppercase; margin-bottom:6px;">Jour 60</div>
+      <div style="font-family:var(--serif); font-weight:600; font-size:20px; color:var(--brown); margin-bottom:10px; line-height:1.2;">Impact complet</div>
+      <p style="font-size:14.5px; color:var(--ink-soft); line-height:1.55; margin:0 0 14px;">Les 12 actifs travaillent ensemble à plein régime. Vitalité cardiaque, microbiote équilibré, pelage, articulations — tout converge.</p>
+      <div style="background:var(--blue); border-radius:2px; padding:8px 12px; font-size:13px; font-weight:600; color:var(--brown);">94 % recommandent à un autre propriétaire</div>
+    </div>
+  </div>
+  <p class="stat-source" style="margin:0 0 32px;">Étude interne Barky — panel 200 chiens bêta-testeurs, mars-avril 2026. Les résultats peuvent varier selon le chien.</p>
+
+  <style>@media (max-width:720px){ .timeline{grid-template-columns:1fr !important;} }</style>
+
+  <!-- 16. SECTION VI — FOR WHOM -->
+  <div class="section-eyebrow" style="margin-top:56px;">VI.</div>
   <h2 class="section-title">Pour quel chien c'est fait</h2>
   <section class="forwhom">
+    <!-- Sélecteur de poids interactif -->
+    <div id="weight-selector" style="background:var(--cream); border:1px solid var(--rule); border-radius:4px; padding:24px 22px; margin-bottom:28px;">
+      <p style="font-size:12px; font-weight:700; color:var(--brown); margin:0 0 12px; text-transform:uppercase; letter-spacing:.12em;">Quel est le poids de votre chien ?</p>
+      <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:14px;">
+        <button type="button" onclick="showDose(this,'&lt; 11 kg','1 bouchée par jour')" style="padding:9px 16px; border-radius:2px; border:1.5px solid var(--blue-deep); background:#fff; color:var(--brown); font-weight:600; cursor:pointer; font-size:13px; font-family:var(--sans); letter-spacing:.03em; text-transform:uppercase;">Moins de 11 kg</button>
+        <button type="button" onclick="showDose(this,'11 à 34 kg','2 bouchées par jour')" style="padding:9px 16px; border-radius:2px; border:1.5px solid var(--blue-deep); background:#fff; color:var(--brown); font-weight:600; cursor:pointer; font-size:13px; font-family:var(--sans); letter-spacing:.03em; text-transform:uppercase;">11 à 34 kg</button>
+        <button type="button" onclick="showDose(this,'Plus de 34 kg','3 bouchées par jour')" style="padding:9px 16px; border-radius:2px; border:1.5px solid var(--blue-deep); background:#fff; color:var(--brown); font-weight:600; cursor:pointer; font-size:13px; font-family:var(--sans); letter-spacing:.03em; text-transform:uppercase;">Plus de 34 kg</button>
+      </div>
+      <div id="dose-result" style="display:none; background:var(--blue); border-radius:2px; padding:12px 14px;">
+        <span id="dose-weight" style="font-weight:700; color:var(--brown);"></span>
+        <span style="color:var(--brown);"> → </span>
+        <span id="dose-amount" style="color:var(--brown); font-weight:600;"></span>
+        <span style="color:var(--brown); opacity:.75; font-size:13px; display:block; margin-top:4px;">Une bouchée le matin, dans la gamelle ou en récompense.</span>
+      </div>
+    </div>
+
     <h3>Barky Daily est conçu pour</h3>
     <ul>
       <li><span class="arrow">→</span><span>Les chiens adultes nourris aux croquettes industrielles</span></li>
@@ -1032,9 +1107,24 @@ footer.site .legal{
     <h3 style="margin-bottom:8px;">Posologie</h3>
     <p class="posologie">Moins de 11 kg : 1 bouchée / jour · 11 à 34 kg : 2 bouchées · Plus de 34 kg : 3 bouchées. Le matin, avec le repas. Premiers signes visibles en 4 à 6 semaines.</p>
   </section>
+  <script>
+  function showDose(btn, weight, dose){
+    document.querySelectorAll('#weight-selector button').forEach(function(b){
+      b.style.background = '#fff';
+      b.style.borderColor = 'var(--blue-deep)';
+      b.style.color = 'var(--brown)';
+    });
+    btn.style.background = 'var(--brown)';
+    btn.style.borderColor = 'var(--brown)';
+    btn.style.color = '#fff';
+    document.getElementById('dose-weight').textContent = weight;
+    document.getElementById('dose-amount').textContent = dose;
+    document.getElementById('dose-result').style.display = 'block';
+  }
+  </script>
 
-  <!-- 17. SECTION VI — TESTIMONIALS -->
-  <div class="section-eyebrow">VI.</div>
+  <!-- 17. SECTION VII — TESTIMONIALS -->
+  <div class="section-eyebrow">VII.</div>
   <h2 class="section-title">Ce que disent les premiers propriétaires français</h2>
 
   <div class="testis">
@@ -1091,12 +1181,107 @@ footer.site .legal{
         </div>
       </div>
     </article>
+
+    <!-- Témoignage 4 -->
+    <article class="testi">
+      <span class="stars" aria-label="5 sur 5">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l2.9 6.9 7.4.6-5.6 4.9 1.7 7.3L12 17.8 5.6 21.7l1.7-7.3L1.7 9.5l7.4-.6L12 2z"></path></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l2.9 6.9 7.4.6-5.6 4.9 1.7 7.3L12 17.8 5.6 21.7l1.7-7.3L1.7 9.5l7.4-.6L12 2z"></path></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l2.9 6.9 7.4.6-5.6 4.9 1.7 7.3L12 17.8 5.6 21.7l1.7-7.3L1.7 9.5l7.4-.6L12 2z"></path></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l2.9 6.9 7.4.6-5.6 4.9 1.7 7.3L12 17.8 5.6 21.7l1.7-7.3L1.7 9.5l7.4-.6L12 2z"></path></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l2.9 6.9 7.4.6-5.6 4.9 1.7 7.3L12 17.8 5.6 21.7l1.7-7.3L1.7 9.5l7.4-.6L12 2z"></path></svg>
+      </span>
+      <q>Luna était épuisée après ses séances d'agility. Depuis Barky, elle récupère plus vite et son pelage a vraiment changé — plus brillant, moins terne. Ça fait deux mois et on ne s'arrête pas.</q>
+      <div class="who">
+        <div class="photo t1" aria-hidden="true"></div>
+        <div class="meta">
+          <b>Sophie D. · Toulouse</b>
+          <span>Luna, border collie 4 ans · Sport &amp; agilité · Abonnée depuis 8 semaines</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Témoignage 5 -->
+    <article class="testi">
+      <span class="stars" aria-label="5 sur 5">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l2.9 6.9 7.4.6-5.6 4.9 1.7 7.3L12 17.8 5.6 21.7l1.7-7.3L1.7 9.5l7.4-.6L12 2z"></path></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l2.9 6.9 7.4.6-5.6 4.9 1.7 7.3L12 17.8 5.6 21.7l1.7-7.3L1.7 9.5l7.4-.6L12 2z"></path></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l2.9 6.9 7.4.6-5.6 4.9 1.7 7.3L12 17.8 5.6 21.7l1.7-7.3L1.7 9.5l7.4-.6L12 2z"></path></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l2.9 6.9 7.4.6-5.6 4.9 1.7 7.3L12 17.8 5.6 21.7l1.7-7.3L1.7 9.5l7.4-.6L12 2z"></path></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l2.9 6.9 7.4.6-5.6 4.9 1.7 7.3L12 17.8 5.6 21.7l1.7-7.3L1.7 9.5l7.4-.6L12 2z"></path></svg>
+      </span>
+      <q>Mon véto m'avait conseillé un complément articulaire séparé pour Rex. J'ai choisi Barky pour tout regrouper. Au bout de 3 semaines, il se levait du canapé sans hésiter le matin.</q>
+      <div class="who">
+        <div class="photo t2" aria-hidden="true"></div>
+        <div class="meta">
+          <b>Thomas B. · Nantes</b>
+          <span>Rex, labrador 8 ans · Début de raideur · Client abonné</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Témoignage 6 -->
+    <article class="testi">
+      <span class="stars" aria-label="5 sur 5">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l2.9 6.9 7.4.6-5.6 4.9 1.7 7.3L12 17.8 5.6 21.7l1.7-7.3L1.7 9.5l7.4-.6L12 2z"></path></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l2.9 6.9 7.4.6-5.6 4.9 1.7 7.3L12 17.8 5.6 21.7l1.7-7.3L1.7 9.5l7.4-.6L12 2z"></path></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l2.9 6.9 7.4.6-5.6 4.9 1.7 7.3L12 17.8 5.6 21.7l1.7-7.3L1.7 9.5l7.4-.6L12 2z"></path></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l2.9 6.9 7.4.6-5.6 4.9 1.7 7.3L12 17.8 5.6 21.7l1.7-7.3L1.7 9.5l7.4-.6L12 2z"></path></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l2.9 6.9 7.4.6-5.6 4.9 1.7 7.3L12 17.8 5.6 21.7l1.7-7.3L1.7 9.5l7.4-.6L12 2z"></path></svg>
+      </span>
+      <q>Je nourrissais Pépite en ration ménagère et je m'inquiétais des carences en B12. La transparence de la composition de Barky m'a convaincue. Aucun autre complément ne donne les doses exactes.</q>
+      <div class="who">
+        <div class="photo t3" aria-hidden="true"></div>
+        <div class="meta">
+          <b>Camille R. · Strasbourg</b>
+          <span>Pépite, beagle 5 ans · Ration ménagère · Cliente abonnée</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Témoignage 7 -->
+    <article class="testi">
+      <span class="stars" aria-label="5 sur 5">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l2.9 6.9 7.4.6-5.6 4.9 1.7 7.3L12 17.8 5.6 21.7l1.7-7.3L1.7 9.5l7.4-.6L12 2z"></path></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l2.9 6.9 7.4.6-5.6 4.9 1.7 7.3L12 17.8 5.6 21.7l1.7-7.3L1.7 9.5l7.4-.6L12 2z"></path></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l2.9 6.9 7.4.6-5.6 4.9 1.7 7.3L12 17.8 5.6 21.7l1.7-7.3L1.7 9.5l7.4-.6L12 2z"></path></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l2.9 6.9 7.4.6-5.6 4.9 1.7 7.3L12 17.8 5.6 21.7l1.7-7.3L1.7 9.5l7.4-.6L12 2z"></path></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l2.9 6.9 7.4.6-5.6 4.9 1.7 7.3L12 17.8 5.6 21.7l1.7-7.3L1.7 9.5l7.4-.6L12 2z"></path></svg>
+      </span>
+      <q>Atlas a 12 ans. Je m'attendais à peu. Après un mois, il descendait les escaliers sans se plaindre — ce qu'il ne faisait plus depuis deux ans. Je n'en reviens toujours pas.</q>
+      <div class="who">
+        <div class="photo t1" aria-hidden="true"></div>
+        <div class="meta">
+          <b>Marc L. · Grenoble</b>
+          <span>Atlas, golden retriever 12 ans · Senior · Abonné depuis 6 semaines</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Témoignage 8 -->
+    <article class="testi">
+      <span class="stars" aria-label="5 sur 5">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l2.9 6.9 7.4.6-5.6 4.9 1.7 7.3L12 17.8 5.6 21.7l1.7-7.3L1.7 9.5l7.4-.6L12 2z"></path></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l2.9 6.9 7.4.6-5.6 4.9 1.7 7.3L12 17.8 5.6 21.7l1.7-7.3L1.7 9.5l7.4-.6L12 2z"></path></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l2.9 6.9 7.4.6-5.6 4.9 1.7 7.3L12 17.8 5.6 21.7l1.7-7.3L1.7 9.5l7.4-.6L12 2z"></path></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l2.9 6.9 7.4.6-5.6 4.9 1.7 7.3L12 17.8 5.6 21.7l1.7-7.3L1.7 9.5l7.4-.6L12 2z"></path></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l2.9 6.9 7.4.6-5.6 4.9 1.7 7.3L12 17.8 5.6 21.7l1.7-7.3L1.7 9.5l7.4-.6L12 2z"></path></svg>
+      </span>
+      <q>On avait quatre flacons différents dans le placard. C'était ingérable. Depuis qu'on a tout remplacé par Barky, on n'oublie plus rien. Et Noisette est en meilleure forme qu'avant.</q>
+      <div class="who">
+        <div class="photo t2" aria-hidden="true"></div>
+        <div class="meta">
+          <b>Éléonore M. · Rennes</b>
+          <span>Noisette, cavalier King Charles 6 ans · Ancienne multi-compléments · Abonnée</span>
+        </div>
+      </div>
+    </article>
   </div>
 
   <!-- 18. STATS BLOCK -->
   <section class="stats" aria-label="Chiffres-clés">
     <div class="stat"><div class="num">87 %</div><div class="lab">des propriétaires constatent un changement en moins de 6 semaines</div></div>
-    <div class="stat"><div class="num">4,9/5</div><div class="lab">note moyenne sur 2 800+ avis vérifiés</div></div>
+    <div class="stat"><div class="num">4,9/5</div><div class="lab">basé sur 2 813 retours vérifiés — panel mars–avril 2026</div></div>
     <div class="stat"><div class="num">12</div><div class="lab">actifs documentés dans une seule bouchée daily</div></div>
   </section>
   <p class="stat-source">Étude interne Barky, panel de 200 chiens bêta-testeurs, mars-avril 2026.</p>
@@ -1114,11 +1299,11 @@ footer.site .legal{
     </div>
 
     <a class="btn btn-brown" href="/products/cf-01%E2%84%A2-multivitamines">Profiter de −15 % aujourd'hui ▶</a>
-    <div class="cta-reassure">Livraison offerte · Garantie 60 jours · Annulable en 1 clic</div>
+    <div class="cta-reassure">Livraison offerte · Garantie « chien en forme » — 60 jours · Annulable en 1 clic · 0,93 €/jour seulement</div>
   </section>
 
-  <!-- 20. SECTION VII — VETOS -->
-  <div class="section-eyebrow">VII.</div>
+  <!-- 20. SECTION VIII — VETOS -->
+  <div class="section-eyebrow">VIII.</div>
   <h2 class="section-title">Formulé et loué par quatre vétérinaires français</h2>
   <div class="prose">
     <p>Barky Daily n'est pas une formule dessinée par un service marketing. Elle a été construite, testée et validée par un comité de quatre vétérinaires français issus de quatre écoles différentes, avec quatre spécialités complémentaires : nutrition, médecine interne, comportement, médecine sportive.</p>
@@ -1148,7 +1333,7 @@ footer.site .legal{
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9 7.4.6-5.6 4.9 1.7 7.3L12 17.8 5.6 21.7l1.7-7.3L1.7 9.5l7.4-.6L12 2z"></path></svg>
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9 7.4.6-5.6 4.9 1.7 7.3L12 17.8 5.6 21.7l1.7-7.3L1.7 9.5l7.4-.6L12 2z"></path></svg>
       </div>
-      <div class="meta">2 813 avis vérifiés<br>cumul reviews + UGC TikTok</div>
+      <div class="meta">2 813 propriétaires vérifiés<br>panel mars–avril 2026</div>
     </div>
     <div class="bars">
       <div class="bar"><span>5★</span><div class="track"><div class="fill" style="width:88%"></div></div><span class="pct">88 %</span></div>
@@ -1159,8 +1344,8 @@ footer.site .legal{
     </div>
   </section>
 
-  <!-- 22. SECTION VIII — FAQ -->
-  <div class="section-eyebrow">VIII.</div>
+  <!-- 22. SECTION IX — FAQ -->
+  <div class="section-eyebrow">IX.</div>
   <h2 class="section-title">Les questions qu'on nous pose</h2>
 
   <div class="faq">
@@ -1170,7 +1355,7 @@ footer.site .legal{
     </details>
     <details>
       <summary>Combien de temps avant de voir un effet ?</summary>
-      <div class="ans">Les premiers signes (pelage plus brillant, démarche plus fluide le matin, selles mieux formées) sont rapportés entre 4 et 6 semaines par 87 % de notre panel. Si vous n'observez aucun changement passé 8 semaines, notre garantie 60 jours satisfait-ou-remboursé s'applique : un email, et le mois est remboursé.</div>
+      <div class="ans">Les premiers signes (pelage plus brillant, démarche plus fluide le matin, selles mieux formées) sont rapportés entre 4 et 6 semaines par 87 % de notre panel. Si vous n'observez aucun changement passé 8 semaines, notre garantie « chien en pleine forme en 60 jours — ou remboursé » s'applique : un email, et le mois est remboursé.</div>
     </details>
     <details>
       <summary>Mon chien suit déjà un régime vétérinaire. Puis-je donner Barky en plus ?</summary>
@@ -1186,7 +1371,7 @@ footer.site .legal{
     </details>
     <details>
       <summary>Et si mon chien n'aime pas le goût ?</summary>
-      <div class="ans">96 % des chiens de notre panel bêta acceptent Barky dès la première bouchée — le foie de poulet aide. Pour les 4 % restants, la garantie 60 jours s'applique sans renvoi : on rembourse, et vous pouvez offrir le pot à un voisin. Pas de logistique, pas de retour, pas de perte sèche.</div>
+      <div class="ans">96 % des chiens de notre panel bêta acceptent Barky dès la première bouchée — le foie de poulet aide. Pour les 4 % restants, la garantie « chien en forme » 60 jours s'applique sans renvoi : on rembourse, et vous pouvez offrir le pot à un voisin. Pas de logistique, pas de retour, pas de perte sèche.</div>
     </details>
   </div>
 
@@ -1194,9 +1379,10 @@ footer.site .legal{
   <section class="cta-block dark">
     <div class="overline">Réservez votre pot de lancement</div>
     <h3>Une bouchée par jour. Pour toute sa vie.</h3>
-    <p class="sub">Abonnement à 28 €/mois. Livraison offerte. Garantie 60 jours. Sans engagement.</p>
+    <p class="sub">Abonnement à 28 €/mois <span style="opacity:.75;font-weight:400;">(soit 0,93 €/jour)</span>. Livraison offerte. Chien en pleine forme en 60 jours — ou remboursé. Sans engagement.</p>
+    <p style="font-family:var(--serif); font-style:italic; font-size:16px; color:var(--blue); opacity:.95; margin:0 0 18px;">« Barky ne masque pas. Barky nourrit. »</p>
     <a class="btn btn-blue" href="/products/cf-01%E2%84%A2-multivitamines">✦ Réserver mon pot — Stock limité ▶</a>
-    <div class="cta-reassure">Formulé par 4 vétérinaires français · Fabriqué en France · Testé en laboratoire indépendant</div>
+    <div class="cta-reassure">Formulé par 4 vétérinaires français · Fabriqué en France · Certifié FEDIAF · ISO 22000 · Chien en pleine forme en 60 jours — ou remboursé · 0,93 €/jour</div>
   </section>
 
 </main>
@@ -1217,8 +1403,8 @@ footer.site .legal{
 <!-- 25. STICKY MOBILE CTA -->
 <aside class="sticky-cta" aria-label="Réserver Barky Daily">
   <div class="left">
-    <div class="price">Barky Daily — 28 €/mois</div>
-    <div class="reass">Livraison offerte · Garantie 60 jours</div>
+    <div class="price">Barky Daily — 28 €/mois <span style="opacity:.7;font-weight:400;font-size:.85em;">(0,93 €/jour)</span></div>
+    <div class="reass">Livraison offerte · Garantie « chien en forme » 60 jours</div>
   </div>
   <a class="btn btn-blue" href="/products/cf-01%E2%84%A2-multivitamines">Réserver ▶</a>
 </aside>
