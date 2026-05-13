@@ -93,7 +93,16 @@ Decision actée 2026-05-13 (option A) : le slug du winner se met en champ Text d
 6. **Coller l'URL** de la DB dans ce fichier (remplace le placeholder ci-dessous)
 
 URL Notion DB Barky Creatives :
-`<lien Notion à venir>`
+https://www.notion.so/35ffd75e0c44809189a0ead944464f3c
+
+Data source ID (pour MCP Notion lors des push de rows) : `35ffd75e-0c44-80a1-8a6a-000b3a36b22c`
+
+Vues créées :
+- **Board by Status** (vue principale validation) — `view://35ffd75e-0c44-81f7-a8e9-000cd0f89095`
+- **Board by Persona** (équilibre P1/P2) — `view://35ffd75e-0c44-81da-8c82-000c3fd1dced`
+- **Gallery** (cover = Visual, trié par date desc) — `view://35ffd75e-0c44-817f-b855-000c9b632df2`
+
+⚠️ Le Select `Angle` contient un placeholder `(à peupler depuis 02-marche/angles.md)` à supprimer dès que les vraies valeurs sont injectées.
 
 ---
 

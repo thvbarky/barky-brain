@@ -44,6 +44,122 @@
 
 ## 📋 Logs de sessions
 
+### Session 2026-05-13 — RÈGLE ABSOLUE : winner requis pour toute génération
+
+**Verbatim Thomas (lors du 1er test `/barky-creas-batch` 25 combos)** :
+> *« Je veux en aucun cas que tu me génères une statique si tu n'as pas de modèle Winner en référence. Ça, là-dessus, c'est intolérable ! Tu me fais des statiques que si et seulement si tu as des références Winner. »*
+
+**Règle absolue actée** : aucune statique générée sans winner de référence concret du swipe file `08-ads/references/ads/`. Tout combo `Référence winner = n/a` est **rejeté de la matrice**. Si pool insuffisant → backlog scrapage avant la prochaine génération.
+
+**Conséquences immédiates** :
+- Sur la matrice de 25 combos du 1er batch auto, **8 combos `n/a` retirés** (Lifestyle FR ×5, Proof testimonial ×3) → matrice trimée à 17 combos
+- Skill `/barky-creas-batch` §2 et §3.3 mis à jour avec garde-fou strict
+- `creative-system.md` Partie 9 : "Winner requis" devient le 1er des 6 commandements
+- Mémoire `feedback-creas-winner-required` sauvegardée
+
+**Backlog scrapage prioritaire pour débloquer les angles couverts** :
+- Lifestyle FR maître + chien senior (P1) → Dog is Human, Japhy, Elmut, The Farmer's Dog
+- Lifestyle FR maître + chien cuisine maison (P2) → idem + Butternut Box
+- Testimonial / Proof vétéran chien → Zesty Paws, Dog is Human reviews-driven
+- Typo Forte pur fond bleu pastel (non-pet) → Hims, Ritual, AG1
+- Founder-pov DTC FR → Lemonade, Elmut founder content
+- Science-claim / ingredient-breakdown → AG1, Seed, Symprove
+
+---
+
+### Session 2026-05-13 — Pivot Nano Banana 2 ALL-IN-ONE (validé sur le principe)
+
+**Brief source** : clone du winner Exode `20260513_exode_1080x1080_problem-solution-01` (hook question rhétorique + packshot + 3 icônes bénéfices). Adapté Barky P1 angle ★★★ `cest-lage`.
+
+**Type** : PRODUCT HERO (winner-clone)
+**Persona** : P1
+**Angle** : `cest-lage` (variante hook ouvert : *"Un complément qui marche VRAIMENT, ça existe ?"*)
+**Awareness** : Problem Aware
+**Stratégie** : 3e tentative de la journée après 2 rejets bloc (Typo Forte fond brun derive orange + Product Hero Python compositing pas charismatique). Nouveau workflow tout-en-un : Nano Banana 2 rend image + texte FR + icônes en un seul prompt, avec packshot Barky en référence.
+
+**Variations générées** :
+| # | Modèle | Workflow | Format / Résolution | Job ID Higgsfield | Statut |
+|---|---|---|---|---|---|
+| v5 | `nano_banana_2` | All-in-one | 1:1 / 2k (2048×2048) | `cd76b9fa-f932-4e77-9c64-474b76f77ada` | À valider Notion |
+| v6 | `nano_banana_2` | All-in-one | 1:1 / 2k (2048×2048) | `7dfeae51-51e9-4eaa-8187-6725c974ee07` | À valider Notion |
+
+**Verdict Thomas (verbatim 2026-05-13)** : *« Écoute, c'est déjà beaucoup mieux ! Il y aurait quelques ajustements à faire, mais ça, je veux te dire, ce sera au cas par cas. Mais, sur le principe, on est déjà bien. »* → **Validé sur le principe**, ajustements précis attendus row par row dans Notion.
+
+**Patterns gagnants (à reproduire)** :
+- ✅ **Nano Banana 2 all-in-one** = image + texte FR + icônes en un seul prompt. Texte FR rendu PARFAITEMENT (`complément`, `VRAIMENT`, `ça existe`, `FORMULÉ`, `VÉTÉRINAIRES`, `BOUCHÉE` tous corrects avec accents). Aucun gibberish.
+- ✅ **Référence packshot réel** passée en `medias[].role = "image"` → le pot Barky est gardé INTACT (label, drapeau FR, "MULTIVITAMINES", sous-texte 60 bouchées tous lisibles). Crucial pour la cohérence brand.
+- ✅ **Fond bleu pastel #CADCE4 dominant** = contraste fort avec pot brun ambré → scroll-stop power. Pas le drapé cream linen pâle qui dilue.
+- ✅ **Spell-out explicite** des accents dans le prompt (`é`, `ç`, `É`, `è`) → Nano Banana respecte les caractères français.
+- ✅ **Encadré "VRAIMENT" en pill brun/cream** = clone fidèle du pattern "NATUREL" du winner Exode, texte qui pope.
+- ✅ **3 icônes line-art simples** (drapeau / stéthoscope / bouchée) demandées explicitement comme `thin outline strokes, NOT illustrated, NOT cartoon` → exactement le rendu obtenu.
+- ✅ **Resolution 2k native** : `2048×2048` (au-dessus des 1080 Meta requis → marge pour crop/recompose).
+
+**Ce qui ne marche PAS — patterns à abandonner** :
+- ❌ **Higgsfield + Python Pillow compositing** : rejet bloc le 2026-05-13. Verbatim Thomas : *« Le texte a été ajouté par dessus, il n'y a aucune esthétisme ou aucun charisme. Ça n'a rien à voir avec les Winners. »* → workflow définitivement écarté.
+- ❌ **`marketing_studio_image` sans texte généré** : visuel propre mais sans hook intégré = "fadasse". Rejeté le 2026-05-13.
+- ❌ **Fond brun ambré pur** (Typo Forte) : Nano Banana 2 dérive vers orange-caramel saturé. Voir mémoire `feedback-nano-banana-palette-brune`.
+- ❌ **Drapé cream linen pâle** : pas assez de contraste pour faire popper le pot brun, manque de scroll-stop.
+
+**Ajustements pour la prochaine session** :
+- Continuer Nano Banana 2 all-in-one comme default Barky (toutes créas, pas juste Product Hero)
+- Élargir le pool winners pour d'autres angles : besoin de winners type `ugc-style`, `before-after`, `testimonial` pour les adaptations futures
+- Tester un autre angle (carences-invisibles P2, ou compl-moitie-marchent-pas P1) avec le même workflow Nano Banana all-in-one
+
+**Asset(s) gardé(s)** :
+- `08-ads/statics/2026-05-13/barky_p1_cest-lage_producthero_v6-nanobanana-allinone.png` (4.7 Mo, 2048×2048)
+- `08-ads/statics/2026-05-13/barky_p1_cest-lage_producthero_v5-nanobanana-allinone.png` (4.6 Mo, 2048×2048)
+- Raws des sessions précédentes (Typo Forte + Product Hero Pillow) gardés en archive locale pour learning patterns à éviter.
+
+---
+
+### Session 2026-05-13 — Premier test SET 3 Typo Forte P1 "C'est l'âge"
+
+**Brief source** : `08-ads/prompt-library.md` SET 3 (Typo Forte × P1 × angle ★★★ "C'est l'âge")
+**Type** : TYPO FORTE
+**Persona** : P1 — La Maîtresse qui Refuse d'Accepter le Déclin
+**Angle** : *"'C'est l'âge' : la fausse raison qui empêche la plupart des maîtres d'aider leur chien"*
+**Awareness** : Problem Aware
+**Stratégie** : 1ère génération qui passe par le pipeline complet (winner ref → brief → Higgsfield → push Notion auto). Tester si le SET 3 sort un mur amber suffisamment texturé pour porter un overlay typo XXL en post-prod. Pas de winner direct du pool (les 15 winners 2026-05-13 sont dominés UGC promo, pas Typo Forte pur).
+
+**Variations générées** :
+| # | Modèle | Format / Résolution | Job ID Higgsfield | Statut Notion |
+|---|---|---|---|---|
+| v1 | nano_banana_2 | 4:5 / 1k (928×1152) | `87fcd570-dfc5-4316-8c0f-6a00a0c1de4a` | À valider (https://www.notion.so/35ffd75e0c44818e8a57d3375361b568) |
+| v2 | nano_banana_2 | 4:5 / 1k (928×1152) | `2c9a81f2-1ea5-4c9e-9329-830d344ff5b2` | À valider (https://www.notion.so/35ffd75e0c4481c0ad04f4ad93f6144d) |
+
+**Prompt utilisé** : SET 3 du `prompt-library.md` (lignes 392-479), copié intégralement avec ajustement mineur — ajout dans NEGATIVE de "orange palette, caramel saturation" (renforcement explicite du learning 5 mai sur Soul Cinema, gardé par sécurité même sur Nano Banana).
+
+**Insights techniques (avant validation Thomas)** :
+- ⚠️ **Resolution 1k par défaut, pas 2k** — `nano_banana_2` n'avait pas de `resolution` explicite dans les params, Higgsfield a appliqué 1k par défaut. Le batch 5 mai avait 2k. **Ajustement : toujours préciser `resolution: "2k"` explicitement dans les params du futur**.
+- Dimensions sorties = 928×1152, pas 1080×1350 exact (Nano Banana sort en multiples de 32 sur 1k). À l'export final Figma/Photoshop, upscaler vers 1080×1350 ou regénérer en 2k pour avoir > 1080 native.
+
+**Ce qui a marché** :
+- *(rien — les 2 variations rejetées en bloc par Thomas)*
+
+**Ce qui n'a pas marché — verbatim Thomas (2026-05-13)** :
+> *« C'est quoi ce résultat de merde ? Le but, c'est d'avoir une putain de créative qui soit sortie la même qu'une Winner, et là tu m'envoies un mur orange, ce truc nul ! Soit j'ai mal compris et pas trouvé le résultat, soit on s'est mal compris. Le but est d'avoir une statique prête à être envoyée sur Meta, copiée d'une statique Winners de notre marque, et là je m'envoie un mur orange. »*
+
+**Diagnostic des 2 erreurs distinctes** :
+
+1. **Palette dérive orange-caramel** — Nano Banana 2 a poussé la saturation vers l'orange chocolat malgré le NEGATIVE PROMPT explicite (`AVOID orange palette, caramel saturation`). **Même pattern que Soul Cinema banni le 2026-05-05**. La citation directe d'un hex brun (`#463432`) sans renforcement extrême incite les modèles diffusion à pousser la saturation. → **Banissement temporaire Nano Banana 2 pour fonds bruns dominants**. Mémoire `feedback-nano-banana-palette-brune` sauvegardée.
+
+2. **Mauvaise interprétation du brief (le plus grave)** — j'ai suivi à la lettre `creative-system.md` §1.2 qui dit *"la typo se compose TOUJOURS en post-prod, Higgsfield n'écrit jamais de texte sur le visuel"* → j'ai sorti un fond Typo Forte ambient attendant overlay Figma. **Thomas voulait une statique COMPLÈTE Meta-ready clonée d'un winner précis du swipe file**, copy intégrée dans l'image, prête à push Meta direct, sans étape Figma intermédiaire. Les 2 règles du pipeline (`creative-system.md` "typo en post-prod" vs intention concrète Thomas "statique Meta-ready") sont en désaccord et j'ai pris la mauvaise. Mémoire `feedback-creas-meta-ready` sauvegardée.
+
+**Ajustements pour la prochaine fois** :
+- **Toujours préciser `resolution: "2k"` dans les params Higgsfield** (sinon défaut 1k = sous-résolution Meta)
+- **Plus jamais "from scratch / pas d'analogue"** → on part TOUJOURS d'un winner précis du swipe file ; si aucun pertinent, on complète le pool avant de générer
+- **Le livrable Notion = statique complète Meta-ready**, copy intégrée dans le PNG final, format 1080×1350 ou 1080×1080 exact, pas un fond
+- **Pour les fonds bruns dominants** : éviter Nano Banana 2 en V1, tester Soul V2 ou GPT Image 2 (texte FR fiable)
+- **Compléter le pool winners** avec : Hims, Ritual, AG1 backdrops type Typo Forte ; et plus globalement des winners "ads complètes" (DR archétype) pour les premières adaptations Barky
+
+**Asset(s) gardé(s)** :
+- `08-ads/statics/2026-05-13/barky_p1_cest-lage_typo_v1.png` (1.9 Mo)
+- `08-ads/statics/2026-05-13/barky_p1_cest-lage_typo_v2.png` (1.8 Mo)
+
+**Étape suivante** : attendre que Thomas score chaque variation dans Notion (status → Validée/Rejetée + Feedback). Une fois validée, composition typo XXL en post-prod selon `prompt-library.md` SET 3 §spec.
+
+---
+
 ### Session 2026-05-05 — Premier test SET 1 Lifestyle P1 "C'est l'âge"
 
 **Brief source** : `08-ads/prompt-library.md` SET 1 (Lifestyle × P1 × angle ★★★ "C'est l'âge")

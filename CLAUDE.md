@@ -104,6 +104,10 @@ BARKY_CERVEAU.md          ← Source de vérité unique (toujours chargée)
 15-machines/              ← Automatisations IA, agents
 ```
 
+## Skills custom Barky (project-level, `.claude/skills/`)
+
+- **`/barky-creas-batch`** — Génère un batch de 5 à 40 statiques Meta-ready Barky en mode auto (Claude propose la matrice) ou manuel. Pipeline complet : lit angles + personas + winners + packshots + learnings + Feedback Notion des 7 derniers jours → propose matrice → validation gate Thomas → Nano Banana 2 all-in-one → push Notion `À valider` → log session. Cap dur 40 / batch. Voir `.claude/skills/barky-creas-batch/SKILL.md`.
+
 ---
 
 ## Fichiers à lire selon le contexte

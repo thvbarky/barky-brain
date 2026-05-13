@@ -637,13 +637,14 @@ Higgsfield (et tous les modèles diffusion modernes) répondent à la **densité
 
 ---
 
-## PARTIE 9 — RÈGLES MÉTA (les 5 commandements)
+## PARTIE 9 — RÈGLES MÉTA (les 6 commandements)
 
-1. **Mécanisme > feature.** Le visuel doit montrer comment Barky agit (l'ingrédient en gros plan, le rituel quotidien, la conséquence concrète sur le chien), pas juste qu'il existe.
-2. **Le maître culpabilise — n'aggrave jamais.** Barky est un acte d'amour éclairé, pas un reproche. Pas de visuels qui pointent du doigt l'erreur du maître.
-3. **Le chien n'est jamais en premier plan produit.** Le chien est dans la scène, mais le hero c'est le rituel, le pot, ou le maître. Sinon on devient pet industry standard.
-4. **Une créa = une idée.** Si tu hésites entre deux angles, tu fais deux créas. Pas une qui essaie de tout dire.
-5. **Si ça pourrait être une ad pour Royal Canin → tu rates.** Si ça pourrait être une ad pour Aesop, Hims, ou Ritual → tu y es.
+1. 🚨 **WINNER REQUIS.** Aucune statique n'est générée sans winner de référence concret du swipe file `08-ads/references/ads/`. Pas de "n/a", pas de "from scratch", pas de "pas d'analogue". Si pas de winner → on scrape un winner d'abord, ensuite on génère. **Non-négociable** (règle Thomas 2026-05-13). Voir mémoire `feedback-creas-winner-required`.
+2. **Mécanisme > feature.** Le visuel doit montrer comment Barky agit (l'ingrédient en gros plan, le rituel quotidien, la conséquence concrète sur le chien), pas juste qu'il existe.
+3. **Le maître culpabilise — n'aggrave jamais.** Barky est un acte d'amour éclairé, pas un reproche. Pas de visuels qui pointent du doigt l'erreur du maître.
+4. **Le chien n'est jamais en premier plan produit.** Le chien est dans la scène, mais le hero c'est le rituel, le pot, ou le maître. Sinon on devient pet industry standard.
+5. **Une créa = une idée.** Si tu hésites entre deux angles, tu fais deux créas. Pas une qui essaie de tout dire.
+6. **Si ça pourrait être une ad pour Royal Canin → tu rates.** Si ça pourrait être une ad pour Aesop, Hims, ou Ritual → tu y es.
 
 ---
 

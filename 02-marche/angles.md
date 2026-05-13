@@ -107,3 +107,62 @@
 ---
 
 *Prochaine étape : Prompt 5 — ranker l'ordre de test des 5 premiers ads + matcher les formats à chaque awareness level.*
+
+---
+
+## Slugs Notion — DB Barky Creatives
+
+> Mapping slug ↔ angle complet. Utilisé par le champ `Angle` (Select) de la DB Notion `Barky Creatives` (https://www.notion.so/35ffd75e0c44809189a0ead944464f3c). Tout slug non listé ici = pas encore disponible dans Notion ; ajouter ici **avant** de l'utiliser dans une row.
+
+### Flagships ★★★ (couleur rouge dans Notion)
+
+| Slug | Persona | Awareness | Angle complet |
+|---|---|---|---|
+| `cest-lage` | P1 | Problem Aware | *"'C'est l'âge' : la fausse raison qui empêche 80% des maîtres d'aider leur chien"* |
+| `carences-invisibles` | P2 | Problem Aware | *"Les 7 carences invisibles que l'alimentation maison ne couvre pas — et pourquoi ton chien ne te montrera pas les signes avant des années"* |
+| `liste-complete-actifs` | P2 | Product Aware | *"Barky : la liste complète des [X] actifs, les doses exactes, et d'où vient chaque ingrédient"* |
+
+### Très forts ★★ (couleur orange dans Notion)
+
+| Slug | Persona | Awareness | Angle complet |
+|---|---|---|---|
+| `signes-mobilite` | P1 | Unaware | *"Ces 3 habitudes chez ton chien qu'on prend pour de la normale — et qui sont en fait le premier signe qu'il perd en mobilité"* |
+| `compl-moitie-marchent-pas` | P1 | Solution Aware | *"Pourquoi la moitié des compléments chien ne donnent AUCUN résultat — et comment repérer les 20% qui marchent"* |
+| `4-nutriments-manquants` | P2 | Unaware | *"Tu cuisines pour ton chien : voici les 4 nutriments que ni la viande, ni les légumes, ni les féculents ne couvrent"* |
+| `barf-supplementer-apres` | P2 | Problem Aware | *"Si tu fais BARF ou maison, tu as déjà entendu 'il faut supplémenter' — voici ce que personne ne te dit après"* |
+| `pas-tous-pareils` | P2 | Solution Aware | *"Tous les multivitaminés ne se valent pas : les 3 critères où 90% des marques échouent"* |
+| `filieres-pet-food-refusees` | P2 | Product Aware | *"Pourquoi on a refusé les filières pet food standard quand on a formulé Barky"* |
+| `made-in-france` | P1 | Product Aware | *"Fabriqué en France, filières humaines : ce que ça change concrètement dans la gamelle de ton chien"* (couleur verte = Product Aware) |
+
+### Solides ★ (couleur jaune = Solution Aware ; verte = Product Aware)
+
+| Slug | Persona | Awareness | Angle complet |
+|---|---|---|---|
+| `pas-vieux-il-manque` | P1 | Problem Aware | *"Ton chien n'est pas vieux. Il lui manque quelque chose."* |
+| `60-bouchees-founder` | P1 | Product Aware | *"60 bouchées. 2 mois de cure. La formule qu'on donne à nos propres chiens."* |
+| `qualite-humaine` | P2 | Solution Aware | *"Qualité humaine ou qualité 'pet food' : comment savoir ce que tu donnes vraiment à ton chien"* |
+| `complement-maison` | P2 | Product Aware | *"Conçu pour les maîtres qui cuisinent maison — voici comment Barky complète sans redoubler ta gamelle"* |
+
+### Transverses (couleur bleue dans Notion)
+
+| Slug | Type | Angle complet |
+|---|---|---|
+| `garantie-2-mois` | Offer / risk reversal | *"Tu peux tester Barky 2 mois, si ton chien bouge pas mieux on te rembourse"* |
+| `comite-veto` | Autorité scientifique | *"L'hypothèse qu'aucun véto ne propose quand ton chien commence à ralentir"* / *"4 vétérinaires ont signé la formule"* (couvre les angles autorité comité scientifique) |
+
+### Convention couleurs Notion (signal lecture rapide)
+
+| Couleur | Sens |
+|---|---|
+| 🔴 Rouge | ★★★ flagship (à tester en priorité) |
+| 🟠 Orange | ★★ angle interrupt fort (Unaware / Problem Aware) |
+| 🟡 Jaune | ★ angle reframe / Solution Aware solide |
+| 🟢 Vert | Product Aware (proof, justification, founder story) |
+| 🔵 Bleu | Transverse (offer, garantie, autorité véto) |
+
+**Process pour ajouter un nouvel angle :**
+1. L'écrire en angle complet ci-dessus dans la bonne section persona × awareness
+2. Slugifier (kebab-case ≤ 30 caractères, parlant)
+3. L'ajouter au mapping slug ↔ angle complet ci-dessus
+4. Faire un `ALTER COLUMN "Angle" SET SELECT(...)` sur la DB Notion via MCP (lister TOUS les angles existants + le nouveau, sinon perte de données)
+5. Si rejet de l'angle après test → ne pas supprimer (historique conservé), mais annoter "déprécié" ici dans le mapping
