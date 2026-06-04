@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barky · Tableau de bord Ads</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>
+  :root{
+    --brun:#463432; --bleu:#CADCE4; --cream:#FAF8F4; --card:#FFFFFF;
+    --green:#3F8F5B; --amber:#C98A2B; --red:#C0492F; --muted:#8A7F79;
+    --line:#ECE6DE;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--cream);color:var(--brun);
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;line-height:1.45}
+  h1,h2,h3{font-family:'Playfair Display',Georgia,serif;margin:0;font-weight:700}
+  .wrap{max-width:1080px;margin:0 auto;padding:28px 22px 60px}
+  header{display:flex;justify-content:space-between;align-items:flex-end;
+    flex-wrap:wrap;gap:12px;border-bottom:2px solid var(--brun);padding-bottom:16px}
+  header h1{font-size:30px;letter-spacing:-.5px}
+  header h1 .dot{color:var(--bleu)}
+  .meta{text-align:right;font-size:13px;color:var(--muted)}
+  .meta b{color:var(--brun)}
+  .nord{background:var(--bleu);color:var(--brun);border-radius:12px;
+    padding:12px 16px;margin:18px 0 6px;font-size:14px;font-weight:500}
+  section{margin-top:28px}
+  section > h2{font-size:19px;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;
+    padding:16px 18px;box-shadow:0 1px 0 rgba(70,52,50,.03)}
+  .card .lab{font-size:12px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted)}
+  .card .val{font-family:'Playfair Display',Georgia,serif;font-size:30px;font-weight:700;margin-top:4px}
+  .card .sub{font-size:12px;color:var(--muted);margin-top:2px}
+  .card.truth{border-color:var(--bleu);box-shadow:0 0 0 2px var(--bleu) inset}
+  .funnel{display:flex;flex-direction:column;gap:8px}
+  .frow{display:flex;align-items:center;gap:12px}
+  .frow .name{width:160px;font-size:13px;color:var(--muted);text-align:right;flex-shrink:0}
+  .frow .barwrap{flex:1;background:#F1ECE5;border-radius:8px;overflow:hidden;height:30px}
+  .frow .bar{height:100%;background:var(--brun);border-radius:8px;display:flex;
+    align-items:center;justify-content:flex-end;padding-right:10px;color:#fff;font-size:13px;font-weight:600;min-width:42px}
+  .frow.truth .bar{background:var(--bleu);color:var(--brun)}
+  table{width:100%;border-collapse:collapse;font-size:13px;background:var(--card);
+    border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line)}
+  th{font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);background:#FBF8F3}
+  td.num{text-align:right;font-variant-numeric:tabular-nums}
+  tr:last-child td{border-bottom:none}
+  .pill{display:inline-block;padding:2px 9px;border-radius:20px;font-size:11px;font-weight:600}
+  .pill.green{background:rgba(63,143,91,.14);color:var(--green)}
+  .pill.amber{background:rgba(201,138,43,.16);color:var(--amber)}
+  .pill.red{background:rgba(192,73,47,.14);color:var(--red)}
+  .pill.muted{background:#F0EAE2;color:var(--muted)}
+  .decisions{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
+  .decisions li{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--bleu);
+    border-radius:10px;padding:12px 16px;font-size:14px}
+  .decisions li.alert{border-left-color:var(--red)}
+  .chartbox{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+  .legend{font-size:12px;color:var(--muted);margin-top:10px;display:flex;gap:16px;flex-wrap:wrap}
+  .empty{color:var(--muted);font-size:13px;font-style:italic;padding:8px 0}
+  footer{margin-top:40px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+  a{color:var(--brun)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Barky<span class="dot">.</span> &nbsp;Tableau de bord Ads</h1>
+    <div class="meta">Dernière mise à jour<br><b id="updated">—</b></div>
+  </header>
+  <div class="nord">🎯 <b>Nord :</b> trancher quel <b>angle</b> et quelle <b>destination (LP vs PDP)</b> convertissent le mieux — jugé sur le <b>coût par AddToCart</b> (sessions Shopify = vérité).</div>
+
+  <section>
+    <h2>📌 Snapshot du jour</h2>
+    <div class="cards" id="kpis"></div>
+  </section>
+
+  <section>
+    <h2>🔻 Funnel réel</h2>
+    <div class="funnel" id="funnel"></div>
+    <div class="legend">⚠️ On lit la conversion sur les <b>sessions Shopify</b> (en bleu), jamais sur les « vues de page » Meta (gonflées par les clics fantômes).</div>
+  </section>
+
+  <section>
+    <h2>📈 Tendances</h2>
+    <div class="chartbox"><canvas id="trend" height="110"></canvas></div>
+  </section>
+
+  <section>
+    <h2>⚔️ Duel LP vs Page Produit</h2>
+    <div id="duel"></div>
+  </section>
+
+  <section>
+    <h2>🧩 Détail par entité (dernier jour)</h2>
+    <table id="detail"><thead><tr>
+      <th>Niveau</th><th>Entité / placement</th><th class="num">Spend</th><th class="num">Impr.</th>
+      <th class="num">Clics</th><th class="num">CTR</th><th class="num">CPC</th><th class="num">Coût/ATC</th>
+    </tr></thead><tbody></tbody></table>
+    <div class="legend">CTR : <span class="pill red">🔴 &lt;1%</span> <span class="pill amber">🟠 1–1,5%</span> <span class="pill green">🟢 &gt;1,5%</span> — toujours lu <b>par placement</b> (un CTR énorme + CPC ridicule = clics fantômes).</div>
+  </section>
+
+  <section>
+    <h2>✅ Décisions recommandées</h2>
+    <ul class="decisions" id="decisions"></ul>
+  </section>
+
+  <footer>
+    Source data : <a href="ads-daily.csv">ads-daily.csv</a> · Mémoire décisions : <a href="learnings-ads.md">learnings-ads.md</a> ·
+    Généré par la routine <code>/barky-ads-daily</code> (Cowork 12h, reco-only). Reco seulement — aucune action sur le compte sans validation.
+  </footer>
+</div>
+
+<script>
+/* ============================================================
+   La routine quotidienne remplace UNIQUEMENT les 3 blocs ci-dessous
+   (entre les marqueurs). Tout le rendu est calculé à partir de DATA.
+   ============================================================ */
+/*UPDATED_START*/
+const UPDATED = "2026-06-04 (seed manuel — 1re exécution auto à 12h)";
+/*UPDATED_END*/
+
+/*DATA_START*/
+// Une ligne par jour × entité. Colonnes alignées sur ads-daily.csv.
+const DATA = [
+  {date:"2026-06-04", scope:"campaign", entity:"Barky · Trafic LP · Validation", placement:"ALL",
+   spend:28.0, impressions:7979, link_clicks:534, ctr:6.7, cpc:0.05, meta_lpv:350, meta_atc:null,
+   cost_per_atc:null, shopify_sessions:14, shopify_atc:null, orders:0, notes:"J1 — clics gonflés placement Facebook"},
+  {date:"2026-06-04", scope:"placement", entity:"Facebook", placement:"Facebook",
+   spend:null, impressions:null, link_clicks:529, ctr:12.4, cpc:0.03, meta_lpv:null, meta_atc:null,
+   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null, notes:"CTR anormal = taps fantômes (Reels?) — à isoler"},
+  {date:"2026-06-04", scope:"placement", entity:"Instagram", placement:"Instagram",
+   spend:null, impressions:null, link_clicks:null, ctr:2.4, cpc:null, meta_lpv:null, meta_atc:null,
+   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null, notes:"CTR sain"}
+];
+/*DATA_END*/
+
+/*DECISIONS_START*/
+const DECISIONS = [
+  {alert:true,  text:"<b>Placement Facebook = clics fantômes</b> : CTR 12,4 % @ 0,03 € (529 clics) vs Instagram 2,4 %. → demain, isoler Feed vs Reels et exclure le coupable."},
+  {alert:false, text:"<b>Ne rien couper aujourd'hui</b> — learning phase, &lt;1000 impr/créa. On laisse respirer."},
+  {alert:false, text:"Prochain point réel = <b>demain 12h</b> (1er pull auto) : classement angles + duel LP/PDP sur coût/ATC."}
+];
+/*DECISIONS_END*/
+
+/* ---------- Rendu (statique, ne pas modifier par la routine) ---------- */
+const fmt = (v,d=0)=> v==null||v===""||isNaN(v) ? "—" : Number(v).toLocaleString("fr-FR",{maximumFractionDigits:d,minimumFractionDigits:d});
+const eur = v=> v==null||isNaN(v) ? "—" : Number(v).toLocaleString("fr-FR",{style:"currency",currency:"EUR"});
+const dates = [...new Set(DATA.map(r=>r.date))].sort();
+const lastDate = dates[dates.length-1];
+const camp = DATA.find(r=>r.date===lastDate && r.scope==="campaign") || {};
+
+document.getElementById("updated").textContent = UPDATED;
+
+// KPI cards
+const kpis = [
+  {lab:"Spend", val:eur(camp.spend), sub:lastDate},
+  {lab:"Sessions Shopify", val:fmt(camp.shopify_sessions), sub:"la seule vérité", truth:true},
+  {lab:"AddToCart", val:fmt(camp.shopify_atc ?? camp.meta_atc), sub:"intention d'achat"},
+  {lab:"Commandes", val:fmt(camp.orders), sub:"CB qui passe"}
+];
+document.getElementById("kpis").innerHTML = kpis.map(k=>
+  `<div class="card${k.truth?' truth':''}"><div class="lab">${k.lab}</div><div class="val">${k.val}</div><div class="sub">${k.sub}</div></div>`).join("");
+
+// Funnel
+const steps = [
+  {name:"Impressions", v:camp.impressions, truth:false},
+  {name:"Clics (Meta)", v:camp.link_clicks, truth:false},
+  {name:"Vues page (Meta)", v:camp.meta_lpv, truth:false},
+  {name:"Sessions Shopify", v:camp.shopify_sessions, truth:true},
+  {name:"AddToCart", v:camp.shopify_atc ?? camp.meta_atc, truth:true},
+  {name:"Commandes", v:camp.orders, truth:true}
+];
+const maxV = Math.max(...steps.map(s=>s.v||0),1);
+document.getElementById("funnel").innerHTML = steps.map(s=>{
+  const w = s.v? Math.max(4,(s.v/maxV)*100):2;
+  return `<div class="frow${s.truth?' truth':''}"><div class="name">${s.name}</div>
+    <div class="barwrap"><div class="bar" style="width:${w}%">${s.v!=null?fmt(s.v):'—'}</div></div></div>`;
+}).join("");
+
+// Trend chart (campaign-scope over time)
+const camps = dates.map(d=>DATA.find(r=>r.date===d&&r.scope==="campaign")||{});
+new Chart(document.getElementById("trend"),{
+  type:"line",
+  data:{labels:dates,datasets:[
+    {label:"Spend (€)",data:camps.map(c=>c.spend??null),borderColor:"#463432",backgroundColor:"#463432",tension:.3,yAxisID:"y"},
+    {label:"Sessions Shopify",data:camps.map(c=>c.shopify_sessions??null),borderColor:"#7FA8B8",backgroundColor:"#CADCE4",tension:.3,yAxisID:"y1"}
+  ]},
+  options:{responsive:true,interaction:{mode:"index",intersect:false},
+    plugins:{legend:{labels:{font:{family:"Inter"}}}},
+    scales:{y:{position:"left",title:{display:true,text:"€"}},y1:{position:"right",grid:{drawOnChartArea:false},title:{display:true,text:"sessions"}}}}
+});
+
+// Duel LP vs PDP (placeholder until per-adset rows exist)
+const lp = DATA.find(r=>r.date===lastDate && /LP|landing/i.test(r.entity));
+const pdp = DATA.find(r=>r.date===lastDate && /produit|PDP/i.test(r.entity));
+document.getElementById("duel").innerHTML = (lp||pdp)
+  ? `<div class="cards">
+      <div class="card"><div class="lab">LP — coût/ATC</div><div class="val">${eur(lp?.cost_per_atc)}</div></div>
+      <div class="card"><div class="lab">Page Produit — coût/ATC</div><div class="val">${eur(pdp?.cost_per_atc)}</div></div></div>`
+  : `<div class="empty">En attente de la data par ad set (coût par AddToCart) — dispo dès le 1er pull auto.</div>`;
+
+// Detail table (last day, non-campaign rows)
+const rows = DATA.filter(r=>r.date===lastDate && r.scope!=="campaign");
+const ctrPill = c=> c==null?'<span class="pill muted">—</span>'
+  : c<1?`<span class="pill red">${fmt(c,1)}%</span>`
+  : c<=1.5?`<span class="pill amber">${fmt(c,1)}%</span>`
+  : `<span class="pill green">${fmt(c,1)}%</span>`;
+const tb = document.querySelector("#detail tbody");
+tb.innerHTML = rows.length? rows.map(r=>
+  `<tr><td>${r.scope}</td><td>${r.entity}</td><td class="num">${eur(r.spend)}</td>
+   <td class="num">${fmt(r.impressions)}</td><td class="num">${fmt(r.link_clicks)}</td>
+   <td class="num">${ctrPill(r.ctr)}</td><td class="num">${eur(r.cpc)}</td><td class="num">${eur(r.cost_per_atc)}</td></tr>`).join("")
+  : `<tr><td colspan="8" class="empty">Pas encore de détail par créa/placement — arrive au 1er pull auto.</td></tr>`;
+
+// Decisions
+document.getElementById("decisions").innerHTML = DECISIONS.map(d=>
+  `<li${d.alert?' class="alert"':''}>${d.text}</li>`).join("");
+</script>
+</body>
+</html>
