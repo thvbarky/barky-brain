@@ -1,0 +1,4 @@
+date,scope,entity,placement,spend_eur,impressions,reach,frequency,link_clicks,ctr_pct,cpc_eur,cpm_eur,meta_lpv,meta_atc,cost_per_atc_eur,shopify_sessions,shopify_atc,orders,notes
+2026-06-04,campaign,Barky · Trafic LP · Validation,ALL,28.00,7979,,,534,6.7,0.05,,350,,,14,,0,J1 réel — clics gonflés par placement Facebook (taps fantômes)
+2026-06-04,placement,Barky · Trafic LP · Validation,Facebook,,,,,529,12.4,0.03,,,,,,,,CTR anormal = taps fantômes (Reels/feed mobile probable) — à isoler
+2026-06-04,placement,Barky · Trafic LP · Validation,Instagram,,,,,,2.4,,,,,,,,,CTR sain
