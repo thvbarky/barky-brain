@@ -27,3 +27,16 @@ skills-lock.json
 
 # Hook logs
 .claude/hooks/sync.log
+.venv/
+
+# Médias lourds — déjà sur le CDN Shopify, non versionnés en git
+# (on garde les .json de mapping + les .md/.yaml texte)
+08-ads/statics/**/*.png
+08-ads/statics/**/*.jpg
+08-ads/meta/creatives/*.png
+08-ads/meta/creatives/*.jpg
+08-ads/references/ads/*.jpg
+08-ads/references/ads/*.png
+08-ads/viral-copy/**/*.mp4
+08-ads/viral-copy/**/*.mp3
+08-ads/viral-copy/**/*.png
