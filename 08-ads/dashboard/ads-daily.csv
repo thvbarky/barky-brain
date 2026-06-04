@@ -1,4 +1,20 @@
 date,scope,entity,placement,spend_eur,impressions,reach,frequency,link_clicks,ctr_pct,cpc_eur,cpm_eur,meta_lpv,meta_atc,cost_per_atc_eur,shopify_sessions,shopify_atc,orders,notes
-2026-06-04,campaign,Barky · Trafic LP · Validation,ALL,28.00,7979,,,534,6.7,0.05,,350,,,14,,0,J1 réel — clics gonflés par placement Facebook (taps fantômes)
+2026-06-04,campaign,Barky · Trafic LP · Validation,ALL,28.00,7979,,,534,6.7,0.05,,350,,,14,,0,J1 seed approximatif — clics gonflés par placement Facebook (taps fantômes)
 2026-06-04,placement,Barky · Trafic LP · Validation,Facebook,,,,,529,12.4,0.03,,,,,,,,CTR anormal = taps fantômes (Reels/feed mobile probable) — à isoler
 2026-06-04,placement,Barky · Trafic LP · Validation,Instagram,,,,,,2.4,,,,,,,,,CTR sain
+2026-06-03,campaign,Barky · Trafic LP · Validation · 2026-06,ALL,10.32,3635,3401,1.07,96,3.33,0.11,2.84,,,,42,0,0,J1 complet — Ad3-Typo domine 80% budget · 42 sessions social Shopify · 0 ATC
+2026-06-03,adset,Broad FR 25-60 · LP Views,ALL,9.58,3284,3060,1.07,82,3.17,0.12,2.92,,,,,,,LP adset J1
+2026-06-03,adset,Broad FR 25-60 · Page Produit,ALL,0.74,351,340,1.03,14,4.84,0.05,2.11,,,,,,,PDP adset J1 — trop peu pour trancher
+2026-06-03,ad,Ad3 · Typo · 5-problemes-1-formule · LP,ALL,8.25,2840,2668,1.06,61,2.61,0.14,2.90,,,,,,,seule créa ≥1000 impr J1 · signal propre
+2026-06-03,ad,Ad3 · Typo · 5-problemes-1-formule · LP,facebook,2.15,864,,,16,3.01,0.13,,,,,,,,CTR sain FB — pas fantôme
+2026-06-03,ad,Ad3 · Typo · 5-problemes-1-formule · LP,instagram,6.10,1976,,,45,2.43,0.14,,,,,,,,meilleur signal propre du compte — référence
+2026-06-03,ad,Ad8 · Video · races-poids-tiktok,facebook,0.56,152,145,1.05,14,15.79,0.04,3.68,,,,,,,CTR 15.79% fantôme · 100% Facebook — premier signal du problème
+2026-06-03,ad,Ad1 · Lifestyle · cest-lage-reframe · PDP,ALL,0.74,349,337,1.04,13,4.58,0.06,2.12,,,,,,,<1000 impr · CTR FB 5.28% limite · IG 0% · ne pas juger
+2026-06-03,ad,Ad2 · ProductHero · signes-mobilite-ete,ALL,0.77,290,284,1.02,7,2.07,0.11,2.66,,,,,,,<1000 impr · CTR sain · laisser tourner
+2026-06-04,campaign,Barky · Trafic LP · Validation · 2026-06,ALL,29.55,8237,7745,1.06,557,12.12,0.05,3.59,,,,9,0,0,J2 en cours — Ad8 capte 96% budget · overspend 29€ vs 25€/j · 9 sessions social
+2026-06-04,adset,Broad FR 25-60 · LP Views,ALL,26.24,7446,6994,1.06,502,12.03,0.05,3.52,,,,,,,J2 — 96% budget LP absorbé par Ad8 video
+2026-06-04,adset,Broad FR 25-60 · Page Produit,ALL,3.31,791,763,1.04,55,12.90,0.06,4.18,,,,,,,J2 — Ad8-Copie domine PDP
+2026-06-04,ad,Ad8 · Video · races-poids-tiktok,ALL,25.36,7135,6699,1.07,505,12.45,0.05,3.55,,,,,,,96% du budget J2 · CBO piégé par CTR fantôme Facebook
+2026-06-04,ad,Ad8 · Video · races-poids-tiktok,facebook,25.29,7111,,,504,12.47,0.05,,,,,,,,100% Facebook · Reels/Feed taps fantômes · 557 link_clicks → 9 sessions Shopify seulement
+2026-06-04,ad,Ad8 · Video · races-poids-tiktok - Copie,facebook,3.24,771,743,1.04,55,13.23,0.06,4.20,,,,,,,Copie aussi fantôme · CTR 13.23% FB · PDP adset
+2026-06-04,ad,Ad3 · Typo · 5-problemes-1-formule · LP,ALL,0.77,281,281,1.00,7,2.85,0.11,2.74,,,,,,,seul signal propre J2 — étouffé par CBO au profit de Ad8
