@@ -3,7 +3,7 @@
 > Vue humaine régénérée chaque jour par `/barky-ads-daily` (reco seulement — aucune action sans validation Thomas).
 > Data brute : [`ads-daily.csv`](ads-daily.csv) · Mémoire : [`learnings-ads.md`](learnings-ads.md)
 
-**Dernière mise à jour : 2026-06-04 12:00 (pull API confirmé)**
+**Dernière mise à jour : 2026-06-04 18:00 (pull API confirmé)**
 
 ---
 
@@ -12,97 +12,81 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 
 ---
 
-## 🚨 ALERTE — Ad8 toujours en vie J2 · 96,8% du budget sur clics fantômes
+## ✅ PIVOT J2→J3 — Ad8 PAUSED, premier ATC en vue
 
-| Métrique | J1 (03/06) complet | J2 (04/06) pull 12h |
+| Métrique | J1 (03/06) complet | J2 (04/06) run 18h |
 |---|---|---|
-| Spend | 10,32 € | **30,06 €** ⚠️ overspend |
-| Impressions | 3 635 | 8 410 |
-| Link clicks Meta | 96 | **574** |
-| **Sessions Shopify social** | **42** ✅ | **9** 🚨 |
+| Spend | 10,32 € | **33,58 €** (Ad8 a tourné jusqu'au soir) |
+| Impressions | 3 635 | 9 405 |
+| Link clicks Meta | 96 | 662 |
+| **Sessions Shopify social** | **42** ✅ | **12** |
+| **Sessions Shopify total** | **74** | **56** |
 | **ATC social** | **0** | **0** |
-| Commandes | 0 | 0 |
-| Coût / session social | **0,25 €** ✅ | **3,34 €** 🚨 ×13 |
+| **ATC tous canaux** | 1 | **3** ⭐ |
+| Coût / session social | **0,25 €** ✅ | 2,80 € |
 
-**J2 = J1 en pire.** La pause Ad8 recommandée hier n'a pas été exécutée. Le CBO a encore alloué 25,80 € sur Ad8 (CTR FB 12,54% @ CPC 0,03 €) + 3,30 € sur sa Copie.
-
----
-
-## Répartition budget J2 (04/06)
-
-| Créa | Spend | % budget | CTR | Placement dominant | Signal |
-|---|---|---|---|---|---|
-| Ad8 Video races-poids | **25,80 €** | 85,8% | 12,51% | 100% Facebook | 🔴 fantôme |
-| Ad8 Copie | 3,30 € | 11,0% | 12,93% | 100% Facebook | 🔴 fantôme |
-| Ad3 Typo 5-problemes | 0,77 € | 2,6% | 2,85% | IG dominant | ✅ propre |
-| Ad1 Lifestyle cest-lage | 0,06 € | 0,2% | 0% | — | ⚠️ étouffé |
+**✅ Ad8 + Copie PAUSED (status API confirmé).** J3 (05/06) = premier jour propre. 3 ATC non-social aujourd'hui : la page convertit pour le trafic qualifié.
 
 ---
 
-## 🏆 Classement angles (J1 complet · seule base fiable)
+## Répartition budget J2 · run 18h
+
+| Créa | Spend | % budget | CTR FB | CTR IG | Status | Signal |
+|---|---|---|---|---|---|---|
+| Ad8 Video races-poids | **28,91 €** | 86,1% | **12,80%** | 4,00% | **PAUSED** ✅ | 🔴 fantôme FB |
+| Ad8 Copie | 3,62 € | 10,8% | **12,29%** | — | **PAUSED** ✅ | 🔴 fantôme FB |
+| Ad3 Typo 5-problemes LP | 0,79 € | 2,4% | 4,00% (n=75) | **2,38%** (n=210) | ACTIVE | ✅ propre |
+| Ad1 LP | 0,07 € | 0,2% | ⚠️ 15,38% (n=13) | 0% (n=5) | ACTIVE | ❓ surveiller |
+| Autres clean ads | 0,11 € | 0,3% | — | — | ACTIVE | < 20 impr |
+
+---
+
+## 🏆 Classement angles (J1+J2 · base fiable)
 
 | Rang | Angle | Créa | CTR IG | CTR FB | Verdict |
 |---|---|---|---|---|---|
-| ⭐ 1 | 5-problemes-1-formule | Ad3 Typo LP | **2,43%** (n=1975) | 3,01% | ✅ signal propre · référence |
+| ⭐ 1 | 5-problemes-1-formule | Ad3 Typo LP | **2,43%** (J1 · n=1975) | 3,01-4,00% | ✅ référence absolue |
 | ⚠️ 2 | signes-mobilite-ete | Ad2 ProductHero | 8,33% (n=24) | 1,50% | prometeur · n trop faible |
-| ⚠️ 3 | cest-lage-reframe | Ad1 Lifestyle PDP | 0% (n=46) | 5,28% | IG mort · FB suspect |
-| 🔴 ✗ | races-poids (vidéo) | Ad8 Video | 4,17% (n=24) | **12,54%** | clics fantômes FB |
-
-> CTR lu par placement. CTR IG = vérité. CTR Facebook toujours splitté avant jugement.
-
----
-
-## ⚔️ Duel LP vs PDP
-
-| | LP Views | Page Produit |
-|---|---|---|
-| Spend J1+J2 | **37,04 €** | 4,11 € |
-| Sessions Shopify | — | — |
-| **ATC** | **0** | **0** |
-| Coût / ATC | — | — |
-
-⚠️ **0 ATC social sur les 2 destinations** — pas tranchable. Attendre J3-J4 de trafic propre post-pause Ad8.
+| ❓ 3 | cest-lage-reframe LP | Ad1 Lifestyle LP | 0% (n=5) | ⚠️ 15,38% (n=13) | suspect FB · à surveiller |
+| 🔴 ✗ | races-poids (vidéo) | Ad8 Video | 4,00% (n=25) | **12,77%** | fantômes FB · **PAUSED** |
 
 ---
 
 ## Funnel cumulé J1+J2
 
 ```
-Spend total        : 40,38 €  (J1: 10,32 € + J2: 30,06 €)
-Impressions        : 12 045
-Link clicks Meta   :    670  (dont ~567 fantômes Ad8+Copie FB ≈ 85%)
-Sessions Shopify   :     51  (social : J1=42 · J2=9)
-ATC social         :      0
-Commandes          :      0  — 0,00 € CA ads
+Spend total         : 43,90 €  (J1: 10,32 € + J2: 33,58 €)
+  dont fantômes     : ~42,50 € (Ad8+Copie J1+J2)
+  dont clean        :   1,40 € (Ad3 + autres)
+Link clicks Meta    :    758   (dont ~97% fantômes J2)
+Sessions Shopify    :     54   (social : J1=42 · J2=12)
+Sessions total      :    130   (J1=74 · J2=56)
+ATC social          :      0
+ATC tous canaux     :      4   (J1=1 · J2=3) ⭐
+Commandes           :      0   — 0,00 € CA ads
 ```
 
-*Note : 1 ATC "tous canaux" le 03/06 et 1 le 04/06 — trafic non-social (organique/direct). 1 commande 64,60 € le 02/06 pré-campagne.*
+---
+
+## ✅ Décisions recommandées (2026-06-04 18h)
+
+### ✅ FAIT — Ad8 + Copie PAUSED
+**Status API : PAUSED / delivery off sur les 2 créas.** J3 opère sans pollution fantôme.
 
 ---
 
-## ✅ Décisions recommandées (2026-06-04)
-
-### 🔴 PRIORITÉ 1 — Pause Ad8 Video + Ad8 Copie MAINTENANT
-
-**Constat** : 2e jour consécutif à 96,8% du budget sur Facebook fantômes. J1 = 0,56 € (signal initial) → J2 = 29,10 € (désastre). La pause recommandée hier n'a pas été exécutée.
-
-**IDs à pauser :**
-- `120248464885400732` — Ad8 · Video · races-poids-tiktok (LP adset)
-- `120248464880070732` — Ad8 · Video · races-poids-tiktok - Copie (PDP adset)
-
-*Résultat attendu* : CBO réalloue vers Ad3 (signal propre). Coût/session devrait repasser < 0,50 €.
+### ⚠️ WATCH — Ad1 Lifestyle LP · Facebook
+CTR FB = 15,38% sur **n=13 impr** : trop petit pour conclure mais pattern Ad8. Au run 8h du 05/06 : si FB CTR reste >10% avec n>100 → **pause recommandée**.
 
 ---
 
-### 🟡 PRIORITÉ 2 — Vérifier J3 redistribution CBO (demain 12h)
-
-Post-pause, Ad3 Typo devrait recevoir ≥10 €/j automatiquement. Si le CBO alloue vers Ad1 ou Ad2 plutôt qu'Ad3 — le signaler.
+### 🎯 J3 (05/06) — vérif redistribution CBO
+Ad3 Typo LP doit recevoir ≥10 €/j. Si CBO alloue ailleurs → signaler au run 8h.
 
 ---
 
-### ⚪ INFO — Duel LP vs PDP : patience
-
-0 ATC des 2 côtés avec seulement 51 sessions totales (dont 85% issues de clics fantômes). Aucun signal exploitable avant trafic propre.
+### ⚔️ Duel LP vs PDP : patience
+0 ATC social des 2 côtés. Verdict J4-J5 avec trafic propre.
 
 ---
 

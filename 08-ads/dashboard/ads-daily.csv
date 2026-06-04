@@ -12,20 +12,16 @@ date,scope,entity,placement,spend_eur,impressions,reach,frequency,link_clicks,ct
 2026-06-03,ad,Ad2 · ProductHero · signes-mobilite-ete,ALL,0.77,290,284,1.02,7,2.07,0.11,2.66,,,,,,,<1000 impr · CTR sain · laisser tourner
 2026-06-03,ad,Ad2 · ProductHero · signes-mobilite-ete,instagram,0.17,24,,,3,8.33,0.09,,,,,,,,J1 IG — CTR sain · n=24 trop peu
 2026-06-03,ad,Ad2 · ProductHero · signes-mobilite-ete,facebook,0.60,266,,,4,1.50,0.15,,,,,,,,J1 FB — CTR sain
-2026-06-04,campaign,Barky · Trafic LP · Validation · 2026-06,ALL,30.06,8410,7861,1.07,574,12.18,0.03,3.57,,,,9,0,0,J2 API confirmé 12h — Ad8+Copie=96.8% budget · 574 link_clicks → 9 sessions social · 0 ATC
-2026-06-04,adset,Broad FR 25-60 · LP Views,ALL,26.69,7601,7110,1.07,519,12.13,0.03,3.51,,,,,,,J2 — dominé Ad8 Video (96% LP)
-2026-06-04,adset,Broad FR 25-60 · Page Produit,ALL,3.37,809,789,1.03,55,12.61,0.03,4.17,,,,,,,J2 — Ad8-Copie domine PDP
-2026-06-04,ad,Ad8 · Video · races-poids-tiktok,ALL,25.80,7289,6834,1.07,512,12.51,0.03,3.54,,,,,,,J2 — 85.8% spend · CBO piégé CTR fantôme
-2026-06-04,ad,Ad8 · Video · races-poids-tiktok,facebook,25.73,7265,,,511,12.54,0.03,,,,,,,,J2 FB — 100% Facebook · 511 link_clicks fantômes
-2026-06-04,ad,Ad8 · Video · races-poids-tiktok,instagram,0.07,24,,,1,4.17,0.07,,,,,,,,J2 IG — CTR sain (n=24 trop peu)
-2026-06-04,ad,Ad8 · Video · races-poids-tiktok - Copie,facebook,3.30,789,762,1.04,55,12.93,0.03,4.18,,,,,,,J2 — Copie aussi fantôme FB · PDP adset
-2026-06-04,ad,Ad3 · Typo · 5-problemes-1-formule · LP,ALL,0.77,281,281,1.00,7,2.85,0.10,2.74,,,,,,,J2 — signal propre étouffé · 3% budget seulement
-2026-06-04,ad,Ad3 · Typo · 5-problemes-1-formule · LP,facebook,0.20,72,,,3,4.17,0.07,,,,,,,,J2 FB — CTR dans la norme
-2026-06-04,ad,Ad3 · Typo · 5-problemes-1-formule · LP,instagram,0.57,209,,,4,2.39,0.11,,,,,,,,J2 IG — CTR propre · référence J2
-2026-06-04,ad,Ad1 · Lifestyle · cest-lage-reframe · PDP,ALL,0.06,18,17,1.06,0,0.00,,3.33,,,,,,,J2 — 0 clics · étouffé par CBO
-2026-06-04,campaign,Barky · Trafic LP · Validation · 2026-06,ALL (final),30.84,8660,8056,1.07,600,12.25,0.05,3.56,,,, 10,0,0,J2 FINAL journée complète — Ad8=96.8% · 30.84€ · 10 sessions Shopify · 0 ATC
-2026-06-04,adset,Broad FR 25-60 · LP Views,ALL (final),27.44,7845,7290,1.08,535,12.22,0.05,3.50,,,,,,,J2 FINAL LP adset
-2026-06-04,adset,Broad FR 25-60 · Page Produit,ALL (final),3.40,815,795,1.03,55,12.52,0.06,4.17,,,,,,,J2 FINAL PDP adset
-2026-06-04,ad,Ad8 · Video · races-poids-tiktok,ALL (final),26.55,7533,6986,1.08,527,12.60,0.05,3.52,,,,,,,J2 FINAL Ad8 — 86% budget
-2026-06-04,ad,Ad8 · Video · races-poids-tiktok,facebook (final),26.18,7509,,,526,12.62,0.03,3.49,,,,,,,J2 FINAL FB Ad8 — 99.7% spend fantômes
-2026-06-04,ad,Ad8 · Video · races-poids-tiktok - Copie,facebook (final),3.33,795,775,1.03,55,12.83,0.06,4.19,,,,,,,J2 FINAL Copie FB
+2026-06-04,campaign,Barky · Trafic LP · Validation · 2026-06,ALL,33.58,9405,8810,1.07,662,12.38,0.03,3.57,,,,12,0,0,J2 run 18h · Ad8+Copie PAUSED ✅ · 32.60€ fantômes (97.1%) · 0.98€ clean · 12s social · 56s total · 3 ATC non-social
+2026-06-04,adset,Broad FR 25-60 · LP Views,ALL,29.89,8537,7996,1.07,606,12.42,0.03,3.50,,,,,,,J2 18h LP adset
+2026-06-04,adset,Broad FR 25-60 · Page Produit,ALL,3.69,868,840,1.03,56,11.98,0.04,4.25,,,,,,,J2 18h PDP adset
+2026-06-04,ad,Ad8 · Video · races-poids-tiktok,facebook,28.91,8195,,,597,12.80,0.03,,,,,,,,J2 PAUSED ✅ · 100% FB fantômes
+2026-06-04,ad,Ad8 · Video · races-poids-tiktok,instagram,0.07,25,,,1,4.00,0.07,,,,,,,,J2 PAUSED · IG sain (n=25)
+2026-06-04,ad,Ad8 · Video · races-poids-tiktok - Copie,facebook,3.62,846,819,1.03,56,12.29,0.03,4.28,,,,,,,J2 PAUSED ✅ · Copie FB fantômes
+2026-06-04,ad,Ad3 · Typo · 5-problemes-1-formule · LP,ALL,0.79,285,285,1.00,7,2.81,0.10,2.77,,,,,,,J2 signal propre · 2.4% budget · étouffé
+2026-06-04,ad,Ad3 · Typo · 5-problemes-1-formule · LP,facebook,0.21,75,,,3,4.00,0.07,,,,,,,,J2 FB CTR sain (n=75)
+2026-06-04,ad,Ad3 · Typo · 5-problemes-1-formule · LP,instagram,0.58,210,,,4,2.38,0.12,,,,,,,,J2 IG CTR propre · référence J2
+2026-06-04,ad,Ad1 · Lifestyle · cest-lage-reframe · PDP,ALL,0.06,19,18,1.06,0,0.00,,3.16,,,,,,,J2 étouffé · 0 clics
+2026-06-04,ad,Ad1 · Lifestyle · cest-lage-reframe · LP,facebook,0.04,13,,,1,15.38,0.02,,,,,,,,⚠️ CTR FB 15.38% n=13 · suspect · surveiller J3
+2026-06-04,ad,Ad1 · Lifestyle · cest-lage-reframe · LP,instagram,0.03,5,,,0,0.00,,,,,,,,,étouffé IG · n=5
+2026-06-04,ad,Ad2 · ProductHero · signes-mobilite-ete,ALL,0.05,14,13,1.08,0,0.00,,3.57,,,,,,,J2 étouffé · <15 impr

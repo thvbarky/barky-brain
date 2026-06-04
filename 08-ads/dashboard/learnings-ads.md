@@ -57,7 +57,19 @@
 - **Résultat — ✅ EXÉCUTÉ le 04/06 (soir) par Thomas.** Vérifié via API : Ad8 `120248464885400732` + Copie `120248464880070732` = **PAUSED / delivery off**. Les 6 créas propres (Ad3 LP+PDP, Ad1 LP+PDP, Ad2 ×2) restent ACTIVE. À surveiller J3 (05/06) : le CBO doit réallouer vers Ad3 → coût/session attendu < 0,50 € (vs 3,34 € J2).
 
 ### 2026-06-04 — Ad3 Typo 5-problemes = seule créa scorable J1+J2
-- **Constat :** Ad3 est la seule créa avec ≥1 000 impr et CTR propre : IG 2,43% (J1 / n=1975) · IG 2,39% (J2 / n=209). CTR FB sain : 3,01% (J1) · 4,17% (J2, n=72). CPC lien ~0,11-0,14 €. Aucune donnée ATC car budget trop faible pour générer du trafic qualifié en volume.
+- **Constat :** Ad3 est la seule créa avec ≥1 000 impr et CTR propre : IG 2,43% (J1 / n=1975) · IG 2,38% (J2 / n=210). CTR FB sain : 3,01% (J1) · 4,00% (J2, n=75). CPC lien ~0,10-0,14 €. Aucune donnée ATC car budget trop faible pour générer du trafic qualifié en volume.
 - **Décision :** Ne pas juger Ad1/Ad2 avant qu'ils atteignent ≥1 000 impr propres. Post-pause Ad8, les laisser monter en puissance naturellement via le CBO.
 - **Pourquoi :** règle <1 000 impr = ne pas couper. Ad2 signes-mobilite IG (8,33% sur 24 impr J1) est prometteur mais non confirmable.
-- **Résultat (à compléter quand ≥1 000 impr chacun) :** —
+- **Résultat (à compléter J3 05/06 — quand Ad3 reçoit budget réel) :** —
+
+### 2026-06-04 — 3 ATC non-social · première intention d'achat confirmée
+- **Constat :** J2 (04/06) = 3 sessions Shopify avec AddToCart (tous canaux). Non-social : trafic direct/organique (56 sessions total vs 12 social). J1 = 1 ATC non-social. Pattern : le trafic qualifié convertit. ATC social = 0 avec seulement 12 sessions social (trop peu pour espérer).
+- **Décision :** aucune action. Attendre J3 avec trafic propre post-pause Ad8 pour avoir du volume social qualifié.
+- **Pourquoi :** 12 sessions social à 2,80 €/session → statistiquement impossible d'avoir un ATC. Post-redistribution CBO (attendu ≥10 €/j sur Ad3), volume social suffisant pour générer de l'intention.
+- **Résultat (J+1 = 05/06) :** à compléter — premier ATC social attendu si Ad3 reçoit budget.
+
+### 2026-06-04 — Ad1 Lifestyle LP Facebook CTR 15,38% (n=13) — risque fantôme
+- **Constat :** Ad1 · Lifestyle · cest-lage-reframe · LP — adset LP Views — FB CTR 15,38% sur 13 impr J2. CPC FB = 0,02 €. Pattern identique au signal initial de Ad8 (J1 : CTR 15,79% sur n=152). Budget J2 = 0,04 € (négligeable).
+- **Décision (reco) :** surveiller J3. Si FB CTR reste >10% avec n>100 impr → recommander pause Ad1 LP Facebook (ou toute la créa si Instagram CTR aussi nul).
+- **Pourquoi :** Ad8 présentait CTR FB 15,79% dès J1 avec n=152 → signal confirmé J2 à 12,54% avec n=7265. Le pattern se répète. 0,04 € aujourd'hui = pas urgent, mais si CBO le booste demain → risque fantôme n°2.
+- **Résultat (J+1 = 05/06 run 8h-12h) :** à compléter.
