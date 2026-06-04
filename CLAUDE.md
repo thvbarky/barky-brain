@@ -118,6 +118,7 @@ BARKY_CERVEAU.md          ← Source de vérité unique (toujours chargée)
 | Créer du contenu | `01-identite/voice-of-brand.md` + canal dans `07-content/` |
 | Décision produit / SKU | `03-produit/produit.md` + `03-produit/skus.md` + `04-legal/allegations.md` |
 | Stratégie ads | `08-ads/meta/strategy.md` + `02-marche/icp.md` + `02-marche/personas.md` |
+| **Rédaction copy ads** (Meta, primary text, headlines) | **`08-ads/swipe-file-copies-concurrents.md`** (patterns gagnants §7) + `01-identite/voice-of-brand.md` + `02-marche/personas.md` |
 | Email/retention | `09-email-sms/flows.md` + `10-retention/` |
 | Question marché / concurrents | `02-marche/concurrents.md` + `02-marche/marche.md` |
 | Unit economics / pricing | `11-analytics/finances.md` + `03-produit/pricing.md` |

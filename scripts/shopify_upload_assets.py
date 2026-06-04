@@ -190,14 +190,15 @@ def upload(local_path: str) -> dict:
         print(f"FAIL: {e}")
         return {"local": local_path, "error": str(e)}
 
-print(f"=== Upload de {len(ASSETS)} assets vers Shopify Files ===\n")
-results = [upload(a) for a in ASSETS]
+if __name__ == "__main__":
+    print(f"=== Upload de {len(ASSETS)} assets vers Shopify Files ===\n")
+    results = [upload(a) for a in ASSETS]
 
-# ─── Sauve le mapping ────────────────────────────────────────────────────────
-out = REPO / "06-store/landing-pages/_shopify-asset-map.json"
-out.write_text(json.dumps(results, indent=2, ensure_ascii=False))
+    # ─── Sauve le mapping ────────────────────────────────────────────────────
+    out = REPO / "06-store/landing-pages/_shopify-asset-map.json"
+    out.write_text(json.dumps(results, indent=2, ensure_ascii=False))
 
-ok = sum(1 for r in results if r.get("url"))
-fail = sum(1 for r in results if r.get("error"))
-print(f"\n=== TERMINÉ : {ok} OK, {fail} échec(s) ===")
-print(f"Mapping sauvegardé dans : {out.relative_to(REPO)}")
+    ok = sum(1 for r in results if r.get("url"))
+    fail = sum(1 for r in results if r.get("error"))
+    print(f"\n=== TERMINÉ : {ok} OK, {fail} échec(s) ===")
+    print(f"Mapping sauvegardé dans : {out.relative_to(REPO)}")

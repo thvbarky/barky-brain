@@ -1,0 +1,13 @@
+# Python deps for Barky Brain scripts/
+#
+# Setup:
+#   python3 -m venv .venv
+#   .venv/bin/pip install -r requirements.txt
+#
+# Always invoke scripts via .venv/bin/python3 (not bare python3) since
+# Homebrew Python is PEP 668 externally-managed.
+
+# Used by scripts/viral_copy_analyze.py (skill /viral-copy)
+google-genai>=2.3.0      # Gemini API SDK (multimodal video analysis)
+python-dotenv>=1.2.0     # Load .env.local for API keys
+requests>=2.34.0         # HTTP fallback (curl alternative)

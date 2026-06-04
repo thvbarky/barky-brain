@@ -1,0 +1,610 @@
+/* ============================================================
+   Barky Weight Selector — fiche produit
+   Palette : bleu pastel #CADCE4 + brun ambré #463432
+   ============================================================ */
+
+.barky-selector {
+  --barky-blue:      #CADCE4;
+  --barky-blue-bg:   #EAF2F6;
+  --barky-brown:     #463432;
+  --barky-brown-bg:  #F5EFEC;
+  --barky-text:      #1A1A1A;
+  --barky-muted:     #7A7A7A;
+  --barky-line:      #E5E5E5;
+  --barky-success:   #2D7D6F;
+  --barky-recommend: #463432;
+
+  font-family: 'Recoleta', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--barky-text);
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+/* ---------- STEP container ---------- */
+.barky-step {
+  border: 1px solid var(--barky-blue);
+  border-radius: 12px;
+  padding: 16px;
+  background: #fff;
+  transition: opacity 0.25s ease;
+}
+.barky-step--locked {
+  opacity: 0.55;
+  pointer-events: none;
+}
+.barky-step--unlocked {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.barky-step-head {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+.barky-step-num {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--barky-success);
+  margin-bottom: 2px;
+}
+.barky-step-title {
+  font-family: 'Recoleta', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--barky-brown);
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* ============================================================
+   ÉTAPE 1 — POIDS
+   ============================================================ */
+.barky-weight-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+.barky-weight-btn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 8px;
+  background: #fff;
+  border: 1.5px solid var(--barky-line);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  font-family: inherit;
+}
+.barky-weight-btn:hover {
+  border-color: var(--barky-brown);
+  transform: translateY(-1px);
+}
+.barky-weight-btn[aria-pressed="true"] {
+  border-color: var(--barky-brown);
+  border-width: 2px;
+  background: var(--barky-brown-bg);
+}
+.barky-weight-img-wrap {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--barky-blue-bg);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+}
+.barky-weight-img-wrap img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+.barky-weight-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--barky-text);
+  text-align: center;
+  line-height: 1.2;
+}
+.barky-weight-check {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--barky-success);
+  color: #fff;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(0.7);
+  transition: all 0.18s ease;
+}
+.barky-weight-btn[aria-pressed="true"] .barky-weight-check {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ============================================================
+   ÉTAPE 2 — BUNDLE
+   ============================================================ */
+.barky-tip {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px;
+  background: var(--barky-blue-bg);
+  border-radius: 8px;
+  margin: 0 0 14px 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--barky-text);
+}
+.barky-tip-icon {
+  flex-shrink: 0;
+  font-size: 16px;
+  line-height: 1;
+}
+.barky-tip strong {
+  color: var(--barky-brown);
+  font-weight: 600;
+}
+.barky-posology {
+  display: block;
+  margin-top: 4px;
+  color: var(--barky-brown);
+  font-weight: 500;
+}
+
+.barky-bundle-grid {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: stretch;
+}
+.barky-bundle-grid > .barky-bundle-btn {
+  flex: 1 1 0;
+  min-width: 100px;
+  max-width: 220px;
+}
+.barky-bundle-btn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 14px 8px 12px;
+  background: #fff;
+  border: 1.5px solid var(--barky-line);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  font-family: inherit;
+  overflow: visible;
+}
+.barky-bundle-btn:hover {
+  border-color: var(--barky-brown);
+}
+.barky-bundle-btn[aria-pressed="true"] {
+  border-color: var(--barky-brown);
+  border-width: 2px;
+  background: var(--barky-brown-bg);
+}
+.barky-bundle-btn[data-unavailable="true"] {
+  display: none;
+}
+
+/* Ribbon "Recommandé" — intégré, repose sur le bord supérieur de la carte */
+.barky-bundle-ribbon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--barky-brown);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 12px;
+  border-radius: 999px;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(70, 52, 50, 0.18);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+  pointer-events: none;
+  z-index: 2;
+}
+.barky-bundle-btn[data-is-recommended="true"] .barky-bundle-ribbon {
+  opacity: 1;
+  visibility: visible;
+}
+
+.barky-bundle-img-wrap {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 4px;
+}
+.barky-bundle-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.barky-bundle-x {
+  position: absolute;
+  bottom: -4px;
+  right: -8px;
+  background: var(--barky-brown);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 5px;
+  border-radius: 8px;
+}
+
+.barky-bundle-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--barky-text);
+  margin-top: 4px;
+}
+.barky-bundle-prices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  line-height: 1.1;
+}
+.barky-bundle-compare {
+  font-size: 11px;
+  color: var(--barky-muted);
+  text-decoration: line-through;
+}
+.barky-bundle-price {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--barky-brown);
+}
+.barky-bundle-duration {
+  font-size: 11px;
+  color: var(--barky-muted);
+  margin-top: 2px;
+}
+
+/* ============================================================
+   ÉTAPE 3 — FRÉQUENCE
+   ============================================================ */
+.barky-frequency-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.barky-freq-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 14px;
+  background: #fff;
+  border: 1.5px solid var(--barky-line);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  position: relative;
+}
+.barky-freq-btn:hover { border-color: var(--barky-brown); }
+.barky-freq-btn input { position: absolute; opacity: 0; pointer-events: none; }
+.barky-freq-btn:has(input:checked) {
+  border-color: var(--barky-brown);
+  border-width: 2px;
+  background: var(--barky-brown-bg);
+}
+
+.barky-freq-radio {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid var(--barky-muted);
+  flex-shrink: 0;
+  position: relative;
+  transition: all 0.18s ease;
+}
+.barky-freq-btn:has(input:checked) .barky-freq-radio {
+  border-color: var(--barky-brown);
+}
+.barky-freq-btn:has(input:checked) .barky-freq-radio::after {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  border-radius: 50%;
+  background: var(--barky-brown);
+}
+
+.barky-freq-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.barky-freq-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--barky-text);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.barky-freq-badge {
+  background: var(--barky-blue);
+  color: var(--barky-brown);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+.barky-freq-sub {
+  font-size: 12px;
+  color: var(--barky-muted);
+  line-height: 1.4;
+}
+
+.barky-freq-price {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--barky-brown);
+  white-space: nowrap;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  line-height: 1.1;
+}
+.barky-freq-compare {
+  font-size: 12px;
+  color: var(--barky-muted);
+  text-decoration: line-through;
+  font-weight: 400;
+}
+
+/* ---------- Sélecteur de cadence (sous l'option Abonnement) ---------- */
+.barky-cadence {
+  margin-top: 4px;
+  padding: 14px 14px 12px;
+  background: var(--barky-blue-bg);
+  border-radius: 10px;
+}
+.barky-cadence[hidden] {
+  display: none;
+}
+.barky-cadence-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--barky-brown);
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.barky-cadence-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+.barky-cadence-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  padding: 10px 10px;
+  background: #fff;
+  border: 1.5px solid var(--barky-line);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  position: relative;
+}
+.barky-cadence-btn input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.barky-cadence-btn[data-active="true"] {
+  border-color: var(--barky-brown);
+  border-width: 2px;
+  padding: 9px 9px;
+  background: #fff;
+}
+.barky-cadence-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--barky-text);
+  line-height: 1.2;
+}
+.barky-cadence-sub {
+  font-size: 10px;
+  color: var(--barky-muted);
+  line-height: 1.3;
+}
+
+/* ============================================================
+   CTA
+   ============================================================ */
+.barky-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 18px 24px;
+  background: var(--barky-brown);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  transition: all 0.2s ease;
+  margin-top: 4px;
+}
+.barky-cta:hover {
+  background: #2C201E;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(70, 52, 50, 0.25);
+}
+.barky-cta:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+.barky-cta-label {
+  text-transform: uppercase;
+}
+.barky-cta-prices {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  line-height: 1.1;
+  gap: 2px;
+}
+.barky-cta-price {
+  font-weight: 700;
+}
+.barky-cta-perday {
+  font-size: 11px;
+  font-weight: 500;
+  opacity: 0.78;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+.barky-trust {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 8px 0 0 0;
+  padding: 0;
+  font-size: 12px;
+  color: var(--barky-muted);
+}
+
+/* ============================================================
+   ÉTAPE 3 — PILL "RECOMMANDÉ" ribbon sur Abonnement (A.5)
+   Style identique au ribbon "Recommandé" des bundles step 2
+   ============================================================ */
+.barky-freq-btn--reco {
+  border-color: var(--barky-brown);
+  margin-top: 10px; /* laisser respirer le ribbon au-dessus */
+}
+.barky-freq-reco {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--barky-brown);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 12px;
+  border-radius: 999px;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(70, 52, 50, 0.18);
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* ============================================================
+   BANNIÈRE LANCEMENT10 (A.4)
+   ============================================================ */
+.barky-launch-banner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 0 0 0;
+  padding: 12px 14px;
+  background: var(--barky-brown);
+  color: #FFF8F0;
+  border-radius: 10px;
+  font-size: 13px;
+  line-height: 1.45;
+  letter-spacing: 0.005em;
+}
+.barky-launch-banner[hidden] { display: none; }
+.barky-launch-icon {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--barky-blue);
+  color: var(--barky-brown);
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+}
+.barky-launch-text { flex: 1; }
+.barky-launch-text strong { color: #fff; font-weight: 700; }
+.barky-launch-stock {
+  display: inline;
+  margin-left: 4px;
+  opacity: 0.85;
+}
+.barky-launch-stock::before { content: " · "; opacity: 0.6; }
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+@media (max-width: 480px) {
+  .barky-step { padding: 14px; }
+  .barky-step-title { font-size: 17px; }
+  .barky-weight-img-wrap { width: 56px; height: 56px; padding: 5px; }
+  .barky-weight-label { font-size: 12px; }
+  .barky-bundle-img-wrap { width: 50px; height: 50px; }
+  .barky-bundle-label { font-size: 12px; }
+  .barky-bundle-price { font-size: 14px; }
+  .barky-freq-title { font-size: 14px; }
+  .barky-freq-price { font-size: 15px; }
+  .barky-cta { padding: 16px 18px; font-size: 15px; }
+  .barky-trust { gap: 10px; font-size: 11px; }
+  .barky-cadence-grid { gap: 4px; }
+  .barky-cadence-title { font-size: 12px; }
+  .barky-cadence-sub { font-size: 9px; }
+  .barky-cadence-btn { padding: 8px 6px; }
+
+  .barky-launch-banner { font-size: 12px; padding: 10px 12px; gap: 8px; }
+  .barky-launch-icon { width: 20px; height: 20px; font-size: 11px; }
+  .barky-launch-stock { display: block; margin-left: 0; margin-top: 4px; }
+  .barky-launch-stock::before { content: ""; }
+
+  .barky-freq-reco { font-size: 9px; padding: 3px 10px; }
+  .barky-cta-perday { font-size: 10px; }
+}

@@ -25,6 +25,9 @@ Chaque décision importante loggée ici avec contexte et raisonnement.
 | 13 | **Rapport IndexPresse petfood juin 2024 intégré** | 2026-04-28 | Synthèse archivée dans [`02-marche/rapports/indexpresse-petfood-juin-2024.md`](../02-marche/rapports/indexpresse-petfood-juin-2024.md). Insights propagés dans `marche.md`, `tendances.md`, `concurrents.md` et §4.8-4.16 + §5.3 + §19.5 du master. **Apport principal** : citation Mars Petcare "90% croissance santé/bien-être" + 79% claim "qualité humaine" socialement validé + chiffres DNVB précis (UPD 110k abonnés 2023, Japhy panier 63€/+20% vs GD, Dogchef 20M€ CA 2023). |
 | 14 | **Stack MCP Barky documentée** (Trendtrack ✅ branché, Meta Ads + Higgsfield à activer post-validation) | 2026-05-01 | Documentation cadre dans [`15-machines/mcp-stack.md`](../15-machines/mcp-stack.md). Playbook veille concurrents [`02-marche/intel-veille-trendtrack.md`](../02-marche/intel-veille-trendtrack.md). Workflow créatif [`08-ads/workflow-creative-mcp.md`](../08-ads/workflow-creative-mcp.md). **Garde-fou non-négociable** : Higgsfield interdit pour visuels chien réel (uncanny valley pet niche, casse la conversion — benchmark Dog is Human n'utilise que photo réelle). Trendtrack à exploiter dès maintenant pour 3 prompts baseline (état marché FR, benchmark Dog is Human, hooks pet wellness 4 pays). Meta MCP à brancher post-J7 de spend. Higgsfield uniquement post-scaling (M2-M3) sur packshots/moodboards. |
 | 15 | **Refonte `BARKY_CERVEAU.md`** : 68k → 22k chars + suppression mentions erronées profil fondateur | 2026-05-05 | Master passé sous le seuil performance Claude Code (40k chars) — détail opérationnel déplacé vers fichiers thématiques (audit complet : tous égaux ou plus riches que le master, zéro perte d'info). Master devient **synthèse stratégique always-loaded + index navigable**. Inversion du flux de vérité : les fichiers thématiques sont désormais la source de vérité opérationnelle, le master tient le cap stratégique. **Profil fondateur corrigé** dans 5 fichiers (suppression "Dauphine/M&A" qui ne correspondait pas à Thomas) — source unique désormais [`01-identite/THOMAS_PROFIL_1.md`](../01-identite/THOMAS_PROFIL_1.md). Voir [`journal/2026-05-05.md`](./journal/2026-05-05.md). |
+| 16 | **Fiche produit Barky Daily : sélecteur 3 étapes Besti-style** + borne 2→3 bouchées remontée 34kg → 35kg | 2026-05-26 | UX inspirée de Besti (`besti.fr/products/8-en-1-premium`) : étape 1 poids du chien (3 buckets : `<11kg` / `11-35kg` / `>35kg` — alignés sur la posologie 1/2/3 bouchées/jour actée master §3) → étape 2 bundle en mois de traitement (1/2/3 pots avec -5%/-7% remise volume) → étape 3 achat unique vs abonnement Recharge. Borne supérieure du palier 2 bouchées remontée de 34kg à 35kg (chiffre rond, sans impact posologique). Thème actif dupliqué en `barky-dev-weight-selector` (ID `203609243997`) pour bosser sans risque. Voir [`journal/2026-05-26.md`](./journal/2026-05-26.md). |
+| 17 | **Cure minimum 2 mois imposée sur la fiche produit** (cohérence garantie 60j) | 2026-05-27 | Filtrage automatique des bundles selon le poids du chien : `<11kg` → 1/2/3 pots OK, `11-35kg` → 2/3 pots seulement (1 pot = 1 mois exclu), `>35kg` → 3 pots seulement. Raison : la garantie "satisfait ou remboursé 60j" exige que le client ait pu observer les bienfaits, donc cure complète. Suppression en parallèle des badges -5%/-7% sur les cartes (visuellement parasites, le compareAtPrice barré suffit). Voir [`journal/2026-05-27.md`](./journal/2026-05-27.md). |
+| 18 | **Refonte mapping bundle dynamique par poids + ajout variants 4 et 6 pots** | 2026-05-27 | Évolution de la décision n°17 : Thomas voulait toujours **3 bundles affichés** quel que soit le poids (pas le filtrage qui faisait disparaître des cartes). Nouvelle architecture : chaque poids a son propre set de 3 bundles, le mapping est dynamique via JS — `<11kg` → 1/2/3 pots (2/4/6 mois), `11-35kg` → 2/3/4 pots (2/3/4 mois), `>35kg` → 3/4/6 pots (2/2,7/4 mois). Création des variants `4 pots` (125,12 € · ID 64802769797469) et `6 pots` (185,64 € · ID 64802789949789), grille de remise volume progressive -5/-7/-8/-9%. **Sélecteur de cadence d'abonnement** ajouté en parallèle (1/2/3 mois) — apparaît dans l'Étape 3 quand "Abonnement" est coché. |
 
 ---
 
@@ -130,4 +133,162 @@ Semaine 1-6 → Test Barky (260-400 €)
 
 ---
 
-*Dernière mise à jour : 27 avril 2026 — palette figée + log pivot multivitaminé.*
+## Décisions actées 29 mai → 3 juin 2026 (session lancement Meta)
+
+### DEC-2026-05-29-A — Domaine canonique = `barky.pet` (TLD `.pet`)
+
+- **Date** : 2026-05-29
+- **Décision** : URL publique canonique = `https://barky.pet` (TLD `.pet`, pas `.fr`). Master `BARKY_CERVEAU.md §5.1` corrigé en conséquence.
+- **Qui** : Thomas
+- **Contexte** : Découverte au moment de configurer Domain Verification Meta. Le master mentionnait `barky.fr` à tort depuis avril.
+- **Raisonnement** : `.pet` est le TLD officiel acheté, déjà connecté à Shopify, SSL OK.
+- **Résultat attendu** : cohérence partout — JSON-LD, footer, Klaviyo, Meta Pixel, AEM.
+
+---
+
+### DEC-2026-05-29-B — Stack d'offre : abo Recharge −25 % + LANCEMENT10 −10 % single-use
+
+- **Date** : 2026-05-29
+- **Décision** :
+  - One-off : 34 € + 4,90 € port flat France métro
+  - Abo Recharge : −25 % permanent (25,50 €/mois) + livraison gratuite
+  - Code `LANCEMENT10` : −10 % single-use sur 100 premières commandes, cumulable abo, `appliesOnSubscription: true`, `recurringCycleLimit: 1`
+  - **1re box abo = 22,95 € (0,76 €/j)** · abo récurrent = 25,50 € (0,85 €/j)
+- **Qui** : Thomas
+- **Contexte** : Avant ce matin, le master disait abo −18 %, LP affichait −30 % mensonger, fiche produit avait Recharge −25 % déjà configurée → tout incohérent.
+- **Options considérées** : (A) −30 % lancement (visible) · (B) −25 % abo permanent · (C) Stack −25 % + LANCEMENT10 −10 %
+- **Raisonnement** : Stack permet de garder un discours marque permanent fort (−25 % abo) + tension d'achat sans tuer la marge long-terme.
+- **Résultat attendu** : message cohérent partout, code visible sur PDP/LP, conversion préservée.
+
+---
+
+### DEC-2026-05-29-C — Livraison gratuite UNIQUEMENT sur abonnement
+
+- **Date** : 2026-05-29
+- **Décision** : Port 4,90 € flat France métro sur one-off ; livraison gratuite incluse dans l'abonnement.
+- **Raisonnement** : Différentiel clair (≈ 5 €) qui pousse vers l'abo, sans dissuader le test ponctuel. Pas de seuil de gratuité one-off (complique le messaging).
+
+---
+
+### DEC-2026-05-29-D — Garantie renommée « Queue Remuante 60 jours »
+
+- **Date** : 2026-05-29
+- **Décision** : remplacement de « Chien en forme 60 jours » par « **Garantie Queue Remuante 60 jours** » partout (LP, PDP, FAQ, footer, iCart drawer).
+- **Raisonnement** : nom propriétaire défini en voice-of-brand §3.2. Plus chaleureux, plus mémorisable, drôle juste.
+
+---
+
+### DEC-2026-05-29-E — Byline LP retirée → signature « Comité scientifique Barky »
+
+- **Date** : 2026-05-29
+- **Décision** : retrait de la byline Dr. Camille Berton + retrait `author` JSON-LD. Pullquotes nominatives → attribution générique « Comité scientifique Barky ».
+- **Raisonnement** : éviter le risque Google « ghost article » + risque réputation si on monte un vrai blog plus tard. Décision audit `12-operations/2026-05-29-audit-validation.md` option D.1.b.
+
+---
+
+### DEC-2026-05-29-F — Strategie ads = split-test LP vs PDP
+
+- **Date** : 2026-05-29
+- **Décision** : 1 campagne Sales / CBO 30 €/jour, 2 ad sets identiques sauf URL : Ad set A → LP, Ad set B → PDP. Audience broad FR 25-60 + intérêt « Chiens ».
+- **Raisonnement** : on n'a pas de signal pixel historique, on doit apprendre vite quelle destination convertit le mieux. Split-test natif via 2 ad sets distincts (plus contrôlable qu'un A/B test Meta natif).
+
+---
+
+### DEC-2026-05-29-G — Meta BM existant réutilisé
+
+- **Date** : 2026-05-29
+- **Décision** : Thomas a déjà un Business Manager (autre activité) → on y ajoute compte pub `Barky FR` + Page FB Barky. Elias ajouté en admin BM + compte pub.
+- **Raisonnement** : pas besoin de créer un BM neuf, réutilisation de l'historique de paiement + permissions déjà connues.
+
+---
+
+### DEC-2026-05-29-H — Thème dev `barky-dev-weight-selector` publié sur le live
+
+- **Date** : 2026-05-29
+- **Décision** : publication du thème dev (ID 203609243997). Ancien Shrine Pro 1.3.3.1 archivé en bibliothèque. Backup `Shrine Pro — Backup pre-launch 2026-05-29` créé avant.
+- **Résultat réel** : OK, site live sur `barky.pet` avec sélecteur 3 étapes Besti-style, iCart drawer, code LANCEMENT10 auto.
+
+---
+
+### DEC-2026-06-02-A — iCart configuré + drawer Shrine Pro abandonné
+
+- **Date** : 2026-06-02
+- **Décision** : iCart configuré aux couleurs Barky (palette stricte, pas d'urgence artificielle, pas de progress bar tier discount). Remplace le drawer Shrine Pro natif qui restait en anglais avec widget Recharge non traduit.
+- **Configs clés** : pot bleu pastel, brun ambré CTA, code LANCEMENT10 affiché en pill auto, garantie Queue Remuante en trust signal, livraison conditionnée au mode (abo gratuit / one-off 4,90 €), Discount widget HIDE (anti pattern), Express checkout activé (Apple/Google Pay).
+
+---
+
+### DEC-2026-06-02-B — AEM Meta reporté (interface introuvable)
+
+- **Date** : 2026-06-02
+- **Décision** : configuration Aggregated Event Measurement reportée. Interface Meta 2026 ne propose plus l'accès classique. Domain Verification `barky.pet` reste OK.
+- **Raisonnement** : non-bloquant pour lancement. Pixel + CAPI tracking 80 events déjà actifs. AEM optimise iOS 14+ post-launch.
+
+---
+
+### DEC-2026-06-02-C — 3 angles ads validés + insight stratégique acquisition par symptôme
+
+- **Date** : 2026-06-02
+- **Décision** : 3 angles initialement validés (Une bouchée par jour / L'été tape chien souffre / C'est l'âge) → enrichis post-import swipe file concurrents.
+- **Insight stratégique** (swipe file 2026-06-02) : le « multivitamine global » ne scale pas comme angle d'acquisition (Besti 8-en-1 = 6 455 reach vs Démangeaisons = 232 776 reach = ×35). Les ads d'acquisition doivent **attaquer par un symptôme précis** (signes mobilité, fatigue, pelage terne). Le « global » reste le territoire de marque / page produit, pas le hook ad.
+
+---
+
+### DEC-2026-06-02-D — Swipe file copies concurrents = source de vérité copywriting ads
+
+- **Date** : 2026-06-02
+- **Décision** : création de `08-ads/swipe-file-copies-concurrents.md`, rempli par Thomas avec 12 copies verbatim (Besti, Balto, Wuffes, Dog is Human). Mémoire `reference-swipe-file-copies-concurrents` ajoutée pour lecture systématique avant toute rédaction copy ads.
+- **Patterns gagnants intégrés** : hook question-symptôme empilée, caution véto + 🇫🇷, bullets ✅ ingrédients, code promo intégré primary, CTA binaire SHOP NOW (direct) vs LEARN MORE (storytelling).
+
+---
+
+### DEC-2026-06-02-E — 1re campagne Meta : 8 créas (7 statics + 1 vidéo), pas de 9:16 static
+
+- **Date** : 2026-06-02
+- **Décision** : short-list finale Thomas = 7 statics 1:1 (`barky_legacy_62_v2`, `barky_legacy_42_v2`, `cest-lage_lifestyle_v2`, `qualite-humaine_17-vitamines`, `signes-mobilite_v2_balades-ete`, `pas-vieux-il-manque_v1`, `liste-complete-actifs_P2_v1`) + 1 vidéo 9:16 (Vidéo 1 TikTok races, 46s).
+- **Bannies** : Barky-4 (avant/après santé), Vidéo 2 (avant/après santé), 4 statics avant/après (#49, 57, 60, 61) — refus Meta probable + DGCCRF rouge.
+- **CTA différencié** : SHOP NOW (ads conversion directe) / LEARN MORE (storytelling reframe « C'est l'âge » + éducatif).
+
+---
+
+### DEC-2026-06-02-F — Mix pot brun + pot bleu pastel accepté en vague 1
+
+- **Date** : 2026-06-02
+- **Décision** : la short-list mélange deux designs de pot (brun = legacy, bleu pastel = batches récents). Acceptation explicite de cette inconsistance visuelle pour aller vite ; Meta optimise par créa unitaire.
+- **Trade-off** : un client qui clique sur une ad « pot brun » verra le pot bleu pastel sur la PDP. Risque conversion mineur, à surveiller dans la data.
+
+---
+
+### DEC-2026-06-02-G — Statut Notion `À tester` ajouté (workflow campagne)
+
+- **Date** : 2026-06-02
+- **Décision** : ajout du statut `À tester` (orange) dans la DB Notion `Barky Creatives`. Workflow : `À valider` → `À tester` (sélectionnée pour campagne) → `Live Meta` (active dans Ads Manager) → `Validée` (winner) / `Rejetée`.
+
+---
+
+### DEC-2026-06-02-H — Toutes les créas legacy uploadées sur Shopify CDN avec naming structuré
+
+- **Date** : 2026-06-02
+- **Décision** : 22 PNG legacy (`/Downloads/Barky/`) uploadées sur Shopify CDN avec naming `barky_legacy_{num}_{descriptor-court}.png`. Mapping sauvegardé : `08-ads/statics/legacy-22-mapping.json`. Notion Visual field accepte URLs externes (validé).
+- **Bénéfice** : visuels visibles dans Notion gallery view, plus de drag-drop manuel, source de vérité centralisée.
+
+---
+
+### DEC-2026-06-03-A — Catalogue Advantage+ Meta désactivé pour 1re campagne
+
+- **Date** : 2026-06-03
+- **Décision** : on n'utilise pas Dynamic Product Ads (DPA / Catalogue Advantage+) pour la 1re campagne. Format = Image unique ou Vidéo par ad.
+- **Raisonnement** : DPA est conçu pour le retargeting sur un pixel chaud. Avec 0 visiteurs trackés au lancement, DPA ne sait pas quoi montrer = budget gaspillé. À réactiver vague 2-3 quand on aura 5 000+ visiteurs trackés.
+
+---
+
+### DEC-2026-06-03-B — MCP officiel Facebook Ads à intégrer
+
+- **Date** : 2026-06-03
+- **Décision** : ajout du MCP officiel Meta `https://mcp.facebook.com/ads` à claude.ai connectors pour pouvoir diagnostiquer/optimiser les campagnes en direct via Claude.
+- **Scopes accordés** : `ads_read`, `ads_management`, `business_management`, `pages_read_engagement`.
+- **À faire** : redémarrer Claude Code pour que les tools `mcp__claude_ai_Facebook_Ads__*` apparaissent.
+
+---
+
+*Dernière mise à jour : 3 juin 2026 — session lancement Meta complète (BM, pixel, code promo, thème live, iCart, copies ads, 8 créas, MCP Meta à activer).*

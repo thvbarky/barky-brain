@@ -232,5 +232,41 @@
     "id": "gid://shopify/MediaImage/71945062121821",
     "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/unboxing-box-pot-balle-tagline.webp?v=1777297637",
     "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/icons/dogs/icon-dog-small-bulldog.png",
+    "id": "gid://shopify/MediaImage/72403765657949",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/icon-dog-small-bulldog.png?v=1779979327",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/icons/dogs/icon-dog-medium-doberman.png",
+    "id": "gid://shopify/MediaImage/72403768475997",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/icon-dog-medium-doberman.png?v=1779979335",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/icons/dogs/icon-dog-large-saint-bernard.png",
+    "id": "gid://shopify/MediaImage/72403770147165",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/icon-dog-large-saint-bernard.png?v=1779979340",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/icons/dogs/icon-dog-small-bulldog.png",
+    "id": "gid://shopify/MediaImage/72403851608413",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/icon-dog-small-bulldog_02a52a28-a05d-458c-80b8-dca0dc1831e3.png?v=1779979610",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/icons/dogs/icon-dog-medium-doberman.png",
+    "id": "gid://shopify/MediaImage/72403854885213",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/icon-dog-medium-doberman_9a8c86be-c851-49d5-b327-7a974bb0a869.png?v=1779979615",
+    "status": "UPLOADED"
+  },
+  {
+    "local": "01-identite/assets/icons/dogs/icon-dog-large-saint-bernard.png",
+    "id": "gid://shopify/MediaImage/72403856785757",
+    "url": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/icon-dog-large-saint-bernard_52320a43-b5a7-4f3c-80a0-be897fb3ce7a.png?v=1779979620",
+    "status": "UPLOADED"
   }
 ]

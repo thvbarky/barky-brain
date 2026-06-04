@@ -1,0 +1,80 @@
+# Script Barky adapté du pattern viral exode skeleton (visualisation interne d'un problème invisible).
+# Source : Publicité Facebook vidéo.mp4 (33s, déodorant exode "huile de nigelle")
+# Rapport Gemini : voir report.md dans le même dossier
+# Date : 2026-05-15
+
+meta:
+  source_pattern: "Visualisation interne d'un problème invisible + personnification de l'ennemi + rejet vieille solution + nouveau produit naturel + offre"
+  angle_barky: carences-invisibles  # ★★★ flagship P2
+  persona_barky: P2  # propriétaire informée, anxieuse carences/BARF
+  duration_total_sec: 32
+  n_plans: 4
+
+narrator:
+  profile: "Chien Barky"  # personnage visuel central
+  voice_profile: "Homme jeune punchy"  # narrateur extradiégétique (le chien ne parle pas, le narrateur décrit)
+  voice_off_description_en: "Confident young adult French male narrator, fast-paced and slightly dramatic, didactic tone shifting to enthusiastic in the second half — mirrors the exode voice profile but adapted to a French DTC pet health context"
+  aesthetic_hints: "Cinematic Pixar 3D render, hybrid style (photoreal environments + stylized expressive central character), warm rim lighting, shallow DOF, palette of cream + warm wood + Barky brand colors (pastel blue #CADCE4 + amber-brown #463432), ultra-detailed fur texture"
+  sound_design_hints: "Melancholic piano motif in plan 1 → tense low strings + heartbeat in plan 2 → warm uplifting strings + magical chime in plan 3 → triumphant strings + joyful steps in plan 4. Whoosh SFX on text overlays, subtle particle crackle for deficiency visualizations, satisfying crunch for the bite reveal."
+
+plans:
+  - plan_id: 1
+    duration_sec: 8
+    dialogue_fr: "« Voilà ce qui se passe dans ton chien quand il fatigue plus vite qu'avant. »"
+    action_en: "A 3D Pixar-style golden retriever lies tiredly on a beige rug in a warm-lit living room. As the camera slowly pushes in, faint blueish glowing particles representing nutrient deficiencies drift in and out of his body. His eyes are gentle but droopy, ears slightly back."
+    decor_en: "Modern minimalist French living room, warm wood floor, large window with soft morning light, neutral palette of cream and warm beige"
+    camera_en: "Slow push-in dolly shot from medium wide to medium close-up, ending on the dog's eyes"
+    sound_design_local: "Soft melancholic piano motif, subtle ambient room tone, faint particle whoosh"
+    emotion_beat: "Concern + tenderness, slight melancholy"
+    text_overlay_fr: "VOILÀ CE QUI SE PASSE"
+    text_overlay_style: "blanc sur fond rouge — match exode hook"
+    nano_banana_ref_prompt: "Cinematic 3D Pixar render of a worried golden retriever lying on beige rug in modern French living room, warm morning light through large window, shallow DOF, palette of cream and warm wood, ultra-detailed fur, expressive sad droopy eyes, faint blueish glowing particles around body representing nutrient deficiencies, 9:16 vertical"
+
+  - plan_id: 2
+    duration_sec: 8
+    dialogue_fr: "« Les carences invisibles. Le manque de glucosamine, d'oméga 3, de vitamines essentielles que les croquettes ne couvrent pas. »"
+    action_en: "Camera tilts down to the dog's joints — glowing red and orange particles flicker at hips and knees (joint stress). Quick whip-pan to ribs — blue and purple particles flicker (vitamin gap). Final cut on dull eyes — soft fading sparkle (energy deficit)."
+    decor_en: "Same living room, darker tone now, dramatic side lighting through window"
+    camera_en: "Static medium shot, then series of dynamic cut-ins on joints / ribs / eyes with whip-pan transitions"
+    sound_design_local: "Tense low strings build-up, brief crackling SFX on each deficiency reveal, low heartbeat undertone"
+    emotion_beat: "Alarmé + pédagogique"
+    text_overlay_fr: "LES CARENCES INVISIBLES"
+    text_overlay_style: "jaune sur fond vert — match exode 'problème' overlays"
+    nano_banana_ref_prompt: "Cinematic 3D Pixar render close-up on golden retriever's body, glowing red and orange particles at hip and knee joints + blue purple particles at ribs representing nutrient deficiencies, dramatic dim side lighting in modern French living room, cream and warm wood palette, X-ray style internal visualization, ultra-detailed, shallow DOF, 9:16 vertical"
+
+  - plan_id: 3
+    duration_sec: 8
+    dialogue_fr: "« Une bouchée Barky par jour. Douze actifs essentiels. Formulés par un comité vétérinaire en France. »"
+    action_en: "Owner's hand enters frame from the left, opening a beige cardboard parcel on a kitchen counter. Inside: a Barky jar (pastel blue label, amber-brown lid, white 'Barky.' wordmark visible). The dog rises slightly, ears forward, tail starting to wag softly. Owner gives him one Barky bite. As he crunches it, the previous deficiency particles dissipate, replaced by a warm soft golden glow flowing through his body."
+    decor_en: "Modern French kitchen counter (cream marble, warm wood cabinets), Barky jar prominent in foreground, soft daylight"
+    camera_en: "Macro close-up on Barky jar reveal as box opens, smooth pull-back to medium shot on dog eating, ending with push-in on dog's now-brighter eyes"
+    sound_design_local: "Warm uplifting strings + soft piano, satisfying crunch on the bite, gentle magical chime as particles dissipate"
+    emotion_beat: "Hope + relief"
+    text_overlay_fr: "1 BOUCHÉE PAR JOUR · 12 ACTIFS"
+    text_overlay_style: "blanc sur fond vert — match exode 'solution' overlays"
+    nano_banana_ref_prompt: "Cinematic 3D Pixar render of a beige cardboard parcel being opened on a modern French kitchen counter, revealing Barky jar (label pastel blue #CADCE4 with white 'Barky.' wordmark and 'MULTIVITAMINES' subtitle, amber-brown #463432 lid, side badge 'Fabriqué en France'), golden retriever happily eating one bite, warm magical golden glow replacing previous deficiency particles, cream marble counter + warm wood cabinets, shallow DOF, ultra-detailed packshot fidelity, 9:16 vertical"
+    packshot_reference: "01-identite/assets/photos/packshot/packshot-pot-ferme-bleu-pastel.png"
+
+  - plan_id: 4
+    duration_sec: 8
+    dialogue_fr: "« Soutient l'énergie, le pelage, les articulations. Premier mois moins trente pour cent. Sans engagement. »"
+    action_en: "The transformed dog runs joyfully through a sunlit Parisian park with his owner. Tail wagging high, fur glossy and vibrant. Quick montage: dog leaps over a small obstacle, then sits proudly while owner gives him a head scratch. Final hero shot: Barky jar on a wooden table with soft garden bokeh background, large overlay text appears."
+    decor_en: "Sunlit French park in late morning, soft bokeh trees in background, transitioning to a clean garden table for the product hero shot"
+    camera_en: "Tracking shot following the running dog, two quick cuts on leap + sit, then static slow push-in on product hero shot at end"
+    sound_design_local: "Triumphant uplifting strings, gentle breeze and joyful dog steps, subtle cinematic ending tone with brand chime"
+    emotion_beat: "Joy + satisfaction + closure"
+    text_overlay_fr: "SOUTIENT ÉNERGIE · PELAGE · ARTICULATIONS  ·  1ER MOIS -30%  ·  SANS ENGAGEMENT"
+    text_overlay_style: "blanc sur fond vert — match exode 'offer reveal'"
+    nano_banana_ref_prompt: "Cinematic 3D Pixar render of a transformed glossy golden retriever running through sunlit Parisian park, tail wagging high, fur vibrant, owner in background bokeh, warm morning light, cream and warm wood palette, ultra-detailed, joyful dynamic motion, 9:16 vertical. Final overlay product hero shot: Barky jar (pastel blue label, amber-brown lid) on wooden table with garden bokeh"
+
+cost_estimate:
+  seedance_plans_eur: 2.00  # 4 × 0.50
+  nano_banana_refs_eur: 0.40  # 4 × 0.10
+  elevenlabs_voice_eur: 0.30  # ⌈32s / 60s⌉ × 0.30
+  total_eur: 2.70
+
+claims_dgccrf_check:
+  zone_verte_used: ["soutient"]  # "Soutient l'énergie, le pelage, les articulations" ✅
+  zone_rouge_avoided: ["traite", "guérit", "prévient", "soigne"]  # aucun verbe interdit utilisé
+  mention_complementaire: "non incluse dans le dialogue (à ajouter sur le packaging) — voir 04-legal/allegations.md"
+  notes: "« Carences invisibles » est un terme marketing courant, pas un claim médical. Pas de promesse de prévention/guérison."

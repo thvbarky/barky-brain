@@ -145,7 +145,7 @@ Test Barky S1-S6 (260-400 €)
 | | Valeur |
 |---|---|
 | **Shop interne (myshopifyDomain)** | `wcrkik-yd.myshopify.com` (utilisé pour les API calls) |
-| **Alias public (primaryDomain)** | `barky-8363.myshopify.com` (changera quand `barky.fr` sera connecté) |
+| **Domaine public canonique** | **`barky.pet`** (connecté, SSL OK, vérifié 29/05/2026) — alias historique `barky-8363.myshopify.com` reste en 301 |
 | **Plan** | Basic · EUR |
 | **Thème actif** | Shrine Pro 1.3.3.1 (premium, acheté) |
 | **Custom App "claude"** | Client ID `f7617aa00dab4bef3da6cc457f0cfca3` · Token Admin API permanent dans `.env.local` |
@@ -154,7 +154,7 @@ Test Barky S1-S6 (260-400 €)
 ⚠️ **Sécurité** : `.env.local` est gitignored. Si compromis, rotater le secret dans Dev Dashboard.
 
 ### 5.2 Page live actuelle
-- **URL publique** : `https://barky-8363.myshopify.com/pages/barky-daily-journal`
+- **URL publique** : `https://barky.pet/pages/barky-daily-journal`
 - **ID Shopify** : `gid://shopify/Page/713609544029`
 - **Template Liquid** : `templates/page.barky-landing.liquid` (chrome-stripped, `{% layout none %}`)
 - **CTAs** : tous vers `/products/cf-01%E2%84%A2-multivitamines` (fiche produit existante CF-01™)

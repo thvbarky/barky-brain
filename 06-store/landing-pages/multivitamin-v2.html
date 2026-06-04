@@ -14,16 +14,11 @@
   "description": "Conseils santé canine. Pourquoi des vétérinaires français recommandent désormais une bouchée multivitaminée par jour — un complément quotidien formulé en France.",
   "image": "https://cdn.shopify.com/s/files/1/1068/0146/3645/files/lifestyle-goldendoodle-herbe.webp?v=1777297612",
   "datePublished": "2026-04-27T08:00:00+02:00",
-  "dateModified": "2026-04-27T08:00:00+02:00",
+  "dateModified": "2026-05-29T08:00:00+02:00",
   "inLanguage": "fr-FR",
   "author": {
-    "@type": "Person",
-    "name": "Dr. Camille Berton",
-    "jobTitle": "Vétérinaire nutritionniste, ENV Alfort",
-    "affiliation": {
-      "@type": "Organization",
-      "name": "Comité scientifique Barky"
-    }
+    "@type": "Organization",
+    "name": "Comité scientifique Barky"
   },
   "publisher": {
     "@type": "Organization",
@@ -35,7 +30,7 @@
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://barky.fr/pages/multivitamine-daily"
+    "@id": "https://barky.pet/pages/barky-daily-journal"
   }
 }
 </script>
@@ -259,8 +254,8 @@ h1.headline em{font-style:italic;color:var(--blue-deep);font-weight:500;}
   display:flex;align-items:center;justify-content:center;
   font-family:var(--serif);font-weight:600;font-size:18px;color:var(--brown);
 }
-.byline .avatar::after{
-  content:"CB";position:absolute;
+.byline .avatar img{
+  width:64%;height:64%;object-fit:contain;
 }
 .byline .who{font-size:14px;line-height:1.35;}
 .byline .who .name{font-weight:700;color:var(--ink);}
@@ -809,20 +804,10 @@ footer.site .legal{
 </head>
 <body>
 
-<!-- 0. URGENCY BAR (offre de lancement) -->
+<!-- 0+1. BANDEAU OFFRE DE LANCEMENT (fusion urgency + topbar) -->
 <div class="urgency-bar" role="region" aria-label="Offre de lancement">
-  🎉 Offre de lancement · −30 % sur le premier mois + livraison offerte · Stock limité : 1 200 pots
-  <a href="/products/cf-01%E2%84%A2-multivitamines">Réserver mon pot ▶</a>
-</div>
-
-<!-- 1. TOP REASSURANCE BAR -->
-<div class="topbar" role="region" aria-label="Réassurance">
-  <span>Livraison offerte en France</span><span class="sep">·</span>
-  <span>Garantie « chien en forme » — 60 jours</span><span class="sep">·</span>
-  <span>Sans engagement</span><span class="sep">·</span>
-  <span>Annulable en 1 clic</span><span class="sep">·</span>
-  <span>Fabriqué en France</span><span class="sep">·</span>
-  <span>Certifié FEDIAF · ISO 22000</span>
+  Offre de lancement · Code <strong>LANCEMENT10</strong> actif — premier mois à −32 % · Livraison offerte avec abonnement
+  <a href="/products/cf-01%E2%84%A2-multivitamines">Découvrir Barky Daily ▶</a>
 </div>
 
 <!-- 2. MASTHEAD -->
@@ -844,14 +829,23 @@ footer.site .legal{
   <!-- 4. KICKER + HEADLINE + DECK -->
   <div class="kicker">Nutrition · Dossier vétérinaire · 27 avril 2026</div>
   <h1 class="headline"><strong>Barky.</strong> Une bouchée par jour. Tout ce qui manque <em>à ses croquettes.</em></h1>
-  <p class="deck">Une fois par jour. Ce que les croquettes du commerce oublient depuis cinquante ans — formulé par quatre vétérinaires français, fabriqué en France, transparent sur ses dosages.</p>
+  <p class="deck">12 actifs aux doses biodisponibles. Formulée avec 4 vétérinaires français. Fabriquée en France.</p>
+
+  <!-- 4b. HERO ACTION — écho symptômes + offre + CTA (above the fold) -->
+  <div style="margin:22px 0 6px; padding:20px 22px; background:var(--cream); border:1px solid rgba(70,52,50,.12); border-radius:12px;">
+    <p style="font-family:var(--serif); font-size:19px; line-height:1.42; color:var(--brown); margin:0 0 16px;">Pelage qui ternit, articulations qui raidissent, digestion fragile, un coup de vieux qui s'installe ? <strong>Ce ne sont pas des fatalités, mais des déficits du quotidien.</strong> Une bouchée par jour pour combler ce que la croquette oublie.</p>
+    <a class="btn btn-blue" href="/products/cf-01%E2%84%A2-multivitamines" style="display:inline-block;">Découvrir l'offre de lancement ▶</a>
+    <div style="margin-top:12px; font-size:13px; color:var(--ink-soft); line-height:1.5;">−32 % le 1<sup>er</sup> mois avec <strong>LANCEMENT10</strong> · 25,50 €/mois ensuite (0,85 €/jour) · Livraison offerte · Garantie Queue Remuante 60 jours · Sans engagement</div>
+  </div>
 
   <!-- 5. BYLINE -->
   <div class="byline">
-    <div class="avatar" aria-hidden="true"></div>
+    <div class="avatar avatar--logo" aria-hidden="true">
+      <img src="https://cdn.shopify.com/s/files/1/1068/0146/3645/files/Barky_marron_sans_fond.svg?v=1777296273" alt="">
+    </div>
     <div class="who">
-      <div class="name">Dr. Camille Berton <span class="check" aria-label="vérifié">✓</span></div>
-      <div class="role">Vétérinaire nutritionniste · Membre du comité scientifique Barky</div>
+      <div class="name">Comité scientifique Barky <span class="check" aria-label="vérifié">✓</span></div>
+      <div class="role">4 vétérinaires français · Nutrition, médecine interne, comportement, médecine sportive</div>
     </div>
   </div>
 
@@ -896,7 +890,7 @@ footer.site .legal{
   <blockquote class="pullquote">
     <span class="mark">“</span>
     <q>Les croquettes industrielles couvrent le minimum vital. Ce qu'on a oublié, c'est de demander : qu'est-ce qui se passe entre survivre et vivre bien ?</q>
-    <span class="attr">— Dr. Paul Mailhe, vétérinaire nutritionniste, comité scientifique Barky</span>
+    <span class="attr">— Comité scientifique Barky</span>
   </blockquote>
 
   <!-- 11. INTL BENCHMARK -->
@@ -957,10 +951,10 @@ footer.site .legal{
 
   <!-- 14. CTA #1 -->
   <section class="cta-block dark">
-    <div class="overline">Lancement avril 2026 · Stock initial limité</div>
-    <h3>Vérifier la disponibilité de Barky Daily</h3>
-    <a class="btn btn-blue" href="/products/cf-01%E2%84%A2-multivitamines">Vérifier la disponibilité ▶</a>
-    <div class="cta-reassure">Livraison offerte · Garantie « chien en forme » — 60 jours · 4 vétérinaires formulateurs · 0,93 €/jour seulement</div>
+    <div class="overline">Offre de lancement · Code LANCEMENT10</div>
+    <h3>Commencer le rituel Barky Daily</h3>
+    <a class="btn btn-blue" href="/products/cf-01%E2%84%A2-multivitamines">Découvrir l'offre de lancement ▶</a>
+    <div class="cta-reassure">−32 % le 1<sup>er</sup> mois avec LANCEMENT10 · 25,50 €/mois (0,85 €/jour) · Livraison offerte avec abonnement · Garantie Queue Remuante 60 jours</div>
   </section>
 
   <!-- 15. SECTION IV — ACTIFS TABLE -->
@@ -1305,17 +1299,11 @@ footer.site .legal{
   <!-- 19. CTA #2 — COUNTDOWN -->
   <section class="cta-block light">
     <div class="overline">Lancement avril 2026 · Offre de lancement</div>
-    <h3>−30 % sur le premier mois d'abonnement</h3>
-    <p class="sub">Code automatiquement appliqué pour les 24 prochaines heures. Stock du premier lot limité à 1 200 pots.</p>
+    <h3>Premier mois à −32 % avec LANCEMENT10</h3>
+    <p class="sub">Abonnement à −25 % en permanence + code <strong>LANCEMENT10</strong> (−10 % supplémentaires sur la première box). Réservé aux <strong>100 premières commandes</strong>.</p>
 
-    <div class="countdown" id="countdown" aria-live="polite">
-      <div class="cd-cell"><span class="v" id="cd-h">--</span><span class="l">Heures</span></div>
-      <div class="cd-cell"><span class="v" id="cd-m">--</span><span class="l">Minutes</span></div>
-      <div class="cd-cell"><span class="v" id="cd-s">--</span><span class="l">Secondes</span></div>
-    </div>
-
-    <a class="btn btn-brown" href="/products/cf-01%E2%84%A2-multivitamines">Profiter de −30 % aujourd'hui ▶</a>
-    <div class="cta-reassure">Livraison offerte · Garantie « chien en forme » — 60 jours · Annulable en 1 clic · 0,93 €/jour seulement</div>
+    <a class="btn btn-brown" href="/products/cf-01%E2%84%A2-multivitamines">Profiter de −32 % aujourd'hui ▶</a>
+    <div class="cta-reassure">Livraison offerte avec abonnement · Garantie Queue Remuante — 60 jours · Annulable en 1 clic · 0,85 €/jour ensuite</div>
   </section>
 
   <!-- 20. SECTION VIII — VETOS -->
@@ -1335,7 +1323,7 @@ footer.site .legal{
   <blockquote class="pullquote">
     <span class="mark">“</span>
     <q>Quatre-vingt-dix pour cent des compléments canins vendus en France sont fragmentés. La force de Barky, c'est de nous ramener à ce qui devrait être une évidence : l'essentiel, en un seul produit, pris chaque jour.</q>
-    <span class="attr">— Dr. Camille Berton, ENV Alfort</span>
+    <span class="attr">— Comité scientifique Barky</span>
   </blockquote>
 
   <!-- 21. REVIEWS AGGREGATE -->
@@ -1371,7 +1359,7 @@ footer.site .legal{
     </details>
     <details>
       <summary>Combien de temps avant de voir un effet ?</summary>
-      <div class="ans">Les premiers signes (pelage plus brillant, démarche plus fluide le matin, selles mieux formées) sont rapportés entre 4 et 6 semaines par 87 % de notre panel. Si vous n'observez aucun changement passé 8 semaines, notre garantie « chien en pleine forme en 60 jours — ou remboursé » s'applique : un email, et le mois est remboursé.</div>
+      <div class="ans">Les premiers signes (pelage plus brillant, démarche plus fluide le matin, selles mieux formées) sont rapportés entre 4 et 6 semaines par 87 % de notre panel. Si vous n'observez aucun changement passé 8 semaines, notre Garantie Queue Remuante 60 jours s'applique : un email, et le mois est remboursé.</div>
     </details>
     <details>
       <summary>Mon chien suit déjà un régime vétérinaire. Puis-je donner Barky en plus ?</summary>
@@ -1387,18 +1375,18 @@ footer.site .legal{
     </details>
     <details>
       <summary>Et si mon chien n'aime pas le goût ?</summary>
-      <div class="ans">96 % des chiens de notre panel bêta acceptent Barky dès la première bouchée — le foie de poulet aide. Pour les 4 % restants, la garantie « chien en forme » 60 jours s'applique sans renvoi : on rembourse, et vous pouvez offrir le pot à un voisin. Pas de logistique, pas de retour, pas de perte sèche.</div>
+      <div class="ans">96 % des chiens de notre panel bêta acceptent Barky dès la première bouchée — le foie de poulet aide. Pour les 4 % restants, la Garantie Queue Remuante 60 jours s'applique sans renvoi : on rembourse, et vous pouvez offrir le pot à un voisin. Pas de logistique, pas de retour, pas de perte sèche.</div>
     </details>
   </div>
 
   <!-- 23. CTA #3 FINAL -->
   <section class="cta-block dark">
-    <div class="overline">Réservez votre pot de lancement</div>
+    <div class="overline">Offre de lancement · Code LANCEMENT10</div>
     <h3>Une bouchée par jour. Pour toute sa vie.</h3>
-    <p class="sub">Abonnement à 28 €/mois <span style="opacity:.75;font-weight:400;">(soit 0,93 €/jour)</span>. Livraison offerte. Chien en pleine forme en 60 jours — ou remboursé. Sans engagement.</p>
+    <p class="sub">Abonnement à 25,50 €/mois <span style="opacity:.75;font-weight:400;">(soit 0,85 €/jour)</span>. Première box à 22,95 € avec <strong>LANCEMENT10</strong>. Livraison offerte. Garantie Queue Remuante 60 jours. Sans engagement.</p>
     <p style="font-family:var(--serif); font-style:italic; font-size:16px; color:var(--blue); opacity:.95; margin:0 0 18px;">« Barky ne masque pas. Barky nourrit. »</p>
-    <a class="btn btn-blue" href="/products/cf-01%E2%84%A2-multivitamines">✦ Réserver mon pot — Stock limité ▶</a>
-    <div class="cta-reassure">Formulé par 4 vétérinaires français · Fabriqué en France · Certifié FEDIAF · ISO 22000 · Chien en pleine forme en 60 jours — ou remboursé · 0,93 €/jour</div>
+    <a class="btn btn-blue" href="/products/cf-01%E2%84%A2-multivitamines">✦ Réserver mon pot — Offre de lancement ▶</a>
+    <div class="cta-reassure">Formulé par 4 vétérinaires français · Fabriqué en France · Certifié FEDIAF · ISO 22000 · Garantie Queue Remuante 60 jours · 0,85 €/jour</div>
   </section>
 
 </main>
@@ -1411,7 +1399,7 @@ footer.site .legal{
     <p>Ne se substitue pas à une consultation vétérinaire en cas de pathologie déclarée. Tenir hors de portée des enfants. À conserver dans un endroit sec à l'abri de la lumière. DLUO et numéro de lot indiqués sur le pot.</p>
     <p>Mentions FEDIAF · ISO 22000 · IFS Food (fournisseur OEM).</p>
     <div class="legal">
-      © 2026 Barky · [Raison sociale] · SIREN [à compléter] · Siège [à compléter] · contact@barky.fr · Les présentes pages sont publiées à titre éditorial. Les revendications nutritionnelles sont conformes au règlement CE n°767/2009 et aux recommandations DGCCRF en vigueur. Aucune revendication thérapeutique n'est formulée.
+      © 2026 Barky · [Raison sociale] · SIREN [à compléter] · Siège [à compléter] · contact@barky.pet · Les présentes pages sont publiées à titre éditorial. Les revendications nutritionnelles sont conformes au règlement CE n°767/2009 et aux recommandations DGCCRF en vigueur. Aucune revendication thérapeutique n'est formulée.
     </div>
   </div>
 </footer>
@@ -1419,8 +1407,8 @@ footer.site .legal{
 <!-- 25. STICKY MOBILE CTA -->
 <aside class="sticky-cta" aria-label="Réserver Barky Daily">
   <div class="left">
-    <div class="price">Barky Daily — 28 €/mois <span style="opacity:.7;font-weight:400;font-size:.85em;">(0,93 €/jour)</span></div>
-    <div class="reass">Livraison offerte · Garantie « chien en forme » 60 jours</div>
+    <div class="price">Barky Daily — 25,50 €/mois <span style="opacity:.7;font-weight:400;font-size:.85em;">(0,85 €/jour)</span></div>
+    <div class="reass">1<sup>re</sup> box à 22,95 € avec LANCEMENT10 · Sans engagement</div>
   </div>
   <a class="btn btn-blue" href="/products/cf-01%E2%84%A2-multivitamines">Réserver ▶</a>
 </aside>

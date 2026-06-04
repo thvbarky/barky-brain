@@ -1,0 +1,229 @@
+{%- comment -%}
+  Sélecteur 3 étapes Barky Daily — fiche produit
+  Étape 1 : poids du chien (3 buckets : <11kg / 11-35kg / >35kg)
+  Étape 2 : quantité — 3 bundles dynamiques selon poids
+            <11kg  → 1 / 2 / 3 pots  (2 / 4 / 6 mois)
+            11-35kg → 2 / 3 / 4 pots  (2 / 3 / 4 mois)
+            >35kg  → 3 / 4 / 6 pots  (2 / 2,7 / 4 mois)
+  Étape 3 : achat unique vs abonnement Recharge + sélecteur de cadence (1/2/3 mois)
+{%- endcomment -%}
+
+{%- comment -%} Tous les variants disponibles (mappés par nombre de pots) {%- endcomment -%}
+{%- assign v1pot  = blank -%}{%- assign v2pots = blank -%}{%- assign v3pots = blank -%}{%- assign v4pots = blank -%}{%- assign v6pots = blank -%}
+{%- for v in product.variants -%}
+  {%- if v.title == '1 pot'  -%}{%- assign v1pot  = v -%}{%- endif -%}
+  {%- if v.title == '2 pots' -%}{%- assign v2pots = v -%}{%- endif -%}
+  {%- if v.title == '3 pots' -%}{%- assign v3pots = v -%}{%- endif -%}
+  {%- if v.title == '4 pots' -%}{%- assign v4pots = v -%}{%- endif -%}
+  {%- if v.title == '6 pots' -%}{%- assign v6pots = v -%}{%- endif -%}
+{%- endfor -%}
+
+{%- comment -%} Selling plans Recharge {%- endcomment -%}
+{%- assign sp_1month = blank -%}{%- assign sp_2month = blank -%}{%- assign sp_3month = blank -%}
+{%- for group in product.selling_plan_groups -%}
+  {%- assign first_plan = group.selling_plans.first -%}
+  {%- comment -%} Match sur les noms FR (Recharge renommé 29/05/2026) ou EN (fallback) {%- endcomment -%}
+  {%- if group.name contains 'mensuel' or group.name contains '1 month' -%}{%- assign sp_1month = first_plan.id -%}{%- endif -%}
+  {%- if group.name contains 'bimestriel' or group.name contains '2 month' -%}{%- assign sp_2month = first_plan.id -%}{%- endif -%}
+  {%- if group.name contains 'trimestriel' or group.name contains '3 month' -%}{%- assign sp_3month = first_plan.id -%}{%- endif -%}
+{%- endfor -%}
+
+<link rel="stylesheet" href="{{ 'barky-weight-selector.css' | asset_url }}">
+
+<form id="barky-selector-form" class="barky-selector" method="post" action="/cart/add" enctype="multipart/form-data" novalidate>
+  <input type="hidden" name="id" value="" id="barky-input-variant">
+  <input type="hidden" name="selling_plan" value="" id="barky-input-selling-plan">
+  <input type="hidden" name="quantity" value="1">
+
+  {%- comment -%} ────── ÉTAPE 1 : POIDS ────── {%- endcomment -%}
+  <section class="barky-step" data-step="1">
+    <header class="barky-step-head">
+      <span class="barky-step-num">Étape 1</span>
+      <h3 class="barky-step-title">Mon chien pèse</h3>
+    </header>
+
+    <div class="barky-weight-grid">
+      <button type="button" class="barky-weight-btn" data-weight="small" aria-pressed="false">
+        <span class="barky-weight-img-wrap">
+          <img src="https://cdn.shopify.com/s/files/1/1068/0146/3645/files/icon-dog-small-bulldog_02a52a28-a05d-458c-80b8-dca0dc1831e3.png?v=1779979610" alt="Petit chien (moins de 11 kg)" loading="lazy">
+        </span>
+        <span class="barky-weight-label">&lt; 11 kg</span>
+        <span class="barky-weight-check" aria-hidden="true">✓</span>
+      </button>
+
+      <button type="button" class="barky-weight-btn" data-weight="medium" aria-pressed="false">
+        <span class="barky-weight-img-wrap">
+          <img src="https://cdn.shopify.com/s/files/1/1068/0146/3645/files/icon-dog-medium-doberman_9a8c86be-c851-49d5-b327-7a974bb0a869.png?v=1779979615" alt="Chien moyen (11 à 35 kg)" loading="lazy">
+        </span>
+        <span class="barky-weight-label">11 – 35 kg</span>
+        <span class="barky-weight-check" aria-hidden="true">✓</span>
+      </button>
+
+      <button type="button" class="barky-weight-btn" data-weight="large" aria-pressed="false">
+        <span class="barky-weight-img-wrap">
+          <img src="https://cdn.shopify.com/s/files/1/1068/0146/3645/files/icon-dog-large-saint-bernard_52320a43-b5a7-4f3c-80a0-be897fb3ce7a.png?v=1779979620" alt="Grand chien (plus de 35 kg)" loading="lazy">
+        </span>
+        <span class="barky-weight-label">&gt; 35 kg</span>
+        <span class="barky-weight-check" aria-hidden="true">✓</span>
+      </button>
+    </div>
+  </section>
+
+  {%- comment -%} ────── ÉTAPE 2 : BUNDLE ────── {%- endcomment -%}
+  <section class="barky-step barky-step--locked" data-step="2">
+    <header class="barky-step-head">
+      <span class="barky-step-num">Étape 2</span>
+      <h3 class="barky-step-title">La quantité recommandée</h3>
+    </header>
+
+    <p class="barky-tip">
+      <span class="barky-tip-text">
+        Les vétérinaires recommandent une cure <strong>d'au moins 2 mois</strong> pour observer les premiers signes durables.
+        <span class="barky-posology" data-posology>Sélectionnez le poids de votre chien pour adapter la posologie.</span>
+      </span>
+    </p>
+
+    <div class="barky-bundle-grid" data-bundle-grid>
+      {%- comment -%} Les 3 cartes sont générées par JS selon le poids choisi {%- endcomment -%}
+    </div>
+  </section>
+
+  {%- comment -%} ────── ÉTAPE 3 : FRÉQUENCE ────── {%- endcomment -%}
+  <section class="barky-step barky-step--locked" data-step="3">
+    <header class="barky-step-head">
+      <span class="barky-step-num">Étape 3</span>
+      <h3 class="barky-step-title">Fréquence de livraison</h3>
+    </header>
+
+    <div class="barky-frequency-list">
+      <label class="barky-freq-btn" data-freq="oneoff">
+        <input type="radio" name="barky-freq" value="oneoff" checked>
+        <span class="barky-freq-radio" aria-hidden="true"></span>
+        <span class="barky-freq-body">
+          <span class="barky-freq-title">Achat unique</span>
+        </span>
+        <span class="barky-freq-price" data-freq-price="oneoff">—</span>
+      </label>
+
+      <label class="barky-freq-btn barky-freq-btn--reco" data-freq="subscription">
+        <span class="barky-freq-reco">Recommandé</span>
+        <input type="radio" name="barky-freq" value="subscription">
+        <span class="barky-freq-radio" aria-hidden="true"></span>
+        <span class="barky-freq-body">
+          <span class="barky-freq-title">
+            Abonnement
+            <span class="barky-freq-badge">&#8722;25&nbsp;%</span>
+          </span>
+          <span class="barky-freq-sub">
+            Pause ou annulation en 1 clic · Livraison toujours offerte
+          </span>
+        </span>
+        <span class="barky-freq-price">
+          <span class="barky-freq-compare" data-freq-compare>—</span>
+          <span data-freq-price="subscription">—</span>
+        </span>
+      </label>
+
+      {%- comment -%} Sélecteur de cadence (visible quand "Abonnement" est sélectionné) {%- endcomment -%}
+      <div class="barky-cadence" data-cadence-wrap hidden>
+        <p class="barky-cadence-label">Choisissez votre cadence de livraison</p>
+        <div class="barky-cadence-grid">
+          <label class="barky-cadence-btn" data-cadence="monthly">
+            <input type="radio" name="barky-cadence" value="monthly">
+            <span class="barky-cadence-title">Tous les mois</span>
+            <span class="barky-cadence-sub">Recommandée moyens &amp; grands chiens</span>
+          </label>
+          <label class="barky-cadence-btn" data-cadence="bimonthly">
+            <input type="radio" name="barky-cadence" value="bimonthly">
+            <span class="barky-cadence-title">Tous les 2 mois</span>
+            <span class="barky-cadence-sub">Recommandée petits chiens</span>
+          </label>
+          <label class="barky-cadence-btn" data-cadence="quarterly">
+            <input type="radio" name="barky-cadence" value="quarterly">
+            <span class="barky-cadence-title">Tous les 3 mois</span>
+            <span class="barky-cadence-sub">Moins de livraisons</span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {%- comment -%} ────── BANNIÈRE LANCEMENT10 ────── {%- endcomment -%}
+  <div class="barky-launch-banner" data-launch-banner>
+    <span class="barky-launch-icon" aria-hidden="true">★</span>
+    <span class="barky-launch-text">
+      Code <strong>LANCEMENT10</strong> appliqué automatiquement —
+      <strong>10 % offerts</strong> sur votre première commande.
+      <span class="barky-launch-stock">Réservé aux 100 premières commandes.</span>
+    </span>
+  </div>
+
+  {%- comment -%} ────── CTA ────── {%- endcomment -%}
+  <button type="submit" class="barky-cta" id="barky-cta">
+    <span class="barky-cta-label">Ajouter au panier</span>
+    <span class="barky-cta-prices">
+      <span class="barky-cta-price" data-cta-price>—</span>
+      <span class="barky-cta-perday" data-cta-perday>—</span>
+    </span>
+  </button>
+
+  <p class="barky-trust">
+    <span data-trust-shipping>✓ Livraison gratuite</span>
+    <span>✓ Garantie Queue Remuante 60 jours</span>
+    <span>✓ Sans engagement</span>
+  </p>
+</form>
+
+<script>
+  window.barkyConfig = {
+    // Mapping bundle dynamique : selon le poids, on affiche 3 cartes avec des variants différents
+    weightProfiles: {
+      small: {
+        daysPerPot: 60,
+        posology: '1 bouchée par jour. 1 pot dure environ 2 mois.',
+        defaultCadence: 'bimonthly',
+        bundles: [
+          { potsCount: 1, variantId: {{ v1pot.id  | json }}, price: 34.00,  compare: null,   isRecommended: true  },
+          { potsCount: 2, variantId: {{ v2pots.id | json }}, price: 64.60,  compare: 68.00,  isRecommended: false },
+          { potsCount: 3, variantId: {{ v3pots.id | json }}, price: 94.86,  compare: 102.00, isRecommended: false }
+        ]
+      },
+      medium: {
+        daysPerPot: 30,
+        posology: '2 bouchées par jour. 1 pot dure environ 1 mois.',
+        defaultCadence: 'monthly',
+        bundles: [
+          { potsCount: 2, variantId: {{ v2pots.id | json }}, price: 64.60,  compare: 68.00,  isRecommended: true  },
+          { potsCount: 3, variantId: {{ v3pots.id | json }}, price: 94.86,  compare: 102.00, isRecommended: false },
+          { potsCount: 4, variantId: {{ v4pots.id | json }}, price: 125.12, compare: 136.00, isRecommended: false }
+        ]
+      },
+      large: {
+        daysPerPot: 20,
+        posology: '3 bouchées par jour. 1 pot dure environ 20 jours.',
+        defaultCadence: 'monthly',
+        bundles: [
+          { potsCount: 3, variantId: {{ v3pots.id | json }}, price: 94.86,  compare: 102.00, isRecommended: true  },
+          { potsCount: 4, variantId: {{ v4pots.id | json }}, price: 125.12, compare: 136.00, isRecommended: false },
+          { potsCount: 6, variantId: {{ v6pots.id | json }}, price: 185.64, compare: 204.00, isRecommended: false }
+        ]
+      }
+    },
+    sellingPlans: {
+      monthly:   {{ sp_1month | default: 'null' | json }},
+      bimonthly: {{ sp_2month | default: 'null' | json }},
+      quarterly: {{ sp_3month | default: 'null' | json }}
+    },
+    launchOffer: {
+      code: 'LANCEMENT10',
+      discount: 0.10,
+      remaining: 100,
+      totalSlots: 100
+    },
+    shipping: {
+      oneoff: 4.90,
+      subscription: 0
+    }
+  };
+</script>
+<script src="{{ 'barky-weight-selector.js' | asset_url }}" defer></script>

@@ -1,0 +1,11 @@
+plan_id: 2
+duration_sec: 8
+dialogue_fr: "« Les carences invisibles. Le manque de glucosamine, d'oméga 3, de vitamines essentielles que les croquettes ne couvrent pas. »"
+action_en: "Camera tilts down to the dog's joints — glowing red and orange particles flicker at hips and knees (joint stress). Quick whip-pan to ribs — blue and purple particles flicker (vitamin gap). Final cut on dull eyes — soft fading sparkle (energy deficit)."
+decor_en: "Same living room, darker tone now, dramatic side lighting through window"
+camera_en: "Static medium shot, then series of dynamic cut-ins on joints / ribs / eyes with whip-pan transitions"
+sound_design_local: "Tense low strings build-up, brief crackling SFX on each deficiency reveal, low heartbeat undertone"
+emotion_beat: "Alarmé + pédagogique"
+text_overlay_fr: "LES CARENCES INVISIBLES"
+text_overlay_style: "jaune sur fond vert — match exode 'problème' overlays"
+nano_banana_ref_prompt: "Cinematic 3D Pixar render close-up on golden retriever's body, glowing red and orange particles at hip and knee joints + blue purple particles at ribs representing nutrient deficiencies, dramatic dim side lighting in modern French living room, cream and warm wood palette, X-ray style internal visualization, ultra-detailed, shallow DOF, 9:16 vertical"

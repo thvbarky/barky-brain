@@ -1,5 +1,15 @@
 # Prompt Library — Higgsfield × Copy Barky
 
+> ⚠️ **MÉTHODE OBSOLÈTE DEPUIS LE 2026-05-14.**
+>
+> Ces prompts ultra-détaillés (500-700 mots chacun) **saturent Nano Banana 2** et produisent des résultats inférieurs au **pattern court Cowork-style** (~150 mots, validé sur les 4 statics du 13/05).
+>
+> Le skill `/barky-creas-batch` n'utilise plus ces templates. Voir `.claude/skills/barky-creas-batch/SKILL.md` §Étape 7 pour le nouveau pattern (meta-prompt fixe + brief court de 1-3 phrases).
+>
+> Fichier **conservé en archive** pour : (a) référence historique du travail `/enhance-prompt`, (b) cas spéciaux Veo3/vidéo où la verbosité peut servir, (c) inspiration de copy d'overlay (la copy `/copywriting` reste valable, c'est le prompt image qui est sur-engineered).
+>
+> ---
+
 > **À quoi sert ce fichier.** Bibliothèque de **4 sets production-ready** (un par type de static), chaque set combinant : (1) prompt Higgsfield designer-grade enrichi via `/enhance-prompt`, (2) copy d'overlay conversion-grade enrichi via `/copywriting`, (3) spec de composition qui soude les deux.
 >
 > **Comment l'utiliser.** Tu prends un set, tu copy-paste le prompt dans Higgsfield, tu génères 3 variations, tu poses la copy en post-prod selon la spec. Tu logues le résultat dans `creative-learnings.md`.

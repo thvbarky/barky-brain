@@ -1,0 +1,12 @@
+plan_id: 3
+duration_sec: 8
+dialogue_fr: "« Une bouchée Barky par jour. Douze actifs essentiels. Formulés par un comité vétérinaire en France. »"
+action_en: "Owner's hand enters frame from the left, opening a beige cardboard parcel on a kitchen counter. Inside: a Barky jar (pastel blue label, amber-brown lid, white 'Barky.' wordmark visible). The dog rises slightly, ears forward, tail starting to wag softly. Owner gives him one Barky bite. As he crunches it, the previous deficiency particles dissipate, replaced by a warm soft golden glow flowing through his body."
+decor_en: "Modern French kitchen counter (cream marble, warm wood cabinets), Barky jar prominent in foreground, soft daylight"
+camera_en: "Macro close-up on Barky jar reveal as box opens, smooth pull-back to medium shot on dog eating, ending with push-in on dog's now-brighter eyes"
+sound_design_local: "Warm uplifting strings + soft piano, satisfying crunch on the bite, gentle magical chime as particles dissipate"
+emotion_beat: "Hope + relief"
+text_overlay_fr: "1 BOUCHÉE PAR JOUR · 12 ACTIFS"
+text_overlay_style: "blanc sur fond vert — match exode 'solution' overlays"
+nano_banana_ref_prompt: "Cinematic 3D Pixar render of a beige cardboard parcel being opened on a modern French kitchen counter, revealing Barky jar (label pastel blue #CADCE4 with white 'Barky.' wordmark and 'MULTIVITAMINES' subtitle, amber-brown #463432 lid, side badge 'Fabriqué en France'), golden retriever happily eating one bite, warm magical golden glow replacing previous deficiency particles, cream marble counter + warm wood cabinets, shallow DOF, ultra-detailed packshot fidelity, 9:16 vertical"
+packshot_reference: "01-identite/assets/photos/packshot/packshot-pot-ferme-bleu-pastel.png"

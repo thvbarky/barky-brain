@@ -1,0 +1,11 @@
+plan_id: 4
+duration_sec: 8
+dialogue_fr: "« Soutient l'énergie, le pelage, les articulations. Premier mois moins trente pour cent. Sans engagement. »"
+action_en: "The transformed dog runs joyfully through a sunlit Parisian park with his owner. Tail wagging high, fur glossy and vibrant. Quick montage: dog leaps over a small obstacle, then sits proudly while owner gives him a head scratch. Final hero shot: Barky jar on a wooden table with soft garden bokeh background, large overlay text appears."
+decor_en: "Sunlit French park in late morning, soft bokeh trees in background, transitioning to a clean garden table for the product hero shot"
+camera_en: "Tracking shot following the running dog, two quick cuts on leap + sit, then static slow push-in on product hero shot at end"
+sound_design_local: "Triumphant uplifting strings, gentle breeze and joyful dog steps, subtle cinematic ending tone with brand chime"
+emotion_beat: "Joy + satisfaction + closure"
+text_overlay_fr: "SOUTIENT ÉNERGIE · PELAGE · ARTICULATIONS · 1ER MOIS -30% · SANS ENGAGEMENT"
+text_overlay_style: "blanc sur fond vert — match exode 'offer reveal'"
+nano_banana_ref_prompt: "Cinematic 3D Pixar render of a transformed glossy golden retriever running through sunlit Parisian park, tail wagging high, fur vibrant, owner in background bokeh, warm morning light, cream and warm wood palette, ultra-detailed, joyful dynamic motion, 9:16 vertical. Final overlay product hero shot: Barky jar (pastel blue label, amber-brown lid) on wooden table with garden bokeh"

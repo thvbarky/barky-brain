@@ -1,0 +1,11 @@
+plan_id: 1
+duration_sec: 8
+dialogue_fr: "« Voilà ce qui se passe chez ton chien quand il fatigue plus vite qu'avant. »"
+action_en: "A 3D Pixar-style golden retriever lies tiredly on a beige rug in a warm-lit living room. As the camera slowly pushes in, faint blueish glowing particles representing nutrient deficiencies drift in and out of his body. His eyes are gentle but droopy, ears slightly back."
+decor_en: "Modern minimalist French living room, warm wood floor, large window with soft morning light, neutral palette of cream and warm beige"
+camera_en: "Slow push-in dolly shot from medium wide to medium close-up, ending on the dog's eyes"
+sound_design_local: "Soft melancholic piano motif, subtle ambient room tone, faint particle whoosh"
+emotion_beat: "Concern + tenderness, slight melancholy"
+text_overlay_fr: "VOILÀ CE QUI SE PASSE"
+text_overlay_style: "blanc sur fond rouge — match exode hook"
+nano_banana_ref_prompt: "Cinematic 3D Pixar render of a worried golden retriever lying on beige rug in modern French living room, warm morning light through large window, shallow DOF, palette of cream and warm wood, ultra-detailed fur, expressive sad droopy eyes, faint blueish glowing particles around body representing nutrient deficiencies, 9:16 vertical"

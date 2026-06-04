@@ -44,6 +44,207 @@
 
 ## 📋 Logs de sessions
 
+### Session 2026-05-14 1455 — Import 5 créas manuelles Thomas (référence d'apprentissage)
+
+**Type** : import (hors flow `/barky-creas-batch`)
+**Source** : créas générées manuellement par Thomas sur l'interface Higgsfield le matin du 14/05, importées en `À valider` dans Notion pour feedback et alimentation des apprentissages du skill.
+**Modèle** : GPT Image 2 (déclaratif)
+**Volume** : 5 rows uniques (1 doublon supprimé)
+**Chemin local** : `08-ads/meta/creatives/barky_p{persona}_{angle}_{type}_v1.png`
+
+**Matrice importée** :
+| # | Fichier | Persona | Angle | Static type | Hook |
+|---|---|---|---|---|---|
+| 1 | `barky_p1_pas-vieux-il-manque_lifestyle_v1.png` | P1 | pas-vieux-il-manque | Lifestyle | « Ton chien se lève lentement ? Il hésite à monter les escaliers ? C'est peut-être pas juste l'âge. » |
+| 2 | `barky_p1_signes-mobilite_proof_v1.png` | P1 | signes-mobilite | Proof | « Tu ne le remarqueras pas du jour au lendemain. Tu le remarqueras dans les petites choses. » + 3 vignettes |
+| 3 | `barky_p2_liste-complete-actifs_producthero_v1.png` | P2 | liste-complete-actifs | Product Hero | « Tu vois chaque jour tout l'amour qu'il te donne. » + 3 bullets icônes |
+| 4 | `barky_p1_cest-lage_lifestyle_v1.png` | P1 | cest-lage | Lifestyle | « Ton chien profite du printemps ? Ou il reste en retrait ? » |
+| 5 | `barky_p1_signes-mobilite_producthero_v1.png` | P1 | signes-mobilite | Product Hero | « Les longues balades du printemps arrivent. Ton chien peut y aller ? » + 4 icônes bénéfices |
+
+**Patterns à observer pour le skill** :
+- **Hook long en 3 niveaux** (#1) : structure question 1 → question 2 → résolution (pastille bleu pastel). Tester si ça fonctionne en feed Meta vs hook 1-niveau.
+- **Layout Proof magazine-style** (#2) : zone hook+photo+packshot en haut, bandeau 3 vignettes numérotées en bas, closing 1 ligne. Structure dense mais hyper-lisible.
+- **Encart vert sage** (#3) : déviation palette stricte assumée — à valider en feedback. Si Thomas l'accepte → relax la règle palette pour les Product Hero "encarts info".
+- **Hooks saisonniers printemps** (#4, #5) : angle temporel pour booster CTR à un moment précis. Catalogue à constituer : printemps / été / rentrée / hiver / fêtes.
+- **Hybride Product Hero + Lifestyle** (#5) : packshot intégré dans scène nature + icônes bénéfices alignées. Format à reproduire pour combos `signes-mobilite`.
+
+**À surveiller dans le Feedback Notion** :
+- Ciel cyan saturé sur #4 et #5 : passe ou se fait taper ? (cyan listé dans bans palette)
+- Encart vert sage sur #3 : passe ou se fait taper ? (idem)
+- Border collie (#2) vs golden senior canonique P1 : cohérence persona ou variation acceptable ?
+- Densité texte hook (#1 = 3 niveaux, #5 = hook + 4 bénéfices + disclaimer) : seuil de tolérance en feed ?
+
+**Apprentissage méta** : Thomas génère manuellement quand il veut explorer un pattern précis (saisonnier, layout magazine, hook 3-niveaux). Le skill `/barky-creas-batch` reste l'industrialisation, mais **les imports manuels alimentent le catalogue de patterns** que le skill pourra réutiliser une fois validés.
+
+---
+
+### Session 2026-05-14 1005 — Batch test refonte skill (5 créas, GPT Image 2)
+
+**Batch ID** : `2026-05-14-1005`
+**Mode** : auto (5 combos test après refonte 14/05/2026 du skill `/barky-creas-batch`)
+**Volume demandé / généré** : 5 / 5 (100% succès)
+**Coût réel** : ~35 credits Higgsfield (gpt_image_2 quality high × 5)
+**Modèle** : `gpt_image_2` (premier batch avec GPT Image 2 après switch défaut Nano Banana 2 → GPT Image 2 le 14/05)
+**Apprentissages relus** : 2 rows Notion rejetées le matin (cron Cowork) — bug hex codes affichés textuellement + pot Barky raté → injection dans le meta-prompt de la consigne « NE JAMAIS afficher les codes hex textuellement dans l'image » et passage systématique du packshot officiel en `medias` dès que le pot est visible.
+
+**Matrice exécutée** :
+| # | Persona | Angle | Static type | Winner / Inspiration | Job ID | Notion |
+|---|---|---|---|---|---|---|
+| 1 | P1 | cest-lage ★★★ | Lifestyle | from scratch — Cereal magazine | `19c0d61d-79e4-4098-9ae6-04597065d7a7` | À valider |
+| 2 | P1 | signes-mobilite ★★ + packshot | Lifestyle | from scratch — The Farmer's Dog ad | `f0208178-6cd1-424c-9764-3854200c96e3` | À valider |
+| 3 | P1 | fete-meres (nouveau slug) | Lifestyle | from scratch — Aesop × Cereal | `a1e91766-3707-4738-aa59-e20a922c74c7` | À valider |
+| 4 | P1 | pas-vieux-il-manque ★ | Lifestyle | from scratch — naturaliste 35mm | `4058314b-9b57-4f62-8810-8e57f064b629` | À valider |
+| 5 | P2 | carences-invisibles ★★★ + packshot | Product Hero | exode_problem-solution-01 — mousse forêt verte | `fa6bd890-bde8-43d1-a3a5-c7a0686a9ef2` | À valider |
+
+**Patterns gagnants confirmés (refonte 14/05 validée)** :
+- ✅ **Pattern court Cowork-style sur GPT Image 2 = qualité Dog is Human / Aesop niveau premium.** Pattern validé sur Nano Banana 2 (4 statics Cowork 13/05), transposé tel quel sur GPT Image 2, résultat équivalent voire supérieur (hiérarchie typo encore plus riche, badges + disclaimers spontanés excellents).
+- ✅ **Meta-prompt fixe ~150 mots + brief court 1-3 phrases** = recette qui marche. 5/5 succès.
+- ✅ **Consigne anti-hex display** : zéro hex affiché textuellement dans les 5 rendus (vs bug du matin avec ancien prompt sans cette consigne).
+- ✅ **Packshot officiel en `medias[].role="image"`** dès que le pot est visible : 2/5 combos (#2 et #5) ont le pot **parfaitement fidèle** (label « Barky. » + « MULTIVITAMINES » + badge France + « 60 BOUCHÉES MOELLEUSES » lisibles). GPT Image 2 accepte uniquement role « image » (auto-coerce depuis « reference »).
+- ✅ **Winner = inspiration optionnelle** : 4/5 combos `from scratch`, 1/5 cite un winner (Exode `problem-solution-01`) — les 4 from scratch sortent aussi bien que le clone. Validation de la refonte « winner = inspiration, pas contrainte ».
+- ✅ **GPT Image 2 quality high** = excellente fidélité texte FR avec accents (zéro gibberish observé), même sur des hooks de 25+ mots.
+
+**Insights techniques nouveaux** :
+- **Coûts mesurés (1:1 2k)** : Nano Banana 2 = 2 cr · GPT Image 2 medium = 3 cr · **GPT Image 2 high = 7 cr/image**. Ratio 3,5× vs Nano Banana 2 pour quality high.
+- **Temps de génération GPT Image 2 quality high** = ~100-150s par image (vs ~10-20s annoncés pour image standard). Nécessite 5-6 rounds de polling sync. Pour batches plus gros, prévoir cette latence.
+- **GPT Image 2 role = "image" seulement** : auto-coerce depuis "reference" mais à passer directement "image" pour les prochains batchs.
+- **CDN Shopify URL packshot expiré** : `?v=1777296328` retournait 404. Fallback via `media_upload` local réussi. Pour le pipeline Cowork 11h qui utilise l'URL CDN — risque de re-expiration à monitorer.
+
+**Patterns à abandonner (confirmé par le test)** :
+- ❌ Prompts verbeux 500-700 mots de `prompt-library.md` : pattern court court Cowork donne meilleurs résultats avec moins de friction.
+- ❌ READ winner.jpg + clone fidèle pixel-par-pixel : le mood en 1 ligne suffit, le modèle respire mieux.
+
+**À surveiller dans les prochains Feedback** :
+- Si Thomas valide les 5/5, on a un pipeline production-ready. Si Rejetée → identifier précisément quelle dimension casse (palette, typo, mise en scène, etc.) pour ajuster le meta-prompt.
+- Slug `fete-meres` à ajouter au Select Notion `Angle` si combo #3 validé.
+- Comparer à un batch équivalent en Nano Banana 2 quality équivalente pour benchmarker objectivement la préférence Thomas GPT Image 2.
+
+**Assets** : `08-ads/statics/2026-05-14-1005/` (5 PNG 2k 1:1, ~40 Mo total)
+**Notion DB** : https://www.notion.so/35ffd75e0c44809189a0ead944464f3c → vue Board by Status > À valider, tag `[REFONTE-1405]`
+
+---
+
+### Session 2026-05-13 1610 — Batch 2 fidélité-winner (20 créas refondues)
+
+**Mode** : refonte du batch 1530 en appliquant la règle fidélité-winner (mémoire `feedback-creas-fidelite-winner`).
+**Cap dur respecté** : 50 credits Higgsfield total (5 test + 15 retry batch = 20 jobs × 2).
+**Volume généré** : 20/20 (100%).
+
+**Diversité de design produite** (vs batch 1530 uniforme) :
+| # | Design type clone | Differs from batch 1530 |
+|---|---|---|
+| T1 / F19 | Chocolate-on-chocolate plâtre (clone mousse-forêt) | Background brun dominant pas bleu |
+| T2 | Split-screen 2 jars comparison | Vrai split au lieu de Typo Forte uniforme |
+| T3 | Handheld + post-it manuscrit jaune | UGC tactical pas Typo Forte propre |
+| T4 / F20 | Infographie 4 cases vs Lifestyle premium | Pédago séquentielle ET still life premium |
+| T5 | Selfie UGC influenceuse P1 cuisine | Humain incarné au lieu de carte flat |
+| F02 | UGC iPhone POV cuisine + caption jaune TikTok | UGC au lieu de Typo statement |
+| F04/F14 | Typo Forte fond CREAM | Cream variant (pas chocolate ni blue) |
+| F05 | Linen oat drape backdrop | Oat variant (pas blue, pas chocolate) |
+| F07 | Typo Forte CREAM-ON-DARK | Inverted pill cream-on-chocolate |
+| F08/F13/F15 | Packshot premium SOBER (no icons) | Honey-oak wood + 2 lignes minimal |
+| F10 | 2-column pedagogic comparison | Gamelle seule vs + Barky |
+| F11 | Typo Forte CREAM emotional | Variation sur même angle |
+| F12/F16 | Still life apothecary premium + props ingredients | Foie poulet + thym + curcuma + lavande + lin |
+| F18 | Vétérinaire en clinique + pot | Authority voice incarnée |
+
+**Patterns gagnants confirmés** :
+- ✅ Read winner.jpg + decrire structure SPÉCIFIQUE au winner = diversité réelle
+- ✅ Varier les backgrounds (chocolate / cream / oat linen / honey-oak / tricolor / kitchen marble) selon le winner précis
+- ✅ Pill inverted (cream-on-dark) marche aussi bien que (dark-on-cream)
+- ✅ Inclure des HUMAINS dans les Proofs (femme P1 cuisine, Dr véto clinique) — Nano Banana 2 gère bien
+- ✅ Sober packshot SANS icônes possible pour certains winners (product-launch)
+- ✅ Still life apothecary avec props ingredients (foie poulet/thym/curcuma) = registre Aesop premium
+
+**À surveiller** :
+- Texte FR sur 3 lignes Typo Forte : encore risque gibberish sur le 3ème mot encadré
+- Variations T1 ↔ F19 : voir si l'utilisateur préfère pot-fermé ou pot-nuages
+- Visuels avec humain (T5, F18) : qualité skin + persona age fidelity
+
+**Backlog scrapage prioritaire** (toujours actif) : Lifestyle FR maître+chien (Dog is Human, Japhy, Elmut, The Farmer's Dog, Butternut Box) + testimonials vétéran chien (Zesty Paws).
+
+**Assets** : `08-ads/statics/2026-05-13-1530/` (T1-T5 + F02-F20, 20 PNG 2k natif)
+**Notion DB** : https://www.notion.so/35ffd75e0c44809189a0ead944464f3c → vue Board by Status > À valider (tags `TEST-FIDELITE-` et `FIDELITE-`)
+
+---
+
+### Session 2026-05-13 1545 — Retour Thomas sur le batch 1530 : trop uniforme, manque de fidélité au winner
+
+**Verbatim Thomas** :
+> *« C'est malgré tout trop souvent pareil. À part le texte qui change, on va dire c'est souvent le packshot avec un titre en haut, le logo en bas ou une petite phrase en bas. Le but c'est de garder les mêmes concepts design que le produit Winner et d'avoir le même résultat avec mon produit. »*
+
+**Diagnostic** : j'ai factorisé les 20 prompts en "template par static type" (Product Hero / Typo Forte / Proof) avec juste les variables qui changent (hook, bénéfices). Résultat : 20 créas qui se ressemblent au lieu de 20 designs distincts clonés fidèlement chacun de son winner.
+
+**Le vrai mode opératoire qui aurait dû être appliqué** :
+1. Pour chaque combo de la matrice → **Read l'image du winner** correspondant
+2. Décrire structurellement la composition SPÉCIFIQUE du winner dans le prompt :
+   - Background unique (mousse vert / marbre / dépôt / split-screen / lifestyle / etc.)
+   - Présence ou absence d'humain/chien
+   - Structure de mise en scène unique
+   - Caption style spécifique
+3. Adapter à Barky **sans aplatir** la singularité du winner
+
+**Conséquence immédiate** :
+- Mémoire `feedback-creas-fidelite-winner` sauvegardée avec catalogue des 15 winners et leur composition à cloner
+- SKILL.md `/barky-creas-batch` §7 mis à jour : Read winner.jpg obligatoire avant de prompter, multi-medias autorisé pour photo lifestyle chien/humain
+- **À refaire au prochain batch** : ne plus mettre fond bleu pastel par défaut partout, varier selon le winner précis
+- Photos `01-identite/assets/photos/lifestyle/` (19 photos chien/humain dispo) à utiliser en référence multi-media quand le winner contient un sujet humain/animal
+
+---
+
+### Session 2026-05-13 1530 — Batch auto 20 créas (1er run industriel `/barky-creas-batch`)
+
+**Batch ID** : 2026-05-13-1530
+**Mode** : auto (proposé 25 → édité à 20 après application règle absolue winner-requis)
+**Coût réel** : 40 credits Higgsfield (cap dur atteint exactement)
+**Volume généré** : 20/20 (100% succès, 0 échec)
+
+**Apprentissages relus avant batch** :
+- ✅ Pattern Nano Banana 2 all-in-one + ref packshot + fond bleu pastel (v6 validé sur le principe)
+- ❌ Typo Forte fond brun pur dérive orange (v1/v2 rejetées) → toutes Typo Forte du batch en fond BLEU PASTEL
+- ❌ Python compositing exclu (rejet v3/v4) → all-in-one only
+- 🚨 Winner requis (règle absolue actée juste avant ce batch) → 8 combos `n/a` (5 Lifestyle + 3 sans testimonial) retirés de la matrice initiale
+
+**Matrice exécutée — 20 combos** :
+| # | Persona | Angle | Type | Winner | Format | Notion |
+|---|---|---|---|---|---|---|
+| 1 | P1 | ★★★ cest-lage | Product Hero | exode_problem-solution-01 | 1:1 | À valider |
+| 2 | P1 | ★★★ cest-lage | Typo Forte | exode_ugc-style | 1:1 | À valider |
+| 3 | P2 | ★★★ carences-invisibles | Product Hero | exode_problem-solution | 4:5 | À valider |
+| 4 | P2 | ★★★ carences-invisibles | Typo Forte | exode_problem-solution-01 | 1:1 | À valider |
+| 5 | P2 | ★★★ liste-complete-actifs | Product Hero | exode_problem-solution-01 | 1:1 | À valider |
+| 6 | P2 | ★★★ liste-complete-actifs | Proof | exode_testimonial-01 | 4:5 | À valider |
+| 7 | P2 | ★★★ liste-complete-actifs | Typo Forte | exode_problem-solution-01 | 1:1 | À valider |
+| 8 | P1 | ★★ signes-mobilite | Product Hero | exode_product-launch | 1:1 | À valider |
+| 9 | P1 | ★★ compl-moitie-marchent-pas | Proof | exode_testimonial-01 | 4:5 | À valider |
+| 10 | P2 | ★★ 4-nutriments-manquants | Product Hero | exode_problem-solution | 4:5 | À valider |
+| 11 | P2 | ★★ pas-tous-pareils | Typo Forte | exode_comparison | 1:1 | À valider |
+| 12 | P2 | ★★ filieres-pet-food-refusees | Product Hero | exode_problem-solution-02 | 1:1 | À valider |
+| 13 | P1 | ★★ made-in-france | Product Hero | exode_product-launch | 1:1 | À valider |
+| 14 | P1 | ★ pas-vieux-il-manque | Typo Forte | exode_problem-solution-01 | 1:1 | À valider |
+| 15 | P1 | ★ 60-bouchees-founder | Product Hero | exode_product-launch | 1:1 | À valider |
+| 16 | P2 | ★ qualite-humaine | Product Hero | exode_problem-solution-02 | 1:1 | À valider |
+| 17 | Tx | garantie-2-mois | Typo Forte | exode_promo-02 | 1:1 | À valider |
+| 18 | Tx | comite-veto | Proof | exode_testimonial-02 | 4:5 | À valider |
+| 19 | P1 | ★★★ cest-lage (var) | Product Hero | exode_problem-solution-01 | 1:1 | À valider |
+| 20 | P2 | ★★★ carences-invisibles (var) | Product Hero | exode_problem-solution | 4:5 | À valider |
+
+**Patterns intégrés depuis Feedback Notion** :
+- Tous les Typo Forte → fond bleu pastel `#CADCE4` (jamais brun pur)
+- Spell-out accents FR systématique dans prompts (é, è, ç, â, û)
+- Encadré pill brun-cream sur le mot fort de chaque hook
+- 3 bénéfices uppercase avec icônes line-art simples
+
+**À surveiller dans les prochains Feedback** :
+- Texte FR sur les Typo Forte (3 lignes au lieu de 2) — risque gibberish plus élevé
+- Testimonials (#6, #9, #18) — premier test des Proof avec carte cream et signature
+- Variation atmosphérique #19 (packshot pot-nuages) vs #1 (pot fermé bleu pastel)
+
+**Assets** : `08-ads/statics/2026-05-13-1530/` (20 PNG 2k natif, ~95 Mo total)
+**Notion DB** : https://www.notion.so/35ffd75e0c44809189a0ead944464f3c (vue Board by Status > À valider)
+
+---
+
 ### Session 2026-05-13 — RÈGLE ABSOLUE : winner requis pour toute génération
 
 **Verbatim Thomas (lors du 1er test `/barky-creas-batch` 25 combos)** :
