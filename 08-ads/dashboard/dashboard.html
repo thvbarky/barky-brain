@@ -119,29 +119,89 @@
    (entre les marqueurs). Tout le rendu est calculé à partir de DATA.
    ============================================================ */
 /*UPDATED_START*/
-const UPDATED = "2026-06-04 (seed manuel — 1re exécution auto à 12h)";
+const UPDATED = "2026-06-04 12:00";
 /*UPDATED_END*/
 
 /*DATA_START*/
-// Une ligne par jour × entité. Colonnes alignées sur ads-daily.csv.
 const DATA = [
-  {date:"2026-06-04", scope:"campaign", entity:"Barky · Trafic LP · Validation", placement:"ALL",
-   spend:28.0, impressions:7979, link_clicks:534, ctr:6.7, cpc:0.05, meta_lpv:350, meta_atc:null,
-   cost_per_atc:null, shopify_sessions:14, shopify_atc:null, orders:0, notes:"J1 — clics gonflés placement Facebook"},
-  {date:"2026-06-04", scope:"placement", entity:"Facebook", placement:"Facebook",
-   spend:null, impressions:null, link_clicks:529, ctr:12.4, cpc:0.03, meta_lpv:null, meta_atc:null,
-   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null, notes:"CTR anormal = taps fantômes (Reels?) — à isoler"},
-  {date:"2026-06-04", scope:"placement", entity:"Instagram", placement:"Instagram",
-   spend:null, impressions:null, link_clicks:null, ctr:2.4, cpc:null, meta_lpv:null, meta_atc:null,
-   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null, notes:"CTR sain"}
+  // J1 — 2026-06-03 (complet)
+  {date:"2026-06-03", scope:"campaign", entity:"Barky · Trafic LP · Validation · 2026-06", placement:"ALL",
+   spend:10.32, impressions:3635, link_clicks:96, ctr:3.33, cpc:0.11, meta_lpv:null, meta_atc:null,
+   cost_per_atc:null, shopify_sessions:42, shopify_atc:0, orders:0,
+   notes:"J1 complet — Ad3-Typo 80% budget · 42 sessions social · 0 ATC"},
+  {date:"2026-06-03", scope:"adset", entity:"Broad FR 25-60 · LP Views", placement:"ALL",
+   spend:9.58, impressions:3284, link_clicks:82, ctr:3.17, cpc:0.12, meta_lpv:null, meta_atc:null,
+   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null, notes:"LP J1"},
+  {date:"2026-06-03", scope:"adset", entity:"Broad FR 25-60 · Page Produit", placement:"ALL",
+   spend:0.74, impressions:351, link_clicks:14, ctr:4.84, cpc:0.05, meta_lpv:null, meta_atc:null,
+   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null, notes:"PDP J1 — trop peu"},
+  {date:"2026-06-03", scope:"ad", entity:"Ad3 · Typo · 5-problemes-1-formule · LP", placement:"ALL",
+   spend:8.25, impressions:2840, link_clicks:61, ctr:2.61, cpc:0.14, meta_lpv:null, meta_atc:null,
+   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null, notes:"seul signal propre ≥1k impr J1"},
+  {date:"2026-06-03", scope:"ad", entity:"Ad3 · Typo · 5-problemes-1-formule · LP", placement:"facebook",
+   spend:2.15, impressions:865, link_clicks:16, ctr:3.01, cpc:0.08, meta_lpv:null, meta_atc:null,
+   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null, notes:"CTR FB sain"},
+  {date:"2026-06-03", scope:"ad", entity:"Ad3 · Typo · 5-problemes-1-formule · LP", placement:"instagram",
+   spend:6.10, impressions:1975, link_clicks:45, ctr:2.43, cpc:0.13, meta_lpv:null, meta_atc:null,
+   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null, notes:"⭐ CTR IG 2,43% — référence compte"},
+  {date:"2026-06-03", scope:"ad", entity:"Ad8 · Video · races-poids-tiktok", placement:"facebook",
+   spend:0.56, impressions:152, link_clicks:14, ctr:15.79, cpc:0.04, meta_lpv:null, meta_atc:null,
+   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null, notes:"🚨 CTR 15.79% fantôme FB — signal initial"},
+  {date:"2026-06-03", scope:"ad", entity:"Ad1 · Lifestyle · cest-lage-reframe · PDP", placement:"facebook",
+   spend:0.61, impressions:303, link_clicks:13, ctr:5.28, cpc:0.04, meta_lpv:null, meta_atc:null,
+   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null, notes:"CTR FB limite — suspect"},
+  {date:"2026-06-03", scope:"ad", entity:"Ad1 · Lifestyle · cest-lage-reframe · PDP", placement:"instagram",
+   spend:0.13, impressions:46, link_clicks:0, ctr:0.00, cpc:null, meta_lpv:null, meta_atc:null,
+   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null, notes:"IG = 0% — signal mort"},
+  {date:"2026-06-03", scope:"ad", entity:"Ad2 · ProductHero · signes-mobilite-ete", placement:"instagram",
+   spend:0.17, impressions:24, link_clicks:3, ctr:8.33, cpc:0.09, meta_lpv:null, meta_atc:null,
+   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null, notes:"⚠️ CTR IG prometeur · n=24 trop peu"},
+  {date:"2026-06-03", scope:"ad", entity:"Ad2 · ProductHero · signes-mobilite-ete", placement:"facebook",
+   spend:0.60, impressions:266, link_clicks:4, ctr:1.50, cpc:0.15, meta_lpv:null, meta_atc:null,
+   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null, notes:"CTR FB sain"},
+
+  // J2 — 2026-06-04 (pull API 12h)
+  {date:"2026-06-04", scope:"campaign", entity:"Barky · Trafic LP · Validation · 2026-06", placement:"ALL",
+   spend:30.06, impressions:8410, link_clicks:574, ctr:12.18, cpc:0.03, meta_lpv:null, meta_atc:null,
+   cost_per_atc:null, shopify_sessions:9, shopify_atc:0, orders:0,
+   notes:"J2 pull 12h — Ad8+Copie=96.8% budget · 574 clics → 9 sessions social · 0 ATC"},
+  {date:"2026-06-04", scope:"adset", entity:"Broad FR 25-60 · LP Views", placement:"ALL",
+   spend:26.69, impressions:7601, link_clicks:519, ctr:12.13, cpc:0.03, meta_lpv:null, meta_atc:null,
+   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null, notes:"J2 LP — dominé Ad8"},
+  {date:"2026-06-04", scope:"adset", entity:"Broad FR 25-60 · Page Produit", placement:"ALL",
+   spend:3.37, impressions:809, link_clicks:55, ctr:12.61, cpc:0.03, meta_lpv:null, meta_atc:null,
+   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null, notes:"J2 PDP — Ad8-Copie domine"},
+  {date:"2026-06-04", scope:"ad", entity:"Ad8 · Video · races-poids-tiktok", placement:"ALL",
+   spend:25.80, impressions:7289, link_clicks:512, ctr:12.51, cpc:0.03, meta_lpv:null, meta_atc:null,
+   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null, notes:"85.8% spend J2 · CBO piégé"},
+  {date:"2026-06-04", scope:"ad", entity:"Ad8 · Video · races-poids-tiktok", placement:"facebook",
+   spend:25.73, impressions:7265, link_clicks:511, ctr:12.54, cpc:0.03, meta_lpv:null, meta_atc:null,
+   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null, notes:"🚨 CTR 12.54% FB = 511 clics fantômes"},
+  {date:"2026-06-04", scope:"ad", entity:"Ad8 · Video · races-poids-tiktok", placement:"instagram",
+   spend:0.07, impressions:24, link_clicks:1, ctr:4.17, cpc:0.07, meta_lpv:null, meta_atc:null,
+   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null, notes:"IG sain · n=24 trop peu"},
+  {date:"2026-06-04", scope:"ad", entity:"Ad8 · Video · races-poids-tiktok - Copie", placement:"facebook",
+   spend:3.30, impressions:789, link_clicks:55, ctr:12.93, cpc:0.03, meta_lpv:null, meta_atc:null,
+   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null, notes:"🚨 Copie fantôme FB · PDP adset"},
+  {date:"2026-06-04", scope:"ad", entity:"Ad3 · Typo · 5-problemes-1-formule · LP", placement:"ALL",
+   spend:0.77, impressions:281, link_clicks:7, ctr:2.85, cpc:0.10, meta_lpv:null, meta_atc:null,
+   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null, notes:"Signal propre · étouffé (3% budget)"},
+  {date:"2026-06-04", scope:"ad", entity:"Ad3 · Typo · 5-problemes-1-formule · LP", placement:"facebook",
+   spend:0.20, impressions:72, link_clicks:3, ctr:4.17, cpc:0.07, meta_lpv:null, meta_atc:null,
+   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null, notes:"CTR FB dans la norme"},
+  {date:"2026-06-04", scope:"ad", entity:"Ad3 · Typo · 5-problemes-1-formule · LP", placement:"instagram",
+   spend:0.57, impressions:209, link_clicks:4, ctr:2.39, cpc:0.11, meta_lpv:null, meta_atc:null,
+   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null, notes:"✅ CTR IG 2.39% propre · référence J2"}
 ];
 /*DATA_END*/
 
 /*DECISIONS_START*/
 const DECISIONS = [
-  {alert:true,  text:"<b>Placement Facebook = clics fantômes</b> : CTR 12,4 % @ 0,03 € (529 clics) vs Instagram 2,4 %. → demain, isoler Feed vs Reels et exclure le coupable."},
-  {alert:false, text:"<b>Ne rien couper aujourd'hui</b> — learning phase, &lt;1000 impr/créa. On laisse respirer."},
-  {alert:false, text:"Prochain point réel = <b>demain 12h</b> (1er pull auto) : classement angles + duel LP/PDP sur coût/ATC."}
+  {alert:true, text:"🚨 <b>PRIORITÉ 1 — Pause Ad8 + Ad8 Copie MAINTENANT</b> : 2e jour consécutif, 96,8% du budget sur clics fantômes Facebook. J2 = <b>29,10 € brûlés</b> (Ad8 25,80 € + Copie 3,30 €) pour 9 sessions Shopify. IDs : <code>120248464885400732</code> (Ad8) + <code>120248464880070732</code> (Copie). Le CBO ne se corrige pas seul sans suppression du signal pourri."},
+  {alert:true, text:"<b>Bilan J1+J2</b> : 40,38 € dépensés · 670 link_clicks Meta · 51 sessions Shopify social · <b>0 ATC social · 0 commande ads</b>. Coût/session J1 = 0,25 € ✅ → J2 = 3,34 € 🚨 (×13). La cause est identifiée : clics fantômes Facebook sur Ad8."},
+  {alert:false, text:"<b>Ad3 Typo 5-problemes = seul signal propre</b> : CTR IG 2,39 % (J2 · n=209) · 2,43 % (J1 · n=1975). Post-pause Ad8, le CBO devrait lui allouer ≥10 €/j automatiquement — à vérifier demain 12h."},
+  {alert:false, text:"<b>Duel LP vs PDP</b> : 0 ATC social des 2 côtés — pas tranchable. Attendre J3-J4 de trafic propre (post-pause Ad8) avant tout jugement sur la destination."},
+  {alert:false, text:"<b>Shopify global</b> : 1 ATC tous-canaux le 03/06 (non-social) + 1 le 04/06 (non-social). 1 commande 64,60 € le 02/06 pré-campagne. Aucun ATC issu du trafic Meta."}
 ];
 /*DECISIONS_END*/
 
