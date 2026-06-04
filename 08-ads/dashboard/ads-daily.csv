@@ -23,3 +23,9 @@ date,scope,entity,placement,spend_eur,impressions,reach,frequency,link_clicks,ct
 2026-06-04,ad,Ad3 · Typo · 5-problemes-1-formule · LP,facebook,0.20,72,,,3,4.17,0.07,,,,,,,,J2 FB — CTR dans la norme
 2026-06-04,ad,Ad3 · Typo · 5-problemes-1-formule · LP,instagram,0.57,209,,,4,2.39,0.11,,,,,,,,J2 IG — CTR propre · référence J2
 2026-06-04,ad,Ad1 · Lifestyle · cest-lage-reframe · PDP,ALL,0.06,18,17,1.06,0,0.00,,3.33,,,,,,,J2 — 0 clics · étouffé par CBO
+2026-06-04,campaign,Barky · Trafic LP · Validation · 2026-06,ALL (final),30.84,8660,8056,1.07,600,12.25,0.05,3.56,,,, 10,0,0,J2 FINAL journée complète — Ad8=96.8% · 30.84€ · 10 sessions Shopify · 0 ATC
+2026-06-04,adset,Broad FR 25-60 · LP Views,ALL (final),27.44,7845,7290,1.08,535,12.22,0.05,3.50,,,,,,,J2 FINAL LP adset
+2026-06-04,adset,Broad FR 25-60 · Page Produit,ALL (final),3.40,815,795,1.03,55,12.52,0.06,4.17,,,,,,,J2 FINAL PDP adset
+2026-06-04,ad,Ad8 · Video · races-poids-tiktok,ALL (final),26.55,7533,6986,1.08,527,12.60,0.05,3.52,,,,,,,J2 FINAL Ad8 — 86% budget
+2026-06-04,ad,Ad8 · Video · races-poids-tiktok,facebook (final),26.18,7509,,,526,12.62,0.03,3.49,,,,,,,J2 FINAL FB Ad8 — 99.7% spend fantômes
+2026-06-04,ad,Ad8 · Video · races-poids-tiktok - Copie,facebook (final),3.33,795,775,1.03,55,12.83,0.06,4.19,,,,,,,J2 FINAL Copie FB
