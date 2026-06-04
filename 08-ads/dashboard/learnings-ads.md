@@ -54,7 +54,7 @@
 - **Constat :** Pause Ad8 recommandée le 03/06 non exécutée. J2 (04/06) : Ad8+Copie = **29,10 €** sur 30,06 € totaux (96,8%). Bilan J1+J2 : 40,38 € dépensés · 51 sessions Shopify social · **0 ATC · 0 commande ads**. Coût/session J2 = 3,34 € (×13 vs J1). Pendant ce temps Ad3 (seul signal propre) = 0,77 € J2 (2,6% du budget).
 - **Décision (reco) :** Pause Ad8 `120248464885400732` + Copie `120248464880070732` AVANT le lancement de J3. Priorité absolue.
 - **Pourquoi :** Chaque jour sans pause = ~30 € brûlés sur Facebook fantômes avec 0 signal marketing. Ad3 est étouffé et ne peut pas générer de données de comparaison.
-- **Résultat (à compléter J+1 — 05/06) :** —
+- **Résultat — ✅ EXÉCUTÉ le 04/06 (soir) par Thomas.** Vérifié via API : Ad8 `120248464885400732` + Copie `120248464880070732` = **PAUSED / delivery off**. Les 6 créas propres (Ad3 LP+PDP, Ad1 LP+PDP, Ad2 ×2) restent ACTIVE. À surveiller J3 (05/06) : le CBO doit réallouer vers Ad3 → coût/session attendu < 0,50 € (vs 3,34 € J2).
 
 ### 2026-06-04 — Ad3 Typo 5-problemes = seule créa scorable J1+J2
 - **Constat :** Ad3 est la seule créa avec ≥1 000 impr et CTR propre : IG 2,43% (J1 / n=1975) · IG 2,39% (J2 / n=209). CTR FB sain : 3,01% (J1) · 4,17% (J2, n=72). CPC lien ~0,11-0,14 €. Aucune donnée ATC car budget trop faible pour générer du trafic qualifié en volume.
