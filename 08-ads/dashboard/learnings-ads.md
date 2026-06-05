@@ -98,16 +98,34 @@
 - **Constat :** Ad1 LP (cest-lage-reframe) atteint **1 040 impr cumul** (J2+J3). CTR J3 : 2,18 % ALL · 1,96 % FB. CPC 0,09 € = meilleur CPC du compte J3. CBO lui alloue 30 % budget.
 - **Décision :** Créa pleinement scorable. CTR > 2 % stable = zone "bon" selon la scorecard. Laisser tourner pour générer des ATC.
 - **Pourquoi :** Règle ≥ 1 000 impr respectée. Lifestyle + reframe âge ("c'est l'âge") est l'angle qui résonne le plus côté Facebook.
-- **Résultat (à compléter J4-J5 quand ATC arrivent) :** —
+- **Résultat J3 FINAL :** CTR 2,28 % ALL · FB 2,06 % (n=923 J3) · 1 228 impr cumul. Signal propre et stable. CBO réduit à 16% (vs 30% à 18h) au profit d'Ad1 PDP. Créa confirmée saine. ✅ CLÔTURÉ.
 
 ### 2026-06-05 — Ad2 LP signes-mobilite : CTR en baisse tendancielle
 - **Constat :** CTR ALL sur 3 mesures : J2 FINAL 1,81 % (n=1 218) → J3 8h 1,40 % (n=214) → J3 18h **1,32 %** (n=303). CPC 0,18 € = plus cher du compte. Tendance baissière confirmée sur 1 521 impr cumul.
 - **Décision (reco) :** Si CTR final J3 ≤ 1,5 % → recommander pause Ad2 LP à J4. Budget libéré → Ad3 LP + Ad1 LP.
 - **Pourquoi :** Tendance baissière sur 3 points de mesure consécutifs sans rebond. L'angle "signes de mobilité + été" ne génère pas d'engagement croissant. Après 1 500 impr propres, un CTR qui décline indique un angle peu différenciant.
-- **Résultat (à compléter J4 matin) :** —
+- **Résultat J3 FINAL :** CTR ALL **2,10 %** (n=334) · FB **1,61 %** (n=311) — seuil 1,5 % non atteint. Les 31 dernières impr (après 18h) ont capté 3 clics supplémentaires à 9,7% CTR sur cette tranche → rebond tardif. Pas de pause. CBO l'écarte naturellement à 7%. ✅ CLÔTURÉ.
+
+### 2026-06-05 — CBO pivote massivement vers Ad1 PDP (14 % → 35 %)
+- **Constat :** Entre le run 18h et le FINAL, le CBO a redéployé : Ad1 PDP 14 % → **35 %**, Ad1 LP 30 % → 16 %, Ad2 LP 16 % → 7 %. Ad3 LP reste leader à 41 %.
+- **Décision :** Ne pas intervenir. Laisser le CBO exprimer sa préférence J4. Si Ad1 PDP reste ≥ 30 % deux jours consécutifs → c'est la créa star du compte.
+- **Pourquoi :** Le CBO optimise sur LPV. Ad1 PDP obtient un CTR plus élevé (2,92 %) et un signal IG valide (3,82 % n=131). La page produit semble capter mieux l'intention post-clic que la landing page.
+- **Résultat (à compléter J4) :** —
+
+### 2026-06-05 — Ad1 PDP · signal IG validé · CTR 3,82 % sur n=131
+- **Constat :** Première fois qu'Ad1 PDP a assez d'impr IG (n=131) pour être scorable. CTR IG 3,82 % · CPC 0,11 €. Créa performante de façon homogène FB et IG.
+- **Décision :** Confirme que l'angle reframe-âge fonctionne en statique sur IG Feed aussi, pas uniquement Facebook. Pas de risque fantôme détecté.
+- **Pourquoi :** Les statiques sur IG ont moins de risque de tap accidentel que les vidéos portrait. CTR IG 3,82 % > CTR FB 2,82 % = créa qui sur-performe sur IG quand elle y est distribuée.
+- **Résultat (à compléter J4) :** —
+
+### 2026-06-05 — Shopify J3 total = 9 sessions (vs 59–74 J1-J2) · anomalie trafic organique
+- **Constat :** J3 total toutes sources : 9 sessions (social=6, non-social=3). J1=74, J2=59. Trafic organique/direct : ~30-46 sessions/j J1-J2 → 3 sessions J3.
+- **Décision :** Surveiller J4. Si total < 20 → investiguer source organique (post TikTok absent ? trafic direct disparu ?).
+- **Pourquoi :** Si le trafic "free" s'est tari, les futurs ATC viendront quasi-exclusivement du paid. Ratio qualité/volume plus lisible mais CAC plus élevé.
+- **Résultat (à compléter J4) :** —
 
 ### 2026-06-05 — Budget J3 lent post-pause Ad8
 - **Constat :** 4,66 € dépensés à 18h J3. Track pour ~6 € final vs 10,32 € J1. CPM plus bas (2,26 € vs 2,84 €) mais CTR normal (2 %) donc CPC réel plus élevé → le CBO dépense moins vite.
 - **Décision :** Thomas confirme le budget journalier CBO. Si ≥ 15 €/j et spend < 8 € → mini learning phase post-pause Ad8. Si budget = 10 €/j → normal.
 - **Pourquoi :** Sans créa à CTR 12 % pour capter de l'inventaire cheap en volume (Facebook Reels), le CBO dépense plus lentement mais sur des clics réels. Comportement attendu, pas une anomalie critique.
-- **Résultat (à compléter J4 matin — vérif spend J3 final) :** —
+- **Résultat J3 FINAL :** 12,79 € total — dans les clous. La mesure à 18h était simplement partielle (~36% de la journée). Budget journalier CBO semble être ~12-15 €/j. ✅ CLÔTURÉ.
