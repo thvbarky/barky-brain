@@ -1,27 +1,38 @@
 date,scope,entity,placement,spend_eur,impressions,reach,frequency,link_clicks,ctr_pct,cpc_eur,cpm_eur,meta_lpv,meta_atc,cost_per_atc_eur,shopify_sessions,shopify_atc,orders,notes
-2026-06-03,campaign,Barky · Trafic LP · Validation · 2026-06,ALL,10.32,3635,3401,1.07,96,3.33,0.11,2.84,,,,42,0,0,J1 complet — Ad3-Typo domine 80% budget · 42 sessions social Shopify · 0 ATC
+2026-06-03,campaign,Barky · Trafic LP · Validation · 2026-06,ALL,10.32,3635,3401,1.07,96,3.33,0.11,2.84,,,,42,0,0,J1 complet — Ad3-Typo 80% budget · 42 sessions social · 0 ATC social · 1 ATC total tous canaux
 2026-06-03,adset,Broad FR 25-60 · LP Views,ALL,9.58,3284,3060,1.07,82,3.17,0.12,2.92,,,,,,,LP adset J1
 2026-06-03,adset,Broad FR 25-60 · Page Produit,ALL,0.74,351,340,1.03,14,4.84,0.05,2.11,,,,,,,PDP adset J1 — trop peu pour trancher
 2026-06-03,ad,Ad3 · Typo · 5-problemes-1-formule · LP,ALL,8.25,2840,2668,1.06,61,2.61,0.14,2.90,,,,,,,seule créa ≥1000 impr J1 · signal propre
-2026-06-03,ad,Ad3 · Typo · 5-problemes-1-formule · LP,facebook,2.15,865,,,16,3.01,0.08,,,,,,,,CTR sain FB — pas fantôme
-2026-06-03,ad,Ad3 · Typo · 5-problemes-1-formule · LP,instagram,6.10,1975,,,45,2.43,0.13,,,,,,,,meilleur signal propre du compte — référence
-2026-06-03,ad,Ad8 · Video · races-poids-tiktok,facebook,0.56,152,145,1.05,14,15.79,0.04,3.68,,,,,,,CTR 15.79% fantôme · 100% Facebook — premier signal du problème
-2026-06-03,ad,Ad1 · Lifestyle · cest-lage-reframe · PDP,ALL,0.74,349,337,1.04,13,4.58,0.06,2.12,,,,,,,<1000 impr · CTR FB 5.28% limite · IG 0% · ne pas juger
-2026-06-03,ad,Ad1 · Lifestyle · cest-lage-reframe · PDP,facebook,0.61,303,,,13,5.28,0.04,,,,,,,,CTR FB limite — suspect
-2026-06-03,ad,Ad1 · Lifestyle · cest-lage-reframe · PDP,instagram,0.13,46,,,0,0.00,,,,,,,,,CTR IG = 0% · signal mort
-2026-06-03,ad,Ad2 · ProductHero · signes-mobilite-ete,ALL,0.77,290,284,1.02,7,2.07,0.11,2.66,,,,,,,<1000 impr · CTR sain · laisser tourner
-2026-06-03,ad,Ad2 · ProductHero · signes-mobilite-ete,instagram,0.17,24,,,3,8.33,0.09,,,,,,,,J1 IG — CTR sain · n=24 trop peu
-2026-06-03,ad,Ad2 · ProductHero · signes-mobilite-ete,facebook,0.60,266,,,4,1.50,0.15,,,,,,,,J1 FB — CTR sain
-2026-06-04,campaign,Barky · Trafic LP · Validation · 2026-06,ALL,33.58,9405,8810,1.07,662,12.38,0.03,3.57,,,,12,0,0,J2 run 18h · Ad8+Copie PAUSED ✅ · 32.60€ fantômes (97.1%) · 0.98€ clean · 12s social · 56s total · 3 ATC non-social
-2026-06-04,adset,Broad FR 25-60 · LP Views,ALL,29.89,8537,7996,1.07,606,12.42,0.03,3.50,,,,,,,J2 18h LP adset
-2026-06-04,adset,Broad FR 25-60 · Page Produit,ALL,3.69,868,840,1.03,56,11.98,0.04,4.25,,,,,,,J2 18h PDP adset
-2026-06-04,ad,Ad8 · Video · races-poids-tiktok,facebook,28.91,8195,,,597,12.80,0.03,,,,,,,,J2 PAUSED ✅ · 100% FB fantômes
-2026-06-04,ad,Ad8 · Video · races-poids-tiktok,instagram,0.07,25,,,1,4.00,0.07,,,,,,,,J2 PAUSED · IG sain (n=25)
-2026-06-04,ad,Ad8 · Video · races-poids-tiktok - Copie,facebook,3.62,846,819,1.03,56,12.29,0.03,4.28,,,,,,,J2 PAUSED ✅ · Copie FB fantômes
-2026-06-04,ad,Ad3 · Typo · 5-problemes-1-formule · LP,ALL,0.79,285,285,1.00,7,2.81,0.10,2.77,,,,,,,J2 signal propre · 2.4% budget · étouffé
-2026-06-04,ad,Ad3 · Typo · 5-problemes-1-formule · LP,facebook,0.21,75,,,3,4.00,0.07,,,,,,,,J2 FB CTR sain (n=75)
-2026-06-04,ad,Ad3 · Typo · 5-problemes-1-formule · LP,instagram,0.58,210,,,4,2.38,0.12,,,,,,,,J2 IG CTR propre · référence J2
-2026-06-04,ad,Ad1 · Lifestyle · cest-lage-reframe · PDP,ALL,0.06,19,18,1.06,0,0.00,,3.16,,,,,,,J2 étouffé · 0 clics
-2026-06-04,ad,Ad1 · Lifestyle · cest-lage-reframe · LP,facebook,0.04,13,,,1,15.38,0.02,,,,,,,,⚠️ CTR FB 15.38% n=13 · suspect · surveiller J3
-2026-06-04,ad,Ad1 · Lifestyle · cest-lage-reframe · LP,instagram,0.03,5,,,0,0.00,,,,,,,,,étouffé IG · n=5
-2026-06-04,ad,Ad2 · ProductHero · signes-mobilite-ete,ALL,0.05,14,13,1.08,0,0.00,,3.57,,,,,,,J2 étouffé · <15 impr
+2026-06-03,ad,Ad3 · Typo · 5-problemes-1-formule · LP,facebook,2.15,865,,,16,3.01,0.08,,,,,,,,CTR FB sain — pas fantôme
+2026-06-03,ad,Ad3 · Typo · 5-problemes-1-formule · LP,instagram,6.10,1975,,,45,2.43,0.13,,,,,,,,⭐ meilleur signal propre J1 — référence compte
+2026-06-03,ad,Ad8 · Video · races-poids-tiktok,facebook,0.56,152,145,1.05,14,15.79,0.04,3.68,,,,,,,🚨 CTR 15.79% fantôme FB — premier signal problème
+2026-06-03,ad,Ad1 · Lifestyle · cest-lage-reframe · PDP,facebook,0.61,303,,,13,5.28,0.04,,,,,,,,CTR FB limite — suspect J1
+2026-06-03,ad,Ad1 · Lifestyle · cest-lage-reframe · PDP,instagram,0.13,46,,,0,0.00,,,,,,,,,CTR IG 0% — signal mort J1
+2026-06-03,ad,Ad2 · ProductHero · signes-mobilite-ete,instagram,0.17,24,,,3,8.33,0.09,,,,,,,,⚠️ CTR IG prometteur · n=24 trop peu
+2026-06-03,ad,Ad2 · ProductHero · signes-mobilite-ete,facebook,0.60,266,,,4,1.50,0.15,,,,,,,,CTR FB sain J1
+2026-06-04,campaign,Barky · Trafic LP · Validation · 2026-06,ALL,39.02,12593,11866,1.06,726,9.84,0.03,3.10,498,,,13,0,0,J2 FINAL · Ad8+Copie paused soir · 33.20€ fantômes (85%) · 5.82€ clean · CTR clean FB 1.82-2.70% ✅ · 59s total · 3 ATC total non-social
+2026-06-04,adset,Broad FR 25-60 · LP Views,ALL,33.92,10795,10233,1.05,652,10.34,0.03,3.14,449,,,,,,,J2 FINAL LP adset — 87% budget
+2026-06-04,adset,Broad FR 25-60 · Page Produit,ALL,5.10,1798,1751,1.03,74,6.84,0.04,2.84,49,,,,,,,J2 FINAL PDP adset — 13% budget
+2026-06-04,ad,Ad8 · Video · races-poids-tiktok,facebook,29.42,8309,,,1062,12.78,0.03,,,,,,,🚨 PAUSED · FB fantômes 12.78% — J2 FINAL
+2026-06-04,ad,Ad8 · Video · races-poids-tiktok,instagram,0.07,25,,,1,4.00,0.07,,,,,,,,PAUSED · IG sain n=25
+2026-06-04,ad,Ad8 · Video · races-poids-tiktok - Copie,facebook,3.71,864,,,105,12.15,0.04,,,,,,,🚨 PAUSED Copie · FB fantômes 12.15% — J2 FINAL
+2026-06-04,ad,Ad3 · Typo · 5-problemes-1-formule · LP,ALL,1.88,938,937,1.00,17,2.24,0.09,2.00,16,,,,,,,✅ signal propre J2 FINAL · 938 impr
+2026-06-04,ad,Ad3 · Typo · 5-problemes-1-formule · LP,facebook,1.22,702,,,14,1.99,0.09,,,,,,,,✅ CTR FB 1.99% SAIN J2
+2026-06-04,ad,Ad3 · Typo · 5-problemes-1-formule · LP,instagram,0.66,236,,,7,2.97,0.09,,,,,,,,✅ CTR IG 2.97% SAIN J2
+2026-06-04,ad,Ad1 · Lifestyle · cest-lage-reframe · PDP,ALL,1.38,922,884,1.04,18,1.95,0.08,1.50,15,,,,,,,J2 FINAL · 922 impr · scorable
+2026-06-04,ad,Ad1 · Lifestyle · cest-lage-reframe · PDP,facebook,1.38,914,,,18,1.97,0.08,,,,,,,,✅ CTR FB 1.97% SAIN J2
+2026-06-04,ad,Ad1 · Lifestyle · cest-lage-reframe · LP,ALL,0.41,305,300,1.02,8,3.28,0.04,1.34,7,,,,,,,J2 · CTR FB 2.70% · alerte n=13 CLÔTURÉE
+2026-06-04,ad,Ad1 · Lifestyle · cest-lage-reframe · LP,facebook,0.35,296,,,8,2.70,0.04,,,,,,,,✅ CTR FB 2.70% SAIN — alerte 15.38% était faux positif n=13
+2026-06-04,ad,Ad2 · ProductHero · signes-mobilite-ete,ALL,2.14,1218,1177,1.03,22,1.81,0.10,1.76,16,,,,,,,J2 FINAL · ≥1000 impr · SCORABLE ✅
+2026-06-04,ad,Ad2 · ProductHero · signes-mobilite-ete,facebook,2.08,1212,,,22,1.82,0.09,,,,,,,,✅ CTR FB 1.82% SAIN — scorable J2
+2026-06-05,campaign,Barky · Trafic LP · Validation · 2026-06,ALL,1.58,946,769,1.23,11,1.48,0.11,1.67,18,,,2,0,,J3 PARTIEL 8h · CTR 1.48% ✅ (↓ de 9.84%) · pause Ad8 PROUVÉE · CBO→Ad1 LP leader 42%
+2026-06-05,adset,Broad FR 25-60 · LP Views,ALL,1.26,733,660,1.11,9,1.64,0.11,1.72,15,,,,,,,J3 partiel LP adset — 80% budget propre
+2026-06-05,adset,Broad FR 25-60 · Page Produit,ALL,0.32,213,196,1.09,2,0.94,0.16,1.50,3,,,,,,,J3 partiel PDP adset — CTR 0.94% limite
+2026-06-05,ad,Ad1 · Lifestyle · cest-lage-reframe · LP,ALL,0.67,429,413,1.04,6,1.63,0.10,1.56,7,,,,,,,J3 · CBO LEADER 42% · CTR 1.63% · 734 impr cumul · <1000 impr
+2026-06-05,ad,Ad1 · Lifestyle · cest-lage-reframe · LP,facebook,0.68,442,,,8,1.81,0.09,,,,,,,,✅ CTR FB 1.81% SAIN · CBO favori J3
+2026-06-05,ad,Ad2 · ProductHero · signes-mobilite-ete,ALL,0.42,214,183,1.17,2,1.40,0.14,1.96,7,,,,,,,J3 partiel · 1722 impr cumul SCORABLE · CTR 1.40% borderline
+2026-06-05,ad,Ad2 · ProductHero · signes-mobilite-ete,facebook,0.32,212,,,3,1.42,0.11,,,,,,,,CTR FB 1.42% borderline J3
+2026-06-05,ad,Ad1 · Lifestyle · cest-lage-reframe · PDP,ALL,0.32,213,209,1.02,2,0.94,0.16,1.50,3,,,,,,,J3 partiel · 1484 impr cumul SCORABLE · CTR 0.94% limite
+2026-06-05,ad,Ad1 · Lifestyle · cest-lage-reframe · PDP,facebook,0.30,217,,,3,1.38,0.10,,,,,,,,CTR FB 1.38% borderline J3
+2026-06-05,ad,Ad3 · Typo · 5-problemes-1-formule · LP,ALL,0.20,98,81,1.21,1,2.04,0.10,2.04,1,,,,,,,⭐ CTR 2.04% · 3876 impr cumul référence · étouffé CBO J3 (13%)
+2026-06-05,ad,Ad3 · Typo · 5-problemes-1-formule · LP,facebook,0.15,87,,,1,1.15,0.15,,,,,,,,CTR FB 1.15% n=87 · surveiller étouffage CBO

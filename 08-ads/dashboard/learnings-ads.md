@@ -72,4 +72,22 @@
 - **Constat :** Ad1 · Lifestyle · cest-lage-reframe · LP — adset LP Views — FB CTR 15,38% sur 13 impr J2. CPC FB = 0,02 €. Pattern identique au signal initial de Ad8 (J1 : CTR 15,79% sur n=152). Budget J2 = 0,04 € (négligeable).
 - **Décision (reco) :** surveiller J3. Si FB CTR reste >10% avec n>100 impr → recommander pause Ad1 LP Facebook (ou toute la créa si Instagram CTR aussi nul).
 - **Pourquoi :** Ad8 présentait CTR FB 15,79% dès J1 avec n=152 → signal confirmé J2 à 12,54% avec n=7265. Le pattern se répète. 0,04 € aujourd'hui = pas urgent, mais si CBO le booste demain → risque fantôme n°2.
-- **Résultat (J+1 = 05/06 run 8h-12h) :** à compléter.
+- **Résultat J2 FINAL :** CTR FB 2,70 % sur **n=296 impr** → entité SAINE. Faux positif n=13. ✅ CLÔTURÉ.
+
+### 2026-06-05 — Pause Ad8 confirmée · CTR compte 9,84 % → 1,48 %
+- **Constat :** J3 partiel 8h avec Ad8+Copie à 0€ : CTR campagne **1,48 %** (vs 9,84 % J2 final). Tous CTR FB sains : Ad1 LP 1,81 % · Ad2 LP 1,42 % · Ad1 PDP 1,38 % · Ad3 LP 1,15 % (n=87). CPC 0,11 € (clics réels).
+- **Décision :** Ne jamais réactiver Ad8 ou toute vidéo portrait sur un objectif Trafic/LPV. Si vidéo portrait à tester → adset Instagram-only ou objectif ATC.
+- **Pourquoi :** La vidéo portrait sur Facebook Reels génère des taps accidentels comptés comme link_clicks. Pattern universel confirmé sur 3 jours consécutifs. Pas corrigeable par le ciblage.
+- **Résultat (J3 fin journée 18h) :** à compléter.
+
+### 2026-06-05 — CBO convergence post-pause · Ad1 LP = favori inattendu
+- **Constat :** J3 8h : CBO alloue Ad1 LP 42 % / Ad2 LP 27 % / Ad1 PDP 20 % / Ad3 LP 13 %. Ad3 était la référence CTR (2-2,9 % FB stable J1+J2) mais reçoit le moins de budget.
+- **Décision :** Ne pas intervenir. Laisser Ad1 LP atteindre ≥1 000 impr (734 cumul à 8h) avant de juger. Si CTR se confirme → CBO a raison. Surveiller au run 12h.
+- **Pourquoi :** Le CBO optimise sur LPV (objectif campagne). Ad1 LP montre CTR propre et LPV élevé (LPV/click ratio à surveiller). Le CBO peut avoir un signal qualité non visible dans CTR seul.
+- **Résultat (à compléter J3 18h) :** —
+
+### 2026-06-05 — Ad2 LP + Ad1 PDP scorables (≥1 000 impr)
+- **Constat :** Ad2 LP (signes-mobilite-ete) : 1 722 impr cumul · CTR FB 1,82 % J2 FINAL. Ad1 PDP (cest-lage-reframe) : 1 484 impr cumul · CTR FB 1,97 % J2 FINAL.
+- **Décision :** Les 2 entités sont saines. Pas de raison de couper. Attendre premier ATC social pour trancher l'angle et LP vs PDP.
+- **Pourquoi :** CTR FB stable 1,8-2 % sur 2 jours consécutifs. CPC 0,08-0,10 €. Signal propre confirmé.
+- **Résultat (à compléter J4-J5 quand ATC arrivent) :** —
