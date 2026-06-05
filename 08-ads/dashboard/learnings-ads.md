@@ -78,16 +78,36 @@
 - **Constat :** J3 partiel 8h avec Ad8+Copie à 0€ : CTR campagne **1,48 %** (vs 9,84 % J2 final). Tous CTR FB sains : Ad1 LP 1,81 % · Ad2 LP 1,42 % · Ad1 PDP 1,38 % · Ad3 LP 1,15 % (n=87). CPC 0,11 € (clics réels).
 - **Décision :** Ne jamais réactiver Ad8 ou toute vidéo portrait sur un objectif Trafic/LPV. Si vidéo portrait à tester → adset Instagram-only ou objectif ATC.
 - **Pourquoi :** La vidéo portrait sur Facebook Reels génère des taps accidentels comptés comme link_clicks. Pattern universel confirmé sur 3 jours consécutifs. Pas corrigeable par le ciblage.
-- **Résultat (J3 fin journée 18h) :** à compléter.
+- **Résultat (J3 18h FINAL) :** CTR campagne 1,48 % (8h) → **2,03 % (18h)** — stabilisation confirmée. Tous FB CTR sains (1,91-2,01 %). Budget 4,66 € · 2 064 impr · CPC 0,11 €. ✅ CLÔTURÉ.
 
 ### 2026-06-05 — CBO convergence post-pause · Ad1 LP = favori inattendu
 - **Constat :** J3 8h : CBO alloue Ad1 LP 42 % / Ad2 LP 27 % / Ad1 PDP 20 % / Ad3 LP 13 %. Ad3 était la référence CTR (2-2,9 % FB stable J1+J2) mais reçoit le moins de budget.
 - **Décision :** Ne pas intervenir. Laisser Ad1 LP atteindre ≥1 000 impr (734 cumul à 8h) avant de juger. Si CTR se confirme → CBO a raison. Surveiller au run 12h.
 - **Pourquoi :** Le CBO optimise sur LPV (objectif campagne). Ad1 LP montre CTR propre et LPV élevé (LPV/click ratio à surveiller). Le CBO peut avoir un signal qualité non visible dans CTR seul.
-- **Résultat (à compléter J3 18h) :** —
+- **Résultat (J3 18h) :** CBO J3 18h a rééquilibré : Ad3 LP remonte à 40 % · Ad1 LP 30 % · Ad2 LP 16 % · Ad1 PDP 14 %. Le CBO semble corriger vers le meilleur CTR historique (Ad3 LP). Ad1 LP a atteint ≥ 1 000 impr cumul = SCORABLE ✅. ✅ CLÔTURÉ.
 
 ### 2026-06-05 — Ad2 LP + Ad1 PDP scorables (≥1 000 impr)
 - **Constat :** Ad2 LP (signes-mobilite-ete) : 1 722 impr cumul · CTR FB 1,82 % J2 FINAL. Ad1 PDP (cest-lage-reframe) : 1 484 impr cumul · CTR FB 1,97 % J2 FINAL.
 - **Décision :** Les 2 entités sont saines. Pas de raison de couper. Attendre premier ATC social pour trancher l'angle et LP vs PDP.
 - **Pourquoi :** CTR FB stable 1,8-2 % sur 2 jours consécutifs. CPC 0,08-0,10 €. Signal propre confirmé.
+- **Résultat (J3 18h) :** Ad1 PDP : CTR J3 2,51 % (meilleur du compte ce jour) · 1 697 impr cumul. Ad2 LP : CTR J3 1,32 % → **tendance baissière** (voir entrée ci-dessous). Duel LP vs PDP toujours sans ATC social pour trancher.
+
+---
+
+### 2026-06-05 — Ad1 LP · ≥1 000 impr confirmé · CTR 2,18 % scorable
+- **Constat :** Ad1 LP (cest-lage-reframe) atteint **1 040 impr cumul** (J2+J3). CTR J3 : 2,18 % ALL · 1,96 % FB. CPC 0,09 € = meilleur CPC du compte J3. CBO lui alloue 30 % budget.
+- **Décision :** Créa pleinement scorable. CTR > 2 % stable = zone "bon" selon la scorecard. Laisser tourner pour générer des ATC.
+- **Pourquoi :** Règle ≥ 1 000 impr respectée. Lifestyle + reframe âge ("c'est l'âge") est l'angle qui résonne le plus côté Facebook.
 - **Résultat (à compléter J4-J5 quand ATC arrivent) :** —
+
+### 2026-06-05 — Ad2 LP signes-mobilite : CTR en baisse tendancielle
+- **Constat :** CTR ALL sur 3 mesures : J2 FINAL 1,81 % (n=1 218) → J3 8h 1,40 % (n=214) → J3 18h **1,32 %** (n=303). CPC 0,18 € = plus cher du compte. Tendance baissière confirmée sur 1 521 impr cumul.
+- **Décision (reco) :** Si CTR final J3 ≤ 1,5 % → recommander pause Ad2 LP à J4. Budget libéré → Ad3 LP + Ad1 LP.
+- **Pourquoi :** Tendance baissière sur 3 points de mesure consécutifs sans rebond. L'angle "signes de mobilité + été" ne génère pas d'engagement croissant. Après 1 500 impr propres, un CTR qui décline indique un angle peu différenciant.
+- **Résultat (à compléter J4 matin) :** —
+
+### 2026-06-05 — Budget J3 lent post-pause Ad8
+- **Constat :** 4,66 € dépensés à 18h J3. Track pour ~6 € final vs 10,32 € J1. CPM plus bas (2,26 € vs 2,84 €) mais CTR normal (2 %) donc CPC réel plus élevé → le CBO dépense moins vite.
+- **Décision :** Thomas confirme le budget journalier CBO. Si ≥ 15 €/j et spend < 8 € → mini learning phase post-pause Ad8. Si budget = 10 €/j → normal.
+- **Pourquoi :** Sans créa à CTR 12 % pour capter de l'inventaire cheap en volume (Facebook Reels), le CBO dépense plus lentement mais sur des clics réels. Comportement attendu, pas une anomalie critique.
+- **Résultat (à compléter J4 matin — vérif spend J3 final) :** —
