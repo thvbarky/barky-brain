@@ -159,3 +159,17 @@
 - **Décision (reco) :** Exclure Instagram des placements pour (1) `Ad2 · ProductHero · signes-mobilite-ete` et (2) `Ad3 · Typo · 5-problemes-1-formule · LP`. FB reste actif pour les deux (CTR FB sain : Ad2 FB 2,90 % · Ad3 LP FB 2,17 %). Impact estimé : ~4,33 €/j réalloués vers du trafic qualifié.
 - **Pourquoi :** Le CBO alloue 78 % du budget Ad2 sur IG (3,51 €/4,45 €) avec CPM 6,24 € — soit ~3× plus cher que FB. Ad3 LP IG brüle 0,82 € pour 2 clics à CPC 0,41 €. Ces deux exclusions IG sont le pendant des "placements fantômes" découverts avec Ad8 — même mécanisme, forme moins extrême mais tout aussi inefficace à l'échelle.
 - **Résultat (à compléter J5) :** —
+
+---
+
+### 2026-06-06 — Ad2 IG · CBO escalade post non-action · piège identique Ad8
+- **Constat :** Reco exclusion IG Ad2 émise à 12h, non exécutée. Run 18h : Ad2 IG = **n=1 600 impr** (×2,8 vs 562 à 12h) · CTR 3,88 % · CPM 5,68 € · budget 3,51 € → **9,09 €** (+5,58 € en 6h). CBO a escaladé Ad2 : 25,7 % → **30,7 %** du budget total. 79 % d'Ad2 part sur IG. Soit ~1,5 €/h de fantômes actifs.
+- **Décision (reco) :** Exclure IG pour Ad2 **immédiatement**. Ce n'est plus une surveillance — c'est le même piège CBO que Ad8 (J1-J2), juste à vitesse plus lente car Ad1 PDP est en compétition.
+- **Pourquoi :** J1-J2 : CBO avait réalloué 85 % budget à Ad8 en ~24h. Ad2 est sur la même trajectoire : sans event aval (ATC/Purchase), le CBO voit des link_clicks IG et pompe sans se corriger. Si non exécuté J4, Ad2 atteindra probablement 40 %+ CBO sous 24-48h.
+- **Résultat (à compléter J5) :** —
+
+### 2026-06-06 — Ad1 LP · mort naturelle CBO · décision finale
+- **Constat :** Ad1 LP = **0 €** en J4 (journée entière). CBO a complètement arrêté de lui allouer du budget.
+- **Décision :** Créa officiellement abandonnée par le CBO. Pas d'action manuelle nécessaire.
+- **Pourquoi :** L'angle reframe-âge fonctionne sur PDP (destination directe avec signal d'achat) mais pas sur la LP storytelling. Le CBO a fait la discrimination lui-même en 4 jours.
+- **Résultat :** Décision CBO finale. ✅ CLÔTURÉ.
