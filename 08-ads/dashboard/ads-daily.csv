@@ -25,18 +25,30 @@ date,scope,entity,placement,spend_eur,impressions,reach,frequency,link_clicks,ct
 2026-06-04,ad,Ad1 · Lifestyle · cest-lage-reframe · LP,facebook,0.35,296,,,8,2.70,0.04,,,,,,,,✅ CTR FB 2.70% SAIN — alerte 15.38% était faux positif n=13
 2026-06-04,ad,Ad2 · ProductHero · signes-mobilite-ete,ALL,2.14,1218,1177,1.03,22,1.81,0.10,1.76,16,,,,,,,J2 FINAL · ≥1000 impr · SCORABLE ✅
 2026-06-04,ad,Ad2 · ProductHero · signes-mobilite-ete,facebook,2.08,1212,,,22,1.82,0.09,,,,,,,,✅ CTR FB 1.82% SAIN — scorable J2
-2026-06-05,campaign,Barky · Trafic LP · Validation · 2026-06,ALL,12.79,4556,4201,1.08,107,2.35,0.12,2.81,85,,,6,0,0,J3 FINAL · CTR 2.35% ✅ · Ad1 PDP CBO 35% ↑↑ · Ad3 LP 41% · 6s social · 9s total · 0 ATC
-2026-06-05,adset,Broad FR 25-60 · LP Views,ALL,8.32,3185,3072,1.04,67,2.10,0.12,2.61,59,,,,,,J3 FINAL LP adset 65% budget · CTR 2.10% ✅
-2026-06-05,adset,Broad FR 25-60 · Page Produit,ALL,4.47,1371,1232,1.11,40,2.92,0.11,3.26,24,,,,,,J3 FINAL PDP adset 35% budget ↑↑ · CTR 2.92% ⭐
-2026-06-05,ad,Ad3 · Typo · 5-problemes-1-formule · LP,ALL,5.28,1928,1847,1.04,39,2.02,0.14,2.74,,,,,,⭐ CBO leader J3 41% · CTR 2.02% ✅ · 5706 impr cumul
-2026-06-05,ad,Ad3 · Typo · 5-problemes-1-formule · LP,facebook,3.33,1285,,,28,2.18,0.12,,,,,,✅ FB 2.18% sain
-2026-06-05,ad,Ad3 · Typo · 5-problemes-1-formule · LP,instagram,1.95,643,,,11,1.71,0.18,,,,,,✅ IG 1.71% sain
-2026-06-05,ad,Ad1 · Lifestyle · cest-lage-reframe · PDP,ALL,4.47,1371,1232,1.11,40,2.92,0.11,3.26,,,,,,⭐ STAR J3 · CBO 35% ↑↑ (était 14%) · CTR 2.92% · 2642 impr cumul
-2026-06-05,ad,Ad1 · Lifestyle · cest-lage-reframe · PDP,facebook,3.93,1240,,,35,2.82,0.11,,,,,,⭐ FB 2.82% ✅
-2026-06-05,ad,Ad1 · Lifestyle · cest-lage-reframe · PDP,instagram,0.54,131,,,5,3.82,0.11,,,,,,✅ IG 3.82% · n=131 valide
-2026-06-05,ad,Ad1 · Lifestyle · cest-lage-reframe · LP,ALL,2.11,923,903,1.02,21,2.28,0.10,2.29,,,,,,✅ CTR 2.28% · 1228 impr cumul · CBO 16%
-2026-06-05,ad,Ad1 · Lifestyle · cest-lage-reframe · LP,facebook,1.84,872,,,18,2.06,0.10,,,,,,✅ FB 2.06% sain
-2026-06-05,ad,Ad1 · Lifestyle · cest-lage-reframe · LP,instagram,0.27,51,,,3,5.88,0.09,,,,,,⚠️ IG CTR 5.88% n=51 trop petit
-2026-06-05,ad,Ad2 · ProductHero · signes-mobilite-ete,ALL,0.93,334,329,1.02,7,2.10,0.13,2.78,,,,,,🟠 CTR FINAL 2.10% · FB 1.61% borderline · CBO l'écarte 7% · 1842 impr cumul
-2026-06-05,ad,Ad2 · ProductHero · signes-mobilite-ete,facebook,0.65,311,,,5,1.61,0.13,,,,,,🟠 FB 1.61% borderline
-2026-06-05,ad,Ad2 · ProductHero · signes-mobilite-ete,instagram,0.28,23,,,2,8.70,0.14,,,,,,⚠️ IG CTR 8.70% n=23 trop petit
+2026-06-05,campaign,Barky · Trafic LP · Validation · 2026-06,ALL,27.37,8813,8206,1.07,175,2.34,0.13,3.11,,,,11,1,0,J3 VRAI FINAL (corrigé — partiel 12.79€ noté à tort) · PREMIER ATC social 🎯 · CTR 2.34% ✅ · Ad1 PDP CBO 55.8% ↑↑ · 16s total · 11s social
+2026-06-05,adset,Broad FR 25-60 · LP Views,ALL,12.09,4223,4055,1.04,79,2.18,0.13,2.86,,,,,,,J3 VRAI · LP 44.2% budget · CTR 2.18% ✅
+2026-06-05,adset,Broad FR 25-60 · Page Produit,ALL,15.28,4590,4302,1.07,96,2.48,0.13,3.33,,,,,,,J3 VRAI · PDP 55.8% budget ↑↑ · CTR 2.48% ⭐ · Ad1 PDP seul
+2026-06-05,ad,Ad3 · Typo · 5-problemes-1-formule · LP,ALL,5.31,1937,1862,1.04,35,2.01,0.14,2.74,,,,,,,J3 VRAI · CTR 2.01% ✅ · CBO 19.4% · 5715 impr cumul
+2026-06-05,ad,Ad3 · Typo · 5-problemes-1-formule · LP,facebook,3.36,1295,,,28,2.16,0.12,2.59,,,,,,,✅ FB 2.16% sain
+2026-06-05,ad,Ad3 · Typo · 5-problemes-1-formule · LP,instagram,1.95,642,,,11,1.71,0.18,3.04,,,,,,,✅ IG 1.71% sain
+2026-06-05,ad,Ad1 · Lifestyle · cest-lage-reframe · PDP,ALL,15.28,4590,4302,1.07,96,2.48,0.13,3.33,,,,,,,⭐ STAR J3 VRAI · CBO 55.8% ↑↑ (noté 35% à 18h) · CTR 2.48% · ~5861 impr cumul
+2026-06-05,ad,Ad1 · Lifestyle · cest-lage-reframe · PDP,facebook,11.06,3537,,,88,2.49,0.13,3.13,,,,,,,⭐ FB 2.49% ✅
+2026-06-05,ad,Ad1 · Lifestyle · cest-lage-reframe · PDP,instagram,4.22,1053,,,26,2.47,0.16,4.01,,,,,,,✅ IG 2.47% · signal solide
+2026-06-05,ad,Ad1 · Lifestyle · cest-lage-reframe · LP,ALL,5.13,1819,1725,1.05,33,2.20,0.13,2.82,,,,,,,✅ CTR 2.20% · CBO 18.7% · ~3047 impr cumul
+2026-06-05,ad,Ad1 · Lifestyle · cest-lage-reframe · LP,facebook,3.87,1540,,,31,2.01,0.12,2.51,,,,,,,✅ FB 2.01% sain
+2026-06-05,ad,Ad1 · Lifestyle · cest-lage-reframe · LP,instagram,1.26,279,,,9,3.23,0.14,4.52,,,,,,,✅ IG 3.23% (n=279)
+2026-06-05,ad,Ad2 · ProductHero · signes-mobilite-ete,ALL,1.65,467,451,1.04,11,2.78,0.13,3.53,,,,,,,🟠 CTR global 2.78% · FB 1.39% borderline · IG 7.48% ⚠️ n=107 · CBO 6%
+2026-06-05,ad,Ad2 · ProductHero · signes-mobilite-ete,facebook,0.80,360,,,5,1.39,0.16,2.22,,,,,,,🟠 FB 1.39% borderline
+2026-06-05,ad,Ad2 · ProductHero · signes-mobilite-ete,instagram,0.85,107,,,8,7.48,0.11,7.94,,,,,,,⚠️ IG 7.48% n=107 · CPM 7.94€ anormal
+2026-06-06,campaign,Barky · Trafic LP · Validation · 2026-06,ALL,4.67,1176,1038,1.13,27,2.55,0.16,3.97,,,,1,0,0,J4 PARTIEL 8h · CTR 2.55% ✅ · Ad1 PDP 56.5% · Ad1 LP 0€ écarté · Ad2 remonte 22.9%
+2026-06-06,adset,Broad FR 25-60 · LP Views,ALL,2.03,479,449,1.07,9,2.30,0.18,4.24,,,,,,,J4 partiel · LP 43.5% · CTR 2.30% ✅
+2026-06-06,adset,Broad FR 25-60 · Page Produit,ALL,2.64,697,588,1.19,18,2.73,0.14,3.79,,,,,,,J4 partiel · PDP 56.5% ↑↑ · CTR 2.73% ⭐
+2026-06-06,ad,Ad3 · Typo · 5-problemes-1-formule · LP,ALL,0.96,247,247,1.00,3,1.21,0.32,3.89,,,,,,,⚠️ CTR 1.21% (n=247) ↓ · IG 1.00% (n=201) 🔴 borderline · CBO 20.6%
+2026-06-06,ad,Ad3 · Typo · 5-problemes-1-formule · LP,facebook,0.14,46,,,1,2.17,0.14,3.04,,,,,,,✅ FB 2.17% sain (n=46)
+2026-06-06,ad,Ad3 · Typo · 5-problemes-1-formule · LP,instagram,0.82,201,,,2,1.00,0.41,4.08,,,,,,,⚠️ IG 1.00% n=201 · CPC 0.41€ ↑↑
+2026-06-06,ad,Ad1 · Lifestyle · cest-lage-reframe · PDP,ALL,2.64,697,588,1.19,18,2.73,0.14,3.79,,,,,,,⭐ J4 · CBO 56.5% · CTR 2.73% · FB 3.78% ⭐
+2026-06-06,ad,Ad1 · Lifestyle · cest-lage-reframe · PDP,facebook,1.01,291,,,11,3.78,0.09,3.46,,,,,,,⭐ FB 3.78% excellent · CPC 0.09€
+2026-06-06,ad,Ad1 · Lifestyle · cest-lage-reframe · PDP,instagram,1.63,406,,,8,1.97,0.20,4.02,,,,,,,✅ IG 1.97% sain
+2026-06-06,ad,Ad2 · ProductHero · signes-mobilite-ete,ALL,1.07,232,223,1.04,6,3.45,0.13,4.61,,,,,,,⚠️ CTR global 3.45% · IG 5.21% (n=96) suspect · CBO 22.9% ↑↑
+2026-06-06,ad,Ad2 · ProductHero · signes-mobilite-ete,facebook,0.38,136,,,3,2.21,0.13,2.80,,,,,,,✅ FB 2.21% sain
+2026-06-06,ad,Ad2 · ProductHero · signes-mobilite-ete,instagram,0.69,96,,,5,5.21,0.14,7.18,,,,,,,⚠️ IG 5.21% n=96 · 2e jour · CPM 7.18€ · pattern suspect

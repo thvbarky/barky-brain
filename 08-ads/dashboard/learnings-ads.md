@@ -128,4 +128,36 @@
 - **Constat :** 4,66 € dépensés à 18h J3. Track pour ~6 € final vs 10,32 € J1. CPM plus bas (2,26 € vs 2,84 €) mais CTR normal (2 %) donc CPC réel plus élevé → le CBO dépense moins vite.
 - **Décision :** Thomas confirme le budget journalier CBO. Si ≥ 15 €/j et spend < 8 € → mini learning phase post-pause Ad8. Si budget = 10 €/j → normal.
 - **Pourquoi :** Sans créa à CTR 12 % pour capter de l'inventaire cheap en volume (Facebook Reels), le CBO dépense plus lentement mais sur des clics réels. Comportement attendu, pas une anomalie critique.
-- **Résultat J3 FINAL :** 12,79 € total — dans les clous. La mesure à 18h était simplement partielle (~36% de la journée). Budget journalier CBO semble être ~12-15 €/j. ✅ CLÔTURÉ.
+- **Résultat J3 VRAI FINAL :** **27,37 €** (pas 12,79 € — la mesure "FINAL" J3 était un snapshot partiel mi-journée). Le CBO a continué le soir. → Voir entrée ci-dessous.
+
+---
+
+### 2026-06-05 — RÈGLE : ne jamais tagger FINAL un run en cours de journée
+- **Constat :** Le run précédent a taggé "J3 FINAL" à ~12,79 € (snapshot probablement en après-midi). L'API Meta J3 confirmé le lendemain = **27,37 €** (8 813 impr · CTR 2,34 %). Ad1 PDP est passé de 35 % (18h) à **55,8 %** en fin de soirée.
+- **Décision :** **FINAL = uniquement le lendemain matin** quand le spend de la veille est confirmé stable (pas de nouvelles impr depuis >8h). Tagger "(partiel HHh)" pendant la journée.
+- **Pourquoi :** Le CBO réalloue régulièrement en fin de soirée sur des créneaux d'enchères cheap. Un snapshot 18h ≠ FINAL.
+- **Résultat :** Règle permanente. Cumul vrai J1+J2+J3 = **76,71 €** (vs 62,13 € noté précédemment).
+
+### 2026-06-05 — PREMIER ATC SOCIAL confirmé (J3 vrai)
+- **Constat :** Shopify J3 vrai : 16 sessions total · 11 sessions social · **1 ATC social** · 0 commande. Coût/ATC social = **27,37 €** (tout le budget J3 / 1 ATC). Sans breakdown créa pixel, impossible d'attribuer l'ATC à LP ou PDP.
+- **Décision :** Milestone acté. Premier signal d'intention réelle. Cible coût/ATC ≤ 8–10 € → gap ×3 à combler. Volume social cumulé désormais = 66 sessions : le trafic paid est qualifié (les 0 ATC J1-J2 venaient du manque de volume propre post-Ad8).
+- **Pourquoi :** Le trafic direct/organique J1-J2 avait généré 4 ATC (dont 3 le J2). Le paid social est plus récent mais commence à convertir. CAC ads social à surveiller.
+- **Résultat (à compléter J4) :** 2e ATC social attendu si volume dépasse ~11 sessions social.
+
+### 2026-06-05 — Ad1 PDP · cest-lage-reframe = créa dominante du compte
+- **Constat :** CBO J3 vrai = **55,8 %** (15,28 €). Confirmé J4 partiel = **56,5 %** (2,64 €). CTR FB : 2,49 % J3 → **3,78 %** J4 ↑↑. Deux jours consécutifs avec > 50 % du budget sur cette créa.
+- **Décision :** Créa confirmée star. Ne pas intervenir. Si CBO maintient > 50 % au run 18h J4 → envisager augmenter le budget CBO pour générer 5+ ATC/semaine.
+- **Pourquoi :** Deux jours de CBO > 50 % = pas une fluctuation. L'angle "c'est l'âge reframe" + destination Page Produit est la combinaison gagnante. La PDP convertit mieux que la LP sur cet angle car le propriétaire est déjà dans un état d'acceptation (pas dans le déni).
+- **Résultat (à compléter J4 FINAL) :** —
+
+### 2026-06-06 — Ad2 IG CTR élevé sur 2 jours consécutifs
+- **Constat :** Ad2 IG : **7,48 %** (n=107, J3 vrai) → **5,21 %** (n=96, J4 partiel). CPM anormal : 7–8 € vs 2–4 € normaux. FB Ad2 reste sain (1,39–2,21 %).
+- **Décision (reco) :** Surveiller J4 final. Si CTR IG > 5 % sur n > 200 impr → recommander exclusion placement IG pour Ad2. Pas d'urgence à ce stade.
+- **Pourquoi :** Pas encore au niveau critique Ad8 (12 %) mais le CPM IG élevé suggère que Ad2 est distribué en IG Stories/Reels → taps accidentels. Le format ProductHero (statique dense) est moins adapté à ce placement que le Feed.
+- **Résultat (à compléter J4 FINAL) :** —
+
+### 2026-06-06 — Ad3 LP IG · CTR 1,00 % sur n=201 — premier seuil rouge scorable
+- **Constat :** Ad3 LP IG J4 partiel : CTR **1,00 %** sur n=201 impr · CPC 0,41 € (vs 0,12 € FB). Ad3 LP FB J4 reste sain : CTR **2,17 %** (n=46). En J3 vrai, Ad3 LP IG était à 1,71 % (sain).
+- **Décision (reco) :** Surveiller run 12h/18h. Si CTR IG < 1 % sur n > 400 impr → recommander exclusion placement IG pour Ad3 LP. Le FB peut continuer seul.
+- **Pourquoi :** Ad3 LP est une créa typographique dense (5 problèmes / 1 formule). Ce format résonne en Feed Facebook (lecture active) mais moins en scroll IG (lecture passive). Possible incompatibilité créa/format sur IG.
+- **Résultat (à compléter J4 FINAL) :** —

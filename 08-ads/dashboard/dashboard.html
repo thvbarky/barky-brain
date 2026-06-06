@@ -119,105 +119,161 @@
    (entre les marqueurs). Tout le rendu est calculé à partir de DATA.
    ============================================================ */
 /*UPDATED_START*/
-const UPDATED = "2026-06-05 FINAL";
+const UPDATED = "2026-06-06 08h (J4 partiel)";
 /*UPDATED_END*/
 
 /*DATA_START*/
 const DATA = [
-  // J1 — 2026-06-03 (complet)
-  {date:"2026-06-03", scope:"campaign", entity:"Barky · Trafic LP · Validation · 2026-06", placement:"ALL",
-   spend:10.32, impressions:3635, link_clicks:96, ctr:3.33, cpc:0.11, meta_lpv:null, meta_atc:null,
-   cost_per_atc:null, shopify_sessions:42, shopify_atc:0, orders:0,
-   notes:"J1 · Ad3 domine 80% budget · 42 sessions social · 0 ATC social · 1 ATC total"},
+  // J1 — 2026-06-03
+  {date:"2026-06-03",scope:"campaign",entity:"Barky · Trafic LP · Validation · 2026-06",placement:"ALL",
+   spend:10.32,impressions:3635,link_clicks:96,ctr:3.33,cpc:0.11,meta_lpv:null,meta_atc:null,
+   cost_per_atc:null,shopify_sessions:42,shopify_atc:0,orders:0,
+   notes:"J1 · Ad3 domine 80% budget · 42s social · 0 ATC social · 1 ATC total"},
 
-  // J2 — 2026-06-04 (FINAL · Ad8+Copie paused soir)
-  {date:"2026-06-04", scope:"campaign", entity:"Barky · Trafic LP · Validation · 2026-06", placement:"ALL",
-   spend:39.02, impressions:12593, link_clicks:726, ctr:9.84, cpc:0.03, meta_lpv:498, meta_atc:null,
-   cost_per_atc:null, shopify_sessions:13, shopify_atc:0, orders:0,
-   notes:"J2 FINAL · Ad8+Copie paused soir · 85% budget fantômes · 59s total · 3 ATC non-social"},
+  // J2 — 2026-06-04 (FINAL)
+  {date:"2026-06-04",scope:"campaign",entity:"Barky · Trafic LP · Validation · 2026-06",placement:"ALL",
+   spend:39.02,impressions:12593,link_clicks:726,ctr:9.84,cpc:0.03,meta_lpv:498,meta_atc:null,
+   cost_per_atc:null,shopify_sessions:13,shopify_atc:0,orders:0,
+   notes:"J2 FINAL · Ad8+Copie paused · 85% fantômes · 59s total · 3 ATC non-social"},
 
-  // J3 — 2026-06-05 (FINAL)
-  {date:"2026-06-05", scope:"campaign", entity:"Barky · Trafic LP · Validation · 2026-06", placement:"ALL",
-   spend:12.79, impressions:4556, link_clicks:107, ctr:2.35, cpc:0.12, meta_lpv:85, meta_atc:null,
-   cost_per_atc:null, shopify_sessions:6, shopify_atc:0, orders:0,
-   notes:"J3 FINAL · CTR 2.35% ✅ · Ad1 PDP CBO 35% ↑↑ · Ad3 LP 41% · 6s social · 9s total · 0 ATC"},
+  // J3 — 2026-06-05 VRAI FINAL (corrigé — le run précédent avait noté 12.79€ partiel)
+  {date:"2026-06-05",scope:"campaign",entity:"Barky · Trafic LP · Validation · 2026-06",placement:"ALL",
+   spend:27.37,impressions:8813,link_clicks:175,ctr:2.34,cpc:0.13,meta_lpv:null,meta_atc:null,
+   cost_per_atc:null,shopify_sessions:11,shopify_atc:1,orders:0,
+   notes:"J3 VRAI FINAL · 27.37€ (corrigé) · PREMIER ATC social 🎯 · Ad1 PDP 55.8% CBO · CTR 2.34%"},
 
-  {date:"2026-06-05", scope:"adset", entity:"Broad FR 25-60 · LP Views", placement:"ALL",
-   spend:8.32, impressions:3185, link_clicks:67, ctr:2.10, cpc:0.12, meta_lpv:59, meta_atc:null,
-   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null,
-   notes:"J3 FINAL LP adset 65% budget · CTR 2.10% ✅"},
+  {date:"2026-06-05",scope:"adset",entity:"Broad FR 25-60 · LP Views",placement:"ALL",
+   spend:12.09,impressions:4223,link_clicks:79,ctr:2.18,cpc:0.13,meta_lpv:null,meta_atc:null,
+   cost_per_atc:null,shopify_sessions:null,shopify_atc:null,orders:null,
+   notes:"J3 VRAI · LP 44.2% budget · CTR 2.18%"},
 
-  {date:"2026-06-05", scope:"adset", entity:"Broad FR 25-60 · Page Produit", placement:"ALL",
-   spend:4.47, impressions:1371, link_clicks:40, ctr:2.92, cpc:0.11, meta_lpv:24, meta_atc:null,
-   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null,
-   notes:"J3 FINAL PDP adset 35% budget ↑↑ · CTR 2.92% ⭐"},
+  {date:"2026-06-05",scope:"adset",entity:"Broad FR 25-60 · Page Produit",placement:"ALL",
+   spend:15.28,impressions:4590,link_clicks:96,ctr:2.48,cpc:0.13,meta_lpv:null,meta_atc:null,
+   cost_per_atc:null,shopify_sessions:null,shopify_atc:null,orders:null,
+   notes:"J3 VRAI · PDP 55.8% ↑↑ · CTR 2.48% ⭐"},
 
-  {date:"2026-06-05", scope:"ad", entity:"Ad3 · Typo · 5-problemes-1-formule · LP", placement:"ALL",
-   spend:5.28, impressions:1928, link_clicks:39, ctr:2.02, cpc:0.14, meta_lpv:null, meta_atc:null,
-   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null,
-   notes:"⭐ CBO leader J3 41% · CTR 2.02% ✅ · 5706 impr cumul"},
+  {date:"2026-06-05",scope:"ad",entity:"Ad3 · Typo · 5-problemes-1-formule · LP",placement:"ALL",
+   spend:5.31,impressions:1937,link_clicks:35,ctr:2.01,cpc:0.14,meta_lpv:null,meta_atc:null,
+   cost_per_atc:null,shopify_sessions:null,shopify_atc:null,orders:null,
+   notes:"J3 VRAI · CTR 2.01% ✅ · CBO 19.4%"},
 
-  {date:"2026-06-05", scope:"ad", entity:"Ad3 · Typo · 5-problemes-1-formule · LP", placement:"facebook",
-   spend:3.33, impressions:1285, link_clicks:28, ctr:2.18, cpc:0.12, meta_lpv:null, meta_atc:null,
-   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null, notes:"✅ FB 2.18%"},
+  {date:"2026-06-05",scope:"ad",entity:"Ad3 · Typo · 5-problemes-1-formule · LP",placement:"facebook",
+   spend:3.36,impressions:1295,link_clicks:28,ctr:2.16,cpc:0.12,meta_lpv:null,meta_atc:null,
+   cost_per_atc:null,shopify_sessions:null,shopify_atc:null,orders:null,notes:"✅ FB 2.16%"},
 
-  {date:"2026-06-05", scope:"ad", entity:"Ad3 · Typo · 5-problemes-1-formule · LP", placement:"instagram",
-   spend:1.95, impressions:643, link_clicks:11, ctr:1.71, cpc:0.18, meta_lpv:null, meta_atc:null,
-   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null, notes:"✅ IG 1.71%"},
+  {date:"2026-06-05",scope:"ad",entity:"Ad3 · Typo · 5-problemes-1-formule · LP",placement:"instagram",
+   spend:1.95,impressions:642,link_clicks:11,ctr:1.71,cpc:0.18,meta_lpv:null,meta_atc:null,
+   cost_per_atc:null,shopify_sessions:null,shopify_atc:null,orders:null,notes:"✅ IG 1.71%"},
 
-  {date:"2026-06-05", scope:"ad", entity:"Ad1 · Lifestyle · cest-lage-reframe · PDP", placement:"ALL",
-   spend:4.47, impressions:1371, link_clicks:40, ctr:2.92, cpc:0.11, meta_lpv:null, meta_atc:null,
-   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null,
-   notes:"⭐ STAR J3 · CBO 35% ↑↑ (était 14%) · CTR 2.92% · 2642 impr cumul"},
+  {date:"2026-06-05",scope:"ad",entity:"Ad1 · Lifestyle · cest-lage-reframe · PDP",placement:"ALL",
+   spend:15.28,impressions:4590,link_clicks:96,ctr:2.48,cpc:0.13,meta_lpv:null,meta_atc:null,
+   cost_per_atc:null,shopify_sessions:null,shopify_atc:null,orders:null,
+   notes:"⭐ STAR J3 VRAI · CBO 55.8% (35% noté à 18h) · CTR 2.48%"},
 
-  {date:"2026-06-05", scope:"ad", entity:"Ad1 · Lifestyle · cest-lage-reframe · PDP", placement:"facebook",
-   spend:3.93, impressions:1240, link_clicks:35, ctr:2.82, cpc:0.11, meta_lpv:null, meta_atc:null,
-   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null, notes:"⭐ FB 2.82% ✅"},
+  {date:"2026-06-05",scope:"ad",entity:"Ad1 · Lifestyle · cest-lage-reframe · PDP",placement:"facebook",
+   spend:11.06,impressions:3537,link_clicks:88,ctr:2.49,cpc:0.13,meta_lpv:null,meta_atc:null,
+   cost_per_atc:null,shopify_sessions:null,shopify_atc:null,orders:null,notes:"⭐ FB 2.49%"},
 
-  {date:"2026-06-05", scope:"ad", entity:"Ad1 · Lifestyle · cest-lage-reframe · PDP", placement:"instagram",
-   spend:0.54, impressions:131, link_clicks:5, ctr:3.82, cpc:0.11, meta_lpv:null, meta_atc:null,
-   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null,
-   notes:"✅ IG 3.82% · n=131 valide"},
+  {date:"2026-06-05",scope:"ad",entity:"Ad1 · Lifestyle · cest-lage-reframe · PDP",placement:"instagram",
+   spend:4.22,impressions:1053,link_clicks:26,ctr:2.47,cpc:0.16,meta_lpv:null,meta_atc:null,
+   cost_per_atc:null,shopify_sessions:null,shopify_atc:null,orders:null,notes:"✅ IG 2.47%"},
 
-  {date:"2026-06-05", scope:"ad", entity:"Ad1 · Lifestyle · cest-lage-reframe · LP", placement:"ALL",
-   spend:2.11, impressions:923, link_clicks:21, ctr:2.28, cpc:0.10, meta_lpv:null, meta_atc:null,
-   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null,
-   notes:"✅ CTR 2.28% · 1228 impr cumul · CBO 16%"},
+  {date:"2026-06-05",scope:"ad",entity:"Ad1 · Lifestyle · cest-lage-reframe · LP",placement:"ALL",
+   spend:5.13,impressions:1819,link_clicks:33,ctr:2.20,cpc:0.13,meta_lpv:null,meta_atc:null,
+   cost_per_atc:null,shopify_sessions:null,shopify_atc:null,orders:null,
+   notes:"✅ CTR 2.20% · CBO 18.7%"},
 
-  {date:"2026-06-05", scope:"ad", entity:"Ad1 · Lifestyle · cest-lage-reframe · LP", placement:"facebook",
-   spend:1.84, impressions:872, link_clicks:18, ctr:2.06, cpc:0.10, meta_lpv:null, meta_atc:null,
-   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null, notes:"✅ FB 2.06%"},
+  {date:"2026-06-05",scope:"ad",entity:"Ad1 · Lifestyle · cest-lage-reframe · LP",placement:"facebook",
+   spend:3.87,impressions:1540,link_clicks:31,ctr:2.01,cpc:0.12,meta_lpv:null,meta_atc:null,
+   cost_per_atc:null,shopify_sessions:null,shopify_atc:null,orders:null,notes:"✅ FB 2.01%"},
 
-  {date:"2026-06-05", scope:"ad", entity:"Ad1 · Lifestyle · cest-lage-reframe · LP", placement:"instagram",
-   spend:0.27, impressions:51, link_clicks:3, ctr:5.88, cpc:0.09, meta_lpv:null, meta_atc:null,
-   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null,
-   notes:"⚠️ IG n=51 trop petit"},
+  {date:"2026-06-05",scope:"ad",entity:"Ad1 · Lifestyle · cest-lage-reframe · LP",placement:"instagram",
+   spend:1.26,impressions:279,link_clicks:9,ctr:3.23,cpc:0.14,meta_lpv:null,meta_atc:null,
+   cost_per_atc:null,shopify_sessions:null,shopify_atc:null,orders:null,notes:"✅ IG 3.23% n=279"},
 
-  {date:"2026-06-05", scope:"ad", entity:"Ad2 · ProductHero · signes-mobilite-ete", placement:"ALL",
-   spend:0.93, impressions:334, link_clicks:7, ctr:2.10, cpc:0.13, meta_lpv:null, meta_atc:null,
-   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null,
-   notes:"🟠 CTR FINAL 2.10% · FB 1.61% borderline · CBO l'écarte 7% · 1842 impr cumul"},
+  {date:"2026-06-05",scope:"ad",entity:"Ad2 · ProductHero · signes-mobilite-ete",placement:"ALL",
+   spend:1.65,impressions:467,link_clicks:11,ctr:2.78,cpc:0.13,meta_lpv:null,meta_atc:null,
+   cost_per_atc:null,shopify_sessions:null,shopify_atc:null,orders:null,
+   notes:"🟠 FB 1.39% borderline · IG 7.48% ⚠️ n=107 · CBO 6%"},
 
-  {date:"2026-06-05", scope:"ad", entity:"Ad2 · ProductHero · signes-mobilite-ete", placement:"facebook",
-   spend:0.65, impressions:311, link_clicks:5, ctr:1.61, cpc:0.13, meta_lpv:null, meta_atc:null,
-   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null,
-   notes:"🟠 FB 1.61% borderline"},
+  {date:"2026-06-05",scope:"ad",entity:"Ad2 · ProductHero · signes-mobilite-ete",placement:"facebook",
+   spend:0.80,impressions:360,link_clicks:5,ctr:1.39,cpc:0.16,meta_lpv:null,meta_atc:null,
+   cost_per_atc:null,shopify_sessions:null,shopify_atc:null,orders:null,notes:"🟠 FB 1.39% borderline"},
 
-  {date:"2026-06-05", scope:"ad", entity:"Ad2 · ProductHero · signes-mobilite-ete", placement:"instagram",
-   spend:0.28, impressions:23, link_clicks:2, ctr:8.70, cpc:0.14, meta_lpv:null, meta_atc:null,
-   cost_per_atc:null, shopify_sessions:null, shopify_atc:null, orders:null,
-   notes:"⚠️ IG CTR 8.70% n=23 trop petit"}
+  {date:"2026-06-05",scope:"ad",entity:"Ad2 · ProductHero · signes-mobilite-ete",placement:"instagram",
+   spend:0.85,impressions:107,link_clicks:8,ctr:7.48,cpc:0.11,meta_lpv:null,meta_atc:null,
+   cost_per_atc:null,shopify_sessions:null,shopify_atc:null,orders:null,
+   notes:"⚠️ IG 7.48% n=107 · CPM 7.94€ suspect"},
+
+  // J4 — 2026-06-06 PARTIEL (run 8h)
+  {date:"2026-06-06",scope:"campaign",entity:"Barky · Trafic LP · Validation · 2026-06",placement:"ALL",
+   spend:4.67,impressions:1176,link_clicks:27,ctr:2.55,cpc:0.16,meta_lpv:null,meta_atc:null,
+   cost_per_atc:null,shopify_sessions:1,shopify_atc:0,orders:0,
+   notes:"J4 PARTIEL 8h · CTR 2.55% ✅ · Ad1 PDP 56.5% · Ad1 LP 0€ · Ad2 remonte 22.9%"},
+
+  {date:"2026-06-06",scope:"adset",entity:"Broad FR 25-60 · LP Views",placement:"ALL",
+   spend:2.03,impressions:479,link_clicks:9,ctr:2.30,cpc:0.18,meta_lpv:null,meta_atc:null,
+   cost_per_atc:null,shopify_sessions:null,shopify_atc:null,orders:null,
+   notes:"J4 partiel · LP 43.5% · CTR 2.30%"},
+
+  {date:"2026-06-06",scope:"adset",entity:"Broad FR 25-60 · Page Produit",placement:"ALL",
+   spend:2.64,impressions:697,link_clicks:18,ctr:2.73,cpc:0.14,meta_lpv:null,meta_atc:null,
+   cost_per_atc:null,shopify_sessions:null,shopify_atc:null,orders:null,
+   notes:"J4 partiel · PDP 56.5% ↑↑ · CTR 2.73% ⭐"},
+
+  {date:"2026-06-06",scope:"ad",entity:"Ad3 · Typo · 5-problemes-1-formule · LP",placement:"ALL",
+   spend:0.96,impressions:247,link_clicks:3,ctr:1.21,cpc:0.32,meta_lpv:null,meta_atc:null,
+   cost_per_atc:null,shopify_sessions:null,shopify_atc:null,orders:null,
+   notes:"⚠️ CTR 1.21% n=247 ↓ · IG 1.00% (n=201) 🔴 · CBO 20.6%"},
+
+  {date:"2026-06-06",scope:"ad",entity:"Ad3 · Typo · 5-problemes-1-formule · LP",placement:"facebook",
+   spend:0.14,impressions:46,link_clicks:1,ctr:2.17,cpc:0.14,meta_lpv:null,meta_atc:null,
+   cost_per_atc:null,shopify_sessions:null,shopify_atc:null,orders:null,notes:"✅ FB 2.17% n=46"},
+
+  {date:"2026-06-06",scope:"ad",entity:"Ad3 · Typo · 5-problemes-1-formule · LP",placement:"instagram",
+   spend:0.82,impressions:201,link_clicks:2,ctr:1.00,cpc:0.41,meta_lpv:null,meta_atc:null,
+   cost_per_atc:null,shopify_sessions:null,shopify_atc:null,orders:null,
+   notes:"⚠️ IG 1.00% n=201 🔴 · CPC 0.41€ ↑"},
+
+  {date:"2026-06-06",scope:"ad",entity:"Ad1 · Lifestyle · cest-lage-reframe · PDP",placement:"ALL",
+   spend:2.64,impressions:697,link_clicks:18,ctr:2.73,cpc:0.14,meta_lpv:null,meta_atc:null,
+   cost_per_atc:null,shopify_sessions:null,shopify_atc:null,orders:null,
+   notes:"⭐ J4 · CBO 56.5% · CTR 2.73% · FB 3.78% ⭐"},
+
+  {date:"2026-06-06",scope:"ad",entity:"Ad1 · Lifestyle · cest-lage-reframe · PDP",placement:"facebook",
+   spend:1.01,impressions:291,link_clicks:11,ctr:3.78,cpc:0.09,meta_lpv:null,meta_atc:null,
+   cost_per_atc:null,shopify_sessions:null,shopify_atc:null,orders:null,
+   notes:"⭐ FB 3.78% excellent · CPC 0.09€"},
+
+  {date:"2026-06-06",scope:"ad",entity:"Ad1 · Lifestyle · cest-lage-reframe · PDP",placement:"instagram",
+   spend:1.63,impressions:406,link_clicks:8,ctr:1.97,cpc:0.20,meta_lpv:null,meta_atc:null,
+   cost_per_atc:null,shopify_sessions:null,shopify_atc:null,orders:null,notes:"✅ IG 1.97%"},
+
+  {date:"2026-06-06",scope:"ad",entity:"Ad2 · ProductHero · signes-mobilite-ete",placement:"ALL",
+   spend:1.07,impressions:232,link_clicks:6,ctr:3.45,cpc:0.13,meta_lpv:null,meta_atc:null,
+   cost_per_atc:null,shopify_sessions:null,shopify_atc:null,orders:null,
+   notes:"⚠️ CTR global 3.45% · IG 5.21% (n=96) suspect · CBO 22.9% ↑↑"},
+
+  {date:"2026-06-06",scope:"ad",entity:"Ad2 · ProductHero · signes-mobilite-ete",placement:"facebook",
+   spend:0.38,impressions:136,link_clicks:3,ctr:2.21,cpc:0.13,meta_lpv:null,meta_atc:null,
+   cost_per_atc:null,shopify_sessions:null,shopify_atc:null,orders:null,notes:"✅ FB 2.21%"},
+
+  {date:"2026-06-06",scope:"ad",entity:"Ad2 · ProductHero · signes-mobilite-ete",placement:"instagram",
+   spend:0.69,impressions:96,link_clicks:5,ctr:5.21,cpc:0.14,meta_lpv:null,meta_atc:null,
+   cost_per_atc:null,shopify_sessions:null,shopify_atc:null,orders:null,
+   notes:"⚠️ IG 5.21% n=96 · 2e jour · CPM 7.18€"}
 ];
 /*DATA_END*/
 
 /*DECISIONS_START*/
 const DECISIONS = [
-  {alert:false, text:"✅ <b>Pause Ad8 DÉFINITIVEMENT CLÔTURÉE</b> — CTR campagne J3 FINAL : <b>2,35 %</b> (vs 9,84 % J2 fantôme). Tous CTR FB propres : Ad3 LP 2,18 % · Ad1 LP 2,06 % · Ad1 PDP 2,82 %. <b>Règle permanente : vidéo portrait → adset Instagram-only ou objectif ATC.</b>"},
-  {alert:false, text:"⭐ <b>SIGNAL CBO J3 : Ad1 PDP · 14 % → 35 % du budget</b> — Le CBO a massivement redirigé vers <em>« c'est l'âge reframe »</em> en destination Page Produit. CTR 2,92 % (⭐ STAR). CTR IG 3,82 % sur n=131 = signal valide. <b>À surveiller J4 : si CBO reste ≥ 30 % → Ad1 PDP est la créa star du compte.</b>"},
-  {alert:false, text:"✅ <b>Ad2 LP : alerte tendance baissière CLÔTURÉE</b> — CTR J3 FINAL 2,10 % (n=334), seuil 1,5 % non atteint. Pas de pause. CTR FB 1,61 % reste borderline mais le CBO l'écarte naturellement (7 % budget). Laisser tourner sans intervenir."},
-  {alert:false, text:"✅ <b>Budget J3 FINAL : 12,79 € · dans les clous</b> — La mesure à 18h (4,66 €) était partielle. FINAL = 12,79 € ≈ budget attendu post-Ad8. Aucune anomalie."},
-  {alert:true,  text:"⚠️ <b>0 ATC social · 61 sessions J1–J3 · 0 commande</b> — Volume social trop faible pour déclencher un ATC (6 sessions social J3). <b>Question Thomas :</b> augmenter le budget CBO pour atteindre ≥ 20 sessions social/j — OU passer l'objectif campagne sur <b>Purchase / ATC</b> pour forcer les événements aval ?"},
-  {alert:true,  text:"⚠️ <b>Shopify J3 total = 9 sessions (vs 59–74 J1-J2)</b> — Trafic organique/direct quasi absent J3 (3 sessions non-social). Peut être TikTok organique inactif ou anomalie de tracking. <b>À surveiller J4 : si total < 20 sessions → vérifier source trafic organique.</b>"}
+  {alert:false, text:"🎯 <b>PREMIER ATC SOCIAL — J3 vrai confirmé</b> — Shopify J3 (vrai final) : 11 sessions social · <b>1 ATC social</b> · coût/ATC = 27,37 €. Cible ≤ 8–10 € → gap ×3. Sans breakdown créa pixel, impossible d'attribuer LP vs PDP. <b>Cumul : 66 sessions social · 1 ATC · 76,71 € spend.</b>"},
+  {alert:false, text:"📊 <b>Correction J3 : vrai FINAL = 27,37 € (vs 12,79 € noté)</b> — Le run précédent avait capturé un snapshot partiel. Le CBO a continué à dépenser en soirée : Ad1 PDP est passé de 35 % (18h) à <b>55,8 %</b> en fin de journée. Règle permanente : FINAL = lendemain matin uniquement."},
+  {alert:false, text:"⭐ <b>Ad1 PDP · cest-lage-reframe = créa dominante confirmée</b> — CBO : 55,8 % J3 vrai (15,28 €) · 56,5 % J4 partiel. CTR FB : 2,49 % J3 → <b>3,78 %</b> J4 ↑↑. Signal stable sur 2 jours. <b>Reco :</b> si tendance confirmée run 18h → augmenter budget CBO pour viser 5+ ATC/sem."},
+  {alert:true,  text:"⚠️ <b>Ad3 LP · IG CTR 1,00 % sur n=201 (J4 partiel)</b> — Première créa à passer sous le seuil rouge sur un n scorable. FB reste sain (2,17 %). <b>Surveiller run 12h/18h : si CTR IG < 1 % sur n > 400 → recommander exclusion placement IG pour Ad3 LP.</b>"},
+  {alert:true,  text:"⚠️ <b>Ad2 IG · CTR 7,48 % J3 → 5,21 % J4 (n=96–107) · pattern 2 jours</b> — CPM anormal (7–8 €). Pas critique (< 12 % seuil Ad8) mais récurrent. <b>Surveiller J4 final : si CTR IG > 5 % sur n > 200 → exclure IG pour Ad2. FB Ad2 reste sain.</b>"},
+  {alert:false, text:"📉 <b>Ad1 LP · 0 € en J4</b> — CBO ne l'alloue pas ce matin (vs 18,7 % J3 vrai). Même angle que Ad1 PDP mais PDP gagne. Éjection naturelle. Pas de pause manuelle nécessaire — laisser le CBO décider."},
+  {alert:false, text:"❓ <b>Question Thomas : augmenter le budget ?</b> — À ~27 €/j, le ratio sessions social → ATC est 1/11. Pour viser 5 ATC/sem → cibler ~55 sessions social/sem → soit ~80 €/j (×3). Alternativement : passer l'objectif campagne sur <b>Purchase/ATC</b> pour forcer les events aval et améliorer l'optimisation CBO."}
 ];
 /*DECISIONS_END*/
 
