@@ -158,7 +158,7 @@
 - **Constat :** Ad2 IG CTR 4,09 % n=562 (CPM 6,24 €) + Ad3 LP IG CTR 0,99 % n=202 (CPC 0,41 €). Deux patterns distincts : Ad2 = clics accidentels sur IG Reels/Stories ; Ad3 LP = format typo très dense non lisible en scroll IG. Les deux drainent du budget sans intent.
 - **Décision (reco) :** Exclure Instagram des placements pour (1) `Ad2 · ProductHero · signes-mobilite-ete` et (2) `Ad3 · Typo · 5-problemes-1-formule · LP`. FB reste actif pour les deux (CTR FB sain : Ad2 FB 2,90 % · Ad3 LP FB 2,17 %). Impact estimé : ~4,33 €/j réalloués vers du trafic qualifié.
 - **Pourquoi :** Le CBO alloue 78 % du budget Ad2 sur IG (3,51 €/4,45 €) avec CPM 6,24 € — soit ~3× plus cher que FB. Ad3 LP IG brüle 0,82 € pour 2 clics à CPC 0,41 €. Ces deux exclusions IG sont le pendant des "placements fantômes" découverts avec Ad8 — même mécanisme, forme moins extrême mais tout aussi inefficace à l'échelle.
-- **Résultat (à compléter J5) :** —
+- **Résultat (J4 FINAL — non exécutées) :** Toujours non exécutées J4. Ad2 IG J4 FINAL = 9,48 € · CTR 3,83 % n=1 671. Ad3 LP IG = 0,82 € · CTR 0,99 % n=202. Cumul fantômes IG J3+J4 ≈ 10 €. → Campagne PAUSED J5 matin — exclusions à faire avant relance.
 
 ---
 
@@ -166,7 +166,21 @@
 - **Constat :** Reco exclusion IG Ad2 émise à 12h, non exécutée. Run 18h : Ad2 IG = **n=1 600 impr** (×2,8 vs 562 à 12h) · CTR 3,88 % · CPM 5,68 € · budget 3,51 € → **9,09 €** (+5,58 € en 6h). CBO a escaladé Ad2 : 25,7 % → **30,7 %** du budget total. 79 % d'Ad2 part sur IG. Soit ~1,5 €/h de fantômes actifs.
 - **Décision (reco) :** Exclure IG pour Ad2 **immédiatement**. Ce n'est plus une surveillance — c'est le même piège CBO que Ad8 (J1-J2), juste à vitesse plus lente car Ad1 PDP est en compétition.
 - **Pourquoi :** J1-J2 : CBO avait réalloué 85 % budget à Ad8 en ~24h. Ad2 est sur la même trajectoire : sans event aval (ATC/Purchase), le CBO voit des link_clicks IG et pompe sans se corriger. Si non exécuté J4, Ad2 atteindra probablement 40 %+ CBO sous 24-48h.
-- **Résultat (à compléter J5) :** —
+- **Résultat (J4 FINAL) :** Toujours non exécuté. Ad2 total J4 FINAL = 12,06 € / 79 % IG = **9,48 €** fantômes. CBO Ad2 = 30,1 % du budget. Campagne PAUSED J5 matin (07/06) → exclusions à faire avant toute relance.
+
+---
+
+### 2026-06-07 — J5 08h · CAMPAIGN_PAUSED inattendu
+- **Constat :** J5 matin : tous les adsets montrent `CAMPAIGN_PAUSED / delivery: campaign_off`. 0 € dépensé. Shopify J5 = 3 sessions direct, 0 social. La campagne a été mise en pause entre la fin de J4 et le run 8h J5.
+- **Décision (reco) :** (1) Vérifier si Thomas a pausé manuellement (pour faire les exclusions IG — ce serait la bonne démarche). (2) Faire les exclusions IG Ad2 + Ad3 LP. (3) Réactiver immédiatement. Chaque heure de pause = budget non dépensé ET pas de signal d'apprentissage.
+- **Pourquoi :** Si la pause est volontaire pour les exclusions → bonne pratique. Si involontaire (budget épuisé, politique Meta, erreur) → corriger en urgence.
+- **Résultat (à compléter J5 relance) :** —
+
+### 2026-06-07 — J4 FINAL : 0 ATC tous canaux · signal landing/PDP insuffisant
+- **Constat :** Shopify J4 FINAL = 21 sessions totales (9 social + 12 direct) / **0 ATC tous canaux**. Y compris le trafic direct/organique (12 sessions = visiteurs type-in/bookmark) = 0 ATC. Cumul J1→J4 : 116,81 € · 75 sessions social · 1 ATC social (J3) · 0 commande.
+- **Décision :** Pas d'action directe sur les créas. La question devient : est-ce un problème de ciblage/créa ou de la PDP/LP elle-même ?
+- **Pourquoi :** 12 sessions direct avec 0 ATC = les visiteurs qui arrivent en connaissance de cause n'achètent pas non plus. Cela pointe vers la PDP ou le prix plutôt que vers le ciblage. À surveiller post-exclusions IG quand le trafic qualifié augmentera.
+- **Résultat (à compléter J5+) :** —
 
 ### 2026-06-06 — Ad1 LP · mort naturelle CBO · décision finale
 - **Constat :** Ad1 LP = **0 €** en J4 (journée entière). CBO a complètement arrêté de lui allouer du budget.
