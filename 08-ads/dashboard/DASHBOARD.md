@@ -3,7 +3,7 @@
 > Vue humaine régénérée par `/barky-ads-daily` (reco seulement — aucune action sans validation Thomas).
 > Data brute : [`ads-daily.csv`](ads-daily.csv) · Mémoire : [`learnings-ads.md`](learnings-ads.md)
 
-**Dernière mise à jour : 2026-06-07 08h — J4 FINAL · J5 CAMPAIGN_PAUSED 🚨**
+**Dernière mise à jour : 2026-06-07 12h — J5 PAUSED confirmé · 4h sans signal · exclusions IG toujours en attente**
 
 ---
 
@@ -12,21 +12,20 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 
 ---
 
-## 🚨 CE QUI A CHANGÉ vs run 18h J4
+## 🚨 CE QUI A CHANGÉ vs run 8h J5
 
-1. **CAMPAGNE PAUSED** — J5 matin : tous les adsets = `CAMPAIGN_PAUSED / campaign_off`. 0€ dépensé aujourd'hui. Cause inconnue — peut-être Thomas qui pausait pour faire les exclusions IG.
-2. **J4 FINAL confirmé : 40,10 €** (vs 40,05 € estimé) / 11 568 impr / 299 clics / CTR 2,58 %.
-3. **Shopify J4 FINAL : 21 sessions totales** (9 social + 12 direct) / **0 ATC tous canaux** (y compris direct — pas seulement social).
-4. **Shopify J5 : 3 sessions direct** / 0 social (campagne off) / 0 ATC.
-5. Cumul J1→J4 : **116,81 €**.
+1. **CAMPAGNE TOUJOURS PAUSED à 12h** — 4h sans signal depuis le run 8h. Status `CAMPAIGN_PAUSED / campaign_off` confirmé API Meta. Les exclusions IG n'ont pas été exécutées.
+2. **J4 FINAL API confirmé : 40,12 €** (vs 40,10 € snapshot 8h) / 11 570 impr / 299 clics / CTR 2,58 %.
+3. **Shopify J5 12h : 3 sessions direct** / 0 social / 0 ATC — inchangé vs 8h.
+4. Cumul J1→J4 : **116,81 €** · 1 ATC social (J3) · 0 commande.
 
 ---
 
 ## 📊 Snapshot
 
-| Métrique | J1 (03/06) | J2 (04/06) | J3 (05/06) FINAL | J4 (06/06) FINAL | J5 (07/06) 8h |
+| Métrique | J1 (03/06) | J2 (04/06) | J3 (05/06) FINAL | J4 (06/06) FINAL | J5 (07/06) 12h |
 |---|---|---|---|---|---|
-| Spend | 10,32 € | 39,02 € 🚨 | 27,37 € ✅ | **40,10 €** | **0 € 🚨 PAUSED** |
+| Spend | 10,32 € | 39,02 € 🚨 | 27,37 € ✅ | **40,12 €** | **0 € 🚨 PAUSED** |
 | CTR | 3,33 % | 9,84 % 🚨 | 2,34 % ✅ | 2,58 % ✅ | — |
 | Sessions social | 42 | 13 | 11 | 9 | 0 |
 | Sessions total | 74 | 59 | 16 | 21 | 3 (direct) |

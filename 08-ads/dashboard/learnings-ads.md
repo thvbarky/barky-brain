@@ -174,7 +174,7 @@
 - **Constat :** J5 matin : tous les adsets montrent `CAMPAIGN_PAUSED / delivery: campaign_off`. 0 € dépensé. Shopify J5 = 3 sessions direct, 0 social. La campagne a été mise en pause entre la fin de J4 et le run 8h J5.
 - **Décision (reco) :** (1) Vérifier si Thomas a pausé manuellement (pour faire les exclusions IG — ce serait la bonne démarche). (2) Faire les exclusions IG Ad2 + Ad3 LP. (3) Réactiver immédiatement. Chaque heure de pause = budget non dépensé ET pas de signal d'apprentissage.
 - **Pourquoi :** Si la pause est volontaire pour les exclusions → bonne pratique. Si involontaire (budget épuisé, politique Meta, erreur) → corriger en urgence.
-- **Résultat (à compléter J5 relance) :** —
+- **Résultat (12h confirmé) :** PAUSED toujours actif à 12h — 4h sans changement depuis le run 8h. API Meta confirme 0 € dépensé J5. Shopify J5 12h = 3 sessions direct, 0 social, 0 ATC. J4 spend confirmé API = 40,12 € (vs 40,10 € snapshot). Les exclusions IG n'ont pas été exécutées. → Résultat définitif à compléter au run 18h ou dès relance.
 
 ### 2026-06-07 — J4 FINAL : 0 ATC tous canaux · signal landing/PDP insuffisant
 - **Constat :** Shopify J4 FINAL = 21 sessions totales (9 social + 12 direct) / **0 ATC tous canaux**. Y compris le trafic direct/organique (12 sessions = visiteurs type-in/bookmark) = 0 ATC. Cumul J1→J4 : 116,81 € · 75 sessions social · 1 ATC social (J3) · 0 commande.
