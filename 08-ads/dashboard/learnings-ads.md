@@ -174,13 +174,19 @@
 - **Constat :** J5 matin : tous les adsets montrent `CAMPAIGN_PAUSED / delivery: campaign_off`. 0 € dépensé. Shopify J5 = 3 sessions direct, 0 social. La campagne a été mise en pause entre la fin de J4 et le run 8h J5.
 - **Décision (reco) :** (1) Vérifier si Thomas a pausé manuellement (pour faire les exclusions IG — ce serait la bonne démarche). (2) Faire les exclusions IG Ad2 + Ad3 LP. (3) Réactiver immédiatement. Chaque heure de pause = budget non dépensé ET pas de signal d'apprentissage.
 - **Pourquoi :** Si la pause est volontaire pour les exclusions → bonne pratique. Si involontaire (budget épuisé, politique Meta, erreur) → corriger en urgence.
-- **Résultat (12h confirmé) :** PAUSED toujours actif à 12h — 4h sans changement depuis le run 8h. API Meta confirme 0 € dépensé J5. Shopify J5 12h = 3 sessions direct, 0 social, 0 ATC. J4 spend confirmé API = 40,12 € (vs 40,10 € snapshot). Les exclusions IG n'ont pas été exécutées. → Résultat définitif à compléter au run 18h ou dès relance.
+- **Résultat (18h FINAL) :** Toujours PAUSED à 18h — **24h+ de pause totale**. API Meta : 0 € J5. Shopify J5 18h = 4 sessions direct, 0 social, 0 ATC. Les exclusions IG n'ont toujours pas été exécutées. J4 FINAL API = 40,12 € confirmé. Signal supplémentaire : 0 ATC organique sur 4 sessions directes = le problème est l'acquisition qualifiée, pas la page seule. Risque croissant de reset learning phase si pause > 3 jours. ✅ CLÔTURÉ (à réouvrir si relance ne survient pas J6).
 
 ### 2026-06-07 — J4 FINAL : 0 ATC tous canaux · signal landing/PDP insuffisant
 - **Constat :** Shopify J4 FINAL = 21 sessions totales (9 social + 12 direct) / **0 ATC tous canaux**. Y compris le trafic direct/organique (12 sessions = visiteurs type-in/bookmark) = 0 ATC. Cumul J1→J4 : 116,81 € · 75 sessions social · 1 ATC social (J3) · 0 commande.
 - **Décision :** Pas d'action directe sur les créas. La question devient : est-ce un problème de ciblage/créa ou de la PDP/LP elle-même ?
 - **Pourquoi :** 12 sessions direct avec 0 ATC = les visiteurs qui arrivent en connaissance de cause n'achètent pas non plus. Cela pointe vers la PDP ou le prix plutôt que vers le ciblage. À surveiller post-exclusions IG quand le trafic qualifié augmentera.
-- **Résultat (à compléter J5+) :** —
+- **Résultat (J5 18h) :** J5 direct : 4 sessions, 0 ATC. Confirme le pattern : même les visiteurs "chauds" (type-in/bookmark) ne passent pas en ATC. Signal mixte : peut être volume trop bas (4 sessions) ou friction PDP. Priorité = relancer d'abord, investiguer PDP si le coût/ATC reste > 15 € après 200+ sessions qualifiées. ✅ CLÔTURÉ.
+
+### 2026-06-07 — Créas jamais tournées détectées dans le compte (Ad4/5/6/7 + v2)
+- **Constat :** API révèle 13+ entités ad à 0 impr avec `effective_status: CAMPAIGN_PAUSED` : Ad4 Typo 17-vitamines-manquantes, Ad5 ProductHero signes-mobilite v2, Ad6 Lifestyle pas-vieux-il-manque, Ad7 ProductHero liste-actifs-P2, et variantes v2 d'Ad2/Ad3 (Typo, Lifestyle). Toutes ACTIVE mais bloquées par la pause campagne.
+- **Décision :** Ne pas les activer simultanément à la relance. Laisser le CBO actuel (Ad1 PDP + Ad2 FB + Ad3 LP FB) exprimer ses préférences post-exclusions IG d'abord. Si coût/ATC stagne > 15 € après 5 jours de trafic propre → introduire 1 nouvelle créa.
+- **Pourquoi :** Introduire 5+ nouvelles créas en même temps fragmente le signal CBO et rallonge la période d'apprentissage. L'ordre est : (1) nettoyer les placements fantômes, (2) mesurer le coût/ATC propre, (3) challenger les angles.
+- **Résultat (à compléter) :** —
 
 ### 2026-06-06 — Ad1 LP · mort naturelle CBO · décision finale
 - **Constat :** Ad1 LP = **0 €** en J4 (journée entière). CBO a complètement arrêté de lui allouer du budget.
