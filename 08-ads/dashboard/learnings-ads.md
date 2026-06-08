@@ -193,3 +193,11 @@
 - **Décision :** Créa officiellement abandonnée par le CBO. Pas d'action manuelle nécessaire.
 - **Pourquoi :** L'angle reframe-âge fonctionne sur PDP (destination directe avec signal d'achat) mais pas sur la LP storytelling. Le CBO a fait la discrimination lui-même en 4 jours.
 - **Résultat :** Décision CBO finale. ✅ CLÔTURÉ.
+
+---
+
+### 2026-06-08 — Pause 48h+ confirmée · risque reset learning critique
+- **Constat :** J6 (08/06, run 8h) : campagne toujours `CAMPAIGN_PAUSED` — API Meta confirme `effective_status: PAUSED` sur les 2 campagnes du compte. 0 € J5 (07/06 full day) + 0 € J6 (08/06 partiel 8h). Shopify J5 FINAL = **5 sessions direct** / 0 ATC. Shopify J6 = 2 sessions direct / 0 ATC. Pause cumulative : **48h+**. Exclusions IG Ad2 + Ad3 LP toujours non exécutées.
+- **Décision (reco) :** Relancer **aujourd'hui** (08/06) — ordre impératif : (1) exclure IG sur `Ad2 · ProductHero · signes-mobilite-ete`, (2) exclure IG sur `Ad3 · Typo · 5-problemes-1-formule · LP`, (3) réactiver la campagne. Si pause passe >72h (09/06 matin) → mini-learning inévitable, 100–150 impr/créa avant de juger la réallocation CBO.
+- **Pourquoi :** Meta CBO sort de learning sur la régularité des dépenses. Au-delà de ~3 jours de pause, les algorithmes d'attribution de budget redémarrent quasi-intégralement. Ad1 PDP reste le favori établi — devrait récupérer ~50–70 % CBO rapidement post-relance.
+- **Résultat (à compléter) :** —

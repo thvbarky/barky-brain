@@ -3,7 +3,7 @@
 > Vue humaine régénérée par `/barky-ads-daily` (reco seulement — aucune action sans validation Thomas).
 > Data brute : [`ads-daily.csv`](ads-daily.csv) · Mémoire : [`learnings-ads.md`](learnings-ads.md)
 
-**Dernière mise à jour : 2026-06-07 18h — J5 PAUSED full day · 24h+ sans signal · URGENCE relance**
+**Dernière mise à jour : 2026-06-08 08h — J6 partiel · CAMPAIGN_PAUSED 48h+ · URGENCE MAXIMALE**
 
 ---
 
@@ -12,35 +12,36 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 
 ---
 
-## 🚨 CE QUI A CHANGÉ vs run 12h J5
+## 🚨 CE QUI A CHANGÉ vs run 18h J5
 
-1. **Campagne toujours PAUSED à 18h** — confirmée 8h / 12h / 18h. Maintenant **24h+ sans budget**.
-2. **Shopify J5 18h : 4 sessions direct** (vs 3 à 12h) / 0 social / 0 ATC.
-3. **0 ATC organique sur 4 sessions directes** — confirme que le problème n'est pas la page seule mais l'acquisition qualifiée.
-4. Aucune nouvelle créa activée, aucune exclusion IG effectuée.
+1. **Campagne TOUJOURS PAUSED — J6 (08/06) confirmé 0 € dépensé.** Maintenant **48h+ sans budget**.
+2. **Shopify J5 FINAL : 5 sessions direct** (vs 4 estimé à 18h) / 0 social / 0 ATC — confirmé.
+3. **Shopify J6 partiel 8h : 2 sessions direct**, 0 social, 0 ATC.
+4. **Risque reset learning phase quasi-certain** si pause dépasse 72h (demain matin 09/06).
+5. Aucune exclusion IG effectuée. Aucune relance.
 
 ---
 
 ## 📊 Snapshot
 
-| Métrique | J1 (03/06) | J2 (04/06) | J3 (05/06) FINAL | J4 (06/06) FINAL | J5 (07/06) 18h FINAL |
-|---|---|---|---|---|---|
-| Spend | 10,32 € | 39,02 € 🚨 | 27,37 € ✅ | **40,12 €** | **0 € 🚨 PAUSED** |
-| CTR | 3,33 % | 9,84 % 🚨 | 2,34 % ✅ | 2,58 % ✅ | — |
-| Sessions social | 42 | 13 | 11 | 9 | 0 |
-| Sessions total | 74 | 59 | 16 | 21 | 4 (direct) |
-| ATC social | 0 | 0 | **1 🎯** | 0 | 0 |
-| Commandes | 0 | 0 | 0 | 0 | 0 |
+| Métrique | J3 (05/06) FINAL | J4 (06/06) FINAL | J5 (07/06) FINAL | J6 (08/06) partiel 8h |
+|---|---|---|---|---|
+| Spend | 27,37 € ✅ | **40,12 €** | **0 € 🚨 PAUSED** | **0 € 🚨 PAUSED** |
+| CTR | 2,34 % ✅ | 2,58 % ✅ | — | — |
+| Sessions social | 11 | 9 | 0 | 0 |
+| Sessions total | 16 | 21 | 5 (direct) | 2 (direct) |
+| ATC social | **1 🎯** | 0 | 0 | 0 |
+| Commandes | 0 | 0 | 0 | 0 |
 
-**Cumul J1→J4 : 116,81 € · 1 ATC social · 0 commande**
+**Cumul J1→J5 : 116,81 € · 1 ATC social · 0 commande**
 
 ---
 
-## 🏆 Scorecard J4 FINAL
+## 🏆 Scorecard J4 FINAL (dernière session active)
 
 | Rang | Créa | CTR FB | CTR IG | CBO % | Verdict |
 |---|---|---|---|---|---|
-| ⭐ | Ad1 PDP · cest-lage-reframe | **2,81 %** ⭐ · CPC **0,10 €** | 1,77 % ✅ | **67,5 %** | ⭐ STAR · 4e jour dominant |
+| ⭐ | Ad1 PDP · cest-lage-reframe | **2,81 %** ⭐ · CPC **0,10 €** | 1,77 % ✅ | **67,5 %** | ⭐ STAR · 4 jours dominant |
 | 🚨 | Ad2 · signes-mobilite | 1,91 % ✅ | **3,83 %** n=1 671 🚨 | 30,1 % | **9,48 € fantômes J4** · EXCLURE IG avant relance |
 | 📉 | Ad3 LP · 5-problemes | 2,17 % ✅ | **0,99 %** 🔴 n=202 | 2,4 % ↓ | CBO killed · EXCLURE IG avant relance |
 | ❌ | Ad1 LP | — | — | 0 % | Mort naturelle CBO · clôturé |
@@ -58,17 +59,17 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 
 3. **Réactiver la campagne** après les 2 exclusions ci-dessus
 
-⚠️ Si la pause dure >3 jours → prévoir mini-learning 100–150 impr avant de juger les créas
+⚠️ **CRITIQUE** : Si pause >72h (09/06 matin) → reset learning probable. Post-relance : laisser 100–150 impr/créa avant de juger la réallocation CBO.
 
 ---
 
-## Funnel cumulé J1→J4
+## Funnel cumulé J1→J5
 
 ```
-Spend total      : 116,81 €  (10,32 + 39,02 + 27,37 + 40,12)
+Spend total      : 116,81 €  (10,32 + 39,02 + 27,37 + 40,12 + 0)
   dont fantômes  : ~43 €     (Ad8+Copie J2 ~33 € + Ad2 IG J3+J4 ~10 €)
-Sessions social  :     75    (J1=42 · J2=13 · J3=11 · J4=9)
-Sessions total   :    170    (J1=74 · J2=59 · J3=16 · J4=21)
+Sessions social  :     75    (J1=42 · J2=13 · J3=11 · J4=9 · J5=0)
+Sessions total   :    175    (J1=74 · J2=59 · J3=16 · J4=21 · J5=5)
 ATC social       :      1    (J3) — coût/ATC = 27,37 €
 Commandes        :      0    — 0,00 € CA
 ```
