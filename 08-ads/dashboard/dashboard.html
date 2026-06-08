@@ -119,7 +119,7 @@
    (entre les marqueurs). Tout le rendu est calculé à partir de DATA.
    ============================================================ */
 /*UPDATED_START*/
-const UPDATED = "2026-06-08 08h (J6 partiel · CAMPAIGN_PAUSED 48h+ · URGENCE MAXIMALE · exclure IG + relancer)";
+const UPDATED = "2026-06-08 12h (J6 partiel · CAMPAIGN_PAUSED 60h+ · ⚠️ seuil 72h ce soir · exclure IG + relancer avant 20h)";
 /*UPDATED_END*/
 
 /*DATA_START*/
@@ -271,21 +271,21 @@ const DATA = [
    cost_per_atc:null,shopify_sessions:5,shopify_atc:0,orders:0,
    notes:"J5 FINAL confirmé · 🚨 CAMPAIGN_PAUSED full day · 5s direct · 0s social · 0 ATC · exclusions IG non exécutées"},
 
-  // J6 — 2026-06-08 partiel 08h · CAMPAIGN_PAUSED 48h+
+  // J6 — 2026-06-08 partiel 12h · CAMPAIGN_PAUSED 60h+
   {date:"2026-06-08",scope:"campaign",entity:"Barky · Trafic LP · Validation · 2026-06",placement:"ALL",
    spend:0,impressions:0,link_clicks:0,ctr:null,cpc:null,meta_lpv:null,meta_atc:null,
-   cost_per_atc:null,shopify_sessions:2,shopify_atc:0,orders:0,
-   notes:"J6 partiel 08h · 🚨 CAMPAIGN_PAUSED 48h+ · 2s direct · 0s social · 0 ATC · URGENCE MAXIMALE relance"}
+   cost_per_atc:null,shopify_sessions:3,shopify_atc:0,orders:0,
+   notes:"J6 partiel 12h · 🚨 CAMPAIGN_PAUSED 60h+ · seuil 72h ce soir · 3s direct · 0s social · 0 ATC · relancer avant 20h Paris"}
 ];
 /*DATA_END*/
 
 /*DECISIONS_START*/
 const DECISIONS = [
-  {alert:true,  text:"🚨 <b>URGENCE ABSOLUE · CAMPAGNE PAUSED 48h+ (J5+J6)</b> — 0 € dépensé J5 (07/06 full day) + 0 € J6 partiel (08/06). Status API : <code>CAMPAIGN_PAUSED / delivery off</code> sur tous les ads. Shopify J5 FINAL = 5 sessions direct / 0 ATC. Shopify J6 = 2 sessions direct / 0 ATC. Si pause >72h (09/06 matin) → reset learning phase quasi-certain. <b>RELANCER AUJOURD'HUI</b> — ordre impératif : (1) exclure IG Ad2, (2) exclure IG Ad3 LP, (3) réactiver la campagne."},
+  {alert:true,  text:"🚨 <b>FENÊTRE CRITIQUE · Relancer AVANT 20h Paris (08/06)</b> — Campagne PAUSED ~60h+. Seuil 72h ce soir : si pas de relance avant minuit, reset learning phase quasi-certain. 0 € J5+J6. Status API : <code>CAMPAIGN_PAUSED</code> confirmé. Shopify J5 FINAL = 5s direct / 0 ATC · J6 12h = 3s direct / 0 ATC. <b>Ordre impératif : (1) exclure IG Ad2, (2) exclure IG Ad3 LP, (3) réactiver la campagne.</b>"},
   {alert:true,  text:"🚨 <b>AVANT relance · Ad2 · exclure placement Instagram</b> — J4 FINAL : CTR IG <b>3,83 % sur n=1 671 impr</b> · CPM 5,67 € · 79 % du budget Ad2 sur IG (9,48 €/12,06 €). FB Ad2 sain : 1,91 % / CPC 0,13 €. Entité : <code>Ad2 · ProductHero · signes-mobilite-ete</code>. Même piège CBO que Ad8 — sans correction, le CBO réescaladerait à 40 %+ sous 48h post-relance."},
   {alert:true,  text:"🚨 <b>AVANT relance · Ad3 LP · exclure placement Instagram</b> — J4 FINAL : CTR IG <b>0,99 % sur n=202</b> · CPC 0,41 € (×3 vs FB 0,14 €). CBO killed 2,4 % budget J4. FB 2,17 % sain mais étouffé. Entité : <code>Ad3 · Typo · 5-problemes-1-formule · LP</code>."},
-  {alert:false, text:"⭐ <b>Ad1 PDP · cest-lage-reframe = créa star J3+J4</b> — CBO <b>67,5 %</b> J4 · CTR FB <b>2,81 %</b> · CPC FB <b>0,10 €</b> · IG 1,77 % ✅. Seul ATC social sur 116,81 € cumulés (J3 · coût/ATC 27,37 €). Post-exclusions : récupère ~10 €/j de budget fantôme. Cible coût/ATC ≤ 8–10 €. Post-relance : 100–150 impr/créa avant de juger la réallocation CBO."},
-  {alert:false, text:"📊 <b>Cumul J1→J5 : 116,81 € · 1 ATC social · 0 commande</b> — 48h sans ads = 0 ATC (5s direct J5 · 2s direct J6, 0 ATC). Confirme que le problème est l'acquisition qualifiée, pas uniquement la page. Post-exclusions : entités propres actives = Ad1 PDP FB + Ad2 FB."},
+  {alert:false, text:"⭐ <b>Ad1 PDP · cest-lage-reframe = créa star J3+J4</b> — CBO <b>67,5 %</b> J4 · CTR FB <b>2,81 %</b> · CPC FB <b>0,10 €</b> · IG 1,77 % ✅. Seul ATC social sur 116,81 € cumulés (J3 · coût/ATC 27,37 €). Post-exclusions : récupère ~10 €/j de budget fantôme. Cible coût/ATC ≤ 8–10 €. Post-relance (même avec mini-learning) : 100–150 impr/créa avant de juger la réallocation CBO."},
+  {alert:false, text:"📊 <b>Cumul J1→J5 : 116,81 € · 1 ATC social · 0 commande</b> — 60h sans ads = 0 ATC (5s direct J5 · 3s direct J6, 0 ATC). Confirme que le problème est l'acquisition qualifiée, pas uniquement la page. Post-exclusions : entités propres actives = Ad1 PDP FB + Ad2 FB."},
   {alert:false, text:"❓ <b>Créas jamais tournées (Ad4/5/6/7 + variantes v2)</b> — API révèle des créas CAMPAIGN_PAUSED à 0 impr. À valider avec Thomas avant relance — ne pas les activer simultanément pour ne pas diluer le signal CBO."}
 ];
 /*DECISIONS_END*/
