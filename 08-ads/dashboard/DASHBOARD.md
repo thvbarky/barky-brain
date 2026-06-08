@@ -3,7 +3,7 @@
 > Vue humaine régénérée par `/barky-ads-daily` (reco seulement — aucune action sans validation Thomas).
 > Data brute : [`ads-daily.csv`](ads-daily.csv) · Mémoire : [`learnings-ads.md`](learnings-ads.md)
 
-**Dernière mise à jour : 2026-06-08 12h — J6 partiel · CAMPAIGN_PAUSED 60h+ · URGENCE : relancer AVANT 20h**
+**Dernière mise à jour : 2026-06-08 18h — J6 partiel · CAMPAIGN_PAUSED ~66h · 🚨 SEUIL 72h dans <6h · RELANCER MAINTENANT**
 
 ---
 
@@ -12,24 +12,24 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 
 ---
 
-## 🚨 CE QUI A CHANGÉ vs run 8h J6
+## 🚨 CE QUI A CHANGÉ vs run 12h J6
 
 1. **Campagne TOUJOURS PAUSED — aucun changement.** 0 € J5 + 0 € J6.
-2. **Shopify J6 : 2 sessions → 3 sessions** (1 session directe supplémentaire depuis 8h) / 0 ATC.
-3. **Pause cumulative : ~60h+** — seuil 72h ce soir/nuit.
-4. **FENÊTRE CRITIQUE** : relancer avant ~20h Paris pour éviter le reset learning 72h.
+2. **Shopify J6 : 3 sessions** (inchangé depuis 12h) / 0 ATC.
+3. **Pause cumulative : ~66h** — seuil 72h dans **<6h** (estimé entre 20h et minuit ce soir).
+4. **FENÊTRE CRITIQUE** : relancer avant ~20h Paris = dernière chance de passer sous 72h sans mini-learning.
 5. Exclusions IG (Ad2 + Ad3 LP) toujours non exécutées.
 
 ---
 
 ## 📊 Snapshot
 
-| Métrique | J3 (05/06) FINAL | J4 (06/06) FINAL | J5 (07/06) FINAL | J6 (08/06) partiel 12h |
+| Métrique | J3 (05/06) FINAL | J4 (06/06) FINAL | J5 (07/06) FINAL | J6 (08/06) partiel 18h |
 |---|---|---|---|---|
 | Spend | 27,37 € ✅ | **40,12 €** | **0 € 🚨 PAUSED** | **0 € 🚨 PAUSED** |
 | CTR | 2,34 % ✅ | 2,58 % ✅ | — | — |
 | Sessions social | 11 | 9 | 0 | 0 |
-| Sessions total | 16 | 21 | 5 (direct) | 3 (direct) |
+| Sessions total | 16 | 21 | 5 (direct) | 3 (direct, inchangé) |
 | ATC social | **1 🎯** | 0 | 0 | 0 |
 | Commandes | 0 | 0 | 0 | 0 |
 
@@ -48,7 +48,7 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 
 ---
 
-## 🚨 ACTIONS AVANT RELANCE (ordre impératif) — FENÊTRE : avant 20h Paris aujourd'hui
+## 🚨 ACTIONS AVANT RELANCE (ordre impératif) — FENÊTRE RESTANTE : <6h (avant ~20h Paris)
 
 1. **🔴 Exclure placement Instagram** sur `Ad2 · ProductHero · signes-mobilite-ete`
    - J4 FINAL : 9,48 € fantômes (79 % budget Ad2 sur IG), CTR IG 3,83 % n=1 671
@@ -59,7 +59,7 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 
 3. **Réactiver la campagne** après les 2 exclusions ci-dessus
 
-⚠️ **SEUIL 72h : ce soir ~22-24h Paris** (si pause depuis midnight 07/06). Post-relance : laisser 100–150 impr/créa avant de juger la réallocation CBO.
+⚠️ **SEUIL 72h estimé entre 20h et minuit ce soir.** Run 18h = ~66h de pause. Si relance après le seuil : mini-learning inévitable (100–150 impr/créa de chauffe). Ad1 PDP devrait récupérer sa position dominante rapidement vu l'historique.
 
 ---
 
