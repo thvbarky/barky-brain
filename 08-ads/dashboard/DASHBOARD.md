@@ -3,7 +3,7 @@
 > Vue humaine régénérée par `/barky-ads-daily` (reco seulement — aucune action sans validation Thomas).
 > Data brute : [`ads-daily.csv`](ads-daily.csv) · Mémoire : [`learnings-ads.md`](learnings-ads.md)
 
-**Dernière mise à jour : 2026-06-09 08h — J7 partiel matin · ⛔ CAMPAIGN_PAUSED 84h+ · SEUIL 72h DÉPASSÉ · mini-learning inévitable · RELANCER AUJOURD'HUI**
+**Dernière mise à jour : 2026-06-09 12h — J7 partiel 12h · ⛔ CAMPAIGN_PAUSED ~88h · SEUIL 72h DÉPASSÉ · mini-learning inévitable · RELANCER AUJOURD'HUI**
 
 ---
 
@@ -12,19 +12,19 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 
 ---
 
-## ⛔ CE QUI A CHANGÉ vs run 18h J6 (08/06)
+## ⛔ CE QUI A CHANGÉ vs run 08h J7 (09/06)
 
-1. **Seuil 72h DÉPASSÉ** — estimé franchi ~20h-22h le 08/06. Mini-learning inévitable à la relance.
-2. **J6 FINAL confirmé** : 6 sessions direct (corrigé depuis 3 partielles), 0 ATC. Campaign 0 € J6.
-3. **J7 partiel matin** : 3 sessions direct, 0 ATC, campagne toujours PAUSED 84h+.
-4. **Aucun ordre en juin** — 0 commande + 0 ATC depuis J3 (07/06 = dernier ATC social, coût 27,37 €).
-5. **Exclusions IG Ad2 + Ad3 LP toujours non exécutées** — toujours bloquantes avant relance.
+1. **Aucun changement de données** — 3 sessions Shopify direct confirmées à 12h (identique 8h). 0 ATC. 0 commande.
+2. **Campaign toujours PAUSED** — API Meta confirmé 12h07 : 0 € J6 + 0 € J7. ~88h de pause cumulée.
+3. **Seuil 72h dépassé depuis ~20h le 08/06** — mini-learning inévitable, chaque heure supplémentaire creuse le trou.
+4. **Exclusions IG Ad2 + Ad3 LP toujours non exécutées** — c'est le seul prérequis avant relance.
+5. **Cumul J1→J4 : 116,81 € · 1 ATC social · 0 commande** — pas de dépense depuis J5.
 
 ---
 
 ## 📊 Snapshot
 
-| Métrique | J4 (06/06) FINAL | J5 (07/06) FINAL | J6 (08/06) FINAL | J7 (09/06) partiel matin |
+| Métrique | J4 (06/06) FINAL | J5 (07/06) FINAL | J6 (08/06) FINAL | J7 (09/06) partiel 12h |
 |---|---|---|---|---|
 | Spend | **40,12 €** | **0 € ⛔ PAUSED** | **0 € ⛔ PAUSED** | **0 € ⛔ PAUSED** |
 | CTR | 2,58 % ✅ | — | — | — |

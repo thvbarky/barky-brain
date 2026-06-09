@@ -119,7 +119,7 @@
    (entre les marqueurs). Tout le rendu est calculé à partir de DATA.
    ============================================================ */
 /*UPDATED_START*/
-const UPDATED = "2026-06-09 08h (J7 partiel matin · CAMPAIGN_PAUSED 84h+ · ⛔ SEUIL 72h DÉPASSÉ · mini-learning inévitable · relancer dès que possible)";
+const UPDATED = "2026-06-09 12h (J7 partiel 12h · CAMPAIGN_PAUSED ~88h · ⛔ SEUIL 72h DÉPASSÉ · mini-learning inévitable · RELANCER AUJOURD'HUI)";
 /*UPDATED_END*/
 
 /*DATA_START*/
@@ -281,13 +281,13 @@ const DATA = [
   {date:"2026-06-09",scope:"campaign",entity:"Barky · Trafic LP · Validation · 2026-06",placement:"ALL",
    spend:0,impressions:0,link_clicks:0,ctr:null,cpc:null,meta_lpv:null,meta_atc:null,
    cost_per_atc:null,shopify_sessions:3,shopify_atc:0,orders:0,
-   notes:"J7 partiel matin · ⛔ CAMPAIGN_PAUSED 84h+ · seuil 72h dépassé · 3s direct · 0s social · 0 ATC · exclusions IG toujours non exécutées"}
+   notes:"J7 partiel 12h · ⛔ CAMPAIGN_PAUSED ~88h · seuil 72h dépassé · 3s direct · 0s social · 0 ATC · exclusions IG toujours non exécutées · RELANCER AUJOURD'HUI"}
 ];
 /*DATA_END*/
 
 /*DECISIONS_START*/
 const DECISIONS = [
-  {alert:true,  text:"⛔ <b>SEUIL 72h DÉPASSÉ · Campagne PAUSED 84h+ (J5+J6+J7)</b> — Seuil 72h estimé franchi ~20h-22h le 08/06. À ce stade : mini-learning inévitable (100–150 impr/créa de chauffe avant que le CBO se stabilise). Pas de panique : Ad1 PDP était dominant à 67,5 % — l'historique signal reste en mémoire Meta, il doit récupérer rapidement. <b>Ordre impératif à la relance : (1) exclure IG Ad2, (2) exclure IG Ad3 LP, (3) réactiver la campagne dès que possible aujourd'hui.</b>"},
+  {alert:true,  text:"⛔ <b>SEUIL 72h DÉPASSÉ · Campagne PAUSED ~88h (J5+J6+J7)</b> — Seuil 72h franchi ~20h-22h le 08/06. Confirmé 12h07 le 09/06. Mini-learning inévitable (100–150 impr/créa de chauffe). Ad1 PDP était dominant à 67,5 % — l'historique signal reste partiellement en mémoire Meta. <b>Ordre impératif : (1) exclure IG Ad2, (2) exclure IG Ad3 LP, (3) réactiver aujourd'hui — chaque heure supplémentaire creuse le trou de learning.</b>"},
   {alert:true,  text:"🚨 <b>AVANT relance · Ad2 · exclure placement Instagram</b> — J4 FINAL : CTR IG <b>3,83 % sur n=1 671 impr</b> · CPM 5,67 € · 79 % du budget Ad2 sur IG (9,48 €/12,06 €). FB Ad2 sain : 1,91 % / CPC 0,13 €. Entité : <code>Ad2 · ProductHero · signes-mobilite-ete</code>. Même piège CBO que Ad8 — sans correction, le CBO réescaladerait à 40 %+ sous 48h post-relance."},
   {alert:true,  text:"🚨 <b>AVANT relance · Ad3 LP · exclure placement Instagram</b> — J4 FINAL : CTR IG <b>0,99 % sur n=202</b> · CPC 0,41 € (×3 vs FB 0,14 €). CBO killed 2,4 % budget J4. FB 2,17 % sain mais étouffé. Entité : <code>Ad3 · Typo · 5-problemes-1-formule · LP</code>."},
   {alert:false, text:"⭐ <b>Ad1 PDP · cest-lage-reframe = créa star confirmée</b> — CBO <b>67,5 %</b> J4 · CTR FB <b>2,81 %</b> · CPC FB <b>0,10 €</b> · IG 1,77 % ✅. Seul ATC social sur 116,81 € cumulés (J3 · coût/ATC 27,37 €). Post-exclusions + mini-learning : récupère ~10 €/j de budget fantôme. Cible coût/ATC ≤ 8–10 €. Attendre 100–150 impr/créa avant de juger la réallocation post-relance."},
