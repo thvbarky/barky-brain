@@ -197,10 +197,10 @@
 ---
 
 ### 2026-06-09 — Seuil 72h dépassé · mini-learning inévitable · procédure relance
-- **Constat :** J7 matin (09/06) : campagne toujours `CAMPAIGN_PAUSED` · 84h+ de pause. Seuil 72h estimé franchi ~20h-22h le 08/06. J6 FINAL Shopify = 6 sessions direct (corrigé depuis 3 partielles), 0 ATC. J7 partiel = 3 sessions direct, 0 ATC. API Meta : 0 € J5+J6+J7. Exclusions IG (Ad2 + Ad3 LP) toujours non exécutées.
+- **Constat :** J7 (09/06) : campagne toujours `CAMPAIGN_PAUSED` · ~105h de pause (18h run). Seuil 72h franchi ~20h-22h le 08/06. J6 FINAL Shopify = 6 sessions direct, 0 ATC. J7 partiel 18h = **5 sessions direct** (3 à 12h → 5 à 18h), 0 ATC. API Meta : 0 € J5+J6+J7. Exclusions IG (Ad2 + Ad3 LP) toujours non exécutées.
 - **Décision (reco) :** (1) Exclure IG sur Ad2 `signes-mobilite-ete` + Ad3 LP `5-problemes-1-formule · LP`. (2) Réactiver la campagne. (3) Ne pas juger le CBO avant 100–150 impr/créa (mini-learning inévitable). (4) Ne pas activer les créas à 0 impr (Ad4/5/6/7 + v2) tant que le coût/ATC post-relance n'est pas mesuré.
 - **Pourquoi :** Au-delà de 72h, Meta recalibre l'ensemble des signaux CBO. L'historique reste partiellement en mémoire (Ad1 PDP dominant à 67,5 %) mais la distribution de budget repart de ~0. La fenêtre "propre" est fermée — il faut accepter le mini-learning et relancer proprement.
-- **Résultat (à compléter) :** —
+- **Résultat (à compléter après relance) :** —
 
 ### 2026-06-08 — Pause 60h+ confirmée · risque reset learning critique · seuil 72h ce soir
 - **Constat :** J6 (08/06, run 12h) : campagne toujours `CAMPAIGN_PAUSED` — API Meta confirme `effective_status: PAUSED` sur les 2 campagnes du compte. 0 € J5 (07/06 full day) + 0 € J6 (08/06 partiel 12h). Shopify J5 FINAL = **5 sessions direct** / 0 ATC. Shopify J6 partiel 12h = **3 sessions direct** (2 à 8h → 3 à 12h) / 0 ATC. Pause cumulative : **~60h+**. Seuil 72h atteint ce soir/nuit (09/06 matin). Exclusions IG Ad2 + Ad3 LP toujours non exécutées.

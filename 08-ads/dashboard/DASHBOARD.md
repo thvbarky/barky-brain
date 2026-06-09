@@ -3,7 +3,7 @@
 > Vue humaine régénérée par `/barky-ads-daily` (reco seulement — aucune action sans validation Thomas).
 > Data brute : [`ads-daily.csv`](ads-daily.csv) · Mémoire : [`learnings-ads.md`](learnings-ads.md)
 
-**Dernière mise à jour : 2026-06-09 12h — J7 partiel 12h · ⛔ CAMPAIGN_PAUSED ~88h · SEUIL 72h DÉPASSÉ · mini-learning inévitable · RELANCER AUJOURD'HUI**
+**Dernière mise à jour : 2026-06-09 18h — J7 partiel 18h · ⛔ CAMPAIGN_PAUSED ~105h · SEUIL 72h DÉPASSÉ · mini-learning inévitable · RELANCER AUJOURD'HUI**
 
 ---
 
@@ -12,10 +12,10 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 
 ---
 
-## ⛔ CE QUI A CHANGÉ vs run 08h J7 (09/06)
+## ⛔ CE QUI A CHANGÉ vs run 12h J7 (09/06)
 
-1. **Aucun changement de données** — 3 sessions Shopify direct confirmées à 12h (identique 8h). 0 ATC. 0 commande.
-2. **Campaign toujours PAUSED** — API Meta confirmé 12h07 : 0 € J6 + 0 € J7. ~88h de pause cumulée.
+1. **+2 sessions Shopify direct** — 3 sessions à 12h → **5 sessions à 18h** (toutes direct, 0 social, 0 ATC).
+2. **Campaign toujours PAUSED** — API Meta confirmé 18h : 0 € J7. ~105h de pause cumulée (↑ vs 88h à 12h).
 3. **Seuil 72h dépassé depuis ~20h le 08/06** — mini-learning inévitable, chaque heure supplémentaire creuse le trou.
 4. **Exclusions IG Ad2 + Ad3 LP toujours non exécutées** — c'est le seul prérequis avant relance.
 5. **Cumul J1→J4 : 116,81 € · 1 ATC social · 0 commande** — pas de dépense depuis J5.
@@ -24,12 +24,12 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 
 ## 📊 Snapshot
 
-| Métrique | J4 (06/06) FINAL | J5 (07/06) FINAL | J6 (08/06) FINAL | J7 (09/06) partiel 12h |
+| Métrique | J4 (06/06) FINAL | J5 (07/06) FINAL | J6 (08/06) FINAL | J7 (09/06) partiel 18h |
 |---|---|---|---|---|
 | Spend | **40,12 €** | **0 € ⛔ PAUSED** | **0 € ⛔ PAUSED** | **0 € ⛔ PAUSED** |
 | CTR | 2,58 % ✅ | — | — | — |
 | Sessions social | 9 | 0 | 0 | 0 |
-| Sessions total | 21 | 5 (direct) | 6 (direct) | 3 (direct, partiel) |
+| Sessions total | 21 | 5 (direct) | 6 (direct) | **5** (direct, partiel 18h) |
 | ATC social | 0 | 0 | 0 | 0 |
 | Commandes | 0 | 0 | 0 | 0 |
 
@@ -69,7 +69,7 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 Spend total      : 116,81 €  (10,32 + 39,02 + 27,37 + 40,12 + 0 + 0)
   dont fantômes  : ~53 €     (Ad8+Copie J2 ~33 € + Ad2 IG J3+J4 ~10 € + budget 3j pause)
 Sessions social  :     75    (J1=42 · J2=13 · J3=11 · J4=9 · J5=0 · J6=0)
-Sessions total   :    186    (J1=74 · J2=59 · J3=16 · J4=21 · J5=5 · J6=6 · J7=3p)
+Sessions total   :    188    (J1=74 · J2=59 · J3=16 · J4=21 · J5=5 · J6=6 · J7=5p)
 ATC social       :      1    (J3) — coût/ATC = 27,37 €
 Commandes        :      0    — 0,00 € CA
 ```
