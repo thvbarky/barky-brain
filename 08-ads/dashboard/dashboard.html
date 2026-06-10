@@ -119,7 +119,7 @@
    (entre les marqueurs). Tout le rendu est calculé à partir de DATA.
    ============================================================ */
 /*UPDATED_START*/
-const UPDATED = "2026-06-09 18h (J7 partiel 18h · CAMPAIGN_PAUSED ~105h · ⛔ SEUIL 72h DÉPASSÉ · mini-learning inévitable · RELANCER AUJOURD'HUI)";
+const UPDATED = "2026-06-10 (J8 partiel · CAMPAIGN_PAUSED ~140h · ⛔ RELANCE URGENTE · 2ème campagne détectée)";
 /*UPDATED_END*/
 
 /*DATA_START*/
@@ -277,22 +277,29 @@ const DATA = [
    cost_per_atc:null,shopify_sessions:6,shopify_atc:0,orders:0,
    notes:"J6 FINAL · 🚨 CAMPAIGN_PAUSED full day · seuil 72h dépassé ~20h-22h · 6s direct (corrigé) · 0s social · 0 ATC · mini-learning inévitable à la relance"},
 
-  // J7 — 2026-06-09 partiel 18h · CAMPAIGN_PAUSED 105h+
+  // J7 — 2026-06-09 FINAL confirmé
   {date:"2026-06-09",scope:"campaign",entity:"Barky · Trafic LP · Validation · 2026-06",placement:"ALL",
    spend:0,impressions:0,link_clicks:0,ctr:null,cpc:null,meta_lpv:null,meta_atc:null,
-   cost_per_atc:null,shopify_sessions:5,shopify_atc:0,orders:0,
-   notes:"J7 partiel 18h · ⛔ CAMPAIGN_PAUSED ~105h · seuil 72h dépassé · 5s direct · 0s social · 0 ATC · exclusions IG toujours non exécutées · RELANCER AUJOURD'HUI"}
+   cost_per_atc:null,shopify_sessions:8,shopify_atc:0,orders:0,
+   notes:"J7 FINAL confirmé · 🚨 CAMPAIGN_PAUSED full day · 8s direct (corrigé 5→8) · 0s social · 0 ATC · exclusions IG non exécutées · 2ème campagne Acquisition Test #1 détectée"},
+
+  // J8 — 2026-06-10 partiel · CAMPAIGN_PAUSED ~140h
+  {date:"2026-06-10",scope:"campaign",entity:"Barky · Trafic LP · Validation · 2026-06",placement:"ALL",
+   spend:0,impressions:0,link_clicks:0,ctr:null,cpc:null,meta_lpv:null,meta_atc:null,
+   cost_per_atc:null,shopify_sessions:4,shopify_atc:0,orders:0,
+   notes:"J8 partiel · 🚨 CAMPAIGN_PAUSED ~140h · 4s direct · 0s social · 0 ATC · RELANCE URGENTE"}
 ];
 /*DATA_END*/
 
 /*DECISIONS_START*/
 const DECISIONS = [
-  {alert:true,  text:"⛔ <b>SEUIL 72h DÉPASSÉ · Campagne PAUSED ~105h (J5+J6+J7)</b> — Seuil 72h franchi ~20h-22h le 08/06. Confirmé 18h le 09/06 : toujours PAUSED. Mini-learning inévitable (100–150 impr/créa de chauffe). Ad1 PDP était dominant à 67,5 % — l'historique signal reste partiellement en mémoire Meta. <b>Ordre impératif : (1) exclure IG Ad2, (2) exclure IG Ad3 LP, (3) réactiver aujourd'hui — chaque heure supplémentaire creuse le trou de learning.</b>"},
-  {alert:true,  text:"🚨 <b>AVANT relance · Ad2 · exclure placement Instagram</b> — J4 FINAL : CTR IG <b>3,83 % sur n=1 671 impr</b> · CPM 5,67 € · 79 % du budget Ad2 sur IG (9,48 €/12,06 €). FB Ad2 sain : 1,91 % / CPC 0,13 €. Entité : <code>Ad2 · ProductHero · signes-mobilite-ete</code>. Même piège CBO que Ad8 — sans correction, le CBO réescaladerait à 40 %+ sous 48h post-relance."},
-  {alert:true,  text:"🚨 <b>AVANT relance · Ad3 LP · exclure placement Instagram</b> — J4 FINAL : CTR IG <b>0,99 % sur n=202</b> · CPC 0,41 € (×3 vs FB 0,14 €). CBO killed 2,4 % budget J4. FB 2,17 % sain mais étouffé. Entité : <code>Ad3 · Typo · 5-problemes-1-formule · LP</code>."},
-  {alert:false, text:"⭐ <b>Ad1 PDP · cest-lage-reframe = créa star confirmée</b> — CBO <b>67,5 %</b> J4 · CTR FB <b>2,81 %</b> · CPC FB <b>0,10 €</b> · IG 1,77 % ✅. Seul ATC social sur 116,81 € cumulés (J3 · coût/ATC 27,37 €). Post-exclusions + mini-learning : récupère ~10 €/j de budget fantôme. Cible coût/ATC ≤ 8–10 €. Attendre 100–150 impr/créa avant de juger la réallocation post-relance."},
-  {alert:false, text:"📊 <b>Cumul J1→J6 : 116,81 € · 1 ATC social · 0 commande</b> — J5 : 5s direct / J6 : 6s direct / J7 partiel 18h : 5s direct. 0 ATC sur 16 sessions en 3 jours sans ads. Confirme que le trafic organique seul ne convertit pas encore. Le paid social propre (post-exclusions) reste le levier."},
-  {alert:false, text:"❓ <b>Créas jamais tournées (Ad4/5/6/7 + variantes v2)</b> — 13+ entités à 0 impr. À ne pas activer simultanément à la relance — laisser le CBO Post-exclusions stabiliser d'abord Ad1 PDP + Ad2 FB + Ad3 LP FB. Si coût/ATC > 15 € après 200+ sessions qualifiées → introduire 1 nouvelle créa."}
+  {alert:true,  text:"⛔ <b>CAMPAIGN PAUSED ~140h · RELANCE URGENTE (J8 · 10/06)</b> — Pause depuis J4 (06/06). Seuil 72h dépassé depuis le 08/06. Mini-learning inévitable. J7 FINAL = 8s direct / J8 partiel = 4s / 0 ATC sur 23 sessions sans paid. <b>Ordre impératif : (1) exclure IG Ad2, (2) exclure IG Ad3 LP, (3) clarifier Acquisition Test #1, (4) réactiver campagne principale.</b>"},
+  {alert:true,  text:"🚨 <b>2ème campagne détectée · clarifier AVANT relance</b> — API J8 révèle <code>Barky · Acquisition Test #1 · 2026-06</code> (ID 120248349620690732) · PAUSED. Contient des créas v2 : Ad1 Proof 5-raisons · Ad2 Typo v2 · Ad3 Lifestyle v2 · Ad4/5/6/7. Budget et structure inconnus. <b>À clarifier avec Thomas : archiver ou activer ? Ne jamais activer les deux campagnes simultanément sans monitoring.</b>"},
+  {alert:true,  text:"🚨 <b>AVANT relance · Ad2 · exclure placement Instagram</b> — J4 FINAL : CTR IG <b>3,83 % sur n=1 671 impr</b> · CPM 5,67 € · 79 % budget Ad2 sur IG (9,48 €). FB Ad2 sain : 1,91 % / CPC 0,13 €. Entité : <code>Ad2 · ProductHero · signes-mobilite-ete</code>. Sans correction, le CBO réescaladerait à 40 %+ sous 48h post-relance."},
+  {alert:true,  text:"🚨 <b>AVANT relance · Ad3 LP · exclure placement Instagram</b> — J4 FINAL : CTR IG <b>0,99 % sur n=202</b> · CPC 0,41 € (×3 vs FB 0,14 €). Entité : <code>Ad3 · Typo · 5-problemes-1-formule · LP</code>."},
+  {alert:false, text:"⭐ <b>Ad1 PDP · cest-lage-reframe = créa star confirmée</b> — CBO <b>67,5 %</b> J4 · CTR FB <b>2,81 %</b> · CPC FB <b>0,10 €</b>. Seul ATC social sur 116,81 € cumulés (coût/ATC 27,37 €). Cible post-relance : coût/ATC ≤ 8–10 €. Attendre 100–150 impr/créa avant de juger la réallocation CBO."},
+  {alert:false, text:"📊 <b>Cumul J1→J8 : 116,81 € · 1 ATC social · 0 commande · 4 jours PAUSED</b> — J5 : 5s · J6 : 6s · J7 : 8s · J8 : 4s (partiel). 0 ATC sur 23 sessions sans ads. Le paid social propre (post-exclusions IG) reste le seul levier d'acquisition."},
+  {alert:false, text:"❓ <b>Créas jamais tournées (Ad4/5/6/7 + v2 dans les 2 campagnes)</b> — Laisser le CBO post-exclusions stabiliser Ad1 PDP + Ad2 FB + Ad3 LP FB en priorité. Si coût/ATC > 15 € après 200+ sessions qualifiées → introduire 1 nouvelle créa."}
 ];
 /*DECISIONS_END*/
 
