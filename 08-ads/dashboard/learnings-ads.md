@@ -214,9 +214,15 @@
 - **Constat :** Shopify 10/06 à 12h : **32 sessions** toutes sources = direct (100%), 0 social. Habituellement 5–8 sess/j pendant la pause (J5=5 · J6=6 · J7=8). Spike ×4–6. 0 ATC sur 32 sessions. Campagne toujours PAUSED, 0 € Meta.
 - **Décision :** Surveillance uniquement. Investiguer la source (email envoyé ? lien partagé ? SEO crawl ?). 0 ATC confirme que ces visiteurs ne sont pas intentionnistes.
 - **Pourquoi :** 0 ATC sur 32 sessions est cohérent avec un trafic de type "navigation de reconnaissance" ou trafic indirect (bots peu probables vu le volume modeste). Ne change pas la priorité absolue : relancer avec les exclusions IG.
-- **Résultat (à compléter run 18h J8) :** —
+- **Résultat (J8 18h FINAL) :** 32s à 12h → **32s à 18h** · Spike terminé dans l'après-midi (0 nouvelle session 12h→18h). Probablement un email/lien partagé le matin. Source non identifiée. 0 ATC. Confirme que même 32 visiteurs sans intent (type-in ou envoi) ne convertissent pas. ✅ CLÔTURÉ.
 
 ---
+
+### 2026-06-10 — Inventaire complet compte : 24 créas · Ad2 PDP + Ad3 PDP invisibles
+- **Constat :** Run 18h J8 révèle l'inventaire complet des entités ad du compte. **24 créas** au total. Dans la campagne principale : Ad2 · ProductHero · signes-mobilite-ete · **PDP** (120248462818290732) et Ad3 · Typo · 5-problemes-1-formule · **PDP** (120248462821350732) existent dans le PDP adset mais n'ont jamais reçu de budget — écrasées par Ad1 PDP qui monopolisait le CBO à 55–67 %. La campagne `Acquisition Test #1` contient 16 entités = 8 créas × 2 adsets (A · Trafic LP + B · Trafic PP), duplicatas par design.
+- **Décision :** Pas d'action sur ces créas PDP inconnues avant stabilisation post-relance. Garder Ad1 PDP + Ad2 FB + Ad3 LP FB comme trio de base. Si coût/ATC reste > 15 € après 200+ sessions qualifiées → envisager Ad3 PDP comme challenger de Ad1 PDP (même format statique, angle différent).
+- **Pourquoi :** Introduire Ad2 PDP ou Ad3 PDP maintenant fragmenterait le signal CBO. L'ordre reste : (1) nettoyer placements, (2) relancer, (3) mesurer coût/ATC propre, (4) challenger.
+- **Résultat (à compléter après relance) :** —
 
 ### 2026-06-10 — 2ème campagne détectée dans le compte · procédure relance mise à jour
 - **Constat :** API Meta run J8 (10/06) révèle **2 campagnes** dans le compte : (1) `Barky · Trafic LP · Validation · 2026-06` (120248461968180732, PAUSED) — campagne principale suivie. (2) `Barky · Acquisition Test #1 · 2026-06` (120248349620690732, PAUSED) — inconnue des runs précédents. Contient des créas : Ad1 Proof 5-raisons · Ad2 Typo v2 · Ad3 Lifestyle v2 · Ad4 Typo 17-vitamines · Ad5 ProductHero v2 · Ad6 Lifestyle pas-vieux · Ad7 ProductHero liste-actifs. Budget et adsets non audités. Pause J8 toujours confirmée : ~140h · 0€ J5→J8 · J7 FINAL = 8s (corrigé) · J8 partiel = 4s · 0 ATC.
