@@ -3,7 +3,7 @@
 > Vue humaine régénérée par `/barky-ads-daily` (reco seulement — aucune action sans validation Thomas).
 > Data brute : [`ads-daily.csv`](ads-daily.csv) · Mémoire : [`learnings-ads.md`](learnings-ads.md)
 
-**Dernière mise à jour : 2026-06-10 (J8 partiel) · ⛔ CAMPAIGN_PAUSED ~140h · 2ème campagne détectée · RELANCE URGENTE**
+**Dernière mise à jour : 2026-06-10 12h06 (J8 run midi) · ⛔ CAMPAIGN_PAUSED ~5j · 32s direct spike ↑↑ · 0 ATC · RELANCE URGENTE**
 
 ---
 
@@ -12,23 +12,22 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 
 ---
 
-## 🆕 CE QUI A CHANGÉ vs run J7 18h (09/06)
+## 🆕 CE QUI A CHANGÉ vs run J8 8h (10/06)
 
-1. **J7 FINAL corrigé : 8 sessions** (5 à 18h → 8 final — pattern habituel, sessions Shopify se consolident en soirée).
-2. **J8 partiel (10/06) : 4 sessions, 0 social, 0 ATC** — campagne toujours PAUSED.
-3. **Pause à ~140h** (↑ depuis 105h J7 18h). Chaque heure supplémentaire érode l'historique CBO.
-4. **🚨 NOUVEAU : 2ème campagne détectée** — `Barky · Acquisition Test #1 · 2026-06` (ID 120248349620690732, PAUSED). Contient des créas v2 (Ad1 Proof, Ad2 Typo v2, Ad3 Lifestyle v2, Ad4/5/6/7). À clarifier avec Thomas avant toute relance.
+1. **🆕 32 sessions directes aujourd'hui (J8 run 12h)** — vs 4 à 8h · Spike ×4–6 vs moyenne pause (5–8s/j) · **Toutes direct, 0 social, 0 ATC**. Source à identifier (email ? partage ?). Ne convertit pas.
+2. **Campagne toujours PAUSED** — 0 € J5-J8. Pas de nouveau signal Meta.
+3. **Cumul sessions pause** : 5+6+8+32 = 51 sessions direct sans ads → 0 ATC.
 
 ---
 
 ## 📊 Snapshot
 
-| Métrique | J4 (06/06) FINAL | J5 (07/06) | J6 (08/06) | J7 (09/06) FINAL | J8 (10/06) partiel |
+| Métrique | J4 (06/06) FINAL | J5 (07/06) | J6 (08/06) | J7 (09/06) FINAL | J8 (10/06) 12h |
 |---|---|---|---|---|---|
 | Spend | **40,12 €** | **0 € ⛔** | **0 € ⛔** | **0 € ⛔** | **0 € ⛔** |
 | CTR | 2,58 % ✅ | — | — | — | — |
 | Sessions social | 9 | 0 | 0 | 0 | 0 |
-| Sessions total | 21 | 5 | 6 | **8** (corrigé) | 4 (partiel) |
+| Sessions total | 21 | 5 | 6 | **8** | **32 ↑↑** |
 | ATC | 0 | 0 | 0 | 0 | 0 |
 | Commandes | 0 | 0 | 0 | 0 | 0 |
 
@@ -60,7 +59,7 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 Spend total      : 116,81 €  (J1→J4 · 0€ J5-J8)
   dont fantômes  : ~53 €     (Ad8+Copie J2 ~33€ + Ad2 IG J3+J4 ~10€ + 0 spend J5-J8)
 Sessions social  :     75    (J1=42 · J2=13 · J3=11 · J4=9 · J5-J8=0)
-Sessions total   :    197    (J1=74 · J2=59 · J3=16 · J4=21 · J5=5 · J6=6 · J7=8 · J8=4p)
+Sessions total   :    225    (J1=74 · J2=59 · J3=16 · J4=21 · J5=5 · J6=6 · J7=8 · J8=32↑↑p)
 ATC social       :      1    (J3) — coût/ATC = 27,37 €
 Commandes        :      0    — 0,00 € CA
 ```
