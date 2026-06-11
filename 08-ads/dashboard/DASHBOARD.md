@@ -3,7 +3,7 @@
 > Vue humaine régénérée par `/barky-ads-daily` (reco seulement — aucune action sans validation Thomas).
 > Data brute : [`ads-daily.csv`](ads-daily.csv) · Mémoire : [`learnings-ads.md`](learnings-ads.md)
 
-**Dernière mise à jour : 2026-06-11 12h00 (J9 run midi) · ⛔ CAMPAIGN_PAUSED ~134h · 0 changement vs 8h · J8 FINAL : 34s · 🎯 2 ATC · 2 checkouts · 0 commande · RELANCE URGENTE**
+**Dernière mise à jour : 2026-06-11 18h00 (J9 run 18h) · ⛔ CAMPAIGN_PAUSED ~140h · J9: 9s direct (+7 vs 12h · 0 ATC) · J8 FINAL confirmé API: 34s · 🎯 2 ATC · 2 checkouts · 0 commande · RELANCE URGENTE**
 
 ---
 
@@ -12,23 +12,23 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 
 ---
 
-## 🆕 CE QUI A CHANGÉ vs run J8 18h (10/06)
+## 🆕 CE QUI A CHANGÉ vs run J9 12h (11/06)
 
-1. **J8 FINAL corrigé :** 32s → **34s** + **0 ATC → 2 ATC + 2 reached checkout** — premier signal checkout reach de l'historique du compte. Taux ATC direct = 5,9 %. Toutes sources = direct (0 social, campagne PAUSED). 0 commande.
-2. **Friction checkout identifiée** — 2 personnes ont atteint le checkout mais n'ont pas acheté. Investiguer : frais de livraison, trust badges, méthode de paiement (Shopify admin → Orders → Abandoned checkouts).
-3. **J9 partiel 8h :** 2 sessions direct, 0 ATC. Meta toujours PAUSED ~130h, 0 €.
-4. **Pause toujours critique** — exclusions IG (Ad2 + Ad3 LP) toujours non exécutées. Chaque heure = coût d'opportunité + learning phase plus longue à la relance.
+1. **J9 sessions : 2 → 9 (+7)** — trafic organique/direct de l'après-midi. 0 ATC. Pas de signal d'intent d'achat.
+2. **Abandoned checkouts API vide** — la requête GraphQL `abandonedCheckouts` a retourné 0 résultat pour J8+J9. Cause probable : scope Admin API insuffisant (`read_orders` ?) ou délai de conservation Shopify. Le signal Shopify Analytics reste valide (2 sessions_that_reached_checkout J8).
+3. **Meta toujours PAUSED ~140h**, 0 €. Aucun changement depuis J4 FINAL (06/06).
+4. **0 commande confirmé** J8 + J9 (API sales Shopify).
 
 ---
 
 ## 📊 Snapshot
 
-| Métrique | J4 (06/06) FINAL | J5→J7 | J8 (10/06) FINAL | J9 (11/06) 8h |
+| Métrique | J4 (06/06) FINAL | J5→J7 | J8 (10/06) FINAL | J9 (11/06) 18h |
 |---|---|---|---|---|
 | Spend | **40,12 €** | **0 € ⛔** | **0 € ⛔** | **0 € ⛔** |
 | CTR | 2,58 % ✅ | — | — | — |
 | Sessions social | 9 | 0 | 0 | 0 |
-| Sessions total | 21 | 5–8/j | **34** (spike · 2 ATC 🎯) | 2 |
+| Sessions total | 21 | 5–8/j | **34** (spike · 2 ATC 🎯) | **9** (+7 PM) |
 | ATC | 0 | 0 | **2 direct** 🎯 | 0 |
 | Commandes | 0 | 0 | 0 | 0 |
 
