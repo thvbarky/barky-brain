@@ -224,6 +224,12 @@
 - **Pourquoi :** Introduire Ad2 PDP ou Ad3 PDP maintenant fragmenterait le signal CBO. L'ordre reste : (1) nettoyer placements, (2) relancer, (3) mesurer coût/ATC propre, (4) challenger.
 - **Résultat (à compléter après relance) :** —
 
+### 2026-06-11 — J8 FINAL corrigé · 2 ATC direct + 2 reached checkout · friction checkout identifiée
+- **Constat :** J8 FINAL confirmé ce matin (11/06 run 8h) : **34 sessions** (vs 32 à 18h) toutes direct · **2 ATC** (vs 0 dans le run J8 18h) · **2 reached checkout** · **0 commande**. Taux ATC direct J8 = 2/34 = 5,9 %. Campagne Meta toujours PAUSED, 0 € J8. J9 partiel 8h : 2s direct, 0 ATC. Pause cumulée ~130h.
+- **Décision :** (1) Investiguer les abandoned checkouts Shopify (Shopify admin → Orders → Abandoned checkouts) — identifier la raison de non-achat. (2) Réitérer la relance urgente avec les exclusions IG. Ce signal ne reporte pas la relance — il s'ajoute à la liste des points à résoudre.
+- **Pourquoi :** 2 visiteurs warm (type-in/lien partagé) ont eu l'intent d'acheter jusqu'au checkout. La friction est post-panier, pas pré-panier. C'est une bonne nouvelle sur la qualité de la PDP/LP — et une alerte sur le checkout (frais de livraison élevés ? absence de trust badges ? méthode de paiement manquante ?). Le problème d'acquisition qualifiée reste premier, mais la friction checkout doit être résolue avant d'avoir du volume.
+- **Résultat (à compléter après investigation checkout) :** —
+
 ### 2026-06-10 — 2ème campagne détectée dans le compte · procédure relance mise à jour
 - **Constat :** API Meta run J8 (10/06) révèle **2 campagnes** dans le compte : (1) `Barky · Trafic LP · Validation · 2026-06` (120248461968180732, PAUSED) — campagne principale suivie. (2) `Barky · Acquisition Test #1 · 2026-06` (120248349620690732, PAUSED) — inconnue des runs précédents. Contient des créas : Ad1 Proof 5-raisons · Ad2 Typo v2 · Ad3 Lifestyle v2 · Ad4 Typo 17-vitamines · Ad5 ProductHero v2 · Ad6 Lifestyle pas-vieux · Ad7 ProductHero liste-actifs. Budget et adsets non audités. Pause J8 toujours confirmée : ~140h · 0€ J5→J8 · J7 FINAL = 8s (corrigé) · J8 partiel = 4s · 0 ATC.
 - **Décision (reco) :** Procédure relance mise à jour — ordre : (1) Clarifier avec Thomas le statut de `Acquisition Test #1` (archiver ou prévoir séquence d'activation avec budget défini). (2) Exclure IG sur Ad2 `signes-mobilite-ete`. (3) Exclure IG sur Ad3 LP `5-problemes-1-formule · LP`. (4) Réactiver campagne principale uniquement. Ne pas activer deux campagnes simultanément sans tracking séparé.

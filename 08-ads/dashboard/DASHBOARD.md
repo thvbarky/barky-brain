@@ -3,7 +3,7 @@
 > Vue humaine régénérée par `/barky-ads-daily` (reco seulement — aucune action sans validation Thomas).
 > Data brute : [`ads-daily.csv`](ads-daily.csv) · Mémoire : [`learnings-ads.md`](learnings-ads.md)
 
-**Dernière mise à jour : 2026-06-10 18h00 (J8 run soir) · ⛔ CAMPAIGN_PAUSED ~116h · 32s direct (spike stabilisé) · 0 ATC · RELANCE URGENTE**
+**Dernière mise à jour : 2026-06-11 08h00 (J9 run matin) · ⛔ CAMPAIGN_PAUSED ~130h · J8 corrigé : 34s direct · 🎯 2 ATC + 2 checkouts · 0 commande · RELANCE URGENTE**
 
 ---
 
@@ -12,25 +12,25 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 
 ---
 
-## 🆕 CE QUI A CHANGÉ vs run J8 12h (10/06)
+## 🆕 CE QUI A CHANGÉ vs run J8 18h (10/06)
 
-1. **Spike 32s stabilisé** — 32 sessions à 12h → **toujours 32 à 18h** (0 nouvelle session dans l'après-midi). Spike matinal terminé. Source probable : email ou partage de lien le matin. À investiguer.
-2. **Campagne toujours PAUSED** — 0 € J5→J8. ~116h de pause cumulées.
-3. **Inventaire compte complet révélé** : **24 créas** au total. Dans la campagne principale : `Ad2 · PDP` + `Ad3 · PDP` existent mais n'avaient jamais été allouées (écrasées par Ad1 PDP dominant CBO). La 2ème campagne `Acquisition Test #1` contient 16 créas (8 × 2 adsets = duplicatas par design).
-4. **Cumul sessions pause** : 5+6+8+32 = 51 sessions direct sans ads → 0 ATC.
+1. **J8 FINAL corrigé :** 32s → **34s** + **0 ATC → 2 ATC + 2 reached checkout** — premier signal checkout reach de l'historique du compte. Taux ATC direct = 5,9 %. Toutes sources = direct (0 social, campagne PAUSED). 0 commande.
+2. **Friction checkout identifiée** — 2 personnes ont atteint le checkout mais n'ont pas acheté. Investiguer : frais de livraison, trust badges, méthode de paiement (Shopify admin → Orders → Abandoned checkouts).
+3. **J9 partiel 8h :** 2 sessions direct, 0 ATC. Meta toujours PAUSED ~130h, 0 €.
+4. **Pause toujours critique** — exclusions IG (Ad2 + Ad3 LP) toujours non exécutées. Chaque heure = coût d'opportunité + learning phase plus longue à la relance.
 
 ---
 
 ## 📊 Snapshot
 
-| Métrique | J4 (06/06) FINAL | J5 (07/06) | J6 (08/06) | J7 (09/06) FINAL | J8 (10/06) FINAL |
-|---|---|---|---|---|---|
-| Spend | **40,12 €** | **0 € ⛔** | **0 € ⛔** | **0 € ⛔** | **0 € ⛔** |
-| CTR | 2,58 % ✅ | — | — | — | — |
-| Sessions social | 9 | 0 | 0 | 0 | 0 |
-| Sessions total | 21 | 5 | 6 | **8** | **32** (spike matinal stabilisé) |
-| ATC | 0 | 0 | 0 | 0 | 0 |
-| Commandes | 0 | 0 | 0 | 0 | 0 |
+| Métrique | J4 (06/06) FINAL | J5→J7 | J8 (10/06) FINAL | J9 (11/06) 8h |
+|---|---|---|---|---|
+| Spend | **40,12 €** | **0 € ⛔** | **0 € ⛔** | **0 € ⛔** |
+| CTR | 2,58 % ✅ | — | — | — |
+| Sessions social | 9 | 0 | 0 | 0 |
+| Sessions total | 21 | 5–8/j | **34** (spike · 2 ATC 🎯) | 2 |
+| ATC | 0 | 0 | **2 direct** 🎯 | 0 |
+| Commandes | 0 | 0 | 0 | 0 |
 
 ---
 
@@ -47,6 +47,7 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 
 ## ⛔ ACTIONS AVANT RELANCE (ordre impératif)
 
+0. **🔍 Investiguer abandoned checkouts** — Shopify admin → Orders → Abandoned checkouts (J8 = 2 checkouts non finalisés).
 1. **🔴 Clarifier `Acquisition Test #1`** — Archiver ou activer ? Budget ? Ne pas relancer sans réponse.
 2. **Exclure IG** sur `Ad2 · ProductHero · signes-mobilite-ete` (CTR IG 3,83 % n=1 671 · 9,48 € fantômes J4)
 3. **Exclure IG** sur `Ad3 · Typo · 5-problemes-1-formule · LP` (CTR IG 0,99 % n=202 · CPC 0,41 €)
@@ -54,14 +55,15 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 
 ---
 
-## Funnel cumulé J1→J8
+## Funnel cumulé J1→J9
 
 ```
-Spend total      : 116,81 €  (J1→J4 · 0€ J5-J8)
-  dont fantômes  : ~53 €     (Ad8+Copie J2 ~33€ + Ad2 IG J3+J4 ~10€ + 0 spend J5-J8)
-Sessions social  :     75    (J1=42 · J2=13 · J3=11 · J4=9 · J5-J8=0)
-Sessions total   :    221    (J1=74 · J2=59 · J3=16 · J4=21 · J5=5 · J6=6 · J7=8 · J8=32 · Shopify confirmé)
+Spend total      : 116,81 €  (J1→J4 · 0€ J5-J9)
+  dont fantômes  : ~53 €     (Ad8+Copie J2 ~33€ + Ad2 IG J3+J4 ~10€)
+Sessions social  :     75    (J1=42 · J2=13 · J3=11 · J4=9 · J5-J9=0)
+Sessions total   :    225    (J1=74 · J2=59 · J3=16 · J4=21 · J5=5 · J6=6 · J7=8 · J8=34 · J9=2 · Shopify confirmé)
 ATC social       :      1    (J3) — coût/ATC = 27,37 €
+ATC direct       :      2    (J8 · trafic warm direct · 0 commande)
 Commandes        :      0    — 0,00 € CA
 ```
 
