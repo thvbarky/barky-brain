@@ -3,7 +3,7 @@
 > Vue humaine régénérée par `/barky-ads-daily` (reco seulement — aucune action sans validation Thomas).
 > Data brute : [`ads-daily.csv`](ads-daily.csv) · Mémoire : [`learnings-ads.md`](learnings-ads.md)
 
-**Dernière mise à jour : 2026-06-11 08h00 (J9 run matin) · ⛔ CAMPAIGN_PAUSED ~130h · J8 corrigé : 34s direct · 🎯 2 ATC + 2 checkouts · 0 commande · RELANCE URGENTE**
+**Dernière mise à jour : 2026-06-11 12h00 (J9 run midi) · ⛔ CAMPAIGN_PAUSED ~134h · 0 changement vs 8h · J8 FINAL : 34s · 🎯 2 ATC · 2 checkouts · 0 commande · RELANCE URGENTE**
 
 ---
 
