@@ -3,7 +3,7 @@
 > Vue humaine régénérée par `/barky-ads-daily` (reco seulement — aucune action sans validation Thomas).
 > Data brute : [`ads-daily.csv`](ads-daily.csv) · Mémoire : [`learnings-ads.md`](learnings-ads.md)
 
-**Dernière mise à jour : 2026-06-12 12h00 (J10 partiel) · ⛔ CAMPAIGN_PAUSED ~158h (6e jour) · J9 FINAL: 9s · J10: 2s · 0 ATC · RELANCE URGENTE**
+**Dernière mise à jour : 2026-06-12 18h00 (J10 partiel 18h) · ⛔ CAMPAIGN_PAUSED ~164h (6e jour) · J9 FINAL: 9s · J10 18h: 4s · 🎯 1 ATC direct · RELANCE URGENTE**
 
 ---
 
@@ -30,8 +30,8 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 | Spend | **40,12 €** | **0 € ⛔** | **0 € ⛔** |
 | CTR | 2,58 % ✅ | — | — |
 | Sessions social | 9 | 0 | 0 |
-| Sessions total | 21 | 5–9/j | **2** (partiel) |
-| ATC | 0 | 0–2 (J8 direct) | 0 |
+| Sessions total | 21 | 5–9/j | **4** (partiel 18h) |
+| ATC | 0 | 0–2 (J8 direct) | **1 direct** |
 | Commandes | 0 | 0 | 0 |
 
 ---
@@ -64,9 +64,9 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 Spend total      : 116,98 €  (J1→J4 · 0€ J5-J10 · API confirmé)
   dont fantômes  : ~53 €     (Ad8+Copie J2 ~33€ + Ad2 IG J3+J4 ~10€ + Ad3 IG ~0,82€)
 Sessions social  :     75    (J1=42 · J2=13 · J3=11 · J4=9 · J5-J10=0)
-Sessions total   :    238    (J1=74 · J2=59 · J3=16 · J4=21 · J5=5 · J6=6 · J7=8 · J8=34 · J9=9 · J10=2p)
+Sessions total   :    240    (J1=74 · J2=59 · J3=16 · J4=21 · J5=5 · J6=6 · J7=8 · J8=34 · J9=9 · J10=4p)
 ATC social       :      1    (J3) — coût/ATC = 27,37 €
-ATC direct       :      2    (J8 · trafic warm · 0 commande)
+ATC direct       :      3    (J8:2 + J10:1 · trafic warm · 0 commande)
 Commandes        :      0    — 0,00 € CA
 ```
 

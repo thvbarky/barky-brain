@@ -242,4 +242,12 @@
 - **Constat :** J9 FINAL Shopify (confirmé API 12/06) = **9 sessions direct · 0 ATC · 0 checkout · 0 commande** (identique au run 18h J9 — pas de correction). J10 partiel 12h = **2 sessions direct · 0 ATC**. Meta : campagne principale toujours `PAUSED` / `effective_status: PAUSED`. 0€ depuis fin J4 (06/06). **Durée de pause : ~158h (~6,5 jours)**. Cumul API campagne principale confirmé : **116,98€ · 36 656 impr**. Créas cumulées : Ad1 PDP = 44,60€ · CTR 2,49% (star) · Ad3 LP = 16,40€ · CTR 2,30% · Ad2 LP = 16,62€ · CTR 2,66% (pollué IG). `Acquisition Test #1` = 0,04€ total (quasi 0 — jamais vraiment tourné). 0 commande Shopify depuis le lancement (seul order = test Thomas #1001 à 0,00€).
 - **Décision :** Pas de nouvelle décision. Les 4 bloqueurs identifiés J5→J9 restent en attente d'exécution : (1) clarification Acquisition Test #1, (2) exclusion IG Ad2, (3) exclusion IG Ad3 LP, (4) relance campagne. Escalade urgence : chaque jour de pause supplémentaire détériore davantage le signal CBO (déjà au-delà du reset inévitable).
 - **Pourquoi :** À ~158h de pause, la learning phase Meta est réinitialisée. L'historique partiel reste en mémoire (Ad1 PDP favori à 67,5% devrait se rétablir rapidement) mais le budget journalier repartira de zéro pendant ~1–2 jours. Plus la pause s'allonge, plus ce mini-learning est coûteux relativement au budget disponible.
-- **Résultat (à compléter après relance) :** —
+- **Résultat (J10 18h) :** J10 partiel 18h = 4s / 1 ATC / 1 checkout (vs 2s/0 ATC à 12h). 3ème ATC direct depuis la pause. → Voir entrée 2026-06-12 18h. Bloqueurs toujours non exécutés.
+
+---
+
+### 2026-06-12 — J10 18h · 3ème ATC direct · friction checkout récurrente confirmée
+- **Constat :** J10 (12/06) partiel 18h : **4 sessions direct · 1 ATC · 1 reached checkout · 0 commande**. Vs run 12h : 2s, 0 ATC. Cumul ATC direct depuis la pause : J8 (10/06) = 2 ATC + 2 checkouts, J10 (12/06) = 1 ATC + 1 checkout. Taux ATC/session direct warm (J8 + J10 hors trafic organique bas) = ~7–9 %. Campagne toujours PAUSED ~164h. 0€ Meta.
+- **Décision :** Pas de nouvelle décision ads. Confirme que la friction checkout est systématique (3 abandons sur 3 tentatives) — à résoudre avant relance pour ne pas drainer budget sur une page qui bloque au checkout.
+- **Pourquoi :** 3 abandons checkout consécutifs = pattern, pas incident. Les 3 causes probables par ordre de fréquence : (1) frais de livraison affichés trop tard / trop élevés, (2) absence de trust badges (SSL visible, avis), (3) méthode de paiement manquante (ex. Paypal). Shopify admin → Orders → Abandoned checkouts donne l'email + le stade d'abandon.
+- **Résultat (à compléter après audit checkout + relance) :** —
