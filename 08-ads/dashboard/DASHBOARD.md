@@ -3,7 +3,7 @@
 > Vue humaine régénérée par `/barky-ads-daily` (reco seulement — aucune action sans validation Thomas).
 > Data brute : [`ads-daily.csv`](ads-daily.csv) · Mémoire : [`learnings-ads.md`](learnings-ads.md)
 
-**Dernière mise à jour : 2026-06-12 18h00 (J10 partiel 18h) · ⛔ CAMPAIGN_PAUSED ~164h (6e jour) · J9 FINAL: 9s · J10 18h: 4s · 🎯 1 ATC direct · RELANCE URGENTE**
+**Dernière mise à jour : 2026-06-12 ~20h (J10 FIN) · ⛔ CAMPAIGN_PAUSED ~170h+ (7e jour) · J9 FINAL: 9s ✅ · J10 FIN: 12s · 🎯 1 ATC direct · RELANCE URGENTE**
 
 ---
 
@@ -12,14 +12,13 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 
 ---
 
-## 🆕 CE QUI A CHANGÉ vs run J9 18h (11/06)
+## 🆕 CE QUI A CHANGÉ vs run J10 18h (12/06)
 
-1. **J9 FINAL confirmé = 9 sessions** (identique au run 18h · 0 ATC · confirmé API Shopify).
-2. **J10 today (12/06) partiel 12h : 2 sessions direct, 0 ATC**. Trafic uniquement direct.
-3. **Campagne toujours PAUSED ~158h** — API Meta confirme `effective_status: PAUSED`. 0€ depuis fin J4 (06/06). 6e jour de pause.
-4. **Cumul API confirmé** : campagne principale = **116,98 €** · Ad1 PDP star = **44,60 €** cumul.
-5. **Aucune commande cliente** — seule commande Shopify = #1001 Thomas test à 0,00€.
-6. **Les 4 bloqueurs restent non exécutés** : Acquisition Test #1 non clarifié, IG Ad2 + Ad3 LP non exclus, campagne non relancée.
+1. **J9 FINAL = 9 sessions, 0 ATC** ✅ confirmé API Shopify (identique au run 18h).
+2. **J10 FIN : 12 sessions direct** (vs 4 à 18h — +8 sessions directes post-18h, **0 nouvel ATC**). Total J10 : 1 ATC / 1 checkout / 0 commande.
+3. **Campagne toujours PAUSED ~170h+** — API Meta confirme `effective_status: PAUSED`. 0€ depuis fin J4 (06/06). 7e jour de pause.
+4. **0 session social** (J9 + J10) — 0 trafic Facebook pendant la pause, confirmé.
+5. **Les 4 bloqueurs restent non exécutés** : Acquisition Test #1 non clarifié, IG Ad2 + Ad3 LP non exclus, campagne non relancée.
 
 ---
 
@@ -30,7 +29,7 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 | Spend | **40,12 €** | **0 € ⛔** | **0 € ⛔** |
 | CTR | 2,58 % ✅ | — | — |
 | Sessions social | 9 | 0 | 0 |
-| Sessions total | 21 | 5–9/j | **4** (partiel 18h) |
+| Sessions total | 21 | 5–9/j | **12** (FIN · +8 post-18h) |
 | ATC | 0 | 0–2 (J8 direct) | **1 direct** |
 | Commandes | 0 | 0 | 0 |
 
@@ -64,7 +63,7 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 Spend total      : 116,98 €  (J1→J4 · 0€ J5-J10 · API confirmé)
   dont fantômes  : ~53 €     (Ad8+Copie J2 ~33€ + Ad2 IG J3+J4 ~10€ + Ad3 IG ~0,82€)
 Sessions social  :     75    (J1=42 · J2=13 · J3=11 · J4=9 · J5-J10=0)
-Sessions total   :    240    (J1=74 · J2=59 · J3=16 · J4=21 · J5=5 · J6=6 · J7=8 · J8=34 · J9=9 · J10=4p)
+Sessions total   :    248    (J1=74 · J2=59 · J3=16 · J4=21 · J5=5 · J6=6 · J7=8 · J8=34 · J9=9 · J10=12)
 ATC social       :      1    (J3) — coût/ATC = 27,37 €
 ATC direct       :      3    (J8:2 + J10:1 · trafic warm · 0 commande)
 Commandes        :      0    — 0,00 € CA

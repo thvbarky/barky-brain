@@ -250,4 +250,10 @@
 - **Constat :** J10 (12/06) partiel 18h : **4 sessions direct · 1 ATC · 1 reached checkout · 0 commande**. Vs run 12h : 2s, 0 ATC. Cumul ATC direct depuis la pause : J8 (10/06) = 2 ATC + 2 checkouts, J10 (12/06) = 1 ATC + 1 checkout. Taux ATC/session direct warm (J8 + J10 hors trafic organique bas) = ~7–9 %. Campagne toujours PAUSED ~164h. 0€ Meta.
 - **Décision :** Pas de nouvelle décision ads. Confirme que la friction checkout est systématique (3 abandons sur 3 tentatives) — à résoudre avant relance pour ne pas drainer budget sur une page qui bloque au checkout.
 - **Pourquoi :** 3 abandons checkout consécutifs = pattern, pas incident. Les 3 causes probables par ordre de fréquence : (1) frais de livraison affichés trop tard / trop élevés, (2) absence de trust badges (SSL visible, avis), (3) méthode de paiement manquante (ex. Paypal). Shopify admin → Orders → Abandoned checkouts donne l'email + le stade d'abandon.
-- **Résultat (à compléter après audit checkout + relance) :** —
+- **Résultat (J10 FIN confirmé) :** J10 FIN = **12 sessions** (vs 4 à 18h — +8 sessions post-18h, **0 nouvel ATC**). 1 ATC / 1 checkout inchangés. Les 8 sessions directes de fin de soirée n'ont pas converti (trafic cold type-in). Bloqueurs toujours non exécutés. ✅ CLÔTURÉ.
+
+### 2026-06-12 — J10 FIN · Sessions 4→12 · 0 ATC additionnel post-18h
+- **Constat :** Run ~20h (J10 FIN) : **12 sessions** toutes sources (toutes direct, 0 social) — vs 4s à 18h. Les 8 sessions supplémentaires arrivent post-18h sans nouvel ATC. Campagne PAUSED ~170h+ (7e jour). 0€ Meta J10. 0 session social J9 + J10 confirmée API Shopify.
+- **Décision :** Pas de nouvelle décision. Correction de volume seulement. Les 4 bloqueurs restent en attente : (1) clarifier Acquisition Test #1, (2) exclure IG Ad2, (3) exclure IG Ad3 LP, (4) réactiver campagne.
+- **Pourquoi :** Les sessions directes de fin de journée sont du trafic "froid" (type-in ou exploration sans intent fort). Le seul ATC J10 a eu lieu plus tôt (avant 18h), cohérent avec les 2 ATCs J8 qui étaient aussi sur un spike matinal.
+- **Résultat (à compléter J11) :** —
