@@ -3,7 +3,7 @@
 > Vue humaine régénérée par `/barky-ads-daily` (reco seulement — aucune action sans validation Thomas).
 > Data brute : [`ads-daily.csv`](ads-daily.csv) · Mémoire : [`learnings-ads.md`](learnings-ads.md)
 
-**Dernière mise à jour : 2026-06-13 08h (J11 partiel · ⛔ CAMPAIGN_PAUSED ~184h · 8e jour · J10 FINAL CORRIGÉ: 34s · J11: 0s · RELANCE URGENTE)**
+**Dernière mise à jour : 2026-06-13 12h (J11 partiel · ⛔ CAMPAIGN_PAUSED ~188h · 8e jour · J11: 6s direct · 0 ATC · RELANCE URGENTE)**
 
 ---
 
@@ -12,12 +12,11 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 
 ---
 
-## 🆕 CE QUI A CHANGÉ depuis run J10 FIN (~20h 12/06)
+## 🆕 CE QUI A CHANGÉ depuis run J11 8h (13/06)
 
-1. **J10 FINAL CORRIGÉ = 34 sessions** (vs 12 loguées à ~20h) — API Shopify confirme 22 sessions nocturnes (20h→minuit) non capturées. 1 ATC / 1 checkout / 0 commande. Sessions total J1→J10 corrigé = **266**.
-2. **J11 (13/06) 8h partiel : 0 sessions** — normal pour cette heure, campagne toujours PAUSED.
-3. **Campagne toujours PAUSED ~184h** — 8e jour consécutif. API Meta confirme `effective_status: PAUSED` sur les 2 campagnes. 0€ depuis fin J4 (06/06).
-4. **Les 4 bloqueurs restent non exécutés** depuis J5 (07/06) : Acquisition Test #1 non clarifié, IG Ad2 + Ad3 LP non exclus, campagne non relancée.
+1. **J11 (13/06) 12h partiel : 6 sessions direct** (vs 0 à 8h) — trafic organique/type-in normal · 0 ATC · 0 commande.
+2. **Campagne toujours PAUSED ~188h** — 8e jour consécutif. API Meta confirme `effective_status: PAUSED` sur les 2 campagnes. 0€ depuis fin J4 (06/06).
+3. **Rien de nouveau** : les 4 bloqueurs restent non exécutés. Pas de changement structurel.
 
 ---
 
@@ -28,7 +27,7 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 | Spend | **40,12 €** | **0 € ⛔** | **0 € ⛔** |
 | CTR | 2,58 % ✅ | — | — |
 | Sessions social | 9 | 0 | 0 |
-| Sessions total | 21 | 5–34/j | **0** (8h partiel) |
+| Sessions total | 21 | 5–34/j | **6** (12h partiel) |
 | ATC | 0 | 0–2 (J8/J10 direct) | 0 |
 | Commandes | 0 | 0 | 0 |
 

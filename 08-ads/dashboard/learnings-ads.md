@@ -258,10 +258,10 @@
 - **Pourquoi :** Les runs à 18h/20h ne capturent jamais la fin de soirée. La règle FINAL = confirmation API du lendemain matin reste la seule approche fiable.
 - **Résultat :** Correction actée dans CSV + dashboard. ✅
 
-### 2026-06-13 — J11 8h · Campagne PAUSED ~184h · 8e jour consécutif
-- **Constat :** Run 8h J11 (13/06) : campagne principale `120248461968180732` + Acquisition Test #1 `120248349620690732` : tous les deux `effective_status: PAUSED / delivery: off`. 0€ Meta J11 (partiel 8h). Shopify J11 = 0 sessions à 8h (normal pour cette heure). Pause cumulative : **~184h** (soir J4 06/06 → matin J11 13/06). Les 4 bloqueurs (Acq Test #1 · IG Ad2 · IG Ad3 LP · relance) restent non exécutés.
-- **Décision :** Aucune nouvelle reco. Urgence maximale inchangée. Chaque journée supplémentaire détériore la mémoire CBO sans possibilité de collecter du signal coût/ATC propre.
-- **Pourquoi :** À 184h de pause, le signal CBO est entièrement réinitialisé. La relance revient à "jour 1" pour l'algorithme, avec le seul avantage d'un historique partiel favori Ad1 PDP (67,5 % CBO à J4).
+### 2026-06-13 — J11 · Campagne PAUSED ~188h · 8e jour consécutif
+- **Constat :** Run 8h J11 : 0 sessions · 0€ Meta. Run 12h J11 : **6 sessions direct · 0 ATC · 0 commande**. Les 2 campagnes (`120248461968180732` + `120248349620690732`) restent `PAUSED / delivery: off`. Pause cumulative : **~188h** (soir J4 06/06 → 12h J11 13/06). Les 4 bloqueurs (Acq Test #1 · IG Ad2 · IG Ad3 LP · relance) restent non exécutés.
+- **Décision :** Aucune nouvelle reco. Urgence maximale inchangée.
+- **Pourquoi :** À 188h de pause, le CBO repart de zéro à la relance. Chaque run de plus sans action concrète est une journée de signal perdue.
 - **Résultat (à compléter J12) :** —
 
 ### 2026-06-12 — J10 FIN · Sessions 4→12 · 0 ATC additionnel post-18h
