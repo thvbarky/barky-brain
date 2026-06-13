@@ -252,6 +252,18 @@
 - **Pourquoi :** 3 abandons checkout consécutifs = pattern, pas incident. Les 3 causes probables par ordre de fréquence : (1) frais de livraison affichés trop tard / trop élevés, (2) absence de trust badges (SSL visible, avis), (3) méthode de paiement manquante (ex. Paypal). Shopify admin → Orders → Abandoned checkouts donne l'email + le stade d'abandon.
 - **Résultat (J10 FIN confirmé) :** J10 FIN = **12 sessions** (vs 4 à 18h — +8 sessions post-18h, **0 nouvel ATC**). 1 ATC / 1 checkout inchangés. Les 8 sessions directes de fin de soirée n'ont pas converti (trafic cold type-in). Bloqueurs toujours non exécutés. ✅ CLÔTURÉ.
 
+### 2026-06-13 — J10 FINAL CORRIGÉ · 34 sessions (API confirme vs 12 loguées à ~20h)
+- **Constat :** API Shopify (run 8h J11 · 13/06) confirme J10 (12/06) FINAL = **34 sessions direct · 1 ATC · 1 checkout · 0 commande**. Le run FIN à ~20h n'avait capté que 12 sessions. 22 sessions supplémentaires sont arrivées entre 20h et minuit. Même volume que J8 (34 sessions = spike). Taux ATC/session J10 = 1/34 = 2,9 % (vs 5,9 % J8 — J8 plus warm que J10).
+- **Décision :** Correction de registre. Sessions total J1→J10 corrigé = **266** (vs 248 indiqué). Les 4 bloqueurs restent inchangés.
+- **Pourquoi :** Les runs à 18h/20h ne capturent jamais la fin de soirée. La règle FINAL = confirmation API du lendemain matin reste la seule approche fiable.
+- **Résultat :** Correction actée dans CSV + dashboard. ✅
+
+### 2026-06-13 — J11 8h · Campagne PAUSED ~184h · 8e jour consécutif
+- **Constat :** Run 8h J11 (13/06) : campagne principale `120248461968180732` + Acquisition Test #1 `120248349620690732` : tous les deux `effective_status: PAUSED / delivery: off`. 0€ Meta J11 (partiel 8h). Shopify J11 = 0 sessions à 8h (normal pour cette heure). Pause cumulative : **~184h** (soir J4 06/06 → matin J11 13/06). Les 4 bloqueurs (Acq Test #1 · IG Ad2 · IG Ad3 LP · relance) restent non exécutés.
+- **Décision :** Aucune nouvelle reco. Urgence maximale inchangée. Chaque journée supplémentaire détériore la mémoire CBO sans possibilité de collecter du signal coût/ATC propre.
+- **Pourquoi :** À 184h de pause, le signal CBO est entièrement réinitialisé. La relance revient à "jour 1" pour l'algorithme, avec le seul avantage d'un historique partiel favori Ad1 PDP (67,5 % CBO à J4).
+- **Résultat (à compléter J12) :** —
+
 ### 2026-06-12 — J10 FIN · Sessions 4→12 · 0 ATC additionnel post-18h
 - **Constat :** Run ~20h (J10 FIN) : **12 sessions** toutes sources (toutes direct, 0 social) — vs 4s à 18h. Les 8 sessions supplémentaires arrivent post-18h sans nouvel ATC. Campagne PAUSED ~170h+ (7e jour). 0€ Meta J10. 0 session social J9 + J10 confirmée API Shopify.
 - **Décision :** Pas de nouvelle décision. Correction de volume seulement. Les 4 bloqueurs restent en attente : (1) clarifier Acquisition Test #1, (2) exclure IG Ad2, (3) exclure IG Ad3 LP, (4) réactiver campagne.
