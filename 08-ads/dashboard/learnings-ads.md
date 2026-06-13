@@ -258,6 +258,14 @@
 - **Pourquoi :** Les runs à 18h/20h ne capturent jamais la fin de soirée. La règle FINAL = confirmation API du lendemain matin reste la seule approche fiable.
 - **Résultat :** Correction actée dans CSV + dashboard. ✅
 
+### 2026-06-13 — J11 18h · Spike 39s · 3ème spike récurrent pendant la pause · 0 ATC
+- **Constat :** J11 (13/06) partiel 18h : **39 sessions direct** (vs 6 à 12h — confirmé API Shopify). 0 ATC · 0 checkout · 0 commande. 3ème spike de la période de pause : J8 (10/06) = 34s / J10 (12/06) = 34s / J11 (13/06) = 39s. Baseline entre les spikes : J5=5, J6=6, J7=8, J9=9. Pattern interval : J8→J10 = 2 jours, J10→J11 = 1 jour (s'accélère). Meta : 0€ hier (J10) + 0€ aujourd'hui (J11) confirmés API — 2 campagnes toujours `PAUSED` (~194h).
+- **Décision :** Surveillance uniquement. **Ne pas interpréter les spikes comme un signal de santé de la page.** Taux ATC : J8=5,9% (warm) → J10=2,9% (warm) → J11=0% (froid ou mêmes visiteurs qui reviennent). Source non identifiée (probablement email/lien partagé ou partages réseaux sociaux). La relance paid reste l'urgence absolue — les spikes organiques ne remplacent pas l'acquisition qualifiée.
+- **Pourquoi :** 0 ATC sur 39 sessions = trafic en mode exploration. La tendance baissière du taux ATC sur les spikes (5,9% → 2,9% → 0%) peut indiquer que les mêmes personnes reviennent sans intent croissant, ou que le profil de visiteur des spikes devient moins warm. Confirme la friction checkout est post-panier (les spikes warm J8/J10 ont convergé vers ATC sans déclencher de commande).
+- **Résultat (à compléter J12 · 14/06) :** —
+
+---
+
 ### 2026-06-13 — J11 · Campagne PAUSED ~188h · 8e jour consécutif
 - **Constat :** Run 8h J11 : 0 sessions · 0€ Meta. Run 12h J11 : **6 sessions direct · 0 ATC · 0 commande**. Les 2 campagnes (`120248461968180732` + `120248349620690732`) restent `PAUSED / delivery: off`. Pause cumulative : **~188h** (soir J4 06/06 → 12h J11 13/06). Les 4 bloqueurs (Acq Test #1 · IG Ad2 · IG Ad3 LP · relance) restent non exécutés.
 - **Décision :** Aucune nouvelle reco. Urgence maximale inchangée.
