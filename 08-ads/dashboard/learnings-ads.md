@@ -270,7 +270,15 @@
 - **Constat :** Run 8h J11 : 0 sessions · 0€ Meta. Run 12h J11 : **6 sessions direct · 0 ATC · 0 commande**. Les 2 campagnes (`120248461968180732` + `120248349620690732`) restent `PAUSED / delivery: off`. Pause cumulative : **~188h** (soir J4 06/06 → 12h J11 13/06). Les 4 bloqueurs (Acq Test #1 · IG Ad2 · IG Ad3 LP · relance) restent non exécutés.
 - **Décision :** Aucune nouvelle reco. Urgence maximale inchangée.
 - **Pourquoi :** À 188h de pause, le CBO repart de zéro à la relance. Chaque run de plus sans action concrète est une journée de signal perdue.
-- **Résultat (à compléter J12) :** —
+- **Résultat (J11 FINAL confirmé 14/06 8h) :** J11 FINAL = **63 sessions direct** (vs 39 à 18h — +24 sessions nocturnes post-18h). 0 ATC · 0 checkout · 0 commande. 3ème et plus fort spike de la pause (J8=34, J10=34, J11=63 ↑↑). 100% direct. ✅ CLÔTURÉ.
+
+---
+
+### 2026-06-14 — J12 · 9e jour de pause · J11 FINAL corrigé (63s vs 39s à 18h)
+- **Constat :** J12 run 8h : API Shopify = **0 sessions** (trop tôt). API Meta = 2 campagnes `PAUSED` · 0€. J11 FINAL confirmé = **63 sessions direct** (vs 39 loguées à 18h le 13/06). +24 sessions nocturnes post-18h — reproduction exacte du pattern J8 (32→34) et J10 (12→34). Pause cumulative : **~210h** (9e jour). Les 4 bloqueurs restent non exécutés.
+- **Décision :** Pas de nouvelle décision. Règle FINAL = lendemain matin confirmée. Corriger CSV + dashboard avec 63s.
+- **Pourquoi :** J11 spike = le plus fort de la pause (×1,85 vs J8/J10). 0 ATC sur 63 sessions confirme que ce trafic est non-intentionniste (visiteurs type-in/exploration sans intent d'achat). La distinction warm/cold des spikes : J8 (34s · taux ATC 5,9%) → J10 (34s · taux ATC 2,9%) → J11 (63s · taux ATC 0%) — le trafic des spikes devient de moins en moins qualifié. Cela ne change pas la priorité : relancer avec les exclusions IG.
+- **Résultat (à compléter J12 12h/18h) :** —
 
 ### 2026-06-12 — J10 FIN · Sessions 4→12 · 0 ATC additionnel post-18h
 - **Constat :** Run ~20h (J10 FIN) : **12 sessions** toutes sources (toutes direct, 0 social) — vs 4s à 18h. Les 8 sessions supplémentaires arrivent post-18h sans nouvel ATC. Campagne PAUSED ~170h+ (7e jour). 0€ Meta J10. 0 session social J9 + J10 confirmée API Shopify.
