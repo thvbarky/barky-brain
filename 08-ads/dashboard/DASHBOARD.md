@@ -3,7 +3,7 @@
 > Vue humaine régénérée par `/barky-ads-daily` (reco seulement — aucune action sans validation Thomas).
 > Data brute : [`ads-daily.csv`](ads-daily.csv) · Mémoire : [`learnings-ads.md`](learnings-ads.md)
 
-**Dernière mise à jour : 2026-06-14 8h (J12 · ⛔ CAMPAIGN_PAUSED ~210h · 9e jour · J11 FINAL: 63s direct · J12: 0s · RELANCE URGENTE)**
+**Dernière mise à jour : 2026-06-14 12h (J12 · ⛔ CAMPAIGN_PAUSED ~214h · 9e jour · J11 FINAL: 63s direct ✅ · J12 partiel: 9s direct · 0 ATC · RELANCE URGENTE)**
 
 ---
 
@@ -12,23 +12,23 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 
 ---
 
-## 🆕 CE QUI A CHANGÉ depuis run J11 18h (13/06)
+## 🆕 CE QUI A CHANGÉ depuis run J12 8h (14/06)
 
-1. **J11 FINAL confirmé API** : **63 sessions direct** (vs 39 à 18h) — +24 sessions nocturnes post-18h. Même pattern que J8 (32→34) et J10 (12→34). 0 ATC · 0 checkout · 0 commande.
-2. **J11 spike = le plus fort de la pause** : J8=34s → J10=34s → J11=63s (×1,85 vs précédents spikes). Trafic 100% direct, non-intentionniste.
-3. **J12 partiel 8h** : 0 sessions (trop tôt). Campagne PAUSED ~210h. Rien de nouveau.
-4. **Rien de structurellement nouveau** : les 4 bloqueurs restent non exécutés.
+1. **J12 partiel 12h** : **9 sessions direct** (0 à 8h → 9 à 12h). 0 ATC · 0 social · 0€ Meta. Baseline de début de journée conforme à la moyenne hors-spike (~5-9 s/j).
+2. **J11 FINAL déjà confirmé** au run 8h : 63 sessions direct · 0 ATC · 0 checkout. Aucune correction sur J11.
+3. **2 campagnes PAUSED** : API Meta confirme `effective_status: PAUSED` sur les deux campagnes · 24 créas toutes `CAMPAIGN_PAUSED`. 0€ J11 + 0€ J12 partiel.
+4. **Rien de structurellement nouveau** : les 4 bloqueurs restent non exécutés. Pause ~214h (9e jour).
 
 ---
 
 ## 📊 Snapshot
 
-| Métrique | J4 (06/06) FINAL | J5→J10 | J11 FINAL | J12 (8h partiel) |
+| Métrique | J4 (06/06) FINAL | J5→J10 | J11 FINAL | J12 (12h partiel) |
 |---|---|---|---|---|
 | Spend | **40,12 €** | **0 € ⛔** | **0 € ⛔** | **0 € ⛔** |
 | CTR | 2,58 % ✅ | — | — | — |
 | Sessions social | 9 | 0 | 0 | 0 |
-| Sessions total | 21 | 5–34/j | **63 ↑↑ SPIKE** | 0 (trop tôt) |
+| Sessions total | 21 | 5–34/j | **63 ↑↑ SPIKE** | **9** |
 | ATC | 0 | 0–2 (J8/J10 direct) | 0 | 0 |
 | Commandes | 0 | 0 | 0 | 0 |
 
