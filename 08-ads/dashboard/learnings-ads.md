@@ -284,4 +284,12 @@
 - **Constat :** Run ~20h (J10 FIN) : **12 sessions** toutes sources (toutes direct, 0 social) — vs 4s à 18h. Les 8 sessions supplémentaires arrivent post-18h sans nouvel ATC. Campagne PAUSED ~170h+ (7e jour). 0€ Meta J10. 0 session social J9 + J10 confirmée API Shopify.
 - **Décision :** Pas de nouvelle décision. Correction de volume seulement. Les 4 bloqueurs restent en attente : (1) clarifier Acquisition Test #1, (2) exclure IG Ad2, (3) exclure IG Ad3 LP, (4) réactiver campagne.
 - **Pourquoi :** Les sessions directes de fin de journée sont du trafic "froid" (type-in ou exploration sans intent fort). Le seul ATC J10 a eu lieu plus tôt (avant 18h), cohérent avec les 2 ATCs J8 qui étaient aussi sur un spike matinal.
-- **Résultat (à compléter J11) :** —
+- **Résultat (J11 FINAL = 63s / 0 ATC) :** Les 8 sessions de fin de soirée J10 = trafic froid sans intent d'achat. Pattern confirmé : les sessions directes nocturnes ne convertissent pas. ✅ CLÔTURÉ.
+
+---
+
+### 2026-06-14 — J12 18h · 4ème spike de la pause (55s partiel) · taux ATC zéro
+- **Constat :** J12 (14/06) partiel 18h : **55 sessions direct** (vs 9s à 12h — +46 sessions entre 12h et 18h). 0 ATC · 0 checkout · 0 commande. Meta : 2 campagnes `PAUSED` · 0€. Pause ~220h (9e jour). Shopify API confirme J11 FINAL = 63 sessions / 0 ATC (identique aux données loguées, pas de correction). 4ème spike de la pause : J8=34s (5,9% ATC warm) · J10=34s (2,9%) · J11=63s (0%) · J12=55s partiel (0%). Intervalles : J8→J10=2j · J10→J11=1j · J11→J12=1j (s'accélère).
+- **Décision :** Surveillance uniquement. Le FINAL J12 devrait croître post-18h selon le pattern nocturne (J10: 4→34, J11: 39→63). Taux ATC des spikes en déclin continu : 5,9% → 2,9% → 0% → 0% — la population de visiteurs warm s'est épuisée. Relance paid reste l'urgence absolue, ces spikes organiques ne substituent pas l'acquisition qualifiée.
+- **Pourquoi :** Spike probablement dû à un partage organique ou email (même source non identifiée que J11). Déclin taux ATC = les mêmes visiteurs reviennent en mode exploration sans intent d'achat croissant. Même si le FINAL J12 atteint 70-80 sessions, sans paid on ne génère pas de signal ATC scalable.
+- **Résultat (J12 FINAL confirmé J13 8h) :** —
