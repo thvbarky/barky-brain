@@ -284,7 +284,13 @@
 - **Constat :** Run 8h J13 (15/06) : **0 sessions** · **0€ Meta** · 2 campagnes `PAUSED` confirmées API. Pause cumulative : **~235h** (fin J4 06/06 soir → 8h J13 15/06). 10e jour consécutif sans spend. Les 4 bloqueurs restent non exécutés : (1) clarifier Acquisition Test #1, (2) exclure IG Ad2, (3) exclure IG Ad3 LP, (4) réactiver campagne principale.
 - **Décision :** Pas de nouvelle reco. Urgence inchangée — relancer dès que possible.
 - **Pourquoi :** À 235h de pause, le signal CBO est entièrement réinitialisé depuis longtemps (seuil 72h dépassé le 09/06). Chaque jour de pause supplémentaire ne dégrade plus le reset (déjà fait) mais allonge le temps pour retrouver un rythme de dépense et générer des signaux ATC exploitables.
-- **Résultat (à compléter run 12h) :** —
+- **Résultat (12h confirmé) :** J13 partiel 12h = **29 sessions direct** (vs 0 à 8h). 5ème spike potentiel en formation — 29s dès 12h dépasse la baseline journalière de la pause (5–8s/j). 0 ATC · 0 social · 0€ Meta. FINAL à confirmer au run 18h et API J+1. ✅ COMPLÉTÉ.
+
+### 2026-06-15 — J13 12h · 5ème spike potentiel · 29s direct dès midi
+- **Constat :** J13 (15/06) partiel 12h : **29 sessions direct** (vs 0 à 8h) · 0 ATC · 0 checkout · 0 commande · 0€ Meta · 2 campagnes `PAUSED` ~239h. Baseline pause = 5–8 sessions/j. 29s dès 12h dépasse déjà la baseline journalière complète → 5ème spike en formation. Fréquence des spikes : J8 (10/06) · J10 (12/06) · J11 (13/06) · J12 (14/06) · J13 (15/06) — désormais quotidiens. Intervalles : 2j → 1j → 1j → 1j.
+- **Décision :** Surveillance uniquement. Confirmer FINAL au run 18h et via API le lendemain (règle FINAL = J+1 matin). Ne pas interpréter comme signal de santé de la page — taux ATC spikes : 5,9% → 2,9% → 0% → 0% → 0% attendu J13. La relance paid reste la priorité absolue.
+- **Pourquoi :** Même dynamique que les spikes précédents (source non identifiée, probablement email/lien partagé). Avec 4 spikes consécutifs (J10→J13) à fréquence quotidienne, la population warm est épuisée. Les visiteurs reviennent en mode exploration sans intent d'achat croissant. Ces spikes organiques ne remplacent pas l'acquisition qualifiée.
+- **Résultat (à compléter run 18h) :** —
 
 ### 2026-06-14 — J12 · 9e jour de pause · J11 FINAL corrigé (63s vs 39s à 18h)
 - **Constat :** J12 run 8h : API Shopify = **0 sessions** (trop tôt). API Meta = 2 campagnes `PAUSED` · 0€. J11 FINAL confirmé = **63 sessions direct** (vs 39 loguées à 18h le 13/06). +24 sessions nocturnes post-18h — reproduction exacte du pattern J8 (32→34) et J10 (12→34). Pause cumulative : **~210h** (9e jour). Les 4 bloqueurs restent non exécutés.
