@@ -274,6 +274,18 @@
 
 ---
 
+### 2026-06-15 — J12 FINAL · 55s sans inflation nocturne · rupture pattern J10/J11
+- **Constat :** API Shopify (run 8h J13 · 15/06) confirme J12 (14/06) FINAL = **55 sessions direct · 0 ATC · 0 checkout · 0 commande**. Identique aux données du run 18h J12 — pas d'inflation nocturne. Rupture du pattern : J10 (4s→34 final, +8h de sessions nocturnes) · J11 (39s→63 final, +24s nocturnes). J12 : pic atteint avant 18h, aucune session nocturne.
+- **Décision :** Correction de note CSV J12 (partiel → FINAL). Pas d'action ads.
+- **Pourquoi :** Le pattern d'inflation nocturne dépend de l'heure du partage source. J12 = partage probable en milieu de journée → trafic pic en journée, clos avant 18h. J10/J11 = partages probables le soir → gonflement nocturne. 0 ATC sur 55s confirme trafic non-intentionniste, cohérent avec la tendance baissière des spikes (5,9% → 2,9% → 0% → 0%).
+- **Résultat :** Correction actée CSV + dashboard. ✅
+
+### 2026-06-15 — J13 08h · 10ème jour de pause · ~235h · urgence maximale
+- **Constat :** Run 8h J13 (15/06) : **0 sessions** · **0€ Meta** · 2 campagnes `PAUSED` confirmées API. Pause cumulative : **~235h** (fin J4 06/06 soir → 8h J13 15/06). 10e jour consécutif sans spend. Les 4 bloqueurs restent non exécutés : (1) clarifier Acquisition Test #1, (2) exclure IG Ad2, (3) exclure IG Ad3 LP, (4) réactiver campagne principale.
+- **Décision :** Pas de nouvelle reco. Urgence inchangée — relancer dès que possible.
+- **Pourquoi :** À 235h de pause, le signal CBO est entièrement réinitialisé depuis longtemps (seuil 72h dépassé le 09/06). Chaque jour de pause supplémentaire ne dégrade plus le reset (déjà fait) mais allonge le temps pour retrouver un rythme de dépense et générer des signaux ATC exploitables.
+- **Résultat (à compléter run 12h) :** —
+
 ### 2026-06-14 — J12 · 9e jour de pause · J11 FINAL corrigé (63s vs 39s à 18h)
 - **Constat :** J12 run 8h : API Shopify = **0 sessions** (trop tôt). API Meta = 2 campagnes `PAUSED` · 0€. J11 FINAL confirmé = **63 sessions direct** (vs 39 loguées à 18h le 13/06). +24 sessions nocturnes post-18h — reproduction exacte du pattern J8 (32→34) et J10 (12→34). Pause cumulative : **~210h** (9e jour). Les 4 bloqueurs restent non exécutés.
 - **Décision :** Pas de nouvelle décision. Règle FINAL = lendemain matin confirmée. Corriger CSV + dashboard avec 63s.
@@ -292,4 +304,4 @@
 - **Constat :** J12 (14/06) partiel 18h : **55 sessions direct** (vs 9s à 12h — +46 sessions entre 12h et 18h). 0 ATC · 0 checkout · 0 commande. Meta : 2 campagnes `PAUSED` · 0€. Pause ~220h (9e jour). Shopify API confirme J11 FINAL = 63 sessions / 0 ATC (identique aux données loguées, pas de correction). 4ème spike de la pause : J8=34s (5,9% ATC warm) · J10=34s (2,9%) · J11=63s (0%) · J12=55s partiel (0%). Intervalles : J8→J10=2j · J10→J11=1j · J11→J12=1j (s'accélère).
 - **Décision :** Surveillance uniquement. Le FINAL J12 devrait croître post-18h selon le pattern nocturne (J10: 4→34, J11: 39→63). Taux ATC des spikes en déclin continu : 5,9% → 2,9% → 0% → 0% — la population de visiteurs warm s'est épuisée. Relance paid reste l'urgence absolue, ces spikes organiques ne substituent pas l'acquisition qualifiée.
 - **Pourquoi :** Spike probablement dû à un partage organique ou email (même source non identifiée que J11). Déclin taux ATC = les mêmes visiteurs reviennent en mode exploration sans intent d'achat croissant. Même si le FINAL J12 atteint 70-80 sessions, sans paid on ne génère pas de signal ATC scalable.
-- **Résultat (J12 FINAL confirmé J13 8h) :** —
+- **Résultat (J12 FINAL confirmé J13 8h) :** J12 FINAL = **55 sessions / 0 ATC** — pas d'inflation nocturne (rupture pattern J10/J11). ✅ CLÔTURÉ.
