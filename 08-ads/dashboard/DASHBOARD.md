@@ -3,7 +3,7 @@
 > Vue humaine régénérée par `/barky-ads-daily` (reco seulement — aucune action sans validation Thomas).
 > Data brute : [`ads-daily.csv`](ads-daily.csv) · Mémoire : [`learnings-ads.md`](learnings-ads.md)
 
-**Dernière mise à jour : 2026-06-16 08h (J14 · ⛔ CAMPAIGN_PAUSED ~259h · 11e jour · J13 FINAL=39s · J14 partiel: 3s · 0 ATC · RELANCE URGENTE)**
+**Dernière mise à jour : 2026-06-16 12h (J14 · ⛔ CAMPAIGN_PAUSED ~263h · 11e jour · J13 FINAL=39s ✅ · J14 partiel 12h: 19s · 6ème spike potentiel · 0 ATC · RELANCE URGENTE)**
 
 ---
 
@@ -12,12 +12,14 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 
 ---
 
-## 🆕 CE QUI A CHANGÉ depuis run J13 18h (15/06)
+## 🆕 CE QUI A CHANGÉ depuis run J14 08h (16/06)
 
-1. **J13 FINAL = 39 sessions** (38 direct + 1 search — vs 36 à 18h · +3 sessions nocturnes post-18h). 0 ATC. API Shopify confirmé 16/06 8h.
-2. **J14 partiel 8h = 3 sessions direct** · baseline normale · pas de spike en cours.
-3. **Meta : 0€ J13 + 0€ J14 confirmés API** — 2 campagnes `PAUSED` ~259h (11e jour).
-4. **Rien de nouveau** sur les 4 bloqueurs — non exécutés depuis J5 (07/06).
+1. **J14 partiel 12h = 19 sessions** (vs 3 à 8h — +16 sessions en ~4h). 0 ATC · 0 social · 0€ Meta. **6ème spike potentiel en formation** — 19s à 12h dépasse déjà la baseline journalière normale (5–8s/j).
+2. **J13 FINAL = 39s ✅ confirmé** (38 direct + 1 search · 0 ATC · stable, pas d'inflation nocturne post-18h).
+3. **J12 FINAL = 55s ✅ confirmé** (0 ATC · 0 checkout).
+4. **Meta : 0€ J13 + 0€ J14 confirmés API** — 2 campagnes `PAUSED` ~263h (11e jour) · toutes créas `CAMPAIGN_PAUSED`.
+5. **Abandoned checkouts GraphQL = 0 résultats** — les checkouts J8 (2×) et J10 (1×) ont expiré du système Shopify (délai ~10 jours). Friction checkout toujours non identifiée.
+6. **4 bloqueurs** toujours non exécutés depuis J5 (07/06).
 
 ---
 
@@ -28,7 +30,7 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 | Spend | **40,12 €** | **0 € ⛔** | **0 € ⛔** | **0 € ⛔** | **0 € ⛔** |
 | CTR | 2,58 % ✅ | — | — | — | — |
 | Sessions social | 9 | 0 | 0 | 0 | 0 |
-| Sessions total | 21 | 5–63/j | **55 ✅** | **39 ✅** | **3 (8h)** |
+| Sessions total | 21 | 5–63/j | **55 ✅** | **39 ✅** | **19 (12h)** |
 | ATC | 0 | 0–2 (J8/J10 direct) | 0 | 0 | 0 |
 | Commandes | 0 | 0 | 0 | 0 | 0 |
 

@@ -310,7 +310,19 @@
 - **Constat :** Run 8h J14 (16/06) : **3 sessions direct** · 0 ATC · 0 checkout · 0 commande · 0€ Meta · 2 campagnes `PAUSED` ~259h. Baseline conforme (5–8s/j hors spike). Pas de spike en formation. J13 FINAL = 39s confirmé.
 - **Décision :** Aucune nouvelle reco. Urgence relance inchangée — 4 bloqueurs toujours non exécutés depuis J5 (07/06).
 - **Pourquoi :** À ~259h de pause, le reset CBO est total depuis longtemps. Chaque jour supplémentaire sans relance n'aggrave plus le reset mais allonge le temps de récupération du signal.
-- **Résultat (à compléter run 12h J14) :** —
+- **Résultat (run 12h confirmé) :** J14 partiel 12h = **19 sessions** (vs 3 à 8h — +16s en ~4h). 0 ATC · 0 social · 0€ Meta. **6ème spike potentiel en formation** — 19s dès 12h dépasse la baseline journalière complète (5–8s). FINAL à confirmer run 18h + API J15 matin. ✅ COMPLÉTÉ.
+
+### 2026-06-16 — J14 12h · 6ème spike potentiel · pattern quotidien continue
+- **Constat :** J14 (16/06) partiel 12h : **19 sessions total** (0 social · 0€ Meta · `PAUSED` ~263h). À 8h : 3s (baseline). À 12h : 19s → spike qui s'accélère. Historique spikes pause : J8=34s (5,9% ATC warm) · J10=34s (2,9%) · J11=63s (0%) · J12=55s (0%) · J13=39s (0%). Intervalles récents : quotidiens depuis J10. Les 5 derniers spikes ont tous eu un taux ATC déclinant : le 6ème devrait être 0% ATC. Source toujours non identifiée.
+- **Décision :** Surveillance uniquement. FINAL J14 à confirmer run 18h + API J15 matin. Ne pas interpréter comme signal de santé. La relance paid reste la priorité absolue. 4 bloqueurs inchangés.
+- **Pourquoi :** Le pattern de spikes quotidiens à taux ATC déclinant confirme que la population warm organique est épuisée. Chaque spike amène des visiteurs en mode exploration sans intent croissant. Ces visites ne remplacent pas l'acquisition qualifiée paid.
+- **Résultat (à compléter run 18h J14) :** —
+
+### 2026-06-16 — Abandoned checkouts expirés du système Shopify
+- **Constat :** GraphQL `abandonedCheckouts` query avec `created_at:>2026-06-09` = **0 résultats**. Les 3 abandons checkout identifiés (J8: 2×, J10: 1×) ne sont plus accessibles via API. Délai d'expiration Shopify des abandoned checkouts non documenté mais estimé ~10 jours.
+- **Décision :** Investiguer la friction checkout via Shopify admin → Orders → Abandoned checkouts (interface admin) plutôt que via API GraphQL. Ou utiliser Klaviyo si les flows abandoned checkout sont configurés.
+- **Pourquoi :** Les 3 abandons confirment une friction systématique post-panier (100% abandon rate). Les causes probables restent : frais livraison affichés tard, absence trust badges, méthode paiement manquante. Ne peut pas être résolu via API — nécessite accès admin direct.
+- **Résultat :** Règle : ne pas compter sur l'API GraphQL abandonedCheckouts pour les données > 10 jours. ✅
 
 ### 2026-06-14 — J12 · 9e jour de pause · J11 FINAL corrigé (63s vs 39s à 18h)
 - **Constat :** J12 run 8h : API Shopify = **0 sessions** (trop tôt). API Meta = 2 campagnes `PAUSED` · 0€. J11 FINAL confirmé = **63 sessions direct** (vs 39 loguées à 18h le 13/06). +24 sessions nocturnes post-18h — reproduction exacte du pattern J8 (32→34) et J10 (12→34). Pause cumulative : **~210h** (9e jour). Les 4 bloqueurs restent non exécutés.
