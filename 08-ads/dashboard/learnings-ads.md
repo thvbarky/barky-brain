@@ -296,7 +296,21 @@
 - **Constat :** J13 (15/06) partiel 18h : **36 sessions direct** (vs 29 à 12h · vs 0 à 8h) · 0 ATC · 0 checkout · 0 commande. Meta : 0€ J12 + 0€ J13 confirmés API — 2 campagnes `PAUSED` ~245h (10e jour, 11ème depuis J5 07/06). Spikes pause : J8=34s (5,9% ATC) · J10=34s (2,9%) · J11=63s (0%) · J12=55s (0%) · J13=36s@18h (0%). Fréquence quotidienne depuis J10. API Shopify J12 FINAL = 55s / 0 ATC = stable, pas d'inflation nocturne (rupture pattern J10/J11).
 - **Décision :** Surveillance uniquement. FINAL J13 à confirmer API le 16/06 matin — possible inflation nocturne selon le pattern. Urgence relance inchangée — 4 bloqueurs toujours non exécutés.
 - **Pourquoi :** Taux ATC spikes : 5,9% → 2,9% → 0% → 0% → 0%. La population warm est entièrement épuisée. Chaque spike supplémentaire amène des visiteurs en mode exploration sans intent croissant. Ces spikes organiques quotidiens ne substituent pas l'acquisition qualifiée — ils confirment simplement qu'il y a un lien/email partagé régulièrement (source encore non identifiée).
-- **Résultat (à compléter J14 · 16/06 run 8h) :** —
+- **Résultat (J13 FINAL confirmé 16/06 8h) :** J13 FINAL = **39 sessions** (38 direct + 1 search) · +3 sessions nocturnes post-18h · 0 ATC · 0 checkout · 0 commande. Légère inflation nocturne (+3s vs J12 qui n'avait rien eu) mais nettement moins que J10/J11 (+22/+24s). Taux ATC 0% confirmé. J14 partiel 8h = 3 sessions direct · 0 ATC · pas de spike en cours. ✅ CLÔTURÉ.
+
+---
+
+### 2026-06-16 — J13 FINAL corrigé · 39s (vs 36 à 18h) · légère inflation nocturne
+- **Constat :** API Shopify (run 8h J14 · 16/06) confirme J13 (15/06) FINAL = **39 sessions** (38 direct + 1 search) · +3s nocturnes vs 36 à 18h. 0 ATC · 0 checkout · 0 commande. Pattern d'inflation nocturne : J10 (+22s) · J11 (+24s) · J12 (0s) · J13 (+3s) — inflation quasi nulle. Pause cumulée : **~259h** (J14 8h · 11e jour).
+- **Décision :** Correction de registre CSV + dashboard. Pas d'action ads. J14 partiel 8h = 3 sessions direct (baseline normale — pas de spike en cours).
+- **Pourquoi :** Le taux d'inflation nocturne des spikes s'estompe (J10/J11 massifs → J12/J13 presque nuls). Signe que la source de partage organique s'épuise aussi. Sans paid relancé, les sessions vont retomber sur la baseline 5–8s/j. 4 bloqueurs toujours non exécutés.
+- **Résultat (à compléter run 12h/18h J14) :** —
+
+### 2026-06-16 — J14 partiel 8h · 11e jour de pause · ~259h · baseline 3s
+- **Constat :** Run 8h J14 (16/06) : **3 sessions direct** · 0 ATC · 0 checkout · 0 commande · 0€ Meta · 2 campagnes `PAUSED` ~259h. Baseline conforme (5–8s/j hors spike). Pas de spike en formation. J13 FINAL = 39s confirmé.
+- **Décision :** Aucune nouvelle reco. Urgence relance inchangée — 4 bloqueurs toujours non exécutés depuis J5 (07/06).
+- **Pourquoi :** À ~259h de pause, le reset CBO est total depuis longtemps. Chaque jour supplémentaire sans relance n'aggrave plus le reset mais allonge le temps de récupération du signal.
+- **Résultat (à compléter run 12h J14) :** —
 
 ### 2026-06-14 — J12 · 9e jour de pause · J11 FINAL corrigé (63s vs 39s à 18h)
 - **Constat :** J12 run 8h : API Shopify = **0 sessions** (trop tôt). API Meta = 2 campagnes `PAUSED` · 0€. J11 FINAL confirmé = **63 sessions direct** (vs 39 loguées à 18h le 13/06). +24 sessions nocturnes post-18h — reproduction exacte du pattern J8 (32→34) et J10 (12→34). Pause cumulative : **~210h** (9e jour). Les 4 bloqueurs restent non exécutés.

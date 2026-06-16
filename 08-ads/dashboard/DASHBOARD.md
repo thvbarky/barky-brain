@@ -3,7 +3,7 @@
 > Vue humaine régénérée par `/barky-ads-daily` (reco seulement — aucune action sans validation Thomas).
 > Data brute : [`ads-daily.csv`](ads-daily.csv) · Mémoire : [`learnings-ads.md`](learnings-ads.md)
 
-**Dernière mise à jour : 2026-06-15 18h (J13 · ⛔ CAMPAIGN_PAUSED ~245h · 10e jour · J13 partiel: 36s · 5ème spike confirmé · 0 ATC · RELANCE URGENTE)**
+**Dernière mise à jour : 2026-06-16 08h (J14 · ⛔ CAMPAIGN_PAUSED ~259h · 11e jour · J13 FINAL=39s · J14 partiel: 3s · 0 ATC · RELANCE URGENTE)**
 
 ---
 
@@ -12,25 +12,25 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 
 ---
 
-## 🆕 CE QUI A CHANGÉ depuis run J13 12h (15/06)
+## 🆕 CE QUI A CHANGÉ depuis run J13 18h (15/06)
 
-1. **J13 partiel 18h = 36 sessions direct** (vs 29 à 12h — +7 sessions depuis midi). **5ème spike confirmé** (baseline 5–8s/j). 0 ATC · 0 social.
-2. **Meta : 0€ J12 (hier) + 0€ J13 (aujourd'hui) confirmés API** — 2 campagnes `PAUSED` ~245h.
-3. **J12 FINAL = 55s / 0 ATC** (API Meta et Shopify concordent) — stable, pas d'inflation nocturne.
+1. **J13 FINAL = 39 sessions** (38 direct + 1 search — vs 36 à 18h · +3 sessions nocturnes post-18h). 0 ATC. API Shopify confirmé 16/06 8h.
+2. **J14 partiel 8h = 3 sessions direct** · baseline normale · pas de spike en cours.
+3. **Meta : 0€ J13 + 0€ J14 confirmés API** — 2 campagnes `PAUSED` ~259h (11e jour).
 4. **Rien de nouveau** sur les 4 bloqueurs — non exécutés depuis J5 (07/06).
 
 ---
 
 ## 📊 Snapshot
 
-| Métrique | J4 (06/06) FINAL | J5→J11 | J12 FINAL | J13 (18h partiel) |
-|---|---|---|---|---|
-| Spend | **40,12 €** | **0 € ⛔** | **0 € ⛔** | **0 € ⛔** |
-| CTR | 2,58 % ✅ | — | — | — |
-| Sessions social | 9 | 0 | 0 | 0 |
-| Sessions total | 21 | 5–63/j | **55 ✅ FINAL** | **36 ⚠️ (18h)** |
-| ATC | 0 | 0–2 (J8/J10 direct) | 0 | 0 |
-| Commandes | 0 | 0 | 0 | 0 |
+| Métrique | J4 (06/06) FINAL | J5→J11 | J12 FINAL | J13 FINAL | J14 (8h) |
+|---|---|---|---|---|---|
+| Spend | **40,12 €** | **0 € ⛔** | **0 € ⛔** | **0 € ⛔** | **0 € ⛔** |
+| CTR | 2,58 % ✅ | — | — | — | — |
+| Sessions social | 9 | 0 | 0 | 0 | 0 |
+| Sessions total | 21 | 5–63/j | **55 ✅** | **39 ✅** | **3 (8h)** |
+| ATC | 0 | 0–2 (J8/J10 direct) | 0 | 0 | 0 |
+| Commandes | 0 | 0 | 0 | 0 | 0 |
 
 ---
 
@@ -56,17 +56,17 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 
 ---
 
-## Funnel cumulé J1→J12 FINAL
+## Funnel cumulé J1→J13 FINAL + J14 partiel
 
 ```
-Spend total      : 116,98 €  (J1→J4 · 0€ J5-J13 · API confirmé)
+Spend total      : 116,98 €  (J1→J4 · 0€ J5-J14 · API confirmé)
   dont fantômes  : ~53 €     (Ad8+Copie ~33€ + Ad2 IG ~10€ + Ad3 IG ~0,82€)
-Sessions social  :     75    (J1=42 · J2=13 · J3=11 · J4=9 · J5-J13=0)
-Sessions total   :    420    (J1→J12 FINAL=384 + J13 partiel 18h: 36s)
+Sessions social  :     75    (J1=42 · J2=13 · J3=11 · J4=9 · J5-J14=0)
+Sessions total   :    426    (J1→J13 FINAL=423 + J14 partiel 8h: 3s)
 ATC social       :      1    (J3) — coût/ATC = 27,37 €
 ATC direct       :      3    (J8:2 + J10:1 · trafic warm · 0 commande)
 Commandes        :      0    — 0,00 € CA
-Spikes pause     :    5     (J8=34s · J10=34s · J11=63s · J12=55s · J13=36s@18h · taux ATC 5,9%→0%)
+Spikes pause     :    5     (J8=34s · J10=34s · J11=63s · J12=55s · J13=39s · taux ATC 5,9%→0%)
 ```
 
 ---
