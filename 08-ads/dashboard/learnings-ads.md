@@ -316,7 +316,7 @@
 - **Constat :** J14 (16/06) partiel 12h : **19 sessions total** (0 social · 0€ Meta · `PAUSED` ~263h). À 8h : 3s (baseline). À 12h : 19s → spike qui s'accélère. Historique spikes pause : J8=34s (5,9% ATC warm) · J10=34s (2,9%) · J11=63s (0%) · J12=55s (0%) · J13=39s (0%). Intervalles récents : quotidiens depuis J10. Les 5 derniers spikes ont tous eu un taux ATC déclinant : le 6ème devrait être 0% ATC. Source toujours non identifiée.
 - **Décision :** Surveillance uniquement. FINAL J14 à confirmer run 18h + API J15 matin. Ne pas interpréter comme signal de santé. La relance paid reste la priorité absolue. 4 bloqueurs inchangés.
 - **Pourquoi :** Le pattern de spikes quotidiens à taux ATC déclinant confirme que la population warm organique est épuisée. Chaque spike amène des visiteurs en mode exploration sans intent croissant. Ces visites ne remplacent pas l'acquisition qualifiée paid.
-- **Résultat (à compléter run 18h J14) :** —
+- **Résultat (run 18h confirmé) :** J14 partiel 18h = **35 sessions** (vs 19 à 12h — +16s en ~6h) · 0 ATC · 0 checkout · 0€ Meta · 100% direct. **6ème spike CONFIRMÉ** — 35s à 18h dépasse nettement la baseline (5–8s/j). FINAL à confirmer API J15 matin. ✅ CLÔTURÉ.
 
 ### 2026-06-16 — Abandoned checkouts expirés du système Shopify
 - **Constat :** GraphQL `abandonedCheckouts` query avec `created_at:>2026-06-09` = **0 résultats**. Les 3 abandons checkout identifiés (J8: 2×, J10: 1×) ne sont plus accessibles via API. Délai d'expiration Shopify des abandoned checkouts non documenté mais estimé ~10 jours.
@@ -343,3 +343,11 @@
 - **Décision :** Surveillance uniquement. Le FINAL J12 devrait croître post-18h selon le pattern nocturne (J10: 4→34, J11: 39→63). Taux ATC des spikes en déclin continu : 5,9% → 2,9% → 0% → 0% — la population de visiteurs warm s'est épuisée. Relance paid reste l'urgence absolue, ces spikes organiques ne substituent pas l'acquisition qualifiée.
 - **Pourquoi :** Spike probablement dû à un partage organique ou email (même source non identifiée que J11). Déclin taux ATC = les mêmes visiteurs reviennent en mode exploration sans intent d'achat croissant. Même si le FINAL J12 atteint 70-80 sessions, sans paid on ne génère pas de signal ATC scalable.
 - **Résultat (J12 FINAL confirmé J13 8h) :** J12 FINAL = **55 sessions / 0 ATC** — pas d'inflation nocturne (rupture pattern J10/J11). ✅ CLÔTURÉ.
+
+---
+
+### 2026-06-16 — J14 18h · 6ème spike CONFIRMÉ · 35s · 0 ATC · population warm épuisée
+- **Constat :** J14 (16/06) partiel 18h : **35 sessions** (100% direct · vs 19 à 12h · vs 3 à 8h) · 0 ATC · 0 checkout · 0 commande · 0€ Meta · 2 campagnes `PAUSED` ~269h (11e jour). 6ème spike de la pause confirmé : J8=34s (5,9% ATC) · J10=34s (2,9%) · J11=63s (0%) · J12=55s (0%) · J13=39s (0%) · J14=35s@18h (0%). Fréquence quotidienne maintenue depuis J10. FINAL à confirmer API J15 matin — possible légère inflation nocturne (pattern J10: +22s · J11: +24s · J12: 0s · J13: +3s → tendance décroissante).
+- **Décision :** Surveillance uniquement. FINAL J14 à confirmer via API le 17/06 matin. Les 4 bloqueurs toujours non exécutés depuis J5 (07/06). Urgence relance inchangée.
+- **Pourquoi :** Taux ATC spikes : 5,9% → 2,9% → 0% → 0% → 0% → 0%. 6 spikes consécutifs avec taux ATC zéro depuis J11. La population warm organique est entièrement épuisée. Ces spikes n'apportent plus aucun signal commercial. Seule la relance paid (avec exclusions IG) peut générer du signal qualifié.
+- **Résultat (à compléter J15 · 17/06) :** —

@@ -119,7 +119,7 @@
    (entre les marqueurs). Tout le rendu est calculé à partir de DATA.
    ============================================================ */
 /*UPDATED_START*/
-const UPDATED = "2026-06-16 12h (J14 · ⛔ CAMPAIGN_PAUSED ~263h · 11e jour · J13 FINAL=39s ✅ · J14 partiel 12h: 19s (6ème spike potentiel) · 0 ATC · ⛔ RELANCE URGENTE — 4 bloqueurs non exécutés)";
+const UPDATED = "2026-06-16 18h (J14 · ⛔ CAMPAIGN_PAUSED ~269h · 11e jour · J13 FINAL=39s ✅ · J14 partiel 18h: 35s (6ème spike CONFIRMÉ) · 0 ATC · ⛔ RELANCE URGENTE — 4 bloqueurs non exécutés)";
 /*UPDATED_END*/
 
 /*DATA_START*/
@@ -319,23 +319,23 @@ const DATA = [
    cost_per_atc:null,shopify_sessions:39,shopify_atc:0,orders:0,
    notes:"J13 FINAL ✅ · 🚨 CAMPAIGN_PAUSED full day · 39s total (38 direct + 1 search) · 5ème spike · +3s nocturnes post-18h · 0 ATC · 0€ Meta · 4 bloqueurs non exécutés"},
 
-  // J14 — 2026-06-16 partiel 12h · CAMPAIGN_PAUSED ~263h · 11e jour
+  // J14 — 2026-06-16 partiel 18h · CAMPAIGN_PAUSED ~269h · 11e jour
   {date:"2026-06-16",scope:"campaign",entity:"Barky · Trafic LP · Validation · 2026-06",placement:"ALL",
    spend:0,impressions:0,link_clicks:0,ctr:null,cpc:null,meta_lpv:null,meta_atc:null,
-   cost_per_atc:null,shopify_sessions:19,shopify_atc:0,orders:0,
-   notes:"J14 partiel 12h · 🚨 CAMPAIGN_PAUSED ~263h (11e jour) · 19s total (vs 3 à 8h — 6ème spike potentiel en formation) · 0s social · 0 ATC · 0€ Meta · 4 bloqueurs non exécutés · abandoned checkouts: 0 via API GraphQL"}
+   cost_per_atc:null,shopify_sessions:35,shopify_atc:0,orders:0,
+   notes:"J14 partiel 18h · 🚨 CAMPAIGN_PAUSED ~269h (11e jour) · 35s total (vs 19 à 12h · vs 3 à 8h) · 6ème spike CONFIRMÉ · 100% direct · 0 ATC · 0 checkout · 0€ Meta · 4 bloqueurs non exécutés · FINAL à confirmer API J15 matin"}
 ];
 /*DATA_END*/
 
 /*DECISIONS_START*/
 const DECISIONS = [
-  {alert:true,  text:"⛔ <b>CAMPAIGN PAUSED ~263h · RELANCE CRITIQUE (J14 · 16/06 12h)</b> — 11e jour de pause. Cumul API : 116,98€ dépensés, 0€ depuis J5. Reset CBO total. J13 FINAL = <b>39s ✅ (0 ATC)</b>. J14 partiel 12h = <b>19s (vs 3 à 8h) · 6ème spike potentiel en formation</b>. Spikes pause : J8=34s (5,9% ATC) · J10=34s (2,9%) · J11=63s · J12=55s · J13=39s · J14=19s@12h → population warm épuisée, taux ATC zéro depuis J11. <b>Ordre impératif : (1) clarifier Acquisition Test #1, (2) exclure IG Ad2, (3) exclure IG Ad3 LP, (4) réactiver campagne principale.</b>"},
+  {alert:true,  text:"⛔ <b>CAMPAIGN PAUSED ~269h · RELANCE CRITIQUE (J14 · 16/06 18h)</b> — 11e jour de pause. Cumul API : 116,98€ dépensés, 0€ depuis J5. Reset CBO total. J13 FINAL = <b>39s ✅ (0 ATC)</b>. J14 partiel 18h = <b>35s (vs 19 à 12h · vs 3 à 8h) · 6ème spike CONFIRMÉ</b>. Spikes pause : J8=34s (5,9% ATC) · J10=34s (2,9%) · J11=63s · J12=55s · J13=39s · J14=35s@18h (0%) → population warm épuisée, taux ATC zéro depuis J11. <b>Ordre impératif : (1) clarifier Acquisition Test #1, (2) exclure IG Ad2, (3) exclure IG Ad3 LP, (4) réactiver campagne principale.</b>"},
   {alert:true,  text:"🔍 <b>3 ATC directs sans commande · friction checkout récurrente</b> — J8 : 2 ATC + 2 checkouts (5,9%) · J10 : 1 ATC + 1 checkout (2,9%) · J11→J14 : 0 ATC sur 175s. 3 abandons checkout sur 3 tentatives warm, 0 commande. <b>Note :</b> GraphQL abandonedCheckouts API = 0 résultats (checkouts J8/J10 expirés du système Shopify). Friction post-panier systématique — à investiguer dans Shopify admin avant relance."},
   {alert:true,  text:"🚨 <b>2ème campagne · clarifier AVANT relance</b> — <code>Barky · Acquisition Test #1 · 2026-06</code> (ID 120248349620690732, PAUSED · 0,04€ total). Créas v2 : Ad1 Proof · Ad2 Typo v2 · Ad3 Lifestyle v2 · Ad4/5/6/7. <b>Archiver ou activer ? Ne jamais activer les deux campagnes simultanément sans tracking séparé.</b>"},
   {alert:true,  text:"🚨 <b>AVANT relance · Ad2 · exclure placement Instagram</b> — J4 FINAL : CTR IG <b>3,83 % sur n=1 671 impr</b> · CPM 5,67 € · 79 % budget Ad2 sur IG (9,48 € fantômes). FB Ad2 sain : 1,91 % / CPC 0,13 €."},
   {alert:true,  text:"🚨 <b>AVANT relance · Ad3 LP · exclure placement Instagram</b> — J4 FINAL : CTR IG <b>0,99 % sur n=202</b> · CPC 0,41 € (×3 vs FB 0,14 €). Entité : <code>Ad3 · Typo · 5-problemes-1-formule · LP</code>."},
   {alert:false, text:"⭐ <b>Ad1 PDP · cest-lage-reframe = créa star confirmée</b> — Cumul : <b>44,60€ · 14 486 impr · CTR 2,49% · CPC 0,12€</b>. CBO J4 : 67,5%. 1 seul ATC social (coût/ATC 27,37 €). Cible post-relance : coût/ATC ≤ 8–10 €."},
-  {alert:false, text:"📊 <b>Cumul J1→J13 FINAL : 116,98€ · 1 ATC social · 3 ATC direct · 0 commande · 11 jours PAUSED</b> — Sessions total J1→J13 FINAL = 423. J14 partiel 12h : 19s (6ème spike?). Spikes : J8=34 · J10=34 · J11=63 · J12=55 · J13=39 · J14=19@12h. FINAL à confirmer demain matin."},
+  {alert:false, text:"📊 <b>Cumul J1→J13 FINAL : 116,98€ · 1 ATC social · 3 ATC direct · 0 commande · 11 jours PAUSED</b> — Sessions total J1→J13 FINAL = 423. J14 partiel 18h : 35s (6ème spike CONFIRMÉ). Spikes : J8=34 · J10=34 · J11=63 · J12=55 · J13=39 · J14=35@18h. FINAL à confirmer demain matin."},
   {alert:false, text:"❓ <b>Créas jamais tournées (Ad4/5/6/7 + v2)</b> — Stabiliser CBO post-exclusions IG avant toute nouvelle créa. Si coût/ATC > 15 € après 200+ sessions qualifiées → introduire 1 nouvelle créa (Ad3 PDP challenger le plus logique)."}
 ];
 /*DECISIONS_END*/
