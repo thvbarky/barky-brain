@@ -350,4 +350,18 @@
 - **Constat :** J14 (16/06) partiel 18h : **35 sessions** (100% direct · vs 19 à 12h · vs 3 à 8h) · 0 ATC · 0 checkout · 0 commande · 0€ Meta · 2 campagnes `PAUSED` ~269h (11e jour). 6ème spike de la pause confirmé : J8=34s (5,9% ATC) · J10=34s (2,9%) · J11=63s (0%) · J12=55s (0%) · J13=39s (0%) · J14=35s@18h (0%). Fréquence quotidienne maintenue depuis J10. FINAL à confirmer API J15 matin — possible légère inflation nocturne (pattern J10: +22s · J11: +24s · J12: 0s · J13: +3s → tendance décroissante).
 - **Décision :** Surveillance uniquement. FINAL J14 à confirmer via API le 17/06 matin. Les 4 bloqueurs toujours non exécutés depuis J5 (07/06). Urgence relance inchangée.
 - **Pourquoi :** Taux ATC spikes : 5,9% → 2,9% → 0% → 0% → 0% → 0%. 6 spikes consécutifs avec taux ATC zéro depuis J11. La population warm organique est entièrement épuisée. Ces spikes n'apportent plus aucun signal commercial. Seule la relance paid (avec exclusions IG) peut générer du signal qualifié.
-- **Résultat (à compléter J15 · 17/06) :** —
+- **Résultat (J14 FINAL confirmé 17/06) :** J14 FINAL = **55 sessions** (+20s inflation nocturne post-18h · vs 35 à 18h). 6ème spike FINAL. 0 ATC · 0 checkout · 0 commande. → J15 partiel : 2s / 1 ATC / 1 checkout abandonné (4ème ATC direct). ✅ CLÔTURÉ.
+
+---
+
+### 2026-06-17 — J14 FINAL corrigé · 55s (vs 35 à 18h) · inflation nocturne +20s
+- **Constat :** API Shopify (run J15 · 17/06) confirme J14 (16/06) FINAL = **55 sessions** (100% direct · +20s nocturnes vs 35 à 18h). 0 ATC · 0 checkout · 0 commande. Inflation nocturne retrouvée après rupture J12-J13 (J12: 0s · J13: +3s). Pattern : J10 (+22s) · J11 (+24s) · J12 (0s) · J13 (+3s) · **J14 (+20s)** — volatilité qui rend les runs 18h non fiables pour les FINALS.
+- **Décision :** Correction actée CSV + dashboard. Cumul J1→J14 FINAL = **478 sessions**. Pas d'action ads.
+- **Pourquoi :** L'inflation nocturne dépend de l'heure du partage source. J14 = partage probable en fin d'après-midi → trafic qui continue en soirée. Règle FINAL = J+1 matin confirmée.
+- **Résultat :** Correction actée. ✅
+
+### 2026-06-17 — J15 partiel · 4ème ATC direct · checkout 4/4 abandonné · 100% friction
+- **Constat :** J15 (17/06) partiel : **2 sessions direct** · **1 ATC** · **1 reached checkout** · **0 commande** · 0€ Meta · 2 campagnes `PAUSED` ~283h (12e jour). Taux ATC J15 = 1/2 = **50 %** (le plus élevé de la pause — visiteur extrêmement warm). Historique ATC direct depuis la pause : J8=2 ATC/2 checkouts · J10=1 ATC/1 checkout · J15=1 ATC/1 checkout → **cumul 4 ATC directs · 4 checkouts · 0 commande = 100% taux d'abandon checkout**.
+- **Décision (PRIORITÉ #0) :** Résoudre la friction checkout **avant toute relance paid**. Shopify admin → Orders → Abandoned checkouts. Causes probables par ordre : (1) frais livraison affichés trop tard/trop élevés, (2) absence trust badges (SSL visible, avis), (3) méthode paiement manquante (PayPal). Si relance sans fixer ça → les visiteurs paid abandonneront aussi au checkout.
+- **Pourquoi :** 4/4 = pattern systématique, pas un incident. Les données montrent que la page CONVAINC (50% ATC sur visiteurs warm), mais QUELQUE CHOSE bloque spécifiquement au checkout. Chaque jour de relance avec friction checkout = budget cramé sur des abandon guaranteed.
+- **Résultat (à compléter post-investigation checkout) :** —

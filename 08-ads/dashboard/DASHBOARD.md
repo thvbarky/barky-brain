@@ -3,7 +3,7 @@
 > Vue humaine régénérée par `/barky-ads-daily` (reco seulement — aucune action sans validation Thomas).
 > Data brute : [`ads-daily.csv`](ads-daily.csv) · Mémoire : [`learnings-ads.md`](learnings-ads.md)
 
-**Dernière mise à jour : 2026-06-16 18h (J14 · ⛔ CAMPAIGN_PAUSED ~269h · 11e jour · J13 FINAL=39s ✅ · J14 partiel 18h: 35s · 6ème spike CONFIRMÉ · 0 ATC · RELANCE URGENTE)**
+**Dernière mise à jour : 2026-06-17 (J15 · ⛔ CAMPAIGN_PAUSED ~283h · 12e jour · J14 FINAL=55s ✅ +20 nocturne · J15 partiel: 2s · ⚠️ 4ème ATC direct · checkout 4/4 abandonné · RELANCE URGENTE)**
 
 ---
 
@@ -12,25 +12,24 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 
 ---
 
-## 🆕 CE QUI A CHANGÉ depuis run J14 12h (16/06)
+## 🆕 CE QUI A CHANGÉ depuis run J14 18h (16/06)
 
-1. **J14 partiel 18h = 35 sessions** (vs 19 à 12h — +16 sessions entre 12h et 18h). 0 ATC · 0 social · 0€ Meta. **6ème spike CONFIRMÉ** (vs "potentiel" à 12h) — 35s à 18h dépasse significativement la baseline (5–8s/j).
-2. **J13 FINAL = 39s ✅** (déjà confirmé · pas de changement).
-3. **Meta : 0€ J13 + 0€ J14 confirmés API** — 2 campagnes `PAUSED` ~269h (11e jour) · toutes créas `CAMPAIGN_PAUSED`.
-4. **4 bloqueurs** toujours non exécutés depuis J5 (07/06).
+1. **J14 FINAL = 55 sessions** (vs 35 loguées à 18h — +20 inflation nocturne post-18h). 0 ATC · 0€ Meta.
+2. **J15 partiel = 2 sessions · ⚠️ 1 ATC + 1 checkout abandonné** — 4ème ATC direct (cumul 4/4 abandons, 0 commande). Friction checkout **100%** sur visiteurs intentionnistes.
+3. **Meta : PAUSED confirmé** sur les 2 campagnes · ~283h · 12e jour · 4 bloqueurs toujours non exécutés.
 
 ---
 
 ## 📊 Snapshot
 
-| Métrique | J4 (06/06) FINAL | J5→J11 | J12 FINAL | J13 FINAL | J14 (18h) |
-|---|---|---|---|---|---|
-| Spend | **40,12 €** | **0 € ⛔** | **0 € ⛔** | **0 € ⛔** | **0 € ⛔** |
-| CTR | 2,58 % ✅ | — | — | — | — |
-| Sessions social | 9 | 0 | 0 | 0 | 0 |
-| Sessions total | 21 | 5–63/j | **55 ✅** | **39 ✅** | **35 (18h)** |
-| ATC | 0 | 0–2 (J8/J10 direct) | 0 | 0 | 0 |
-| Commandes | 0 | 0 | 0 | 0 | 0 |
+| Métrique | J4 (06/06) FINAL | J5→J13 | J14 FINAL | J15 partiel |
+|---|---|---|---|---|
+| Spend | **40,12 €** | **0 € ⛔** | **0 € ⛔** | **0 € ⛔** |
+| CTR | 2,58 % ✅ | — | — | — |
+| Sessions social | 9 | 0 | 0 | 0 |
+| Sessions total | 21 | 5–63/j | **55 ✅** | **2 (partiel)** |
+| ATC | 0 | 0–2 (J8/J10) | 0 | **1 ⚠️** |
+| Commandes | 0 | 0 | 0 | 0 |
 
 ---
 
@@ -48,25 +47,25 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 
 ## ⛔ ACTIONS AVANT RELANCE (ordre impératif)
 
-0. **🔍 Investiguer abandoned checkouts** — Shopify admin → Orders → Abandoned checkouts (3 abandons sans achat : J8=2, J10=1). API GraphQL expirée — nécessite accès admin direct.
-1. **🔴 Clarifier `Acquisition Test #1`** — PAUSED · 0,04€ · 7 créas v2 dedans. Archiver ou planifier ?
+0. **🔴 PRIORITÉ #0 — Fixer friction checkout** — 4 ATC directs, 4 checkouts abandonnés, 0 commande = **100% abandon rate**. Shopify admin → Orders → Abandoned checkouts. Causes probables : frais livraison tardifs, absence trust badges, méthode paiement manquante (PayPal). **À résoudre avant toute relance paid.**
+1. **🔍 Clarifier `Acquisition Test #1`** — PAUSED · 0,04€ · 7 créas v2 dedans. Archiver ou planifier ?
 2. **Exclure IG** sur `Ad2 · ProductHero · signes-mobilite-ete` (CTR IG 3,83 % n=1 671 · 9,48 € fantômes J4)
 3. **Exclure IG** sur `Ad3 · Typo · 5-problemes-1-formule · LP` (CTR IG 0,99 % n=202 · CPC 0,41 €)
 4. **Réactiver la campagne principale** — reset CBO total inévitable (~100–150 impr/créa de chauffe)
 
 ---
 
-## Funnel cumulé J1→J13 FINAL + J14 partiel 18h
+## Funnel cumulé J1→J14 FINAL + J15 partiel
 
 ```
-Spend total      : 116,98 €  (J1→J4 · 0€ J5-J14 · API confirmé)
+Spend total      : 116,98 €  (J1→J4 · 0€ J5-J15 · API confirmé)
   dont fantômes  : ~53 €     (Ad8+Copie ~33€ + Ad2 IG ~10€ + Ad3 IG ~0,82€)
-Sessions social  :     75    (J1=42 · J2=13 · J3=11 · J4=9 · J5-J14=0)
-Sessions total   :    458    (J1→J13 FINAL=423 + J14 partiel 18h: 35s)
+Sessions social  :     75    (J1=42 · J2=13 · J3=11 · J4=9 · J5-J15=0)
+Sessions total   :    480    (J1→J14 FINAL=478 + J15 partiel: 2s)
 ATC social       :      1    (J3) — coût/ATC = 27,37 €
-ATC direct       :      3    (J8:2 + J10:1 · trafic warm · 0 commande)
+ATC direct       :      4    (J8:2 + J10:1 + J15:1 · trafic warm · 0 commande · 4/4 abandonné checkout)
 Commandes        :      0    — 0,00 € CA
-Spikes pause     :      6    (J8=34s · J10=34s · J11=63s · J12=55s · J13=39s · J14=35s@18h · taux ATC 5,9%→0%)
+Spikes pause     :      6    (J8=34s · J10=34s · J11=63s · J12=55s · J13=39s · J14=55s · 0 ATC depuis J10)
 ```
 
 ---
