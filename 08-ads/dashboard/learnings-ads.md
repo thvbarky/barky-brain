@@ -361,7 +361,19 @@
 - **Résultat :** Correction actée. ✅
 
 ### 2026-06-17 — J15 partiel · 4ème ATC direct · checkout 4/4 abandonné · 100% friction
-- **Constat :** J15 (17/06) partiel : **2 sessions direct** · **1 ATC** · **1 reached checkout** · **0 commande** · 0€ Meta · 2 campagnes `PAUSED` ~283h (12e jour). Taux ATC J15 = 1/2 = **50 %** (le plus élevé de la pause — visiteur extrêmement warm). Historique ATC direct depuis la pause : J8=2 ATC/2 checkouts · J10=1 ATC/1 checkout · J15=1 ATC/1 checkout → **cumul 4 ATC directs · 4 checkouts · 0 commande = 100% taux d'abandon checkout**.
+- **Constat :** J15 (17/06) partiel 8h : **2 sessions direct** · **1 ATC** · **1 reached checkout** · **0 commande** · 0€ Meta · 2 campagnes `PAUSED` ~283h (12e jour). Taux ATC J15 = 1/2 = **50 %** (le plus élevé de la pause — visiteur extrêmement warm). Historique ATC direct depuis la pause : J8=2 ATC/2 checkouts · J10=1 ATC/1 checkout · J15=1 ATC/1 checkout → **cumul 4 ATC directs · 4 checkouts · 0 commande = 100% taux d'abandon checkout**.
 - **Décision (PRIORITÉ #0) :** Résoudre la friction checkout **avant toute relance paid**. Shopify admin → Orders → Abandoned checkouts. Causes probables par ordre : (1) frais livraison affichés trop tard/trop élevés, (2) absence trust badges (SSL visible, avis), (3) méthode paiement manquante (PayPal). Si relance sans fixer ça → les visiteurs paid abandonneront aussi au checkout.
 - **Pourquoi :** 4/4 = pattern systématique, pas un incident. Les données montrent que la page CONVAINC (50% ATC sur visiteurs warm), mais QUELQUE CHOSE bloque spécifiquement au checkout. Chaque jour de relance avec friction checkout = budget cramé sur des abandon guaranteed.
-- **Résultat (à compléter post-investigation checkout) :** —
+- **Résultat (run 12h confirmé) :** J15 12h = **23 sessions** (vs 2 à 8h · +21s) · **1 ATC inchangé · 1 checkout abandonné**. Les 21 nouvelles sessions n'ont pas converti — visiteurs froids ou curiosité. Le 4ème ATC reste le seul signal warm de la journée. Friction checkout toujours non résolue. → À compléter après investigation Shopify admin.
+
+### 2026-06-17 — J15 12h · 7ème spike en formation (23s vs 2 à 8h)
+- **Constat :** J15 (17/06) partiel 12h : **23 sessions total** (vs 2 à 8h · +21s en ~4h) · 1 ATC · 1 checkout · 0 commande · 0€ Meta · PAUSED ~287h. Baseline pause = 5–8 sessions/j. 23s dès 12h dépasse la baseline journalière complète → **7ème spike en formation**. Pattern spikes : J8=34s (5,9% ATC) · J10=34s (2,9%) · J11=63s (0%) · J12=55s (0%) · J13=39s (0%) · J14=55s (0%) · J15=23s@12h. L'unique ATC du jour était présent dès 8h (2 sessions) — les 21 nouvelles sessions n'en ont pas généré de nouveau.
+- **Décision :** Surveillance uniquement. FINAL J15 à confirmer via API le 18/06 matin (règle FINAL = J+1). Possible inflation nocturne post-18h selon pattern (J14 avait +20s nocturnes). Ne pas interpréter comme signal positif — taux ATC des spikes depuis J10 = 0% systématique (seul l'ATC isolé du run 8h était warm). Relance paid reste l'urgence absolue.
+- **Pourquoi :** Le taux ATC des spikes : 5,9% → 2,9% → 0% → 0% → 0% → 0% → 0%@12h. Population warm épuisée — les spikes amènent des visiteurs en mode exploration. L'ATC J15 est un visiteur warm arrivé tôt (2 sessions à 8h), pas représentatif du spike.
+- **Résultat (à compléter J16 · 18/06 8h) :** —
+
+### 2026-06-17 — Meta API non disponible (OTID error)
+- **Constat :** Run 12h J15 (17/06) : toutes les calls `ads_get_ad_entities` retournent `MCP error -32603: OTID is a required input and cannot be empty or malformed`. API Meta inaccessible ce run. Statut campagne inféré depuis historique (PAUSED depuis J5 · 06/06 soir) — pas de modification manuelle signalée.
+- **Décision :** Ne pas bloquer la routine sur l'erreur API Meta. Logger le gap de données. Retenter au run 18h — si persistant, signaler à Thomas.
+- **Pourquoi :** L'erreur OTID est une erreur d'authentification/session du serveur MCP. Elle est transitoire dans la plupart des cas. La campagne étant PAUSED depuis 12 jours, la perte de data Meta est mineure (0€ spend).
+- **Résultat (à confirmer run 18h) :** —
