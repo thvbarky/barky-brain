@@ -376,4 +376,12 @@
 - **Constat :** Run 12h J15 (17/06) : toutes les calls `ads_get_ad_entities` retournent `MCP error -32603: OTID is a required input and cannot be empty or malformed`. API Meta inaccessible ce run. Statut campagne inféré depuis historique (PAUSED depuis J5 · 06/06 soir) — pas de modification manuelle signalée.
 - **Décision :** Ne pas bloquer la routine sur l'erreur API Meta. Logger le gap de données. Retenter au run 18h — si persistant, signaler à Thomas.
 - **Pourquoi :** L'erreur OTID est une erreur d'authentification/session du serveur MCP. Elle est transitoire dans la plupart des cas. La campagne étant PAUSED depuis 12 jours, la perte de data Meta est mineure (0€ spend).
-- **Résultat (à confirmer run 18h) :** —
+- **Résultat (run 18h confirmé) :** API Meta opérationnelle au run 18h. 2 campagnes `PAUSED` confirmées API. Erreur OTID transitoire — aucune action nécessaire. ✅ CLÔTURÉ.
+
+---
+
+### 2026-06-17 — J15 18h · 7ème spike CONFIRMÉ · 38s · ATC inchangé
+- **Constat :** J15 (17/06) partiel 18h : **38 sessions direct** (vs 23 à 12h · vs 2 à 8h · +15s depuis 12h) · **1 ATC · 1 checkout · 0 commande** · 0€ Meta · 2 campagnes `PAUSED` ~293h (12e jour). L'ATC (1) est inchangé depuis le run 8h — les 36 sessions arrivées après 8h n'ont pas généré de nouvel ATC. Taux ATC J15 à 18h : 1/38 = **2,6 %** (mais l'ATC unique était présent dès 2 sessions à 8h = visiteur extrêmement warm arrivé très tôt). Historique spikes : J8=34s (5,9% ATC) · J10=34s (2,9%) · J11=63s (0%) · J12=55s (0%) · J13=39s (0%) · J14=55s (0%) · **J15=38s@18h (2,6% mais 1 ATC arrivé hors spike)**.
+- **Décision :** Surveillance uniquement. FINAL J15 à confirmer API le 18/06 matin (possible inflation nocturne selon pattern J14 +20s). L'ATC J15 ne change pas la priorité — friction checkout 4/4 confirme que le problème est post-panier, pas l'intent.
+- **Pourquoi :** Le taux ATC apparent (2,6%) est trompeur car l'ATC unique est arrivé avant le spike (2 sessions à 8h). Le spike lui-même (36s supplémentaires) = 0 ATC. Population warm épuisée, cohérent avec le pattern. PRIORITÉ #0 inchangée : fixer le checkout avant relance.
+- **Résultat (J15 FINAL à confirmer 18/06 8h) :** —
