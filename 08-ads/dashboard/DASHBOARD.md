@@ -3,7 +3,7 @@
 > Vue humaine régénérée par `/barky-ads-daily` (reco seulement — aucune action sans validation Thomas).
 > Data brute : [`ads-daily.csv`](ads-daily.csv) · Mémoire : [`learnings-ads.md`](learnings-ads.md)
 
-**Dernière mise à jour : 2026-06-17 18h00 (J15 partiel · ⛔ CAMPAIGN_PAUSED ~293h · 12e jour · J14 FINAL=55s ✅ · J15: 38s · 7ème spike CONFIRMÉ · ⚠️ 4ème ATC direct · 4/4 checkout abandonné · Meta API OK — PRIORITÉ #0: fixer checkout avant relance)**
+**Dernière mise à jour : 2026-06-18 08h00 (J16 partiel · ⛔ CAMPAIGN_PAUSED ~307h · 13e jour · J15 FINAL=38s ✅ pas d'inflation nocturne · J16: 0s · Meta PAUSED · PRIORITÉ #0: fixer checkout avant relance paid)**
 
 ---
 
@@ -12,12 +12,12 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 
 ---
 
-## 🆕 CE QUI A CHANGÉ depuis run J15 12h (17/06)
+## 🆕 CE QUI A CHANGÉ depuis run J15 18h (17/06)
 
-1. **J15 partiel 18h = 38 sessions** (vs 23 à 12h — +15s). **7ème spike CONFIRMÉ** (38s dépasse largement la baseline 5–8s/j). 1 ATC + 1 checkout inchangés depuis 8h — les 15 nouvelles sessions n'ont pas généré de nouvel ATC.
-2. **J14 FINAL = 55 sessions** ✅ confirmé API (inchangé — pas de correction).
-3. **Meta API opérationnelle** ce run (erreur OTID résolue) — 2 campagnes `PAUSED` confirmées API (~293h · 12e jour).
-4. **4 bloqueurs toujours non exécutés** depuis J5 (07/06).
+1. **J15 FINAL = 38 sessions** ✅ confirmé API — **pas d'inflation nocturne** (identique au run 18h). 1 ATC + 1 checkout, 0 commande. Note mise à jour de "partiel" à "FINAL".
+2. **J16 partiel 8h (aujourd'hui) = 0 sessions** — début de journée normal, aucun spike en cours.
+3. **Meta toujours PAUSED** (~307h · 13e jour) — 2 campagnes confirmées PAUSED, 0€ hier + 0€ aujourd'hui.
+4. **4 bloqueurs toujours non exécutés** depuis J5 (07/06). PRIORITÉ #0 : friction checkout 4/4.
 
 ---
 
@@ -25,11 +25,13 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 
 | Métrique | J4 (06/06) FINAL | J5→J13 | J14 FINAL | J15 partiel |
 |---|---|---|---|---|
+| Métrique | J4 (06/06) FINAL | J5→J13 | J15 FINAL | J16 partiel 8h |
+|---|---|---|---|---|
 | Spend | **40,12 €** | **0 € ⛔** | **0 € ⛔** | **0 € ⛔** |
 | CTR | 2,58 % ✅ | — | — | — |
 | Sessions social | 9 | 0 | 0 | 0 |
-| Sessions total | 21 | 5–63/j | **55 ✅** | **38 (partiel 18h)** |
-| ATC | 0 | 0–2 (J8/J10) | 0 | **1 ⚠️** |
+| Sessions total | 21 | 5–63/j | **38 ✅ FINAL** | **0** |
+| ATC | 0 | 0–2 (J8/J10) | **1 ⚠️** | 0 |
 | Commandes | 0 | 0 | 0 | 0 |
 
 ---
@@ -59,14 +61,14 @@ Trancher : **quel angle** et **quelle destination (LP vs PDP)** convertissent le
 ## Funnel cumulé J1→J14 FINAL + J15 partiel
 
 ```
-Spend total      : 116,98 €  (J1→J4 · 0€ J5-J15 · API confirmé)
+Spend total      : 116,98 €  (J1→J4 · 0€ J5-J16 · API confirmé)
   dont fantômes  : ~53 €     (Ad8+Copie ~33€ + Ad2 IG ~10€ + Ad3 IG ~0,82€)
-Sessions social  :     75    (J1=42 · J2=13 · J3=11 · J4=9 · J5-J15=0)
-Sessions total   :    516    (J1→J14 FINAL=478 + J15 partiel 18h: 38s)
+Sessions social  :     75    (J1=42 · J2=13 · J3=11 · J4=9 · J5-J16=0)
+Sessions total   :    516    (J1→J15 FINAL=516 · J16: 0s partiel 8h)
 ATC social       :      1    (J3) — coût/ATC = 27,37 €
 ATC direct       :      4    (J8:2 + J10:1 + J15:1 · trafic warm · 0 commande · 4/4 abandonné checkout)
 Commandes        :      0    — 0,00 € CA
-Spikes pause     :      7    (J8=34 · J10=34 · J11=63 · J12=55 · J13=39 · J14=55 · J15=38@partiel 18h)
+Spikes pause     :      7    FINALS : J8=34 · J10=34 · J11=63 · J12=55 · J13=39 · J14=55 · J15=38
 ```
 
 ---

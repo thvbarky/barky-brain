@@ -384,4 +384,12 @@
 - **Constat :** J15 (17/06) partiel 18h : **38 sessions direct** (vs 23 à 12h · vs 2 à 8h · +15s depuis 12h) · **1 ATC · 1 checkout · 0 commande** · 0€ Meta · 2 campagnes `PAUSED` ~293h (12e jour). L'ATC (1) est inchangé depuis le run 8h — les 36 sessions arrivées après 8h n'ont pas généré de nouvel ATC. Taux ATC J15 à 18h : 1/38 = **2,6 %** (mais l'ATC unique était présent dès 2 sessions à 8h = visiteur extrêmement warm arrivé très tôt). Historique spikes : J8=34s (5,9% ATC) · J10=34s (2,9%) · J11=63s (0%) · J12=55s (0%) · J13=39s (0%) · J14=55s (0%) · **J15=38s@18h (2,6% mais 1 ATC arrivé hors spike)**.
 - **Décision :** Surveillance uniquement. FINAL J15 à confirmer API le 18/06 matin (possible inflation nocturne selon pattern J14 +20s). L'ATC J15 ne change pas la priorité — friction checkout 4/4 confirme que le problème est post-panier, pas l'intent.
 - **Pourquoi :** Le taux ATC apparent (2,6%) est trompeur car l'ATC unique est arrivé avant le spike (2 sessions à 8h). Le spike lui-même (36s supplémentaires) = 0 ATC. Population warm épuisée, cohérent avec le pattern. PRIORITÉ #0 inchangée : fixer le checkout avant relance.
-- **Résultat (J15 FINAL à confirmer 18/06 8h) :** —
+- **Résultat (J15 FINAL confirmé 18/06 8h) :** J15 FINAL = **38 sessions** · **pas d'inflation nocturne** (identique au run 18h — rupture du pattern J14 +20s). 1 ATC · 1 checkout · 0 commande. Taux ATC = 1/38 = 2,6% mais l'ATC unique était arrivé avant le spike. Population warm épuisée confirmée. ✅ CLÔTURÉ.
+
+---
+
+### 2026-06-18 — J16 08h · 13e jour de pause · ~307h · J15 FINAL = 38s sans inflation
+- **Constat :** Run 8h J16 (18/06) : **0 sessions** · **0€ Meta** · 2 campagnes `PAUSED` ~307h. Baseline conforme (pas de spike en formation à 8h). J15 FINAL confirmé API = **38 sessions** (pas d'inflation nocturne — identique run 18h · rupture du pattern J14 +20s). Cumul sessions J1→J15 FINAL = **516**. Les 4 bloqueurs restent non exécutés : (1) clarifier Acquisition Test #1, (2) exclure IG Ad2, (3) exclure IG Ad3 LP, (4) réactiver campagne principale.
+- **Décision :** Pas de nouvelle reco. PRIORITÉ #0 inchangée : fixer friction checkout (4/4 abandons) avant relance. Urgence relance maximale — chaque jour supplémentaire n'aggrave plus le reset CBO (déjà total) mais rallonge le temps de récupération du signal.
+- **Pourquoi :** À ~307h de pause, le reset CBO est depuis longtemps consommé. L'absence d'inflation nocturne J15 est une légère bonne nouvelle (le pattern des spikes s'épuise) mais ne change pas la situation ads.
+- **Résultat (à compléter run 12h · 18/06) :** —
