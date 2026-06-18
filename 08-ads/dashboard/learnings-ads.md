@@ -392,4 +392,12 @@
 - **Constat :** Run 8h J16 (18/06) : **0 sessions** · **0€ Meta** · 2 campagnes `PAUSED` ~307h. Baseline conforme (pas de spike en formation à 8h). J15 FINAL confirmé API = **38 sessions** (pas d'inflation nocturne — identique run 18h · rupture du pattern J14 +20s). Cumul sessions J1→J15 FINAL = **516**. Les 4 bloqueurs restent non exécutés : (1) clarifier Acquisition Test #1, (2) exclure IG Ad2, (3) exclure IG Ad3 LP, (4) réactiver campagne principale.
 - **Décision :** Pas de nouvelle reco. PRIORITÉ #0 inchangée : fixer friction checkout (4/4 abandons) avant relance. Urgence relance maximale — chaque jour supplémentaire n'aggrave plus le reset CBO (déjà total) mais rallonge le temps de récupération du signal.
 - **Pourquoi :** À ~307h de pause, le reset CBO est depuis longtemps consommé. L'absence d'inflation nocturne J15 est une légère bonne nouvelle (le pattern des spikes s'épuise) mais ne change pas la situation ads.
-- **Résultat (à compléter run 12h · 18/06) :** —
+- **Résultat (run 12h confirmé) :** J16 12h = **23 sessions** (vs 0 à 8h · +23s en ~4h) · 0 ATC · 0 checkout · 0 commande · 0€ Meta. **8ème spike en formation** — même pattern que J13 (0→29s@12h) et J14 (3→19s@12h). FINAL à confirmer run 18h + API J17 matin. ✅ CLÔTURÉ.
+
+---
+
+### 2026-06-18 — J16 12h · 8ème spike en formation · 23s · population warm épuisée
+- **Constat :** J16 (18/06) partiel 12h : **23 sessions direct** (vs 0 à 8h · +23s en ~4h) · 0 ATC · 0 checkout · 0 commande · 0€ Meta · 2 campagnes `PAUSED` ~311h (13e jour). Baseline pause = 5–8 sessions/j. 23s dès 12h dépasse la baseline journalière complète → **8ème spike en formation**. Pattern spikes : J8=34s (5,9% ATC) · J10=34s (2,9%) · J11=63s (0%) · J12=55s (0%) · J13=39s (0%) · J14=55s (0%) · J15=38s (0%) · J16=23s@12h (0%).
+- **Décision :** Surveillance uniquement. FINAL J16 à confirmer API le 19/06 matin. Taux ATC spikes depuis J11 = 0% systématique → population warm épuisée. La relance paid reste l'urgence absolue. 4 bloqueurs inchangés depuis J5 (07/06).
+- **Pourquoi :** Même dynamique que les spikes précédents. FINAL attendu 30–55s selon patterns J13–J15. Taux ATC 0% attendu — la population warm est entièrement épuisée depuis J11. Ces spikes ne remplacent pas l'acquisition qualifiée.
+- **Résultat (à compléter run 18h · 18/06) :** —
